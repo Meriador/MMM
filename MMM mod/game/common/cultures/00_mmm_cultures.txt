@@ -1,0 +1,29 @@
+mnormon={
+	color= rgb{ 205 206 59 } 
+	religion = lds
+	traits = { anglophone european_heritage }
+	male_common_first_names = {
+		David
+	}
+	female_common_first_names = {
+		Lucy
+	}
+	noble_last_names = {
+		Smith
+	}
+	common_last_names = {
+		Kimball
+	}
+	male_regal_first_names = {
+		Hyrum
+		Joseph
+	}
+	female_regal_first_names = {
+		Emma
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

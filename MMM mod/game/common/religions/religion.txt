@@ -16,6 +16,14 @@ protestant = {
 	color = { 0.2 0.3 0.55 }
 }
 
+lds = {
+	texture = "gfx/interface/icons/religion_icons/mormonism.dds"
+	traits = {
+		christian
+	}
+	color = { 0.8 0.7 0.1 }
+}
+
 orthodox = {
 	texture = "gfx/interface/icons/religion_icons/orthodox.dds"
 	traits = {
