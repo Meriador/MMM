@@ -1,4 +1,4 @@
-mnormon={
+mormon={
 	color= rgb{ 205 206 59 } 
 	religion = lds
 	traits = { anglophone european_heritage }
