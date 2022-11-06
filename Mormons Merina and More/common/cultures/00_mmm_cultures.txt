@@ -1,5 +1,5 @@
 mormon={
-	color= rgb{ 205 206 59 } 
+	color= rgb{ 204 179 26 } 
 	religion = lds
 	traits = { anglophone european_heritage }
 	male_common_first_names = {
