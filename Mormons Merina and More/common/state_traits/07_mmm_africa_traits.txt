@@ -1,0 +1,18 @@
+state_trait_toamasina_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.1
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+state_trait_tsaratanana_massif = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+		state_building_port_max_level_add = -1
+		state_building_naval_base_max_level_add = -10
+	}
+}

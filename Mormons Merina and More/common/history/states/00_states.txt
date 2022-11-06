@@ -3976,22 +3976,6 @@ STATES = {
 		add_homeland = turkish	
 		add_homeland = bulgarian		
 	}
-	s:STATE_SOUTH_MADAGASCAR = {
-		create_state = {
-			country = c:MAD
-			owned_provinces = { xC6697B x3CE339 x19F69A x5D2D79 x132895 xC910DF x6DAE72 xA58AC5 xBFA51F x637E10 x47F3A1 xDF5AED xED95E1 xB57D66 xE8FA9B x676257 x7A489E x33BDA3 x714D08 xB5FA86 x069C0D x4DC413 x071AEC x2D9669 x097464 x1BB5E5 xDBFAC1 xE6F19B xF18FED xDCB2F8 x15A1AC xB7598B x034485 x9D8997 xE480E0 xDB3D79 x52ED6A xBCB8C0 x425701 x1B65BD x1FAF90 x6D48C1 x2B3FCB x9F5F4C x471161 x10A7DF xE655F6 xEA95C4 x5F8C33 x40C0E0 xFC9FEC xADD893 xF2317F x794F7A xB9259E x44FC6E x9C2288 xF81480 x94059D xB0B64A x5897EC x606CE0 }
-		}
-		
-		add_homeland = malagasy
-	}
-	s:STATE_NORTH_MADAGASCAR = {
-		create_state = {
-			country = c:MAD
-			owned_provinces = { x6A1582 x35CC6B x0F6E52 xC9BB37 x88A889 xDF60B0 x0B558A x4A0895 xF7C90E xA99E28 x392CDC xD4E1D7 xB1EDB4 xBB70FE xC3F681 x069F1A x3732E1 x3450FE x3619E0 xB27647 xBEC58A xA0D0B6 xBD43D8 x7D2FD8 xF7F009 x215769 x9C3835 xDB635D x50A090 x724867 x2625B9 x285C26 xF41FD5 x7F2785 x2240CA xEFBDB7 x11F67B xB92804 x054C46 xE0C530 x678DC5 xA11116 x84B32B xC2E62D x8E25F6 xF9D98C xA67461 x50BAA2 xC3722C xC89FD5 x3465B6 x25C5DC x6B56F5 xFFB457 x8CF7D2 x00D7F5 x6CC56F xD3049A xC67F91 x1032DF }
-		}
-		
-		add_homeland = malagasy
-	}
 	s:STATE_OROMIA = {
 		create_state = {
 			country = c:HAR
@@ -7138,3 +7122,59 @@ STATES = {
 		add_homeland = irish
 	}
 }
+	s:STATE_SOUTH_HIGHLANDS  = {
+		create_state = {
+			country = c:MAD
+			owned_provinces = { x1BB5E5 x2B3FCB xB9259E x714D08 xE655F6 x9F5F4C x471161 xBCB8C0 x1FAF90 x794F7A x6D48C1 xDBFAC1 x5F8C33 xFC9FEC xF2317F x069C0D xBFA51F x40C0E0 x19F69A}
+		}
+		
+		add_homeland = bara
+		add_homeland = merina
+	}
+	s:STATE_IMERINA = {
+		create_state = {
+			country = c:MAD
+			owned_provinces = { x392CDC xA0D0B6 x3450FE x7F2785 x724867 x215769 xBD43D8 x285C26 xF41FD5 x7D2FD8 xBEC58A xC3F681 x9C3835 xBB70FE xB1EDB4}
+		}
+		
+		add_homeland = merina
+	}
+	s:STATE_TOAMASINA = {
+		create_state = {
+			country = c:MAD
+			owned_provinces = { x1032DF xEA95C4 xC67F91 x50A090 x6CC56F xFFB457 x8CF7D2 x00D7F5 x069F1A x3619E0 x3732E1 xD3049A xE0C530 xF7F009 xEFBDB7 x054C46 x10F67B x84B32B x50BAA2 x3465B6 xC3722C x678DC5}
+		}
+		
+		add_homeland = betsimisaraka
+	}
+	s:STATE_MAHAJANGA = {
+		create_state = {
+			country = c:MAD
+			owned_provinces = { xDB635D xB27647 x392CDC x024485 xE6F19B x4DC413 x425701 xDCB2F8 x0F6E52 xDF60B0 x88A889 x2240CA x4A0795 xC9BB37 xA99E28 x2625B9 xD4E1D7 xF7C90E x0A558A x6A1582 xC2E62D x35CC6B xA11016 xC89FD5 xA67461 xB92804 x6B56F5 x8E25F6 x25C5DC xF9D98C x606CE0}
+			state_type = unincorporated
+		}
+		
+		add_homeland = sakalava
+	}
+	s:STATE_MORONDAVA = {
+		create_state = {
+			country = c:MAD
+			owned_provinces = { 071aec b5fa86 2d9669 e480e0 b7598b db3d79 f18fed 7a489e e8fa9b 676257 15a1ac 1b65bd 9d8997 33bda3 52ed6a 097464 b57d66 3ce339 6dae72 c6697b df5aed 637e10 47f3a1}
+			state_type = unincorporated
+		}
+		
+		add_homeland = sakalava
+		add_homeland = mahafaly
+	}
+	s:STATE_SOUTHEAST_MADAGASCAR = {
+		create_state = {
+			country = c:MAD
+			owned_provinces = { x94059D xF81480 x44FC6E xADD893 x9C2288 x10A7DF x5D2D79 x5897EC x132895 xA58AC5 xB0B64A xED95E1 xC910DF}
+			state_type = unincorporated
+		}
+		
+		add_homeland = bara
+		add_homeland = mahafaly
+		add_homeland = antaimoro
+		
+	}

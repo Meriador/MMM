@@ -27,3 +27,286 @@ mormon={
 		1 = caucasian
 	}
 }
+
+# WIP: namelists for all, these are a mix at the moment
+merina={
+	color= hsv{ 0.35 0.26 0.64 }
+	religion = animist
+	traits = { malagasy_language african_heritage }
+	male_common_first_names={
+		Andriamanely
+		Andriantsirotso
+		Lamboina
+		Ndriantompoinairivo
+		Rabiby
+		Radama
+		Rainilaiarivony
+		Ramasoandro
+		Ratsimivila
+		Tonanahary
+		Tsialana
+		Tsimiharo
+		Zafimamy
+	}
+	female_common_first_names = {
+		Binao
+		Ramasindrazana
+		Rasendranoro
+		Raketaka
+		Razafinandriamanitra
+		Ranavalona
+		Tahina
+	}	
+	noble_last_names = {
+		Bemihisatra
+		Ramavo
+		Hova
+	}
+	common_last_names={
+		Andriamahazo
+		Ramanantsoa
+		Ratsimandrava
+		Ratsiraka
+		Tsiranana
+		Razafindramary
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+betsimisaraka={
+	color= hsv{ 226 247 138 }
+	religion = animist
+	traits = { malagasy_language african_heritage }
+	male_common_first_names={
+		Andriamanely
+		Andriantsirotso
+		Lamboina
+		Ndriantompoinairivo
+		Rabiby
+		Radama
+		Rainilaiarivony
+		Ramasoandro
+		Ratsimivila
+		Tonanahary
+		Tsialana
+		Tsimiharo
+		Zafimamy
+	}
+	female_common_first_names = {
+		Binao
+		Ramasindrazana
+		Rasendranoro
+		Raketaka
+		Razafinandriamanitra
+		Ranavalona
+		Tahina
+	}	
+	noble_last_names = {
+		Bemihisatra
+		Ramavo
+		Hova
+	}
+	common_last_names={
+		Andriamahazo
+		Ramanantsoa
+		Ratsimandrava
+		Ratsiraka
+		Tsiranana
+		Razafindramary
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+bara={
+	color= hsv{ 169 33 73 }
+	religion = animist
+	traits = { malagasy_language african_heritage }
+	male_common_first_names={
+		Andriamanely
+		Andriantsirotso
+		Lamboina
+		Ndriantompoinairivo
+		Rabiby
+		Radama
+		Rainilaiarivony
+		Ramasoandro
+		Ratsimivila
+		Tonanahary
+		Tsialana
+		Tsimiharo
+		Zafimamy
+	}
+	female_common_first_names = {
+		Binao
+		Ramasindrazana
+		Rasendranoro
+		Raketaka
+		Razafinandriamanitra
+		Ranavalona
+		Tahina
+	}	
+	noble_last_names = {
+		Bemihisatra
+		Ramavo
+		Hova
+	}
+	common_last_names={
+		Andriamahazo
+		Ramanantsoa
+		Ratsimandrava
+		Ratsiraka
+		Tsiranana
+		Razafindramary
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+sakalava={
+	color= hsv{ 155 189 73 }
+	religion = animist
+	traits = { malagasy_language african_heritage }
+	male_common_first_names={
+		Andriamanely
+		Andriantsirotso
+		Lamboina
+		Ndriantompoinairivo
+		Rabiby
+		Radama
+		Rainilaiarivony
+		Ramasoandro
+		Ratsimivila
+		Tonanahary
+		Tsialana
+		Tsimiharo
+		Zafimamy
+	}
+	female_common_first_names = {
+		Binao
+		Ramasindrazana
+		Rasendranoro
+		Raketaka
+		Razafinandriamanitra
+		Ranavalona
+		Tahina
+	}	
+	noble_last_names = {
+		Bemihisatra
+		Ramavo
+		Hova
+	}
+	common_last_names={
+		Andriamahazo
+		Ramanantsoa
+		Ratsimandrava
+		Ratsiraka
+		Tsiranana
+		Razafindramary
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+mahafaly={
+	color= hsv{ 73 177 190 }
+	religion = animist
+	traits = { malagasy_language african_heritage }
+	male_common_first_names={
+		Andriamanely
+		Andriantsirotso
+		Lamboina
+		Ndriantompoinairivo
+		Rabiby
+		Radama
+		Rainilaiarivony
+		Ramasoandro
+		Ratsimivila
+		Tonanahary
+		Tsialana
+		Tsimiharo
+		Zafimamy
+	}
+	female_common_first_names = {
+		Binao
+		Ramasindrazana
+		Rasendranoro
+		Raketaka
+		Razafinandriamanitra
+		Ranavalona
+		Tahina
+	}	
+	noble_last_names = {
+		Bemihisatra
+		Ramavo
+		Hova
+	}
+	common_last_names={
+		Andriamahazo
+		Ramanantsoa
+		Ratsimandrava
+		Ratsiraka
+		Tsiranana
+		Razafindramary
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}
+
+antaimoro={
+	color= hsv{ 245 41 205 }
+	religion = animist
+	traits = { malagasy_language african_heritage }
+	male_common_first_names={
+		Andriamanely
+		Andriantsirotso
+		Lamboina
+		Ndriantompoinairivo
+		Rabiby
+		Radama
+		Rainilaiarivony
+		Ramasoandro
+		Ratsimivila
+		Tonanahary
+		Tsialana
+		Tsimiharo
+		Zafimamy
+	}
+	female_common_first_names = {
+		Binao
+		Ramasindrazana
+		Rasendranoro
+		Raketaka
+		Razafinandriamanitra
+		Ranavalona
+		Tahina
+	}	
+	noble_last_names = {
+		Bemihisatra
+		Ramavo
+		Hova
+	}
+	common_last_names={
+		Andriamahazo
+		Ramanantsoa
+		Ratsimandrava
+		Ratsiraka
+		Tsiranana
+		Razafindramary
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = generic
+}

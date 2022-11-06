@@ -1474,55 +1474,51 @@
 			}
 		}
 	}
-	s:STATE_SOUTH_MADAGASCAR = {
+	s:STATE_SOUTHEAST_MADAGASCAR 
 		region_state:MAD = {
 			create_pop = {
-				culture = malagasy
-				size = 805196
-			}
-			create_pop = {
-				culture = malagasy
-				religion = sunni
-				size = 72604
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = malagasy
-				size = 15000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = malagasy
-				religion = sunni
-				size = 5000
+				culture = antaimoro
+				size = 455500
 			}
 		}
 	}
-	s:STATE_NORTH_MADAGASCAR = {
+	s:STATE_MORONDAVA 
 		region_state:MAD = {
 			create_pop = {
-				culture = malagasy
-				size = 900304
+				culture = mahafaly
+				size = 455500
 			}
+		}
+	}
+	s:STATE_MAHAJANGA  
+		region_state:MAD = {
 			create_pop = {
-				culture = malagasy
-				religion = catholic
-				size = 5000
+				culture = sakalava
+				size = 455500
 			}
+		}
+	}
+	s:STATE_TOAMASINA  
+		region_state:MAD = {
 			create_pop = {
-				culture = malagasy
-				religion = sunni
-				size = 97800
+				culture = betsimisaraka
+				size = 455500
 			}
+		}
+	}
+	s:STATE_IMERINA  
+		region_state:MAD = {
 			create_pop = {
-				culture = malagasy
-				religion = protestant
-				size = 12000
+				culture = merina
+				size = 455500
 			}
+		}
+	}
+	s:STATE_SOUTH_HIGHLANDS 
+		region_state:MAD = {
 			create_pop = {
-				pop_type = slaves
-				culture = malagasy
-				size = 30000
+				culture = bara
+				size = 455500
 			}
 		}
 	}
