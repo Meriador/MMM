@@ -217,7 +217,7 @@ sakalava={
 	graphics = generic
 }
 
-mahafaly={
+antandroy={
 	color= hsv{ 73 177 190 }
 	religion = animist
 	traits = { malagasy_language african_heritage }

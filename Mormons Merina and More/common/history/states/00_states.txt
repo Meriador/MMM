@@ -7124,8 +7124,16 @@ STATES = {
 }
 	s:STATE_SOUTH_HIGHLANDS  = {
 		create_state = {
-			country = c:MAD
-			owned_provinces = { x1BB5E5 x2B3FCB xB9259E x714D08 xE655F6 x9F5F4C x471161 xBCB8C0 x1FAF90 x794F7A x6D48C1 xDBFAC1 x5F8C33 xFC9FEC xF2317F x069C0D xBFA51F x40C0E0 x19F69A}
+			country = c:MER
+			owned_provinces = { x1BB5E5 x2B3FCB xB9259E xE655F6 x9F5F4C x471161 x1FAF90 x794F7A x6D48C1 xFC9FEC xF2317F}
+		}
+		create_state = {
+			country = c:BBE
+			owned_provinces = { x5F8C33 xBFA51F x069C0D x19F69A x40C0E0 }
+		}
+		create_state = {
+			country = c:IMM
+			owned_provinces = { xDBFAC1 xBCB8C0 x714D08 }
 		}
 		
 		add_homeland = bara
@@ -7133,7 +7141,7 @@ STATES = {
 	}
 	s:STATE_IMERINA = {
 		create_state = {
-			country = c:MAD
+			country = c:MER
 			owned_provinces = { x392CDC xA0D0B6 x3450FE x7F2785 x724867 x215769 xBD43D8 x285C26 xF41FD5 x7D2FD8 xBEC58A xC3F681 x9C3835 xBB70FE xB1EDB4}
 		}
 		
@@ -7141,26 +7149,47 @@ STATES = {
 	}
 	s:STATE_TOAMASINA = {
 		create_state = {
-			country = c:MAD
+			country = c:MER
 			owned_provinces = { x1032DF xEA95C4 xC67F91 x50A090 x6CC56F xFFB457 x8CF7D2 x00D7F5 x069F1A x3619E0 x3732E1 xD3049A xE0C530 xF7F009 xEFBDB7 x054C46 x10F67B x84B32B x50BAA2 x3465B6 xC3722C x678DC5}
 		}
 		
 		add_homeland = betsimisaraka
 	}
-	s:STATE_MAHAJANGA = {
+	s:STATE_BOENY = {
 		create_state = {
-			country = c:MAD
-			owned_provinces = { xDB635D xB27647 x392CDC x024485 xE6F19B x4DC413 x425701 xDCB2F8 x0F6E52 xDF60B0 x88A889 x2240CA x4A0795 xC9BB37 xA99E28 x2625B9 xD4E1D7 xF7C90E x0A558A x6A1582 xC2E62D x35CC6B xA11016 xC89FD5 xA67461 xB92804 x6B56F5 x8E25F6 x25C5DC xF9D98C x606CE0}
+			country = c:MER
+			owned_provinces = { xDB635D xB27647 x024485 xDF60B0 x88A889 x2240CA x4A0795 xA99E28 x2625B9 xD4E1D7 xF7C90E x0A558A x6A1582 xC2E62D x35CC6B xA11016 xC89FD5 xA67461 xB92804 x6B56F5 x606CE0}
 			state_type = unincorporated
+		}
+		create_state = {
+			country = c:BOI
+			owned_provinces = { x4A0895 x0F6E52 xC9BB37 }
+		}
+		create_state = {
+			country = c:MKY
+			owned_provinces = { xDCB2F8 x425701 x4DC413 xE6F19B x034485 }
+		}
+		create_state = {
+			country = c:AKR
+			owned_provinces = { xF9D98C x8E25F6 x25C5DC }
 		}
 		
 		add_homeland = sakalava
+		add_homeland = betsimisaraka
 	}
 	s:STATE_MORONDAVA = {
 		create_state = {
-			country = c:MAD
-			owned_provinces = { 071aec b5fa86 2d9669 e480e0 b7598b db3d79 f18fed 7a489e e8fa9b 676257 15a1ac 1b65bd 9d8997 33bda3 52ed6a 097464 b57d66 3ce339 6dae72 c6697b df5aed 637e10 47f3a1}
+			country = c:MER
+			owned_provinces = { xDB3D79 xF18FED x7A489E xE8FA9B x676257 x15A1AC x1B65BD }
 			state_type = unincorporated
+		}
+		create_state = {
+			country = c:NTD
+			owned_provinces = { x47F3A1 x637E10 xB57D66 x3CE339 x6DAE72 xC6697B xDF5AED x9D8997 x33BDA3 x52ED6A x097464}
+		}
+		create_state = {
+			country = c:MNB
+			owned_provinces = { x071AEC xB5FA86 x2D9669 xE480E0 xB7598B }
 		}
 		
 		add_homeland = sakalava
@@ -7168,9 +7197,17 @@ STATES = {
 	}
 	s:STATE_SOUTHEAST_MADAGASCAR = {
 		create_state = {
-			country = c:MAD
-			owned_provinces = { x94059D xF81480 x44FC6E xADD893 x9C2288 x10A7DF x5D2D79 x5897EC x132895 xA58AC5 xB0B64A xED95E1 xC910DF}
+			country = c:MER
+			owned_provinces = { x94059D xF81480 x44FC6E x9C2288 x5897EC xB0B64A }
 			state_type = unincorporated
+		}
+		create_state = {
+			country = c:NTD
+			owned_provinces = { x132895 xA58AC5 xED95E1 xC910DF }
+		}
+		create_state = {
+			country = c:IAN
+			owned_provinces = { x5D2D79 x10A7DF xADD893 }
 		}
 		
 		add_homeland = bara

@@ -1474,51 +1474,205 @@
 			}
 		}
 	}
-	s:STATE_SOUTHEAST_MADAGASCAR 
+# the exact numbers here are more or less made up - I'm making sure the total is about right and that there's roughly the right number of slaves and such, but I haven't found details of the relative size of ethnic groups or anything like that
+	s:STATE_SOUTHEAST_MADAGASCAR = {
 		region_state:MAD = {
 			create_pop = {
 				culture = antaimoro
-				size = 455500
+				size = 325000
 			}
-		}
-	}
-	s:STATE_MORONDAVA 
-		region_state:MAD = {
 			create_pop = {
-				culture = mahafaly
-				size = 455500
+				culture = sakalava
+				size = 80000
+			}
+			create_pop = {
+				culture = sakalava
+				pop_type = slaves
+				size = 20000
+			}
+			create_pop = {
+				culture = antaimoro
+				pop_type = slaves
+				size = 75000
+			}
+			create_pop = {
+				culture = merina
+				size = 15000
+			}
+		}
+		region_state:NTD = {
+			create_pop = {
+				culture = antandroy
+				size = 90000
+			}
+		region_state:IAN = {
+			create_pop = {
+				culture = bara
+				size = 50000
 			}
 		}
 	}
-	s:STATE_MAHAJANGA  
+	s:STATE_MORONDAVA  = {
 		region_state:MAD = {
 			create_pop = {
 				culture = sakalava
-				size = 455500
+				size = 45000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = sakalava
+				size = 15000
+			}
+			create_pop = {
+				culture = merina
+				size = 15000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = makua
+				size = 12000
+			}
+		region_state:NTD = {
+			create_pop = {
+				culture = antandroy
+				size = 60000
+			}
+			create_pop = {
+				culture = sakalava
+				size = 30000
+			}
+		region_state:MNB = {
+			create_pop = {
+				culture = sakalava
+				size = 60000
 			}
 		}
 	}
-	s:STATE_TOAMASINA  
+	s:STATE_BOENY = {
+		region_state:MAD = {
+			create_pop = {
+				culture = sakalava
+				size = 145000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = sakalava
+				size = 15000
+			}
+			create_pop = {
+				culture = betsimisaraka
+				size = 110000
+			}
+			create_pop = {
+				culture = merina
+				size = 30000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = makua
+				size = 8000
+			}
+		}
+		region_state:BOI = {
+			create_pop = {
+				culture = sakalava
+				size = 65000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = makua
+				size = 2000
+			}
+		}
+		region_state:MKY = {
+			create_pop = {
+				culture = sakalava
+				size = 50000
+			}
+		}
+		region_state:AKR = {
+			create_pop = {
+				culture = sakalava
+				size = 25000
+			}
+		}
+	}
+	s:STATE_TOAMASINA = {
 		region_state:MAD = {
 			create_pop = {
 				culture = betsimisaraka
-				size = 455500
+				size = 200000
+			}			
+			create_pop = {
+				pop_type = slaves
+				culture = betsimisaraka
+				size = 50000
+			}
+			create_pop = {
+				culture = merina
+				size = 30000
 			}
 		}
 	}
-	s:STATE_IMERINA  
+	s:STATE_IMERINA = {
 		region_state:MAD = {
 			create_pop = {
 				culture = merina
-				size = 455500
+				size = 600000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = merina
+				size = 10000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = sakalava
+				size = 25000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = antaimoro
+				size = 75000
+			}			
+			create_pop = {
+				pop_type = slaves
+				culture = betsimisaraka
+				size = 50000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = makua
+				size = 5000
 			}
 		}
 	}
-	s:STATE_SOUTH_HIGHLANDS 
+	s:STATE_SOUTH_HIGHLANDS = {
 		region_state:MAD = {
 			create_pop = {
 				culture = bara
-				size = 455500
+				size = 70000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = bara
+				size = 10000
+			}
+			create_pop = {
+				culture = merina
+				size = 290000
+			}
+		}
+		region_state:BBE = {
+			create_pop = {
+				culture = bara
+				size = 60000
+			}
+		}
+		region_state:IMM = {
+			create_pop = {
+				culture = bara
+				size = 50000
 			}
 		}
 	}
