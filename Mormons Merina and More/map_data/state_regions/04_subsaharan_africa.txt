@@ -632,10 +632,10 @@ STATE_SOMALILAND = {
     naval_exit_id = 3018
 }
 
-STATE_IMERINA  = {
+STATE_IMERINA = {
     id = 1000
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x392CDC" "xA0D0B6" "x3450FE" "x7F2785" "x724867" "x215769" "xBD43D8" "x285C26" "xF41FD5" "x7D2FD8" "xBEC58A" "xC3F681" "x9C3835" "xBB70FE" "xB1EDB4}
+    provinces = { "x392CDC" "xA0D0B6" "x3450FE" "x7F2785" "x724867" "x215769" "xBD43D8" "x285C26" "xF41FD5" "x7D2FD8" "xBEC58A" "xC3F681" "x9C3835" "xBB70FE" "xB1EDB4" }
     traits = { "state_trait_malaria" }
     city = "xBEC58A" #antananarivo
     farm = "x215769" #tsiroanomandidy
@@ -647,7 +647,8 @@ STATE_IMERINA  = {
 		bg_coal_mining = 4
     }
 }
-STATE_SOUTH_HIGHLANDS  = {
+
+STATE_SOUTH_HIGHLANDS = {
     id = 1001
     subsistence_building = "building_subsistence_farms"
     provinces = { "x1BB5E5" "x2B3FCB" "xB9259E" "x714D08" "xE655F6" "x9F5F4C" "x471161" "xBCB8C0" "x1FAF90" "x794F7A" "x6D48C1" "xDBFAC1" "x5F8C33" "xFC9FEC" "xF2317F" "x069C0D" "xBFA51F" "x40C0E0" "x19F69A"}
@@ -668,6 +669,7 @@ STATE_SOUTH_HIGHLANDS  = {
         undiscovered_amount = 4
     }
 }
+
 STATE_SOUTHEAST_MADAGASCAR = {
     id = 1002
     subsistence_building = "building_subsistence_farms"
@@ -692,6 +694,7 @@ STATE_SOUTHEAST_MADAGASCAR = {
     }
     naval_exit_id = 3107
 }
+
 STATE_MORONDAVA = {
     id = 1003
     subsistence_building = "building_subsistence_farms"
@@ -715,7 +718,7 @@ STATE_MORONDAVA = {
 STATE_BOENY = {
     id = 1004
     subsistence_building = "building_subsistence_farms"
-    provinces = { "xDB635D" "xB27647" "x392CDC" "x024485" "xE6F19B" "x4DC413" "x425701" "xDCB2F8" "x0F6E52" "xDF60B0" "x88A889" "x2240CA" "x4A0795" "xC9BB37" "xA99E28" "x2625B9" "xD4E1D7" "xF7C90E" "x0A558A" "x6A1582" "xC2E62D" "x35CC6B" "xA11016" "xC89FD5" "xA67461" "xB92804" "x6B56F5" "x8E25F6" "x25C5DC" "xF9D98C" "x606CE0"}
+    provinces = { "xA11116" "x0B558A" "xDB635D" "xB27647" "x024485" "xDF60B0" "x88A889" "x2240CA" "x4A0795" "xA99E28" "x2625B9" "xD4E1D7" "xF7C90E" "x0A558A" "x6A1582" "xC2E62D" "x35CC6B" "xA11016" "xC89FD5" "xA67461" "xB92804" "x6B56F5" "x606CE0" "x4A0895" "x0F6E52" "xC9BB37" "xDCB2F8" "x425701" "x4DC413" "xE6F19B" "x034485" "xF9D98C" "x8E25F6" "x25C5DC" }
     impassable = { "x606CE0" }
     traits = { "state_trait_malaria" "state_trait_tsaratanana_massif"}
     city = "x4A0895" #mahajanga
@@ -738,10 +741,11 @@ STATE_BOENY = {
     }
     naval_exit_id = 3107
 }
+
 STATE_TOAMASINA = {
     id = 1005
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x1032DF" "xEA95C4" "xC67F91" "x50A090" "x6CC56F" "xFFB457" "x8CF7D2" "x00D7F5" "x069F1A" "x3619E0" "x3732E1" "xD3049A" "xE0C530" "xF7F009" "xEFBDB7" "x054C46" "x10F67B" "x84B32B" "x50BAA2" "x3465B6" "xC3722C" "x678DC5}
+    provinces = { "x11F67B" "x1032DF" "xEA95C4" "xC67F91" "x50A090" "x6CC56F" "xFFB457" "x8CF7D2" "x00D7F5" "x069F1A" "x3619E0" "x3732E1" "xD3049A" "xE0C530" "xF7F009" "xEFBDB7" "x054C46" "x10F67B" "x84B32B" "x50BAA2" "x3465B6" "xC3722C" "x678DC5"}
     traits = { "state_trait_malaria" "state_trait_toamasina_harbor" }
     city = "xD3049A" #foulpoint
     port = "x00D7F5" #toamasina
@@ -763,7 +767,6 @@ STATE_TOAMASINA = {
     }
     naval_exit_id = 3107
 }
-
 
 STATE_UGANDA = {
     id = 235

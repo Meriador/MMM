@@ -77,7 +77,7 @@ merina={
 }
 
 betsimisaraka={
-	color= hsv{ 226 247 138 }
+	color= rgb{ 226 247 138 }
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
@@ -124,7 +124,7 @@ betsimisaraka={
 }
 
 bara={
-	color= hsv{ 169 33 73 }
+	color= rgb{ 169 33 73 }
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
@@ -171,7 +171,7 @@ bara={
 }
 
 sakalava={
-	color= hsv{ 155 189 73 }
+	color= rgb{ 155 189 73 }
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
@@ -218,7 +218,7 @@ sakalava={
 }
 
 antandroy={
-	color= hsv{ 73 177 190 }
+	color= rgb{ 73 177 190 }
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
@@ -265,7 +265,7 @@ antandroy={
 }
 
 antaimoro={
-	color= hsv{ 245 41 205 }
+	color= rgb{ 245 41 205 }
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={

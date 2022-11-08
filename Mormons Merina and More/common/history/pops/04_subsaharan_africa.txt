@@ -1505,6 +1505,7 @@
 				culture = antandroy
 				size = 90000
 			}
+		}
 		region_state:IAN = {
 			create_pop = {
 				culture = bara
@@ -1532,6 +1533,7 @@
 				culture = makua
 				size = 12000
 			}
+		}
 		region_state:NTD = {
 			create_pop = {
 				culture = antandroy
@@ -1541,6 +1543,7 @@
 				culture = sakalava
 				size = 30000
 			}
+		}
 		region_state:MBE = {
 			create_pop = {
 				culture = sakalava
