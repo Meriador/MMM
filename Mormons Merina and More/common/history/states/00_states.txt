@@ -7121,7 +7121,6 @@ STATES = {
 		
 		add_homeland = irish
 	}
-}
 	s:STATE_SOUTH_HIGHLANDS  = {
 		create_state = {
 			country = c:MER
@@ -7215,3 +7214,4 @@ STATES = {
 		add_homeland = antaimoro
 		
 	}
+}

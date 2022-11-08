@@ -1,0 +1,154 @@
+MAD = {
+	color = { 45  229  61 }
+	
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { merina betsimisaraka sakalava antandroy antaimoro bara }
+	capital = STATE_IMERINA
+}
+
+MER = {
+	color = { 117  150  120 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { merina }
+	capital = STATE_IMERINA
+}
+
+IAN = {
+	color = { 96  19  112 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bara }
+	capital = STATE_SOUTHEAST_MADAGASCAR
+}
+
+BBE = {
+	color = { 157  48  179 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bara }
+	capital = STATE_SOUTH_HIGHLANDS
+}
+
+IMM = {
+	color = { 209  127  225 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bara }
+	capital = STATE_SOUTH_HIGHLANDS
+}
+
+BAR = {
+	color = { 197  12  144 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { bara }
+	capital = STATE_SOUTH_HIGHLANDS
+}
+
+BSK = {
+	color = { 195  231  48 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { betsimisaraka }
+	capital = STATE_TOAMASINA
+}
+
+AMR = {
+	color = { 189  111  52 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { antaimoro }
+	capital = STATE_SOUTHEAST_MADAGASCAR
+}
+
+AKR = {
+	color = { 22  91  12 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sakalava }
+	capital = STATE_BOENY
+}
+
+BOI = {
+	color = { 46  178  176 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sakalava }
+	capital = STATE_BOENY
+}
+
+MBE = {
+	color = { 224  163  82 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sakalava }
+	capital = STATE_MORONDAVA
+}
+
+SKL = {
+	color = { 216  162  17 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { sakalava }
+	capital = STATE_MORONDAVA
+}
+
+MKY = {
+	color = { 184  149  200 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { sakalava }
+	capital = STATE_BOENY
+}
+
+NTD = {
+	color = { 216  162  17 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { antandroy }
+	capital = STATE_SOUTHEAST_MADAGASCAR
+}
+

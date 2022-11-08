@@ -1476,7 +1476,7 @@
 	}
 # the exact numbers here are more or less made up - I'm making sure the total is about right and that there's roughly the right number of slaves and such, but I haven't found details of the relative size of ethnic groups or anything like that
 	s:STATE_SOUTHEAST_MADAGASCAR = {
-		region_state:MAD = {
+		region_state:MER = {
 			create_pop = {
 				culture = antaimoro
 				size = 325000
@@ -1513,7 +1513,7 @@
 		}
 	}
 	s:STATE_MORONDAVA  = {
-		region_state:MAD = {
+		region_state:MER = {
 			create_pop = {
 				culture = sakalava
 				size = 45000
@@ -1541,7 +1541,7 @@
 				culture = sakalava
 				size = 30000
 			}
-		region_state:MNB = {
+		region_state:MBE = {
 			create_pop = {
 				culture = sakalava
 				size = 60000
@@ -1549,7 +1549,7 @@
 		}
 	}
 	s:STATE_BOENY = {
-		region_state:MAD = {
+		region_state:MER = {
 			create_pop = {
 				culture = sakalava
 				size = 145000
@@ -1598,7 +1598,7 @@
 		}
 	}
 	s:STATE_TOAMASINA = {
-		region_state:MAD = {
+		region_state:MER = {
 			create_pop = {
 				culture = betsimisaraka
 				size = 200000
@@ -1615,7 +1615,7 @@
 		}
 	}
 	s:STATE_IMERINA = {
-		region_state:MAD = {
+		region_state:MER = {
 			create_pop = {
 				culture = merina
 				size = 600000
@@ -1648,7 +1648,7 @@
 		}
 	}
 	s:STATE_SOUTH_HIGHLANDS = {
-		region_state:MAD = {
+		region_state:MER = {
 			create_pop = {
 				culture = bara
 				size = 70000
