@@ -1483,21 +1483,21 @@
 			}
 			create_pop = {
 				culture = sakalava
-				size = 80000
+				size = 75000
 			}
 			create_pop = {
 				culture = sakalava
 				pop_type = slaves
-				size = 20000
+				size = 15000
 			}
 			create_pop = {
 				culture = antaimoro
 				pop_type = slaves
-				size = 75000
+				size = 60000
 			}
 			create_pop = {
 				culture = merina
-				size = 15000
+				size = 5000
 			}
 		}
 		region_state:NTD = {
@@ -1560,7 +1560,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = sakalava
-				size = 15000
+				size = 17000
 			}
 			create_pop = {
 				culture = betsimisaraka
@@ -1604,7 +1604,7 @@
 		region_state:MER = {
 			create_pop = {
 				culture = betsimisaraka
-				size = 200000
+				size = 207000
 			}			
 			create_pop = {
 				pop_type = slaves
@@ -1615,6 +1615,16 @@
 				culture = merina
 				size = 30000
 			}
+			create_pop = {
+				pop_type = slaves
+				culture = merina
+				size = 10000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = antaimoro
+				size = 15000
+			}	
 		}
 	}
 	s:STATE_IMERINA = {
@@ -1631,7 +1641,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = sakalava
-				size = 25000
+				size = 28000
 			}
 			create_pop = {
 				pop_type = slaves

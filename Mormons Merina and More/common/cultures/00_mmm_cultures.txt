@@ -265,7 +265,7 @@ antandroy={
 }
 
 antaimoro={
-	color= rgb{ 245 41 205 }
+	color= rgb{ 163 29 137 }
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
