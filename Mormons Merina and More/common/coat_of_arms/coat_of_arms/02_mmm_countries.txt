@@ -1,0 +1,201 @@
+@semy = 0.25
+@third = @[1/3]
+@fifth = @[1/5]
+@sixth = @[1/6]
+
+@canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
+
+@canton_scale_sweden_x = @[ ( 255 / 768 ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / 512 ) + 0.001 ]
+
+@uru_canton_height = 0.556
+@NZL_coa_offset = @[3/16] 
+@sm_fra = 0.16
+
+MER = { # Imerina
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+MER_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_tribar.dds"
+		color1 = "red"
+		color2 = "green"
+		color3 = "white"
+	}
+}
+MER_subject_FRA = {
+	# French protectorate
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.38 0.38 } position = { @third 0.5 } }	
+	}	
+}
+
+IAN = { # Ianstsantsa
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_stripes_10.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+
+BBE = { # Be
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_stripes_10.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+
+IMM = { # Imamono
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_stripes_10.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+
+BAR = { # Bara
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_stripes_10_alternating.dds"
+		color1 = "red"
+		color2 = "yellow"
+	}
+}
+
+BSK = { # Tamatave
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_rooster.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } }
+	}
+}
+
+AMR = { # Antaimoro
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_crescent_voided.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+}
+
+AKR = { # Antankarana
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_crescent_star_06_pale.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+
+BOI = { # Boina
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	
+	colored_emblem = {
+		texture = "ce_cross_switzerland.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.50 0.50 } }
+	}
+}
+
+MBE = { # Menabe
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	
+	colored_emblem = {
+		texture = "ce_yak.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.50 0.50 } }
+	}
+}
+
+SKL = { # Sakalava
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "black"
+	}
+}
+
+MKY = { # Melaky
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_moors_head.dds"
+		color1 = "black"
+		color2 = "green"
+	}
+}
+
+NTD = { # Antandroy
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_yak.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+}
