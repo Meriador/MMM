@@ -1,0 +1,10 @@
+TRADE_ROUTES = {
+	c:MER = {
+		create_trade_route = {
+			goods = small_arms
+			level = 1
+			direction = import
+			target = c:GBR.market
+		}
+	}
+}

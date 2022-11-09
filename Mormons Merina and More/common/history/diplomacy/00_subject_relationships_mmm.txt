@@ -1,0 +1,22 @@
+DIPLOMACY = {
+	c:MER = {
+		create_diplomatic_pact = {
+			country = c:AKR
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:BOI
+			type = vassal
+		}
+	}
+	c:BBE = {
+		create_diplomatic_pact = {
+			country = c:IMM
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:IAN
+			type = personal_union
+		}
+	}
+}

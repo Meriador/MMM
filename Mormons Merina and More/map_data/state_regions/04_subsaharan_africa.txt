@@ -633,14 +633,14 @@ STATE_SOMALILAND = {
 }
 
 STATE_IMERINA = {
-    id = 1000
+    id = 6000
     subsistence_building = "building_subsistence_farms"
     provinces = { "x392CDC" "xA0D0B6" "x3450FE" "x7F2785" "x724867" "x215769" "xBD43D8" "x285C26" "xF41FD5" "x7D2FD8" "xBEC58A" "xC3F681" "x9C3835" "xBB70FE" "xB1EDB4" }
     traits = { "state_trait_malaria" }
     city = "xBEC58A" #antananarivo
     farm = "x215769" #tsiroanomandidy
     mine = "xBB70FE" #antsirabe
-    arable_land = 57
+    arable_land = 50
     arable_resources = { "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_rice_farms" }
     capped_resources = {
 		bg_iron_mining = 6
@@ -649,7 +649,7 @@ STATE_IMERINA = {
 }
 
 STATE_SOUTH_HIGHLANDS = {
-    id = 1001
+    id = 6001
     subsistence_building = "building_subsistence_farms"
     provinces = { "x1BB5E5" "x2B3FCB" "xB9259E" "x714D08" "xE655F6" "x9F5F4C" "x471161" "xBCB8C0" "x1FAF90" "x794F7A" "x6D48C1" "xDBFAC1" "x5F8C33" "xFC9FEC" "xF2317F" "x069C0D" "xBFA51F" "x40C0E0" "x19F69A"}
     traits = { "state_trait_malaria" }
@@ -671,7 +671,7 @@ STATE_SOUTH_HIGHLANDS = {
 }
 
 STATE_SOUTHEAST_MADAGASCAR = {
-    id = 1002
+    id = 6002
     subsistence_building = "building_subsistence_farms"
     provinces = { "x94059D" "xF81480" "x44FC6E" "xADD893" "x9C2288" "x10A7DF" "x5D2D79" "x5897EC" "x132895" "xA58AC5" "xB0B64A" "xED95E1" "xC910DF"}
     traits = { "state_trait_malaria" }
@@ -696,14 +696,14 @@ STATE_SOUTHEAST_MADAGASCAR = {
 }
 
 STATE_MORONDAVA = {
-    id = 1003
+    id = 6003
     subsistence_building = "building_subsistence_farms"
     provinces = { "x071AEC" "xB5FA86" "x2D9669" "xE480E0" "xB7598B" "xDB3D79" "xF18FED" "x7A489E" "xE8FA9B" "x676257" "x15A1AC" "x1B65BD" "x9D8997" "x33BDA3" "x52ED6A" "x097464" "xB57D66" "x3CE339" "x6DAE72" "xC6697B" "xDF5AED" "x637E10" "x47F3A1"}
     traits = { "state_trait_malaria" }
     city = "xF18FED" #morondava
     port = "x52ED6A" #toliara
     farm = "x071AEC" #maintirano
-    arable_land = 20
+    arable_land = 22
     arable_resources = { "bg_banana_plantations" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_rice_farms" }
     capped_resources = {
         bg_fishing = 10
@@ -716,7 +716,7 @@ STATE_MORONDAVA = {
 }
 
 STATE_BOENY = {
-    id = 1004
+    id = 6004
     subsistence_building = "building_subsistence_farms"
     provinces = { "xA11116" "x0B558A" "xDB635D" "xB27647" "x024485" "xDF60B0" "x88A889" "x2240CA" "x4A0795" "xA99E28" "x2625B9" "xD4E1D7" "xF7C90E" "x0A558A" "x6A1582" "xC2E62D" "x35CC6B" "xA11016" "xC89FD5" "xA67461" "xB92804" "x6B56F5" "x606CE0" "x4A0895" "x0F6E52" "xC9BB37" "xDCB2F8" "x425701" "x4DC413" "xE6F19B" "x034485" "xF9D98C" "x8E25F6" "x25C5DC" }
     impassable = { "x606CE0" }
@@ -726,7 +726,7 @@ STATE_BOENY = {
     farm = "xDF60B0" #marovoay
     mine = "xDCB2F8" #besalampy
     wood = "xB92804" #ambanja
-    arable_land = 25
+    arable_land = 28
     arable_resources = { "bg_banana_plantations" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_rice_farms" }
     capped_resources = {
         bg_iron_mining = 5
@@ -743,7 +743,7 @@ STATE_BOENY = {
 }
 
 STATE_TOAMASINA = {
-    id = 1005
+    id = 6005
     subsistence_building = "building_subsistence_farms"
     provinces = { "x11F67B" "x1032DF" "xEA95C4" "xC67F91" "x50A090" "x6CC56F" "xFFB457" "x8CF7D2" "x00D7F5" "x069F1A" "x3619E0" "x3732E1" "xD3049A" "xE0C530" "xF7F009" "xEFBDB7" "x054C46" "x10F67B" "x84B32B" "x50BAA2" "x3465B6" "xC3722C" "x678DC5"}
     traits = { "state_trait_malaria" "state_trait_toamasina_harbor" }
