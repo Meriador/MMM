@@ -1,0 +1,9 @@
+﻿l_english:
+ je_katips_legacy:0 "Katip's Legacy"
+ je_katips_legacy_goal:0 "For Dai Viet!"
+ je_katips_legacy_reason:0 "A decade prior, our country was place before Jihad by the upstart rebel, Katip Sumat and Petty Lords of Thuan Thanh. A last great fire for the proud people of Champa started from the infamous Che Bong Nga to the Upstarts of Tay Son we have endured the march South to claim the banks of the Mekong for ourselves, Now we stand to close this chapter of our history..."
+
+ vietnam.1.t:0 "The Embers of Panduranga"
+ vietnam.1.d:0 "Tây Nguyên, The Highlands which once housed our great rival has finally come before the heel of the dragon son of the Kinh, There are those that will resist our dominion but under the auspicious of Minh Mang we shall heal the nation and bring glory forever more to Dai Nam not even [CHI.GetCountry.GetName] can ignore."
+ vietnam.1.f:0 ""Respecting above all the rules of life, such as meeting and parting, life and death\nBuilding a harmonious family\nEstablishing a prosperous country."" # Excrept from Ming Mang Succession Poem
+ vietnam.1.a:0 "Another step to preserving our way of being..."

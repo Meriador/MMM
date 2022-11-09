@@ -1,0 +1,45 @@
+﻿namespace = vietnam
+
+# Katip's Legacy
+vietnam.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = vietnam.1.t
+	desc = vietnam.1.d
+	flavor = vietnam.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/union_leader"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+		
+	}
+
+	option = {
+		name = vietnam.1.a
+		add_radicals = {
+			value = very_large_radicals
+			culture = cu:cham
+		}
+		add_radicals = {
+			value = large_radicals
+			religion = rel:muslim
+		}
+		add_radicals = {
+			value = medium_radicals
+			religion = rel:catholic
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}

@@ -2,18 +2,10 @@
 	c:DAI = {
 		create_diplomatic_play = {
 			name = rebellion_of_thuy_xa_and_hoa_xa
-		
 			target_state = s:STATE_BINH_DINH.region_state:DGR
-			
 			war = yes
 			
-			type = dp_return_state
-			
-			add_war_goal = {
-				holder = c:DAI
-				type = return_state
-				target_state = s:STATE_ANNAM.region_state:DGR
-			}			
-		}	
+			type = dp_native_uprising
+		}
 	}
 }
