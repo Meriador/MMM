@@ -7175,6 +7175,7 @@ STATES = {
 		
 		add_homeland = sakalava
 		add_homeland = betsimisaraka
+		add_claim = c:BOI
 	}
 	s:STATE_MORONDAVA = {
 		create_state = {
@@ -7193,6 +7194,7 @@ STATES = {
 		
 		add_homeland = sakalava
 		add_homeland = mahafaly
+		add_claim = c:MBE
 	}
 	s:STATE_SOUTHEAST_MADAGASCAR = {
 		create_state = {

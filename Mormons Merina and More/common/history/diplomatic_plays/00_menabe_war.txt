@@ -1,0 +1,11 @@
+DIPLOMATIC_PLAYS = {
+	c:MBE = {
+		create_diplomatic_play = {
+			target_state = s:STATE_MORONDAVA.region_state:MER
+			
+			war = yes
+			
+			type = dp_return_state
+		}
+	}
+}
