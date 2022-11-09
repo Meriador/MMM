@@ -1,0 +1,20 @@
+﻿CHM = {
+	color = { 250  117  89 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { cham }
+	capital = STATE_BINH_DINH
+}
+DGR = {
+	color = { 230  102  140 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { degar cham }
+	capital = STATE_BINH_DINH
+}

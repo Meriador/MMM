@@ -1,0 +1,14 @@
+﻿CHM = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75	
+	
+	ai_will_do = { always = yes }
+}
+DGR = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75	
+	
+	ai_will_do = { always = yes }
+}

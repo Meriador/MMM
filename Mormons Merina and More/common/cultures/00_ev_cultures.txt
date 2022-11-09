@@ -1,0 +1,86 @@
+cham={
+	color= rgb{ 189 129 138 }
+	religion = sunni
+	traits = { southeast_asian_heritage malay_culture }
+	male_common_first_names={
+		Khai
+		Po
+		Ko
+		Indravarman
+		Ibrohim
+		Hasan
+		Kabrah
+		Porome
+		Kasit
+		Simhavarman
+	}
+	female_common_first_names = {
+		Maryam
+		Nagar
+		Sari
+		Muk
+	}	
+	noble_last_names = {
+		Binnasur
+		Indra
+		Che
+		Jaya
+		Ba
+	}
+	common_last_names={
+		Phung
+		Hoa
+		Maha
+		Ja
+		Ma
+		Khang
+		Ong
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}
+degar={
+	color= rgb{ 179 199 90 }
+	religion = animist
+	traits = { southeast_asian_heritage malay_culture }
+	male_common_first_names={
+		Khai
+		Po
+		Ko
+		Indravarman
+		Ibrohim
+		Hasan
+		Kabrah
+		Porome
+		Kasit
+		Simhavarman
+	}
+	female_common_first_names = {
+		Maryam
+		Nagar
+		Sari
+		Muk
+	}	
+	noble_last_names = {
+		Binnasur
+		Indra
+		Che
+		Jaya
+		Ba
+	}
+	common_last_names={
+		Phung
+		Hoa
+		Maha
+		Ja
+		Ma
+		Khang
+		Ong
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}

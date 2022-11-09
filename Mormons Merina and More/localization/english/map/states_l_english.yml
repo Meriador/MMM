@@ -432,6 +432,7 @@
  STATE_MEKONG:0 "Mekong"
  STATE_TONKIN:0 "Tonkin"
  STATE_ANNAM:0 "Annam"
+ STATE_BINH_DINH:0 "Bình Dinh"
  STATE_LAOS:0 "Laos"
  STATE_CHIANG_MAI:0 "Chiang Mai"
  STATE_NAKHON_RATCHASIMA:0 "Nakhon Ratchasima"
