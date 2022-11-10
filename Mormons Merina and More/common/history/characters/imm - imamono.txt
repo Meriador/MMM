@@ -1,0 +1,14 @@
+CHARACTERS = {
+	c:IMM = {
+		create_character = {
+			first_name = "Ratsimivily"
+			last_name = "Zafimaniry"
+			heir = yes
+			age = 42
+			interest_group = ig_landowners
+			traits = {
+				ambitious
+			}
+		}
+	}
+}

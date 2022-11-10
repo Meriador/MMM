@@ -1,0 +1,12 @@
+CHARACTERS = {
+	c:DGR = {
+		create_character = {
+			first_name = "Thi"
+			last_name = "Cân Oa"
+			ruler = yes
+			age = 25
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+		}
+	}
+}

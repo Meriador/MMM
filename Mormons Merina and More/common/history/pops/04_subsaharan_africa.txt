@@ -1479,7 +1479,12 @@
 		region_state:MER = {
 			create_pop = {
 				culture = antaimoro
-				size = 325000
+				size = 303000
+			}
+			create_pop = {
+				culture = antaimoro
+				size = 22000
+				religion = sunni
 			}
 			create_pop = {
 				culture = sakalava
@@ -1517,12 +1522,23 @@
 		region_state:MER = {
 			create_pop = {
 				culture = sakalava
-				size = 45000
+				size = 38000
+			}
+			create_pop = {
+				culture = sakalava
+				size = 7000
+				religion = sunni
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = sakalava
-				size = 15000
+				size = 10500
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = sakalava
+				religion = sunni
+				size = 4500
 			}
 			create_pop = {
 				culture = merina
@@ -1547,7 +1563,12 @@
 		region_state:MBE = {
 			create_pop = {
 				culture = sakalava
-				size = 60000
+				size = 52000
+			}
+			create_pop = {
+				culture = sakalava
+				religion = sunni
+				size = 8000
 			}
 		}
 	}
@@ -1555,12 +1576,22 @@
 		region_state:MER = {
 			create_pop = {
 				culture = sakalava
-				size = 145000
+				size = 106000
+			}
+			create_pop = {
+				culture = sakalava
+				religion = sunni
+				size = 31000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = sakalava
-				size = 17000
+				size = 13000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = sakalava
+				size = 4000
 			}
 			create_pop = {
 				culture = betsimisaraka
@@ -1579,7 +1610,11 @@
 		region_state:BOI = {
 			create_pop = {
 				culture = sakalava
-				size = 65000
+				size = 52000
+			}
+			create_pop = {
+				culture = sakalava
+				size = 11000
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1590,13 +1625,22 @@
 		region_state:MKY = {
 			create_pop = {
 				culture = sakalava
-				size = 50000
+				size = 45000
+			}
+			create_pop = {
+				culture = sakalava
+				size = 5000
 			}
 		}
 		region_state:AKR = {
 			create_pop = {
 				culture = sakalava
-				size = 25000
+				size = 8000
+			}
+			create_pop = {
+				culture = sakalava
+				religion = sunni
+				size = 17000
 			}
 		}
 	}
@@ -1631,17 +1675,45 @@
 		region_state:MER = {
 			create_pop = {
 				culture = merina
-				size = 600000
+				size = 590000
+			}
+			create_pop = {
+				culture = merina
+				religion = protestant
+				size = 6000
+			}
+			create_pop = {
+				culture = merina
+				religion = protestant
+				size = 4000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = merina
-				size = 10000
+				size = 4000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = merina
+				religion = protestant
+				size = 4000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = merina
+				religion = catholic
+				size = 2000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = sakalava
-				size = 28000
+				size = 26000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = sakalava
+				religion = sunni
+				size = 2000
 			}
 			create_pop = {
 				pop_type = slaves

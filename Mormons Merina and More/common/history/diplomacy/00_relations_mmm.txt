@@ -1,0 +1,5 @@
+DIPLOMACY = {
+	c:AKR = {
+		set_relations = { country = c:MER value = -50 }
+	}
+}

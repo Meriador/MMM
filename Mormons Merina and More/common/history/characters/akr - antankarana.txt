@@ -1,0 +1,16 @@
+CHARACTERS = {
+	c:AKR = {
+		create_character = {
+			first_name = "Tsimiaro"
+			last_name = "Zafin'i'fotsy"
+			ruler = yes
+			age = 24
+			religion = sunni #slightly anachronistic but I'm not gonna do a whole thing for them right now
+			interest_group = ig_devout
+			ideology = ideology_moderate
+			traits = {
+				pious
+			}
+		}
+	}
+}

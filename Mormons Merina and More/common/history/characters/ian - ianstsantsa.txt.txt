@@ -1,0 +1,14 @@
+CHARACTERS = {
+	c:IAN = {
+		create_character = {
+			first_name = "Ratsimamotoa"
+			last_name = "Zafimaniry"
+			heir = yes
+			age = 42
+			interest_group = ig_landowners
+			traits = {
+				romantic
+			}
+		}
+	}
+}

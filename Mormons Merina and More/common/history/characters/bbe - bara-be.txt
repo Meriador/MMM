@@ -1,0 +1,22 @@
+CHARACTERS = {
+	c:BBE = {
+		create_character = {
+			first_name = "Rakitroka Ratsileondrafy"
+			last_name = "Zafimaniry"
+			ruler = yes
+			age = 82 #"old." he dies in the first year irl
+			interest_group = ig_landowners
+		}
+		create_character = {
+			first_name = "Tonanahary"
+			last_name = "Zafimaniry"
+			heir = yes
+			age = 45
+			interest_group = ig_landowners
+			traits = {
+				cruel
+				arrogant
+			}
+		}
+	}
+}

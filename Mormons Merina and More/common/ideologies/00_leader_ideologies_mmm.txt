@@ -1,0 +1,118 @@
+ideology_autarkic = {
+	icon = "gfx/interface/icons/ideology_icons/isolationist.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_trade_policy = {
+		law_isolationism = approve
+		law_protectionism = disapprove
+		law_mercantilism = disapprove		
+		law_free_trade = strongly_disapprove
+	}				
+	lawgroup_migration = {
+		law_closed_borders = approve
+		law_migration_controls = neutral
+		law_no_migration_controls = disapprove
+	}
+	possible = {
+		owner = {
+			has_technology_researched = international_trade
+		}
+		scope:interest_group = {
+			OR = {
+				is_interest_group_type = ig_landowners
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_trade_unions
+			}
+		}
+	leader_weight = {
+		value = 100
+		#more likely for uncompetitive economies
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_traditionalism
+				}
+			}
+			add = 100
+		}
+		#less likely for those "in the club"
+		if = {
+			limit = {
+				owner = {
+					NOR = {
+						country_rank = rank_value:unrecognized_regional_power
+						country_rank = rank_value:unrecognized_power
+						country_rank = rank_value:unrecognized_major_power
+					}
+				}
+			}
+			add = -100
+		}
+		#less likely for the Big Game in Town
+		if = {
+			limit = {
+				owner = {
+					country_rank = rank_value:great_power
+				}
+			}
+			add = -50
+		}
+		#more likely for communists and command economists if things are going well
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:command_economy
+						has_law = law_type:council_republic
+					}
+				}
+				scope:interest_group = {
+					ig_approval >= 5
+				}
+			}
+			add = 150
+		}
+		#more likely for the lower classes if they feel undermined by free movement
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:free_trade
+						has_law = law_type:no_migration_controls
+					}
+					scope:interest_group = {
+						is_interest_group_type = ig_rural_folk
+						is_interest_group_type = ig_trade_unions
+					}
+					average_sol <= 10
+				}
+			add = 100
+			}
+		}
+		#more likely for the sinosphere after china gets opium warred
+		if = {
+			limit = {
+				owner = {
+					capital = {
+						OR = {
+							region = sr:region_indochina
+							region = sr:region_south_china
+							region = sr:region_north_china
+							region = sr:region_manchuria
+							region = sr:region_japan
+						}
+					}
+				}
+				c:CHI = {
+					has_variable = lost_opium_wars
+				}
+			}
+			add = 150
+		}
+			
+	}
+}
+			
+			

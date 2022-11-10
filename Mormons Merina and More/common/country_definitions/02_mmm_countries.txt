@@ -94,6 +94,7 @@ AKR = {
 	tier = principality
 	
 	cultures = { sakalava }
+	religion = sunni
 	capital = STATE_BOENY
 }
 
@@ -105,6 +106,7 @@ BOI = {
 	tier = principality
 	
 	cultures = { sakalava }
+	religion = sunni
 	capital = STATE_BOENY
 }
 
@@ -116,6 +118,7 @@ MBE = {
 	tier = principality
 	
 	cultures = { sakalava }
+	religion = sunni
 	capital = STATE_MORONDAVA
 }
 
@@ -127,6 +130,7 @@ SKL = {
 	tier = kingdom
 	
 	cultures = { sakalava }
+	religion = sunni
 	capital = STATE_MORONDAVA
 }
 

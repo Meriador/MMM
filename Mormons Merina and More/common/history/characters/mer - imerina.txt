@@ -1,0 +1,33 @@
+CHARACTERS = {
+	c:MER = {
+		create_character = {
+			#Ranavalona I
+			first_name = "Ranavalona"
+			last_name = "Hova"
+			ruler = yes
+			female = yes
+			age = 58
+			interest_group = ig_landowners
+			ideology = ideology_autarkic
+			traits = {
+				imperious
+			}
+			on_created = {
+				set_variable = {
+					name = ranavalona
+				}
+			}
+		}
+		create_character = {
+			first_name = "Ramada"
+			last_name = "Hova"
+			heir = yes
+			birth_date = 1829.9.23
+			interest_group = ig_intelligentsia #there's a reason he got offed
+			ideology = ideology_moderate
+			traits = {
+				imperious
+			}
+			
+	}
+}
