@@ -1,4 +1,4 @@
-CHARACTERS = {
+﻿CHARACTERS = {
 	c:IMM = {
 		create_character = {
 			first_name = "Ratsimivily"

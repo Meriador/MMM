@@ -1,4 +1,4 @@
-CHARACTERS = {
+﻿CHARACTERS = {
 	c:MBE = {
 		create_character = {
 			first_name = "Taragny"

@@ -1,4 +1,4 @@
-MAD = {
+﻿MAD = {
 	color = { 45  229  61 }
 	
 	country_type = unrecognized

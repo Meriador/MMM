@@ -1,4 +1,4 @@
-CHARACTERS = {
+﻿CHARACTERS = {
 	c:IAN = {
 		create_character = {
 			first_name = "Ratsimamotoa"

@@ -1,4 +1,4 @@
-cham={
+﻿cham={
 	color= rgb{ 189 129 138 }
 	religion = sunni
 	traits = { southeast_asian_heritage malay_culture }

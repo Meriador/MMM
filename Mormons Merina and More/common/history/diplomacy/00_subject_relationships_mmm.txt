@@ -1,4 +1,4 @@
-DIPLOMACY = {
+﻿DIPLOMACY = {
 	c:MER = {
 		create_diplomatic_pact = {
 			country = c:AKR

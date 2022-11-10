@@ -1,4 +1,4 @@
-mormon={
+﻿mormon={
 	color= rgb{ 204 179 26 } 
 	religion = lds
 	traits = { anglophone european_heritage }

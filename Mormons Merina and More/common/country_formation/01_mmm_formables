@@ -1,4 +1,4 @@
-MAD = {
+﻿MAD = {
 	use_culture_states = yes
 
 	required_states_fraction = 1

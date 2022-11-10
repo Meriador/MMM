@@ -1,4 +1,4 @@
-BUILDINGS={
+﻿BUILDINGS={
 	s:STATE_SOUTHEAST_MADAGASCAR = {
 		region_state:MER = {
 			create_building={
