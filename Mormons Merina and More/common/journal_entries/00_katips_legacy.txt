@@ -1,0 +1,24 @@
+﻿je_katips_legacy = {
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    is_shown_when_inactive = {
+        exists = c:DAI
+        THIS = c:DAI
+        country_has_primary_culture = cu:vietnamese
+    }
+    possible = {
+		hidden_trigger = { always = yes }
+		hidden_trigger = { has_game_started = yes }
+	}
+    complete = {
+		calc_true_if = {
+			amount >= 2
+			owns_entire_state_region = STATE_BINH_DINH
+			owns_entire_state_region = STATE_ANNAM
+		}
+	}
+	 on_complete = {
+        trigger_event = { id = vietnam.1 } # Katip's Legacy
+    }
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
