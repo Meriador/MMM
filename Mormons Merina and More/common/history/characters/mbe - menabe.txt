@@ -4,7 +4,7 @@
 			first_name = "Taragny"
 			last_name = "Vignay"
 			ruler = yes
-			culture = sakalava
+			culture = cu:sakalava
 			religion = sunni #probably, not sure
 			age = 55 #dunno lol, he died in the 50s
 			interest_group = ig_landowners
@@ -14,7 +14,7 @@
 			last_name = "Toera"
 			heir = yes
 			female = yes
-			culture = sakalava
+			culture = cu:sakalava
 			religion = sunni #likewise
 			age = 2 #also unsure, but she was in a regency until 1860ish
 			interest_group = ig_landowners

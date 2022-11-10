@@ -4,7 +4,7 @@
 			goods = small_arms
 			level = 1
 			direction = import
-			target = c:GBR.market
+			target = c:SAF.market
 		}
 	}
 }

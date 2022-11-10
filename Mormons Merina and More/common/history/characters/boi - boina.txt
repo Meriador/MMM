@@ -6,7 +6,7 @@
 			ruler = yes
 			age = 79 #"old"
 			female = yes
-			culture = sakalava
+			culture = cu:sakalava
 			religion = sunni
 			interest_group = ig_landowners
 		}
@@ -16,7 +16,7 @@
 			heir = yes
 			age = 8
 			female = yes
-			culture = sakalava
+			culture = cu:sakalava
 			religion = sunni
 			interest_group = ig_landowners
 		}

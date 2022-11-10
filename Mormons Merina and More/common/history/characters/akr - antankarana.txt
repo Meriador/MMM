@@ -2,9 +2,10 @@
 	c:AKR = {
 		create_character = {
 			first_name = "Tsimiaro"
-			last_name = "Zafin'i'fotsy"
+			last_name = "Zafinifotsy"
 			ruler = yes
 			age = 24
+			culture = cu:sakalava
 			religion = sunni #slightly anachronistic but I'm not gonna do a whole thing for them right now
 			interest_group = ig_devout
 			ideology = ideology_moderate
