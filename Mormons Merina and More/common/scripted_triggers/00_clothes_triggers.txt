@@ -474,7 +474,7 @@ arabic_clothes_trigger = {
 				}
 			}
 			culture = cu:sakalava
-			culture = cu:antiamoro
+			culture = cu:antaimoro
 		}
 	}        
 }
