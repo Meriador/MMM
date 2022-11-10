@@ -5,6 +5,7 @@
 			last_name = "Zafimaniry"
 			ruler = yes
 			age = 82 #"old." he dies in the first year irl
+			culture = bara
 			interest_group = ig_landowners
 		}
 		create_character = {
@@ -12,6 +13,7 @@
 			last_name = "Zafimaniry"
 			heir = yes
 			age = 45
+			culture = bara
 			interest_group = ig_landowners
 			traits = {
 				cruel

@@ -165,9 +165,9 @@ bara={
 		Razafindramary
 	}
 	ethnicities = {
-		1 = polynesian
+		1 = african
 	}
-	graphics = generic
+	graphics = african
 }
 
 sakalava={
@@ -212,9 +212,9 @@ sakalava={
 		Razafindramary
 	}
 	ethnicities = {
-		1 = polynesian
+		1 = african
 	}
-	graphics = generic
+	graphics = mideast_indian
 }
 
 antandroy={
@@ -306,7 +306,7 @@ antaimoro={
 		Razafindramary
 	}
 	ethnicities = {
-		1 = polynesian
+		1 = african
 	}
-	graphics = generic
+	graphics = african
 }

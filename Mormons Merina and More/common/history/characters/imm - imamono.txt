@@ -5,6 +5,7 @@
 			last_name = "Zafimaniry"
 			heir = yes
 			age = 42
+			culture = bara
 			interest_group = ig_landowners
 			traits = {
 				ambitious

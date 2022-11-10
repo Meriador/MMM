@@ -5,6 +5,7 @@
 			last_name = "Cân Oa"
 			ruler = yes
 			age = 25
+			culture = degar
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 		}

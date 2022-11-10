@@ -2,20 +2,22 @@
 	c:BOI = {
 		create_character = {
 			first_name = "Oantitsy"
-			last_name = "Zafin'i'mena"
+			last_name = "Zafinimena"
 			ruler = yes
 			age = 79 #"old"
 			female = yes
-			religion = sunni 
+			culture = sakalava
+			religion = sunni
 			interest_group = ig_landowners
 		}
 		create_character = {
 			first_name = "Tsiomeko"
-			last_name = "Zafin'i'mena"
+			last_name = "Zafinimena"
 			heir = yes
 			age = 8
 			female = yes
-			religion = sunni 
+			culture = sakalava
+			religion = sunni
 			interest_group = ig_landowners
 		}
 	}

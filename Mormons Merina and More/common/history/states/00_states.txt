@@ -7212,7 +7212,7 @@ STATES = {
 		}
 		
 		add_homeland = sakalava
-		add_homeland = mahafaly
+		add_homeland = antandroy
 		add_claim = c:MBE
 	}
 	s:STATE_SOUTHEAST_MADAGASCAR = {
@@ -7231,7 +7231,7 @@ STATES = {
 		}
 		
 		add_homeland = bara
-		add_homeland = mahafaly
+		add_homeland = antandroy
 		add_homeland = antaimoro
 		
 	}

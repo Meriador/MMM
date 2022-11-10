@@ -7,6 +7,7 @@
 			ruler = yes
 			female = yes
 			age = 58
+			culture = merina
 			dna = dna_ranavalona
 			interest_group = ig_landowners
 			ideology = ideology_autarkic
@@ -24,6 +25,7 @@
 			last_name = "Hova"
 			heir = yes
 			birth_date = 1829.9.23
+			culture = merina
 			dna = dna_radama_ii
 			interest_group = ig_intelligentsia #there's a reason he got offed
 			ideology = ideology_moderate
