@@ -1,6 +1,7 @@
 ﻿COUNTRIES = {
 	c:AKR = {
 		effect_starting_technology_tier_5_tech = yes
+		add_technology_researched = empiricism
 
 		effect_starting_politics_traditional = yes	
 		activate_law = law_total_separation
