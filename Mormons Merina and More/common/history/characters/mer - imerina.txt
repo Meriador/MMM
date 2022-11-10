@@ -2,11 +2,12 @@
 	c:MER = {
 		create_character = {
 			#Ranavalona I
-			first_name = Ranavalona
-			last_name = Hova
+			first_name = "Ranavalona"
+			last_name = "Hova"
 			ruler = yes
 			female = yes
 			age = 58
+			dna = dna_ranavalona
 			interest_group = ig_landowners
 			ideology = ideology_autarkic
 			traits = {
@@ -19,10 +20,11 @@
 			}
 		}
 		create_character = {
-			first_name = Ramada
-			last_name = Hova
+			first_name = "Ramada"
+			last_name = "Hova"
 			heir = yes
 			birth_date = 1829.9.23
+			dna = dna_radama_ii
 			interest_group = ig_intelligentsia #there's a reason he got offed
 			ideology = ideology_moderate
 			traits = {
