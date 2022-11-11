@@ -678,7 +678,7 @@ STATE_SOUTHEAST_MADAGASCAR = {
     city = "x5D2D79" #betroka
     port = "xB0B64A" #fort dauphin
     farm = "xF81480" #manakara
-    mine = "x9C2288" #farafanga
+    mine = "x9C2288" #farafangana
     wood = "xED95E1" #ambovombe
     arable_land = 51
     arable_resources = { "bg_sugar_plantations" "bg_banana_plantations" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_rice_farms"}
@@ -692,7 +692,7 @@ STATE_SOUTHEAST_MADAGASCAR = {
         type = "bg_rubber"
         undiscovered_amount = 8
     }
-    naval_exit_id = 3107
+    naval_exit_id = 3111
 }
 
 STATE_MORONDAVA = {
@@ -765,7 +765,7 @@ STATE_TOAMASINA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 4
     }
-    naval_exit_id = 3107
+    naval_exit_id = 3111
 }
 
 STATE_UGANDA = {
