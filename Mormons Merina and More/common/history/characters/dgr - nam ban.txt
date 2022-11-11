@@ -1,7 +1,7 @@
 ﻿CHARACTERS = {
 	c:DGR = {
 		create_character = {
-			first_name = "Cân_Oa"
+			first_name = "Can_Oa"
 			last_name = "Thi"
 			ruler = yes
 			age = 25
