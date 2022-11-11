@@ -89,8 +89,8 @@
 					}
 					average_sol <= 10
 				}
-			add = 100
 			}
+			add = 100
 		}
 		#more likely for the sinosphere after china gets opium warred
 		if = {
