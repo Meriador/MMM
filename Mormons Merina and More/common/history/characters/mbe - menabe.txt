@@ -1,21 +1,19 @@
 ﻿CHARACTERS = {
 	c:MBE = {
 		create_character = {
-			first_name = "Taragny"
-			last_name = "Vignay"
+			first_name = "Taragny_Vignay"
+			last_name = "None"
 			ruler = yes
 			culture = cu:sakalava
-			religion = sunni #probably, not sure
 			age = 55 #dunno lol, he died in the 50s
 			interest_group = ig_landowners
 		}
 		create_character = {
-			first_name = "Ampanjaka"
-			last_name = "Toera"
+			first_name = "Ampanjaka_Toera"
+			last_name = "None"
 			heir = yes
 			female = yes
 			culture = cu:sakalava
-			religion = sunni #likewise
 			age = 2 #also unsure, but she was in a regency until 1860ish
 			interest_group = ig_landowners
 		}

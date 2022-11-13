@@ -2,7 +2,7 @@
 	c:AKR = {
 		create_character = {
 			first_name = "Tsimiaro"
-			last_name = "Zafinifotsy"
+			last_name = "None"
 			ruler = yes
 			age = 24
 			culture = cu:sakalava

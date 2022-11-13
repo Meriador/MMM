@@ -1507,7 +1507,7 @@
 		}
 		region_state:NTD = {
 			create_pop = {
-				culture = antandroy
+				culture = sakalava
 				size = 90000
 			}
 		}
@@ -1552,7 +1552,7 @@
 		}
 		region_state:NTD = {
 			create_pop = {
-				culture = antandroy
+				culture = sakalava
 				size = 60000
 			}
 			create_pop = {

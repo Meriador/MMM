@@ -34,41 +34,64 @@ merina={
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
-		Andriamanely
-		Andriantsirotso
-		Lamboina
-		Ndriantompoinairivo
 		Rabiby
+		Rainilaiarivony
+		Rainivoninahitriniony
+		Razakaratrimo
+		Mbahoaka
+		Ramboasalama
+		Ralaitokana
+		Ratsiantahana
+		Rakotomavo
+		Mampandry
+		Rainiharo
+		Rainijohary
+		Rasata
+		Manalina
+		Rahenry
+		Ratsimihety
+		Ralainony
+		Rabehety
+	}
+	male_regal_first_names = {
+		Andriamampandry
+		Rainijohary
+		Razakaratrimo 
 		Radama
 		Rainilaiarivony
-		Ramasoandro
-		Ratsimivila
-		Tonanahary
-		Tsialana
-		Tsimiharo
-		Zafimamy
+		Andriambahoaka
+		Ramboasalama
+		Ralaitokana
+		Ratsiantahana
+		Andriamampandry
+		Rasata
+		Andrianantara
+		Andriamanalina
+		Rahenry
+		Ratsimihety
+		Ralainony
+		Andriambelonandro
+		Raonimamina
+		Rabehety
 	}
 	female_common_first_names = {
-		Binao
 		Ramasindrazana
 		Rasendranoro
 		Raketaka
 		Razafinandriamanitra
 		Ranavalona
 		Tahina
+		Ranavalontsimitovy
+		Ramoma
+		Rafarasoa
+		Rabodomiarana
+		Rabodofotsy
 	}	
 	noble_last_names = {
-		Bemihisatra
-		Ramavo
-		Hova
+		None
 	}
 	common_last_names={
-		Andriamahazo
-		Ramanantsoa
-		Ratsimandrava
-		Ratsiraka
-		Tsiranana
-		Razafindramary
+		None
 	}
 	ethnicities = {
 		1 = polynesian
@@ -81,44 +104,45 @@ betsimisaraka={
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
-		Andriamanely
-		Andriantsirotso
-		Lamboina
-		Ndriantompoinairivo
-		Rabiby
-		Radama
-		Rainilaiarivony
-		Ramasoandro
-		Ratsimivila
-		Tonanahary
-		Tsialana
-		Tsimiharo
-		Zafimamy
+		Ratsimilaho
+		Zanahary
+		Ratsiraka
+		Ramanano
+		Iavy
+		Zakavolo
+		Tsiranana
+		Ramaromanompo 
+	}
+	male_regal_first_names = {
+		Ratsimilaho
+		Zanahary
+		Ratsiraka
+		Ramanano
+		Iavy
+		Zakavolo
+		Tsiranana
+		Ramaromanompo 
 	}
 	female_common_first_names = {
-		Binao
-		Ramasindrazana
-		Rasendranoro
-		Raketaka
-		Razafinandriamanitra
-		Ranavalona
-		Tahina
-	}	
+		Bety
+		Betia
+		Rahena
+		Vohilakatsy
+		Rambahira
+		Soanaomby
+		Ambary
+		Nenimoana
+		Tsiresy
+		Ravahiny
+	}	#first 3 names specifically betsimisaraka, those thereafter to fill out the list
 	noble_last_names = {
-		Bemihisatra
-		Ramavo
-		Hova
+		None
 	}
 	common_last_names={
-		Andriamahazo
-		Ramanantsoa
-		Ratsimandrava
-		Ratsiraka
-		Tsiranana
-		Razafindramary
+		None
 	}
 	ethnicities = {
-		1 = polynesian
+		1 = african
 	}
 	graphics = generic
 }
@@ -128,41 +152,55 @@ bara={
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
-		Andriamanely
-		Andriantsirotso
-		Lamboina
-		Ndriantompoinairivo
 		Rabiby
-		Radama
-		Rainilaiarivony
-		Ramasoandro
 		Ratsimivila
 		Tonanahary
-		Tsialana
-		Tsimiharo
-		Zafimamy
+		Ratsimivily
+		Ratsimamotoa
+		Raselea
+		Retsila
+		Ramieba
+		Ramitongoa
+		Imasoandro
+		Tsimanompo
+		Rakonjobe
+		Isambo
+	}
+	male_regal_first_names = {
+		Andriamanely
+		Andriantompoinairivo
+		Rabiby
+		Ratsimivila
+		Tonanahary
+		Ratsimivily
+		Ratsimamotoa
+		Ramitongoa
+		Imasoandro
+		Tsimanompo
+		Rakonjobe
+		Isambo
 	}
 	female_common_first_names = {
-		Binao
-		Ramasindrazana
-		Rasendranoro
+		Vohilakatsy
+		Rambahira
+		Ratsivinda
 		Raketaka
-		Razafinandriamanitra
-		Ranavalona
-		Tahina
+		Binao
+		Oantitsy
+		Tsiomeko
+		Soanaomby
+		Ambary
+		Nenimoana
+		Tsiresy
+		Ravahiny
+		Tsimalomo
+		Tombola
 	}	
 	noble_last_names = {
-		Bemihisatra
-		Ramavo
-		Hova
+		None
 	}
 	common_last_names={
-		Andriamahazo
-		Ramanantsoa
-		Ratsimandrava
-		Ratsiraka
-		Tsiranana
-		Razafindramary
+		None
 	}
 	ethnicities = {
 		1 = african
@@ -175,41 +213,66 @@ sakalava={
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
-		Andriamanely
-		Andriantsirotso
 		Lamboina
-		Ndriantompoinairivo
-		Rabiby
-		Radama
-		Rainilaiarivony
-		Ramasoandro
-		Ratsimivila
-		Tonanahary
+		Tshimbola
 		Tsialana
 		Tsimiharo
-		Zafimamy
+		Ramasoandro
+		Ramitraho
+		Amada
+		Misara
+		Tsoly
+		Tsirotso
+		Tsiaraso
+		Boanamaka
+		Ratrimolahi
+		Tsoarivo
+		Rainasa
+		Mahatindriarivo
+	}
+	male_regal_first_names = {
+		Andriamisara
+		Andriantsoly
+		Andriantsirotso
+		Lamboina
+		Tshimbola
+		Tsialana
+		Tsimiharo
+		Adriamaitso
+		Ramasoandro
+		Ramitraho
+		Amada
+		Tsiaraso
+		Boanamaka
+		Ratrimolahi
+		Andriantsoarivo
+		Rainasa
+		Kelisambay
+		Andrianamboniarivo
+		Andriamahatindriarivo 
 	}
 	female_common_first_names = {
-		Binao
-		Ramasindrazana
-		Rasendranoro
+		Vohilakatsy
+		Rambahira
+		Ratsivinda
 		Raketaka
-		Razafinandriamanitra
-		Ranavalona
-		Tahina
+		Binao
+		Oantitsy
+		Tsiomeko
+		Soanaomby
+		Ambary
+		Nenimoana
+		Tsiresy
+		Ravahiny
+		Tsimalomo
+		Tombola
+		Kelisambay
 	}	
 	noble_last_names = {
-		Bemihisatra
-		Ramavo
-		Hova
+		None
 	}
 	common_last_names={
-		Andriamahazo
-		Ramanantsoa
-		Ratsimandrava
-		Ratsiraka
-		Tsiranana
-		Razafindramary
+		None
 	}
 	ethnicities = {
 		1 = african
@@ -217,93 +280,58 @@ sakalava={
 	graphics = mideast_indian
 }
 
-antandroy={
-	color= rgb{ 73 177 190 }
-	religion = animist
-	traits = { malagasy_language african_heritage }
-	male_common_first_names={
-		Andriamanely
-		Andriantsirotso
-		Lamboina
-		Ndriantompoinairivo
-		Rabiby
-		Radama
-		Rainilaiarivony
-		Ramasoandro
-		Ratsimivila
-		Tonanahary
-		Tsialana
-		Tsimiharo
-		Zafimamy
-	}
-	female_common_first_names = {
-		Binao
-		Ramasindrazana
-		Rasendranoro
-		Raketaka
-		Razafinandriamanitra
-		Ranavalona
-		Tahina
-	}	
-	noble_last_names = {
-		Bemihisatra
-		Ramavo
-		Hova
-	}
-	common_last_names={
-		Andriamahazo
-		Ramanantsoa
-		Ratsimandrava
-		Ratsiraka
-		Tsiranana
-		Razafindramary
-	}
-	ethnicities = {
-		1 = polynesian
-	}
-	graphics = generic
-}
-
 antaimoro={
 	color= rgb{ 163 29 137 }
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
-		Andriamanely
-		Andriantsirotso
-		Lamboina
-		Ndriantompoinairivo
-		Rabiby
-		Radama
-		Rainilaiarivony
-		Ramasoandro
-		Ratsimivila
-		Tonanahary
-		Tsialana
-		Tsimiharo
-		Zafimamy
+		Ratsilikaina
+		Mahazonoro
+		Rivoekembahoaka
+		Ramakararube
+		Hamadi
+		Bakara
+		Ramusafosy
+		Ramasomari
+		Ramarohala
+		Rabesirana
+		Panolahe
+	}
+	male_regal_first_names = {
+		Andriamahazonoro
+		Rivoekembahoaka
+		Ratsilikaina
+		Ramakararube
+		Hamadi
+		Andriambuaziribe
+		Andriabakara
+		Ramusafosy
+		Ramasomari
+		Ramarohala
+		Andriankazimambobe
+		Rabesirana
+		Andriamasi
+		Andriamarofotana
+		Andriapanolaha
 	}
 	female_common_first_names = {
-		Binao
-		Ramasindrazana
-		Rasendranoro
-		Raketaka
-		Razafinandriamanitra
-		Ranavalona
-		Tahina
-	}	
+		Mahazonoro
+		Rabodofotsy
+		Ravahininia
+		Ratandramasi
+		Vohilakatsy
+		Rambahira
+		Soanaomby
+		Ambary
+		Nenimoana
+		Tsiresy
+		Ravahiny
+	}	#the first 4 are specifically antaimoro-connected name i found, i just gave them a few more
 	noble_last_names = {
-		Bemihisatra
-		Ramavo
-		Hova
+		None
 	}
 	common_last_names={
-		Andriamahazo
-		Ramanantsoa
-		Ratsimandrava
-		Ratsiraka
-		Tsiranana
-		Razafindramary
+		None
 	}
 	ethnicities = {
 		1 = african

@@ -2,7 +2,7 @@
 	c:IMM = {
 		create_character = {
 			first_name = "Ratsimivily"
-			last_name = "Zafimaniry"
+			last_name = "None"
 			heir = yes
 			age = 42
 			culture = cu:bara

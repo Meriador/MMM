@@ -2,7 +2,7 @@
 	c:BOI = {
 		create_character = {
 			first_name = "Oantitsy"
-			last_name = "Zafinimena"
+			last_name = "None"
 			ruler = yes
 			age = 79 #"old"
 			female = yes
@@ -12,7 +12,7 @@
 		}
 		create_character = {
 			first_name = "Tsiomeko"
-			last_name = "Zafinimena"
+			last_name = "None"
 			heir = yes
 			age = 8
 			female = yes

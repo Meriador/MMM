@@ -11,8 +11,10 @@
 }
 
 SKL = {
-	use_culture_states = yes
-
+	states = {
+		STATE_MORONDAVA
+		STATE_BOENY
+	}
 	required_states_fraction = 0.5
 	
 	ai_will_do = { always = yes }

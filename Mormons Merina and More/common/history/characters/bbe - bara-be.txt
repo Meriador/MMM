@@ -2,7 +2,7 @@
 	c:BBE = {
 		create_character = {
 			first_name = "Rakitroka_Ratsileondrafy"
-			last_name = "Zafimaniry"
+			last_name = "None"
 			ruler = yes
 			age = 82 #"old." he dies in the first year irl
 			culture = cu:bara
@@ -10,7 +10,7 @@
 		}
 		create_character = {
 			first_name = "Tonanahary"
-			last_name = "Zafimaniry"
+			last_name = "None"
 			heir = yes
 			age = 45
 			culture = cu:bara

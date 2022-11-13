@@ -5,7 +5,7 @@
 	
 	tier = empire
 	
-	cultures = { merina betsimisaraka sakalava antandroy antaimoro bara }
+	cultures = { merina betsimisaraka sakalava antaimoro bara }
 	capital = STATE_IMERINA
 }
 
@@ -118,7 +118,6 @@ MBE = {
 	tier = principality
 	
 	cultures = { sakalava }
-	religion = sunni
 	capital = STATE_MORONDAVA
 }
 
@@ -152,7 +151,7 @@ NTD = {
 	
 	tier = principality
 	
-	cultures = { antandroy }
+	cultures = { sakalava }
 	capital = STATE_SOUTHEAST_MADAGASCAR
 }
 
