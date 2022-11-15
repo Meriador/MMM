@@ -1,0 +1,21 @@
+﻿state_trait_colonizable_new_mexico = {
+	icon = "gfx/interface/icons/state_status_icons/colonizable.dds"
+	
+	required_techs_for_colonization = { "claim_new_mexico" }
+	disabling_technologies = { "claim_new_mexico" }
+	
+	modifier = {
+		state_colony_growth_speed_mult = -2
+	}
+}
+
+state_trait_colonizable_oklahoma = {
+	icon = "gfx/interface/icons/state_status_icons/colonizable.dds"
+	
+	required_techs_for_colonization = { "claim_oklahoma" }
+	disabling_technologies = { "claim_oklahoma" }
+	
+	modifier = {
+		state_colony_growth_speed_mult = -2
+	}
+}

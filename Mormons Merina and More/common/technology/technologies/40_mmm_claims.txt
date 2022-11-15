@@ -1,0 +1,15 @@
+﻿### NORTH AMERICA
+
+claim_new_mexico = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = claims
+	can_research = no
+}
+
+claim_oklahoma = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = claims
+	can_research = no
+}

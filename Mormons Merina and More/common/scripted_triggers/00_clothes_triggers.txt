@@ -363,7 +363,6 @@ african_clothes_trigger = {
 				}
 			}
 			culture = cu:bara
-			culture = cu:antandroy
 		}
 	}     
 }

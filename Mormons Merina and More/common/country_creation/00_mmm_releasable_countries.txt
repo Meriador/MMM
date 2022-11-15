@@ -1,0 +1,79 @@
+﻿MAD = {
+	use_culture_states = yes
+
+	required_num_states = 6
+	
+	ai_will_do = { always = no }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+	}
+}
+
+SKL = {
+	states = {
+		STATE_MORONDAVA
+		STATE_BOENY
+	}
+	required_num_states = 1
+	
+	ai_will_do = { always = no }
+}
+
+MER = {
+	states = {
+		STATE_IMERINA
+	}
+	
+	ai_will_do = { always = no }
+}
+
+IAN = {
+	provinces = { x5D2D79 x10A7DF xADD893 }
+	
+	ai_will_do = { always = no }
+}
+
+BBE = {
+	provinces = { x5F8C33 xBFA51F x069C0D x19F69A x40C0E0 }
+	
+	ai_will_do = { always = no }	
+}
+
+IMM = {
+	provinces = { xDBFAC1 xBCB8C0 x714D08 }
+	
+	ai_will_do = { always = no }	
+}
+
+BOI = {
+	provinces = { x4A0895 x0F6E52 xC9BB37 }
+	
+	ai_will_do = { always = no }	
+}
+
+MBE = {
+	provinces = { x071AEC xB5FA86 x2D9669 xE480E0 xB7598B xDB3D79 xF18FED x7A489E xE8FA9B x676257 x15A1AC x1B65BD }
+	
+	ai_will_do = { always = no }	
+}
+
+AKR = {
+	provinces = { xF9D98C x8E25F6 x25C5DC }
+	
+	ai_will_do = { always = no }	
+}
+
+BSK = {
+	states = {
+		STATE_TOAMASINA
+	}
+	
+	ai_will_do = { always = no }	
+}
+
+AMR = {
+	provinces = { x94059D xF81480 x44FC6E x9C2288 x5897EC xB0B64A }
+	
+	ai_will_do = { always = no }	
+}
