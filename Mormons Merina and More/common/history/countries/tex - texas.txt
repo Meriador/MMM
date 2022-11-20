@@ -8,7 +8,6 @@
 		add_technology_researched = empiricism
 		add_technology_researched = claim_texas
 		add_technology_researched = claim_new_mexico
-		remove_technology_researched = manufacturies
 		
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_census_voting

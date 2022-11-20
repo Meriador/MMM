@@ -692,7 +692,7 @@ STATE_SOUTHEAST_MADAGASCAR = {
         type = "bg_rubber"
         undiscovered_amount = 8
     }
-    naval_exit_id = 3107
+    naval_exit_id = 3111
 }
 
 STATE_MORONDAVA = {
@@ -765,7 +765,7 @@ STATE_TOAMASINA = {
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 4
     }
-    naval_exit_id = 3107
+    naval_exit_id = 3111
 }
 
 STATE_UGANDA = {
