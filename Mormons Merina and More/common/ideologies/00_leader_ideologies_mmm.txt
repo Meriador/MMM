@@ -6,7 +6,7 @@
 	lawgroup_trade_policy = {
 		law_isolationism = approve
 		law_protectionism = disapprove
-		law_mercantilism = disapprove		
+		law_mercantilism = disapprove
 		law_free_trade = strongly_disapprove
 	}				
 	lawgroup_migration = {

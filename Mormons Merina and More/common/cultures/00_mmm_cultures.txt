@@ -250,6 +250,8 @@ sakalava={
 		Kelisambay
 		Andrianamboniarivo
 		Andriamahatindriarivo 
+		Olembetsitoto
+		Tsiampondy
 	}
 	female_common_first_names = {
 		Vohilakatsy
@@ -340,7 +342,7 @@ antaimoro={
 }
 
 ojibwe={
-	color = hsv{ .8 .333 0 }
+	color = { 204 85 0 }
 	religion = animist
 	traits = { indigenous_american_heritage algonquian }
 	
@@ -392,7 +394,7 @@ shoshone={
 }
 
 paiute={
-	color = rgb{ 25 134 125 }
+	color = hsv{ 0.06 0.39 0.80 }
 	religion = animist
 	traits = { indigenous_american_heritage numic }
 	
@@ -417,3 +419,80 @@ paiute={
 	graphics = generic
 }
 
+ute={
+	color= rgb{ 94 73 16 }
+	religion = animist
+	traits = { indigenous_american_heritage numic }
+	
+	male_common_first_names={
+	WIP
+	}
+	
+	female_common_first_names = {
+	WIP
+	}
+	
+	noble_last_names = {
+	WIP
+	}
+	
+	common_last_names={
+	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+absaroka = {
+	color = rgb{ 199 102 22 }
+	religion = animist
+	traits = { indigenous_american_heritage siouan plains }
+	
+	male_common_first_names={
+	WIP
+	}
+	
+	female_common_first_names = {
+	WIP
+	}
+	
+	noble_last_names = {
+	WIP
+	}
+	
+	common_last_names={
+	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+cheyenne = {
+	color = rgb{ 7 7 77 }
+	religion = animist
+	traits = { indigenous_american_heritage algonquian plains }
+	
+	male_common_first_names={
+	WIP
+	}
+	
+	female_common_first_names = {
+	WIP
+	}
+	
+	noble_last_names = {
+	WIP
+	}
+	
+	common_last_names={
+	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}

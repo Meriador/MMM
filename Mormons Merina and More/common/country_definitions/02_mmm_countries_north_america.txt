@@ -42,3 +42,74 @@ PAI = {
 	capital = STATE_NEVADA
 }
 
+UTE = {
+	color = { 235 126 175 }
+	
+	cultures = { ute }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_UTAH
+}
+
+TFC = {
+	color = { 204 85 0 }
+	
+	cultures = { ojibwe }
+	
+	country_type = decentralized
+	
+	tier = principality
+
+	capital = STATE_MICHIGAN
+}
+	
+ABS = {
+	color = { 199 102 22 }
+
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { absaroka }
+	
+	capital = STATE_MONTANA
+}
+
+MME = {
+	color = { 90 93 34 }
+
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { ojibwe }
+	
+	capital = STATE_WISCONSIN
+}
+
+CNE = {
+	color = { 7 7 77 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { cheyenne }
+	
+	capital = STATE_SOUTH_DAKOTA
+}
+
+ARP = {
+	color = { 223 204 125 }
+
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { cheyenne }
+	
+	capital = STATE_COLORADO
+}
