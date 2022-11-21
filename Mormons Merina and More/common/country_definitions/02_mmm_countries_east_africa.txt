@@ -155,3 +155,13 @@ NTD = {
 	capital = STATE_SOUTHEAST_MADAGASCAR
 }
 
+MHF = {
+	color = { 62  92  51 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { sakalava }
+	capital = STATE_MORONDAVA
+}

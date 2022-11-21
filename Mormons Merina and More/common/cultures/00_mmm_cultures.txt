@@ -338,3 +338,82 @@ antaimoro={
 	}
 	graphics = african
 }
+
+ojibwe={
+	color = hsv{ .8 .333 0 }
+	religion = animist
+	traits = { indigenous_american_heritage algonquian }
+	
+	male_common_first_names={
+	WIP
+	}
+	
+	female_common_first_names = {
+	WIP
+	}
+	
+	noble_last_names = {
+	WIP
+	}
+	
+	common_last_names={
+	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+shoshone={
+	color = rgb{ 241 218 122 }
+	religion = animist
+	traits = { indigenous_american_heritage numic }
+	
+	male_common_first_names={
+	WIP
+	}
+	
+	female_common_first_names = {
+	WIP
+	}
+	
+	noble_last_names = {
+	WIP
+	}
+	
+	common_last_names={
+	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+paiute={
+	color = rgb{ 25 134 125 }
+	religion = animist
+	traits = { indigenous_american_heritage numic }
+	
+	male_common_first_names={
+	WIP
+	}
+	
+	female_common_first_names = {
+	WIP
+	}
+	
+	noble_last_names = {
+	WIP
+	}
+	
+	common_last_names={
+	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+

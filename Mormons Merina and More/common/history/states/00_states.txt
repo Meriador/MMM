@@ -7203,7 +7203,7 @@ STATES = {
 			state_type = unincorporated
 		}
 		create_state = {
-			country = c:NTD
+			country = c:MHF
 			owned_provinces = { x47F3A1 x637E10 xB57D66 x3CE339 x6DAE72 xC6697B xDF5AED x9D8997 x33BDA3 x52ED6A x097464}
 		}
 		create_state = {

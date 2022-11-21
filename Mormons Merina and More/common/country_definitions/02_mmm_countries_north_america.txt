@@ -1,0 +1,44 @@
+﻿DES = {
+	color = { 125  92  110 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { mormon }
+	capital = STATE_UTAH
+}
+
+SHO = {
+	color = { 184  149  200 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { shoshone }
+	capital = STATE_UTAH
+}
+
+NPA = {
+	color = { 34  49  3 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { paiute }
+	capital = STATE_NEVADA
+}
+
+PAI = {
+	color = { 79  64  76 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { paiute }
+	capital = STATE_NEVADA
+}
+

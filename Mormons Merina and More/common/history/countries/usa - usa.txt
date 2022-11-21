@@ -15,6 +15,9 @@
 		add_technology_researched = claim_nebraska
 		add_technology_researched = claim_montana
 		add_technology_researched = claim_florida
+		add_technology_researched = claim_wisconsin
+		add_technology_researched = claim_michigan
+		add_technology_researched = claim_iowa
 		
 		set_market_capital = STATE_NEW_YORK
 		
