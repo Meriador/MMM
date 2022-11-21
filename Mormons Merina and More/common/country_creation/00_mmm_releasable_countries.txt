@@ -77,3 +77,51 @@ AMR = {
 	
 	ai_will_do = { always = no }	
 }
+
+ARJ = {
+	provinces = { xC42EC6 x7BE071 x8050E0 x18C9AD x01D0E0 x01D060 x90E0A0 xBA7B5B xE0118B x494421 x596DE2 x800FE7 }
+	
+	ai_will_do = { always = no }
+	
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
+TSL = {
+	provinces = { x70A0E0 x021374 xE48F39  }
+	
+	ai_will_do = { always = no }
+	
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
+RML = {
+
+	provinces = { x7F25CD xB06121 xF021A0 xC7D441 xEC96F3 x940C8D xF0A020 x115006 x608BB0 xF02082 xFCF160 x2073F0 x194E90 xBE51B7 x6181D2 xF02020 x0261AB xEDECFB x702020 xB2249C x2038F6 xA3D7CE }
+	
+	ai_will_do = { always = no }
+	
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
+SVN = {
+	states = {
+		STATE_SLAVONIA
+		STATE_DELVIDEK
+	}
+	required_num_states = 1
+	
+	ai_will_do = { always = no }
+}
+
+BNT = {
+	provinces = { x90E021 x1161A0 x15C7D1 xF56517 x078D13 xC381B6 x2C0A00 x4D9139 xD1FEBD x77143D xC347D8 x626998 }
+	
+	ai_will_do = { always = no }
+}
+
