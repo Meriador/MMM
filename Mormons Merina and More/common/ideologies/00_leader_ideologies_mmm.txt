@@ -1,5 +1,5 @@
 ﻿ideology_autarkic = {
-	icon = "gfx/interface/icons/ideology_icons/isolationist.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader_autarkic.dds"
 	
 	character_ideology = yes
 	
