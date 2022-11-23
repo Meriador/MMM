@@ -19,3 +19,80 @@ SKL = {
 	
 	ai_will_do = { always = yes }
 }
+
+ROM = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.25 # Romania has 12 possible homeland states total, 3 are required.
+
+	ai_will_do = { always = yes }
+}
+
+VLC = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.375 # Trajania has 8 possible homeland states total, 3 are required.
+
+	ai_will_do = { always = yes }
+	
+	possible = {
+		has_global_flag = aromania_romania_aromania
+	}
+}
+
+ARJ = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.25 # Armanja has 4 possible homeland states total, only 1 is required.
+
+	ai_will_do = { always = yes }
+	
+	possible = {
+		has_global_flag = aromania_romania_romania
+	}
+}
+
+RML = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.5
+
+	ai_will_do = { always = yes }
+	
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
+YUG = {
+	use_culture_states = yes
+	
+	is_major_formation = yes
+	
+	unification_play = dp_unify_yugoslavia
+	leadership_play = dp_leadership_yugoslavia
+
+	required_states_fraction = 0.6
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:serb
+			country_has_primary_culture = cu:bosniak
+			country_has_primary_culture = cu:slovene
+			country_has_primary_culture = cu:croat
+			country_has_primary_culture = cu:bulgarian
+		}
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:serbian
+				country_has_primary_culture = cu:bosnian
+				country_has_primary_culture = cu:croatian
+				country_has_primary_culture = cu:slovene
+				country_has_primary_culture = cu:bulgarian
+			}
+			has_technology_researched = pan-nationalism
+		}
+	}
+}

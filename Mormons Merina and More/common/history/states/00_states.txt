@@ -1178,6 +1178,7 @@ STATES = {
 		}
 		
 		add_homeland = albanian
+		add_homeland = aromanian
 	}
 	s:STATE_BOSNIA = {
 		create_state = {
@@ -4049,6 +4050,7 @@ STATES = {
 		
 		add_homeland = greek
 		add_homeland = bulgarian
+		add_homeland = aromanian
 		add_homeland = turkish
 		add_homeland = albanian
 	}
@@ -4059,6 +4061,7 @@ STATES = {
 		}
 		
 		add_homeland = greek
+		add_homeland = aromanian
 		add_homeland = turkish
 	}
 	s:STATE_THESSALIA = {
@@ -4068,6 +4071,7 @@ STATES = {
 		}
 		
 		add_homeland = greek
+		add_homeland = aromanian
 		add_claim = c:GRE
 	}
 	s:STATE_WESTERN_THRACE = {
