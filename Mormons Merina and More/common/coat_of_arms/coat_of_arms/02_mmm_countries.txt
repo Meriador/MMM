@@ -199,3 +199,172 @@ NTD = { # Antandroy
 		color2 = "yellow"
 	}
 }
+
+ARJ = {
+	# Aromanian flag for the Paris Peace Conference of 1919
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 1.0 0.2 } position = { 0.5 0.3 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 1.0 0.2 } position = { 0.5 0.5 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 1.0 0.2 } position = { 0.5 0.7 } }			
+	}		
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 1.0 0.2 } position = { 0.5 0.9 } }			
+	}		
+}
+
+RML = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_sunburst.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.6 0.5 } scale = { 0.8 0.8 } }
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { position = { 0.6 0.5 } scale = { 0.61 0.61 } }
+	}
+	colored_emblem = {
+		texture = "ce_crescent_star_turkey.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.3 0.3 } position = { 0.6 0.5 } rotation = 180 }	
+	}		
+}
+
+BNT = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+
+VLC = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_dark"
+	color2 = "blue"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+
+SVN = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 1.0 0.1 } position = { 0.5 0.45 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.6 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 1.0 0.08 } position = { 0.5 0.75 } }			
+	}
+	colored_emblem = {
+		texture = "ce_star_06.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.3 0.3 } position = { 0.5 0.18 } }	
+	}	
+}
+
+TSL = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 1.0 0.5 } }			
+	}
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 2.0 } position = { 1.0 0.0 } }			
+	}
+	colored_emblem = {
+		texture = "ce_star_hexagram.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.25 0.25 } }
+	}
+}
+
+TSL_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 1.0 0.5 } }			
+	}
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.5 2.0 } position = { 1.0 0.0 } }			
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.4 0.4 } position = { 0.25 0.25 } }
+	}
+		colored_emblem = {
+		texture = "ce_square.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.4 0.4 } position = { 0.25 0.25 } }
+	}
+}
