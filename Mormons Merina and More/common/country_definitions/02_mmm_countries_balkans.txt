@@ -1,0 +1,87 @@
+YUG = {
+	color = { 29 76 89 } # Better Yugo Color
+	
+	country_type = recognized
+
+	tier = empire
+	
+	capital = STATE_NORTHERN_SERBIA 
+	cultures = { serb croat slovene bosniak bulgarian }
+}
+
+ROM = {
+	color = { 21  96  178 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	capital = STATE_WALLACHIA
+	cultures = { romanian aromanian }
+}
+
+VLC = {
+	color = { 127  20  48 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	capital = STATE_WALLACHIA
+	cultures = { romanian }
+}
+
+ARJ = {
+	color = { 92 112 158 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	capital = STATE_THESSALIA
+	cultures = { aromanian }
+}
+
+TSL = {
+	color= hsv{ 0.20 0.53 0.23 }
+	
+	country_type = recognized
+
+	tier = city-state
+	
+	capital = STATE_MACEDONIA
+	cultures = { sephardic }
+}
+
+RML = {
+	color= { 17 224 160 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	capital = STATE_EASTERN_THRACE
+	cultures = { turkish }
+}
+
+BNT = {
+	color= { 240 180 100 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	capital = STATE_BANAT
+	cultures = { south_german }
+}
+
+SVN = {
+	color = { 63 103 183 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	capital = STATE_SLAVONIA
+	cultures = { croat serb }
+}
