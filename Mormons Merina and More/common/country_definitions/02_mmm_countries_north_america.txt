@@ -221,3 +221,39 @@ SPK = {
 	
 	capital = STATE_WASHINGTON
 }
+
+KTH = {
+	color = { 220 54 89 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian }
+	
+	capital = STATE_OREGON
+}
+
+UMP = {
+	color = { 45 167 200 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian athabaskan }
+	
+	capital = STATE_OREGON
+}
+
+SAB = {
+	color = { 21 12 89 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_CALIFORNIA
+}
