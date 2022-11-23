@@ -9,3 +9,21 @@ numic = {
 
 siouan = {
 }
+
+iroquoian = {
+}
+
+southwest_american = {
+}
+
+southeast_american = {
+}
+
+nadene = {
+}
+
+penutian = {
+}
+
+northwest_coast = {
+}

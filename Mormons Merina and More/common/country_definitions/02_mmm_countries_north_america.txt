@@ -54,15 +54,15 @@ UTE = {
 	capital = STATE_UTAH
 }
 
-TFC = {
-	color = { 204 85 0 }
-	
-	cultures = { ojibwe }
+CTF = { # the Council of Three Fires, Niswa-mishkodewinan
+	color = { 220 147 37 }
 	
 	country_type = decentralized
 	
 	tier = principality
-
+	
+	cultures = { ojibwe }
+	
 	capital = STATE_MICHIGAN
 }
 	
@@ -112,4 +112,112 @@ ARP = {
 	cultures = { cheyenne }
 	
 	capital = STATE_COLORADO
+}
+
+MSC = { # Muscogee
+	color = { 108 139 208 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { muskogean }
+	
+	capital = STATE_FLORIDA
+}
+	
+CSH = {
+	color = { 204 255 255 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	
+	capital = STATE_WASHINGTON
+}
+	
+SYX = {
+	color = { 167 56 4 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+	
+YKM = {
+	color = { 245 168 23 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian }
+	
+	capital = STATE_WASHINGTON
+}
+
+CDA = {
+	color = { 245 15 56 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	
+	capital = STATE_IDAHO
+}
+
+FTH = {
+	color = { 45 6 135 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	
+	capital = STATE_MONTANA
+}
+
+WKS = {
+	color= { 53 94 59 }
+
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { wakashan }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+UMT = {
+	color = { 198 231 56 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian }
+	
+	capital = STATE_OREGON
+}
+
+SPK = {
+	color = { 1 41 51 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	
+	capital = STATE_WASHINGTON
 }
