@@ -257,3 +257,99 @@ SAB = {
 	
 	capital = STATE_CALIFORNIA
 }
+
+SRO = {
+	color = { 176 112 56 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { serrano }
+	
+	capital = STATE_CALIFORNIA
+}
+
+MWK = {
+	color = { 56 230 64 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian }
+	
+	capital = STATE_CALIFORNIA
+}
+
+MDN = {
+	color = { 76 198 98 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian }
+	
+	capital = STATE_CALIFORNIA
+}
+
+WTN = {
+	color = { 65 223 8 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian }
+	
+	capital = STATE_CALIFORNIA
+}
+
+SHT = {
+	color = { 210 65 176 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { hokan }
+	
+	capital = STATE_CALIFORNIA
+}
+
+PTT = {
+	color = { 178 165 145 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { hokan }
+	
+	capital = STATE_CALIFORNIA
+}
+
+YVP = {
+	color = { 234 216 65 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { hokan }
+	
+	capital = STATE_ARIZONA
+}
+
+YKT = {
+	color = { 235 235 41 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian }
+	
+	capital = STATE_CALIFORNIA
+}
