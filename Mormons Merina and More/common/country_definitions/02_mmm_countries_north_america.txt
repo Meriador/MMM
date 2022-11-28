@@ -353,3 +353,182 @@ YKT = {
 	
 	capital = STATE_CALIFORNIA
 }
+
+HDA = {
+	color = { 180 14 23 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { haida }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+TSI = {
+	color = { 165 240 34 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { penutian }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+LLT = {
+	color = { 56 75 93 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+DKL = {
+	color = { 34 176 78 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+TLT = {
+	color = { 34 65 178 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+SWP = {
+	color = { 56 87 34 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { salish }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+KTN = {
+	color = { 62 14 28 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { kutenai }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+DNZ = {
+	color = { 66 54 15 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_BRITISH_COLUMBIA
+}
+
+TTC = {
+	color = { 17 64 81 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_YUKON
+}
+
+SVY = {
+	color = { 45 32 145 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_NORTHWEST_TERRITORIES
+}
+
+IPQ = {
+	color = { 10 15 60 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { inuit }
+	
+	capital = STATE_ALASKA
+}
+
+TNN = {
+	color = { 33 78 84 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_ALASKA
+}
+
+KYK = {
+	color = { 84 27 31 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_ALASKA
+}
+
+GWC = {
+	color = { 56 59 65 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_YUKON
+}
+
+IRC = {
+	color = { 61 158 124 }
+
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { cree nakoda ojibwe }
+	capital = STATE_SASKATCHEWAN
+}
