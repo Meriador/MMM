@@ -239,21 +239,21 @@ types tech_tree
 				}
 
 				# Claims
-				blockoverride "fourth_button" {
-					text = "CLAIMS_GUI"
-				}
-				blockoverride "fourth_button_click" {
-					onclick = "[InformationPanel.SelectTab('claims')]"
-				}
-				blockoverride "fourth_button_visibility" {
-					visible = "[InformationPanel.IsTabSelected('claims')]"
-				}
-				blockoverride "fourth_button_visibility_checked" {
-					visible = "[Not( InformationPanel.IsTabSelected('claims') )]"
-				}
-				blockoverride "fourth_button_selected" {
-					text = "CLAIMS_GUI"
-				}				
+#				blockoverride "fourth_button" {
+#					text = "CLAIMS_GUI"
+#				}
+#				blockoverride "fourth_button_click" {
+#					onclick = "[InformationPanel.SelectTab('claims')]"
+#				}
+#				blockoverride "fourth_button_visibility" {
+#					visible = "[InformationPanel.IsTabSelected('claims')]"
+#				}
+#				blockoverride "fourth_button_visibility_checked" {
+#					visible = "[Not( InformationPanel.IsTabSelected('claims') )]"
+#				}
+#				blockoverride "fourth_button_selected" {
+#					text = "CLAIMS_GUI"
+#				}				
 
 				### ICON SHOWING WHERE TECH IS BEING TECHED.
 				datacontext = "[GetPlayer.GetCurrentlyResearchedTechnology]"
@@ -319,28 +319,28 @@ types tech_tree
 					}
 				}
 				# claims
-				blockoverride "fourth_button_icon" {
-					
-					container = {
-						parentanchor = vcenter
-						# light bulb
-						visible = "[ObjectsEqual(Technology.GetCategoryName, 'Claims')]"
-						
-						icon = {
-							using = rotate_glow_animation_02
-							size = { 60 60 }
-							parentanchor = center
-						}
-						icon = {
-							texture = "gfx/interface/icons/generic_icons/innovation.dds"
-							size = { 30 30 }
-							parentanchor = center
-						}
-					}
-				}
-			}
-		}
-		
+#				blockoverride "fourth_button_icon" {
+#					
+#					container = {
+#						parentanchor = vcenter
+#						# light bulb
+#						visible = "[ObjectsEqual(Technology.GetCategoryName, 'Claims')]"
+#						
+#						icon = {
+#							using = rotate_glow_animation_02
+#							size = { 60 60 }
+#							parentanchor = center
+#						}
+#						icon = {
+#							texture = "gfx/interface/icons/generic_icons/innovation.dds"
+#							size = { 30 30 }
+#							parentanchor = center
+#						}
+#					}
+#				}
+#			}
+#		}
+#		
 		### CONTENT
 		blockoverride "scrollarea_content"
 		{
@@ -369,13 +369,13 @@ types tech_tree
 					visible = "[InformationPanel.IsTabSelected('society')]"
 					using = default_content_fade
 				}
-				background = {
-					using = illu_alpha
-					fittype = center
-					texture = "gfx/interface/illustrations/tech_tree/illustration_tech_society.dds"
-					visible = "[InformationPanel.IsTabSelected('claims')]"
-					using = default_content_fade
-				}
+#				background = {
+#					using = illu_alpha
+#					fittype = center
+#					texture = "gfx/interface/illustrations/tech_tree/illustration_tech_society.dds"
+#					visible = "[InformationPanel.IsTabSelected('claims')]"
+#					using = default_content_fade
+#				}
 
 				### TECH TREES
 				tech_tree_graph = {
@@ -483,41 +483,41 @@ types tech_tree
 						pan_position = "[GetDefine('NGUI', 'TECH_TREE_SOCIETY_INITIAL_POSITION')]"
 					}
 				}
-				tech_tree_graph = {
-					name = "tech_tree_panel_claims"
-					visible = "[InformationPanel.IsTabSelected('claims')]"
-					using = default_content_fade
-
-					blockoverride "datamodel_lines" {
-						datamodel = "[TechTreePanel.GetClaimsTechTreeLines]"
-					}
-
-					blockoverride "datamodel_items" {
-						datamodel = "[TechTreePanel.GetClaimsTechTreeItems]"
-					}
-
-					blockoverride "extra_lines" {
-						icon = {
-							using = tech_tree_divider
-							position = { 0 -100 }
-							size = { 200% 1575 }
-						}
-						icon = {
-							using = tech_tree_divider
-							position = { 0 2100 }
-							size = { 200% 300 }
-						}
-						icon = {
-							using = tech_tree_divider
-							position = { 0 3050 }
-							size = { 200% 300 }
-						}
-					}
-
-					blockoverride "starting_pan_position" {
-						pan_position = "[GetDefine('NGUI', 'TECH_TREE_CLAIMS_INITIAL_POSITION')]"
-					}
-				}
+#				tech_tree_graph = {
+#					name = "tech_tree_panel_claims"
+#					visible = "[InformationPanel.IsTabSelected('claims')]"
+#					using = default_content_fade
+#
+#					blockoverride "datamodel_lines" {
+#						datamodel = "[TechTreePanel.GetClaimsTechTreeLines]"
+#					}
+#
+#					blockoverride "datamodel_items" {
+#						datamodel = "[TechTreePanel.GetClaimsTechTreeItems]"
+#					}
+#
+#					blockoverride "extra_lines" {
+#						icon = {
+#							using = tech_tree_divider
+#							position = { 0 -100 }
+#							size = { 200% 1575 }
+#						}
+#						icon = {
+#							using = tech_tree_divider
+#							position = { 0 2100 }
+#							size = { 200% 300 }
+#						}
+#						icon = {
+#							using = tech_tree_divider
+#							position = { 0 3050 }
+#							size = { 200% 300 }
+#						}
+#					}
+#
+#					blockoverride "starting_pan_position" {
+#						pan_position = "[GetDefine('NGUI', 'TECH_TREE_CLAIMS_INITIAL_POSITION')]"
+#					}
+#				}
 
 				container = {
 					parentanchor = top|right
@@ -540,12 +540,12 @@ types tech_tree
 						onclick = "[TechTreePanel.ResetSocietyView]"
 						size = { 42 42 }
 					}
-					button_icon_reset = {
-						visible = "[InformationPanel.IsTabSelected('claims')]"
-						tooltip = "TOOLTIP_RESET"
-						onclick = "[TechTreePanel.ResetClaimsView]"
-						size = { 42 42 }
-					}
+#					button_icon_reset = {
+#						visible = "[InformationPanel.IsTabSelected('claims')]"
+#						tooltip = "TOOLTIP_RESET"
+#						onclick = "[TechTreePanel.ResetClaimsView]"
+#						size = { 42 42 }
+#					}
 				}
 			}
 		}

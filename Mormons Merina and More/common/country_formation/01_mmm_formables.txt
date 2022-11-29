@@ -86,9 +86,9 @@ YUG = {
 		}
 		any_country = {
 			OR = {
-				country_has_primary_culture = cu:serbian
-				country_has_primary_culture = cu:bosnian
-				country_has_primary_culture = cu:croatian
+				country_has_primary_culture = cu:serb
+				country_has_primary_culture = cu:bosniak
+				country_has_primary_culture = cu:croat
 				country_has_primary_culture = cu:slovene
 				country_has_primary_culture = cu:bulgarian
 			}

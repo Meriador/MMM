@@ -1,0 +1,232 @@
+﻿COUNTRIES = {
+	c:GWC = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:KYK = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:CPW = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:CTF = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:DGB = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:INK = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:INV = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:MME = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:NPA = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:OJI = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:PAI = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SHO = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SWC = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:TNN = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:IPQ = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SVY = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:TTC = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:DNZ = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:KTN = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SWP = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:TLT = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:DKL = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:LLT = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:TSI = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:HDA = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:YKT = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:YVP = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:PTT = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SHT = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:WTN = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:MDN = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:MWK = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SRO = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SAB = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:UMP = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:KTH = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SPK = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:UMT = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:WKS = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:FTH = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:CDA = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:YKM = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:SYX = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:CSH = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:CNE = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+	c:MSC = {
+		effect_starting_technology_tier_6_tech = yes		
+		effect_starting_politics_traditional = yes
+		effect_native_conscription_10 = yes
+	}
+}
