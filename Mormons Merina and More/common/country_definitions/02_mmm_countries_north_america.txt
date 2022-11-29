@@ -532,3 +532,75 @@ IRC = {
 	cultures = { cree nakoda ojibwe }
 	capital = STATE_SASKATCHEWAN
 }
+
+CPW = {
+	color = { 234 67 143 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_NORTHWEST_TERRITORIES
+}
+
+SWC = {
+	color = { 73 146 169 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { cree }
+	
+	capital = STATE_MANITOBA
+}
+
+OJI = {
+	color = { 114 73 9 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { ojibwe cree }
+	
+	capital = STATE_ONTARIO
+}
+
+INK = {
+	color = { 20 30 120 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { inuit }
+	
+	capital = STATE_QUEBEC
+}
+
+INV = {
+	color = { 30 45 180 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { inuit }
+	
+	capital = STATE_NUNAVUT
+}
+
+DGB = {
+	color = { 90 23 43 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_NORTHWEST_TERRITORIES
+}
