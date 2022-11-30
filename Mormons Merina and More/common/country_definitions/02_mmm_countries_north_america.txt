@@ -604,3 +604,50 @@ DGB = {
 	
 	capital = STATE_NORTHWEST_TERRITORIES
 }
+
+ECR = {
+	color = { 6 250 121 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { cree }
+	
+	capital = STATE_QUEBEC
+}
+
+INN = {
+	color = { 239 131 3 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { cree }
+	
+	capital = STATE_QUEBEC
+}
+
+BLF = { # Niitsitapi / Blackfoot Confederacy
+	color = hsv{ 0.63 0.68 0.60 }
+	
+	cultures = { blackfoot }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_ALBERTA
+}
+
+SEQ = {
+	color = { 86 120 117 }
+
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { cherokee muskogean siouan }
+	capital = STATE_OKLAHOMA
+}
