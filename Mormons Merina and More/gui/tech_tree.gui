@@ -338,9 +338,9 @@ types tech_tree
 #						}
 #					}
 #				}
-#			}
-#		}
-#		
+			}
+		}
+		
 		### CONTENT
 		blockoverride "scrollarea_content"
 		{
