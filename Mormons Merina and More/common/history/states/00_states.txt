@@ -418,7 +418,6 @@ STATES = {
 				x5B5900 x724089 x125FB0 x63F85D x86F203 x50C000 x72823F xDE4C96 x52EB7C x15CB9B x5AE64F x34EDA2 x4E209F xC8FA49 xF2C402 x4F6919 xBF0C47 x6EA57A xEBAEAA x22BFC4 x669059 x07E17F xF642DA x31580F
 			}
 		}
-		add_homeland = siouan
 		add_homeland = paiute
 		add_homeland = cheyenne
 		add_homeland = ute
@@ -448,7 +447,6 @@ STATES = {
 				x65D786 x600D92 xE387E7 x81DB36 x5F141F x36DEC9 x58C850 x952F3F x93B583 x3DC80A x465DC8 x319B3E x84DF43 x1AC89E x0DE2A6 x867348 xD7B8D9 x7105F8 xCF073F x2403EF x89656E x0EB61F x8B96F2 x21EE68 xEC9D85
 			}
 		}
-		add_homeland = siouan
 		add_homeland = shoshone
 		add_homeland = absaroka
 		add_homeland = cheyenne
@@ -502,6 +500,7 @@ STATES = {
 		add_homeland = absaroka
 		add_homeland = salish
 		add_homeland = nakoda
+		add_homeland = blackfoot
 	}
 	s:STATE_NORTH_DAKOTA = {
 		create_state = {
@@ -582,6 +581,8 @@ STATES = {
 		
 		add_homeland = dakota	
 		add_homeland = cheyenne
+		add_homeland = caddoan
+		add_homeland = siouan
 	}
 	s:STATE_KANSAS = {
 		create_state = {
@@ -611,6 +612,7 @@ STATES = {
 		}
 		add_homeland = siouan
 		add_homeland = cheyenne
+		add_homeland = caddoan
 	}
 	s:STATE_OKLAHOMA = {
 		create_state = {
@@ -627,8 +629,9 @@ STATES = {
 			}
 		}
 		
-		add_homeland = cherokee	
+		add_homeland = cherokee
 		add_homeland = siouan
+		add_homeland = caddoan
 	}
 	s:STATE_ARKANSAS = {
 		create_state = {
@@ -781,7 +784,8 @@ STATES = {
 		}
 		
 		add_homeland = dixie
-		add_homeland = afro_american		
+		add_homeland = afro_american
+		add_homeland = muskogean
 	}
 	s:STATE_ALABAMA = {
 		create_state = {
@@ -791,7 +795,7 @@ STATES = {
 		
 		add_homeland = dixie
 		add_homeland = afro_american
-		add_homeland = caddoan
+		add_homeland = muskogean
 	}
 	s:STATE_FLORIDA = {
 		create_state = {
@@ -820,7 +824,8 @@ STATES = {
 		}
 		
 		add_homeland = dixie
-		add_homeland = afro_american		
+		add_homeland = afro_american
+		add_homeland = cherokee
 	}
 	s:STATE_DISTRICT_OF_COLUMBIA = {
 		create_state = {
@@ -1181,6 +1186,7 @@ STATES = {
 		add_homeland = metis
 		add_homeland = anglo_canadian
 		add_homeland = athabaskan
+		add_homeland = blackfoot
 	}
 	s:STATE_SASKATCHEWAN = {
 		create_state = {
@@ -1331,7 +1337,7 @@ STATES = {
 		add_homeland = franco_canadian
 		add_homeland = cree
 		add_homeland = inuit
-		add_homeland = algonquan
+		add_homeland = algonquian
 	}
 	s:STATE_NEWFOUNDLAND = {
 		create_state = {
