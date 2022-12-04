@@ -922,27 +922,33 @@
 			}
 		}
 	}
-	s:STATE_UTAH = {
-		region_state:MEX = {
+	s:STATE_UTAH = { 
+		region_state:PAI = {
 			create_pop = {
-				culture = paiute
-				size = 3000
+				culture = ute
+				size = 9000
+			}
+		}
+		region_state:SHO = {
+			create_pop = {
+				culture = shoshone
+				size = 4400
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = paiute
-				size = 2000
+				culture = ute
+				size = 1000
 			}
 			create_pop = {
 				culture = navajo
-				size = 4000
+				size = 2000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
-				size = 11000
+				culture = ute
+				size = 5000
 			}
 		}
 	}
@@ -1323,11 +1329,29 @@
 			}
 		}
 	}
-	s:STATE_NEVADA = {
-		region_state:MEX = {
+	s:STATE_NEVADA = { 
+		region_state:NPA = {
 			create_pop = {
 				culture = paiute
-				size = 28000
+				size = 9000
+			}
+		}
+		region_state:WSH = {
+			create_pop = {
+				culture = hokan
+				size = 1500
+			}
+		}
+		region_state:SHO = {
+			create_pop = {
+				culture = shoshone
+				size = 6000
+			}
+		}
+		region_state:PAI = {
+			create_pop = {
+				culture = ute
+				size = 4000
 			}
 		}
 	}
@@ -1352,7 +1376,7 @@
 				size = 24000
 			}
 			create_pop = {
-				culture = paiute
+				culture = ute
 				size = 4000
 			}
 		}
@@ -1364,6 +1388,18 @@
 			create_pop = {
 				culture = pueblo
 				size = 2000
+			}
+		}
+		region_state:YVP = { 
+			create_pop = {
+				culture = hokan
+				size = 2000
+			}
+		}
+		region_state:PAI = {
+			create_pop = {
+				culture = ute
+				size = 1000
 			}
 		}
 	}
@@ -1401,15 +1437,99 @@
 			}
 		}
 	}
-	s:STATE_CALIFORNIA = {
-		region_state:MEX = {
+	s:STATE_CALIFORNIA = { 
+		region_state:MDN = { 
+			create_pop = {
+				culture = penutian
+				size = 9000
+			}
+		}
+		region_state:PTT = {
 			create_pop = {
 				culture = hokan
-				size = 52000
+				size = 5000
+			}
+		}
+		region_state:SHT = {
+			create_pop = {
+				culture = penutian
+				size = 12500
+			}
+		}
+		region_state:WTN = {
+			create_pop = {
+				culture = penutian
+				size = 12000
+			}
+		}
+		region_state:MWK = {
+			create_pop = {
+				culture = penutian
+				size = 7000
+			}
+		}
+		region_state:YKT = {
+			create_pop = {
+				culture = penutian
+				size = 34000
+			}
+		}
+		region_state:SRO = {
+			create_pop = {
+				culture = serrano
+				size = 10000
+			}
+		}
+		region_state:MEX = {
+			create_pop = {
+				culture = penutian
+				size = 4000
+			}
+			create_pop = {
+				culture = hokan
+				size = 3000
 			}
 			create_pop = {
 				culture = mexican
 				size = 11996
+			}
+			create_pop = {
+				culture = serrano
+				size = 500
+			}
+		}
+		region_state:KTH = {
+			create_pop = {
+				culture = penutian
+				size = 500
+			}
+		}
+		region_state:SAB = {
+			create_pop = {
+				culture = algonquian
+				size = 4500
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 15000
+			}
+		}
+		region_state:PAI = {
+			create_pop = {
+				culture = ute
+				size = 1500
+			}
+		}
+		region_state:NPA = {
+			create_pop = {
+				culture = paiute
+				size = 4500
+			}
+		}
+		region_state:WSH = {
+			create_pop = {
+				culture = hokan
+				size = 1500
 			}
 		}
 	}
@@ -1700,7 +1820,7 @@
 				size = 8264
 			}
 			create_pop = {
-				culture = oodham
+				culture = hokan
 				size = 13300
 			}
 			create_pop = {

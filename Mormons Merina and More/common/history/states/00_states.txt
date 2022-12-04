@@ -2079,7 +2079,13 @@ STATES = {
 	s:STATE_NEVADA = {
 		create_state = {
 			country = c:NPA
-			owned_provinces = { xB312C1 xDBA111 x5CC000 x7C1958 x6CF688 x455838 x6D645C x8B11E1 x0D95C2 x992C09 x5BE036 x4934EE xEAB9B1 x80BCA8 x48E8C5 xEF5007 xF13FC2 xA7D253 x7C7251 x91EF0D xCA0467 xA72957 x7D25E6 x187093 xF0C923 x3F791B xEDCBF4 x60609D x8A5945 x012DC1 xE15291 xB2D968 x1BAC1A xB6ED0A xE3A018 x5AD9C0 x2A9CAC x780763 x0DF43E x8F30EA }
+			owned_provinces = { xB312C1 xDBA111 x5CC000 x7C1958 x6CF688 x455838 x6D645C x8B11E1 x0D95C2 x992C09 x5BE036 x4934EE xEAB9B1 x48E8C5 xEF5007 xF13FC2 x7C7251 x91EF0D xCA0467 xA72957 x7D25E6 x187093 xF0C923 x3F791B xEDCBF4 x60609D x8A5945 x012DC1 xE15291 xB2D968 x1BAC1A xB6ED0A xE3A018 x5AD9C0 x2A9CAC x780763 x0DF43E x8F30EA }
+		}
+		create_state = {
+			country = c:WSH
+			owned_provinces = {
+				x80BCA8 xA7D253
+			}
 		}
 		create_state = {
 			country = c:PAI
@@ -2234,12 +2240,19 @@ STATES = {
 		create_state = {
 			country = c:NPA
 			owned_provinces = {
-				x441749 xDE208B x519529 x0AE895 x1FE069 xF6B075 x56F5CB
+				x441749 xDE208B x519529 x0AE895 x1FE069
+			}
+		}
+		create_state = {
+			country = c:WSH
+			owned_provinces = {
+				xF6B075 x56F5CB
 			}
 		}
 		
 		add_homeland = hokan
 		add_homeland = penutian
+		add_homeland = serrano
 	}
 	s:STATE_SONORA = {
 		create_state = {

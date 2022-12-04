@@ -38,7 +38,7 @@ PAI = {
 	
 	tier = principality
 	
-	cultures = { paiute }
+	cultures = { ute } #using the culture they share a language with, rather than just a name
 	capital = STATE_NEVADA
 }
 
@@ -650,4 +650,16 @@ SEQ = {
 	
 	cultures = { cherokee muskogean siouan }
 	capital = STATE_OKLAHOMA
+}
+
+WSH = {
+	color = { 86 245 203 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { hokan }
+	
+	capital = STATE_NEVADA
 }
