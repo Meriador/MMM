@@ -518,6 +518,32 @@ ojibwe={
 	graphics = generic
 }
 
+fox={
+	color = { 154 0 38 }
+	religion = animist
+	traits = { indigenous_american_heritage algonquian }
+	
+	male_common_first_names={
+	WIP
+	}
+	
+	female_common_first_names = {
+	WIP
+	}
+	
+	noble_last_names = {
+	WIP
+	}
+	
+	common_last_names={
+	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
 shoshone={
 	color = rgb{ 241 218 122 }
 	religion = animist
@@ -624,6 +650,32 @@ absaroka = {
 
 cheyenne = {
 	color = rgb{ 7 7 77 }
+	religion = animist
+	traits = { indigenous_american_heritage algonquian plains }
+	
+	male_common_first_names={
+	WIP
+	}
+	
+	female_common_first_names = {
+	WIP
+	}
+	
+	noble_last_names = {
+	WIP
+	}
+	
+	common_last_names={
+	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+arapaho = { # and gros ventre
+	color = { 223 204 125 }
 	religion = animist
 	traits = { indigenous_american_heritage algonquian plains }
 	

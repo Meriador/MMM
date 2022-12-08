@@ -362,13 +362,21 @@
 			}
 			create_pop = {
 				culture = cherokee
-				size = 50800
+				size = 30000
+			}
+			create_pop = {
+				culture = muskogean
+				size = 16000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
 				culture = siouan
-				size = 18000
+				size = 6000
+			}
+			create_pop = {
+				culture = comanche
+				size = 12000
 			}
 		}
 	}
@@ -394,7 +402,11 @@
 			}
 			create_pop = {
 				culture = cherokee
-				size = 30136
+				size = 10136
+			}
+			create_pop = {
+				culture = muskogean
+				size = 20136
 			}
 		}
 	}
@@ -625,6 +637,10 @@
 				culture = afro_american
 				size = 87057
 			}
+			create_pop = {
+				culture = muskogean #leftover choctaws
+				size = 5000 
+			}
 		}
 	}
 	s:STATE_ALABAMA = {
@@ -674,7 +690,13 @@
 			}
 			create_pop = {
 				culture = muskogean
-				size = 8000
+				size = 3000
+			}
+		}
+		region_state:MSC = {
+			create_pop = {
+				culture = muskogean
+				size = 5000
 			}
 		}
 	}
@@ -926,13 +948,13 @@
 		region_state:PAI = {
 			create_pop = {
 				culture = ute
-				size = 9000
+				size = 8000
 			}
 		}
 		region_state:SHO = {
 			create_pop = {
 				culture = shoshone
-				size = 4400
+				size = 9000
 			}
 		}
 		region_state:NVJ = {
@@ -948,7 +970,7 @@
 		region_state:UTE = {
 			create_pop = {
 				culture = ute
-				size = 5000
+				size = 4000
 			}
 		}
 	}
@@ -1296,7 +1318,11 @@
 			}
 			create_pop = {
 				culture = caddoan
-				size = 4000
+				size = 6650
+			}
+			create_pop = {
+				culture = muskogean
+				size = 1870
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1311,7 +1337,15 @@
 		region_state:MEX = {
 			create_pop = {
 				culture = oodham
-				size = 12000
+				size = 7000
+			}
+			create_pop = {
+				culture = dakota
+				size = 2600
+			}
+			create_pop = {
+				culture = apache
+				size = 3500
 			}
 			create_pop = {
 				culture = mexican
@@ -1321,7 +1355,7 @@
 		region_state:COM = {
 			create_pop = {
 				culture = comanche
-				size = 18000
+				size = 22000
 			}
 			create_pop = {
 				culture = apache

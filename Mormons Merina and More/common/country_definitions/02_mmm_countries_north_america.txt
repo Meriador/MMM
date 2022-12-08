@@ -109,7 +109,7 @@ ARP = {
 
 	tier = principality
 	
-	cultures = { cheyenne }
+	cultures = { arapaho }
 	
 	capital = STATE_COLORADO
 }
