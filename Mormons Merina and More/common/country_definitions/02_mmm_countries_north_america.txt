@@ -655,7 +655,7 @@ SEQ = {
 WSH = {
 	color = { 86 245 203 }
 	
-	country_type = unrecognized
+	country_type = decentralized
 
 	tier = principality
 	

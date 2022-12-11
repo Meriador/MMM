@@ -1658,12 +1658,16 @@
 			create_pop = {
 				culture = anglo_canadian
 				size = 14848
-			}	
+			}
+			create_pop = {
+				culture = metis
+				size = 16004
+			}
 		}
 		region_state:IRC = {
 			create_pop = {
 				culture = metis
-				size = 1000
+				size = 4000
 			}
 			create_pop = {
 				culture = ojibwe
