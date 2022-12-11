@@ -671,7 +671,7 @@
 		}
 	}
 	s:STATE_MINNESOTA = {
-		region_state:USA
+		region_state:USA = {
 			create_pop = { 
 				culture = yankee
 				size = 1000
@@ -1449,7 +1449,7 @@
 		}
 	}
 	s:STATE_ALBERTA = {
-		region_state:HBC
+		region_state:HBC = {
 			create_pop = {
 				culture = metis
 				size = 2000
