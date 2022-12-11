@@ -397,6 +397,7 @@ STATES = {
 		add_homeland = nez_perce
 		add_homeland = paiute
 		add_homeland = shoshone
+		add_homeland = salish
 	}
 	s:STATE_COLORADO = {
 		create_state = {
@@ -418,8 +419,7 @@ STATES = {
 				x5B5900 x724089 x125FB0 x63F85D x86F203 x50C000 x72823F xDE4C96 x52EB7C x15CB9B x5AE64F x34EDA2 x4E209F xC8FA49 xF2C402 x4F6919 xBF0C47 x6EA57A xEBAEAA x22BFC4 x669059 x07E17F xF642DA x31580F
 			}
 		}
-		add_homeland = paiute
-		add_homeland = cheyenne
+		add_homeland = arapaho
 		add_homeland = ute
 	}
 	s:STATE_WYOMING = {
@@ -450,6 +450,7 @@ STATES = {
 		add_homeland = shoshone
 		add_homeland = absaroka
 		add_homeland = cheyenne
+		add_homeland = arapaho
 	}
 	s:STATE_MONTANA = {
 		create_state = {
@@ -579,6 +580,7 @@ STATES = {
 		
 		add_homeland = dakota	
 		add_homeland = cheyenne
+		add_homeland = arapaho
 		add_homeland = caddoan
 		add_homeland = siouan
 	}
@@ -609,7 +611,7 @@ STATES = {
 			}
 		}
 		add_homeland = siouan
-		add_homeland = cheyenne
+		add_homeland = arapaho
 		add_homeland = caddoan
 	}
 	s:STATE_OKLAHOMA = {
@@ -1139,6 +1141,7 @@ STATES = {
 		add_homeland = athabaskan
 		add_homeland = salish
 		add_homeland = wakashan
+		add_homeland = penutian
 		
 	}
 	s:STATE_ALBERTA = {
@@ -2095,6 +2098,7 @@ STATES = {
 		}
 		add_homeland = paiute
 		add_homeland = shoshone
+		add_homeland = hokan
 	}
 	s:STATE_ARIZONA = {
 		create_state = {
@@ -7577,7 +7581,7 @@ STATES = {
 			owned_provinces = {
 				xEC4FF4 x567651 xB3AE0B xA3BC1C xCBA4C1 x901FD6 xAF38BD x54A0C5 xD13E4A x4D739A x9B34F6 xA54D29
 			}
-		
+		}
 		add_homeland = paiute
 		add_homeland = shoshone
 		add_homeland = ute

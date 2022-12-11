@@ -47,7 +47,7 @@ TSL = {
 	
 	country_type = recognized
 
-	tier = city-state
+	tier = city_state
 	
 	capital = STATE_MACEDONIA
 	cultures = { sephardic }

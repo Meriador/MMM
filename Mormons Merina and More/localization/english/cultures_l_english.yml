@@ -324,4 +324,17 @@
  arapaho:0 "Arapaho"
  blackfoot:0 "Blackfoot"
  nakoda:0 "Nakoda"
+ serrano:0 "Serrano"
  aromanian:0 "Aromanian"
+ 
+ #discrimination traits
+ algonquian:0 "Algonquian Language"
+ plains:0 "Plains Indian"
+ numic:0 "Numic Language"
+ siouan:0 "Siouan Language"
+ iroquoian:0 "Iroquoian Language"
+ southwest_american:0 "Southwestern American"
+ southeast_american:0 "Southeast Woodland"
+ nadene:0 "Na-Dene Language"
+ penutian:0 "Penutian"
+ northwest_coast:0 "Northwest Coast"

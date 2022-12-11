@@ -1599,7 +1599,7 @@
 	s:STATE_SASKATCHEWAN = {
 		region_state:HBC = {
 			create_pop = {
-				culture = anglo-canadian
+				culture = anglo_canadian
 				size = 500
 			}
 			create_pop = {
@@ -1644,11 +1644,11 @@
 		region_state:HBC = {
 			create_pop = {
 				culture = cree
-				size = 3000
+				size = 6000
 			}
 			create_pop = {
 				culture = athabaskan
-				size = 2000
+				size = 4000
 			}
 			create_pop = {
 				culture = metis
@@ -1932,13 +1932,13 @@
 				size = 6000
 			}
 			create_pop = {
-				culture = paiute
+				culture = ute
 				size = 2000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
-				culture = siouan
+				culture = comanche
 				size = 3000
 			}
 		}

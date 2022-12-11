@@ -459,7 +459,7 @@ TTC = {
 	
 	cultures = { athabaskan }
 	
-	capital = STATE_YUKON
+	capital = STATE_YUKON_TERRITORY
 }
 
 SVY = {
@@ -519,7 +519,7 @@ GWC = {
 	
 	cultures = { athabaskan }
 	
-	capital = STATE_YUKON
+	capital = STATE_YUKON_TERRITORY
 }
 
 IRC = {
