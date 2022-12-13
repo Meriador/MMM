@@ -1,16 +1,16 @@
-﻿algonquian = {
+﻿algonquian_trait = {
 }
 
-plains = {
+plains_trait = {
 }
 
 numic = {
 }
 
-siouan = {
+siouan_trait = {
 }
 
-iroquoian = {
+iroquoian_trait = {
 }
 
 southwest_american = {
@@ -22,7 +22,7 @@ southeast_american = {
 nadene = {
 }
 
-penutian = {
+penutian_trait = {
 }
 
 northwest_coast = {

@@ -22,7 +22,7 @@ SKL = {
 
 MER = {
 	states = {
-		STATE_IMERINA
+		STATE_NORTH_MADAGASCAR
 	}
 	
 	ai_will_do = { always = no }

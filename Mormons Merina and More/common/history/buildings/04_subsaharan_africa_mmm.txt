@@ -101,7 +101,7 @@
 			}
 		}
 	}
-	s:STATE_IMERINA = {
+	s:STATE_NORTH_MADAGASCAR = {
 		region_state:MER = {
 			create_building = {
 				building="building_tooling_workshops"
@@ -128,7 +128,7 @@
 			}
 		}
 	}
-	s:STATE_SOUTH_HIGHLANDS = {
+	s:STATE_SOUTH_MADAGASCAR = {
 		region_state:MER = {
 			create_building={
 				building="building_rice_farm"

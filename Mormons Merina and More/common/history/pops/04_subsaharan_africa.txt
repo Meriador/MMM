@@ -1671,7 +1671,7 @@
 			}	
 		}
 	}
-	s:STATE_IMERINA = {
+	s:STATE_NORTH_MADAGASCAR = {
 		region_state:MER = {
 			create_pop = {
 				culture = merina
@@ -1732,7 +1732,7 @@
 			}
 		}
 	}
-	s:STATE_SOUTH_HIGHLANDS = {
+	s:STATE_SOUTH_MADAGASCAR = {
 		region_state:MER = {
 			create_pop = {
 				culture = bara

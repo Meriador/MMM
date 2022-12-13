@@ -390,7 +390,7 @@ STATE_TOGO = {
     id = 221
     subsistence_building = "building_subsistence_farms"
     provinces = { "x162D0C" "x406D9B" "x40E9E9" "x51AD34" "x778011" "x802111" "x87D283" "x8D0A5A" "x938637" "xAF65D3" "xD10A98" "xD4B5FF" "xD6D784" "xE35197" "xE8CC9C" "xEDF00C" }
-    prime_land = { "x802111" "x406D9B"  }
+    prime_land = { "x802111" "x406D9B" }
     traits = { "state_trait_malaria" }
     city = "x87D283"
     port = "x802111"
@@ -652,7 +652,7 @@ STATE_SOMALILAND = {
     naval_exit_id = 3018
 }
 
-STATE_IMERINA = {
+STATE_NORTH_MADAGASCAR = {
     id = 6000
     subsistence_building = "building_subsistence_farms"
     provinces = { "x215769" "x285C26" "x3450FE" "x392CDC" "x724867" "x7D2FD8" "x7F2785" "x9C3835" "xA0D0B6" "xB1EDB4" "xBB70FE" "xBD43D8" "xBEC58A" "xC3F681" "xF41FD5" }
@@ -668,7 +668,7 @@ STATE_IMERINA = {
     }
 }
 
-STATE_SOUTH_HIGHLANDS = {
+STATE_SOUTH_MADAGASCAR = {
     id = 6001
     subsistence_building = "building_subsistence_farms"
     provinces = { "x069C0D" "x19F69A" "x1BB5E5" "x1FAF90" "x2B3FCB" "x40C0E0" "x471161" "x5F8C33" "x6D48C1" "x714D08" "x794F7A" "x9F5F4C" "xB9259E" "xBCB8C0" "xBFA51F" "xDBFAC1" "xE655F6" "xF2317F" "xFC9FEC" }

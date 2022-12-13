@@ -1,0 +1,49 @@
+mad_unif.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = mad_unif.1.t
+	desc = mad_unif.1.d
+	flavor = mad_unif.1.f
+	
+	duration = 3
+	
+	option = {
+		name = mad_unif.1.a
+		add_modifier = {
+			name = madagascar_united
+			months = long_modifier_time
+		}
+		ig:ig_armed_forces = {
+			add_modifier = {
+				name = madagascar_military_unification
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+
+mad_unif.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = mad_unif.2.t
+	desc = mad_unif.2.d
+	flavor = mad_unif.2.f
+	
+	duration = 3
+	
+	option = {
+		name = mad_unif.2.a
+		add_modifier = {
+			name = madagascar_united_underdog
+			months = long_modifier_time
+		}
+		ig:ig_armed_forces = {
+			add_modifier = {
+				name = madagascar_military_unification
+				months = normal_modifier_time
+			}
+		}
+	}
+}

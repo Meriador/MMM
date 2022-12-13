@@ -1,0 +1,68 @@
+﻿je_madagscar_unification = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	complete = {
+		calc_true_if = {
+			amount = 6
+			owns_entire_state_region = STATE_IMERINA
+			owns_entire_state_region = STATE_BOENY
+			owns_entire_state_region = STATE_TOAMASINA
+			owns_entire_state_region = STATE_SOUTH_HIGHLANDS
+			owns_entire_state_region = STATE_MORONDAVA
+			owns_entire_state_region = STATE_SOUTHEAST_MADAGASCAR
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = mad_unif.1 }
+	}
+	
+	weight = 200
+}
+
+je_madagscar_unification_2 = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	is_shown_when_inactive = {
+		AND = {
+			can_form_nation = MAD
+			not = {
+				THIS = c:MER
+			}
+		}
+	}
+	
+	possible = {
+		has_technology_researched = nationalism
+	}
+	
+	complete = {
+		calc_true_if = {
+			amount = 6
+			owns_entire_state_region = STATE_IMERINA
+			owns_entire_state_region = STATE_BOENY
+			owns_entire_state_region = STATE_TOAMASINA
+			owns_entire_state_region = STATE_SOUTH_HIGHLANDS
+			owns_entire_state_region = STATE_MORONDAVA
+			owns_entire_state_region = STATE_SOUTHEAST_MADAGASCAR
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = mad_unif.2 }
+	}
+	
+	weight = 200
+}
+
+je_madagascar_nationalism = {
+
+}
+
+je_madagascar_social_reform = {
+
+}
+
+je_madagascar_international = {
+
+}

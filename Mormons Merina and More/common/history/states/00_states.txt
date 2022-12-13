@@ -7665,7 +7665,7 @@ STATES = {
 		
 		add_homeland = irish
 	}
-	s:STATE_SOUTH_HIGHLANDS  = {
+	s:STATE_SOUTH_MADAGASCAR  = {
 		create_state = {
 			country = c:MER
 			owned_provinces = { x1BB5E5 x2B3FCB xB9259E xE655F6 x9F5F4C x471161 x1FAF90 x794F7A x6D48C1 xFC9FEC xF2317F}
@@ -7682,7 +7682,7 @@ STATES = {
 		add_homeland = bara
 		add_homeland = merina
 	}
-	s:STATE_IMERINA = {
+	s:STATE_NORTH_MADAGASCAR = {
 		create_state = {
 			country = c:MER
 			owned_provinces = { x392CDC xA0D0B6 x3450FE x7F2785 x724867 x215769 xBD43D8 x285C26 xF41FD5 x7D2FD8 xBEC58A xC3F681 x9C3835 xBB70FE xB1EDB4}

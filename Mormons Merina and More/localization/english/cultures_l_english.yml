@@ -328,13 +328,13 @@
  aromanian:0 "Aromanian"
  
  #discrimination traits
- algonquian:0 "Algonquian Language"
- plains:0 "Plains Indian"
+ algonquian_trait:0 "Algonquian Language"
+ plains_trait:0 "Plains Indian"
  numic:0 "Numic Language"
- siouan:0 "Siouan Language"
- iroquoian:0 "Iroquoian Language"
+ siouan_trait:0 "Siouan Language"
+ iroquoian_trait:0 "Iroquoian Language"
  southwest_american:0 "Southwestern American"
  southeast_american:0 "Southeast Woodland"
  nadene:0 "Na-Dene Language"
- penutian:0 "Penutian"
+ penutian_trait:0 "Penutian"
  northwest_coast:0 "Northwest Coast"

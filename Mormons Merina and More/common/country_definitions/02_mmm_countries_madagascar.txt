@@ -6,7 +6,7 @@
 	tier = empire
 
 	cultures = { merina betsimisaraka sakalava antaimoro bara }
-	capital = STATE_IMERINA
+	capital = STATE_NORTH_MADAGASCAR
 }
 
 MER = {
@@ -17,7 +17,7 @@ MER = {
 	tier = kingdom
 
 	cultures = { merina }
-	capital = STATE_IMERINA
+	capital = STATE_NORTH_MADAGASCAR
 }
 
 IAN = {
@@ -39,7 +39,7 @@ BBE = {
 	tier = principality
 
 	cultures = { bara }
-	capital = STATE_SOUTH_HIGHLANDS
+	capital = STATE_SOUTH_MADAGASCAR
 }
 
 IMM = {
@@ -50,7 +50,7 @@ IMM = {
 	tier = principality
 
 	cultures = { bara }
-	capital = STATE_SOUTH_HIGHLANDS
+	capital = STATE_SOUTH_MADAGASCAR
 }
 
 BAR = {
@@ -61,7 +61,7 @@ BAR = {
 	tier = kingdom
 
 	cultures = { bara }
-	capital = STATE_SOUTH_HIGHLANDS
+	capital = STATE_SOUTH_MADAGASCAR
 }
 
 BSK = {

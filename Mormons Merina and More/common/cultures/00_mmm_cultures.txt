@@ -495,7 +495,7 @@ antaimoro={
 ojibwe={
 	color = { 204 85 0 }
 	religion = animist
-	traits = { indigenous_american_heritage algonquian }
+	traits = { indigenous_american_heritage algonquian_trait }
 	
 	male_common_first_names={
 	WIP
@@ -521,7 +521,7 @@ ojibwe={
 fox={
 	color = { 154 0 38 }
 	religion = animist
-	traits = { indigenous_american_heritage algonquian }
+	traits = { indigenous_american_heritage algonquian_trait }
 	
 	male_common_first_names={
 	WIP
@@ -625,7 +625,7 @@ ute={ #and southern paiute
 absaroka = {
 	color = rgb{ 199 102 22 }
 	religion = animist
-	traits = { indigenous_american_heritage siouan plains }
+	traits = { indigenous_american_heritage siouan_trait plains_trait }
 	
 	male_common_first_names={
 	WIP
@@ -651,7 +651,7 @@ absaroka = {
 cheyenne = {
 	color = rgb{ 7 7 77 }
 	religion = animist
-	traits = { indigenous_american_heritage algonquian plains }
+	traits = { indigenous_american_heritage algonquian_trait plains_trait }
 	
 	male_common_first_names={
 	WIP
@@ -677,7 +677,7 @@ cheyenne = {
 arapaho = { # and gros ventre
 	color = { 223 204 125 }
 	religion = animist
-	traits = { indigenous_american_heritage algonquian plains }
+	traits = { indigenous_american_heritage algonquian_trait plains_trait }
 	
 	male_common_first_names={
 	WIP
@@ -703,7 +703,7 @@ arapaho = { # and gros ventre
 metis={
 	color= rgb{ 200 111 62 }
 	religion = catholic
-	traits = { indigenous_american_heritage francophone plains algonquian }
+	traits = { indigenous_american_heritage francophone plains_trait algonquian_trait }
 	male_common_first_names={
 		Amroise-Dydime
 		Daniel
@@ -750,7 +750,7 @@ metis={
 dakota={
 	color= hsv{ 0.63 0.30 0.52 }
 	religion = animist
-	traits = { indigenous_american_heritage plains siouan }
+	traits = { indigenous_american_heritage plains_trait siouan_trait }
 	male_common_first_names={
 		Hehaka
 		Inkpaduta
@@ -802,7 +802,7 @@ dakota={
 cherokee={
 	color= rgb{ 105 145 40 }
 	religion = protestant
-	traits = { indigenous_american_heritage southeast_american iroquoian }
+	traits = { indigenous_american_heritage southeast_american iroquoian_trait }
 	male_common_first_names={
 		Andrew
 		Charles
@@ -1039,7 +1039,7 @@ inuit={
 cree={
 	color= hsv{ 0.30 0.39 0.95 }
 	religion = animist
-	traits = { indigenous_american_heritage algonquian plains }
+	traits = { indigenous_american_heritage algonquian_trait plains_trait }
 	male_common_first_names={
 		Alexis
 		Baptiste
@@ -1138,7 +1138,7 @@ navajo={
 comanche={
 	color= hsv{ 0.08 0.5 0.37 }
 	religion = animist
-	traits = { indigenous_american_heritage numic plains }
+	traits = { indigenous_american_heritage numic plains_trait }
 	male_common_first_names={
 		Esihabit
 		Huupi-pahati Hitetetsi
@@ -1185,7 +1185,7 @@ comanche={
 iroquoian={
 	color= rgb{ 233 116 10 }
 	religion = animist
-	traits = { indigenous_american_heritage iroquoian }
+	traits = { indigenous_american_heritage iroquoian_trait }
 	male_common_first_names={
 		Akwiraron Akwirente
 		Domagaya
@@ -1375,7 +1375,7 @@ oodham={
 caddoan={
 	color= hsv{ 0.16 0.65 0.85 }
 	religion = animist
-	traits = { indigenous_american_heritage plains }
+	traits = { indigenous_american_heritage plains_trait }
 	male_common_first_names={
 		Apuckshunubbee
 		Benjamin
@@ -1416,7 +1416,7 @@ caddoan={
 penutian={
 	color = rgb{ 186 85 211 }
 	religion = animist
-	traits = { indigenous_american_heritage penutian }
+	traits = { indigenous_american_heritage penutian_trait }
 	
 	male_common_first_names={
 	WIP
@@ -1602,7 +1602,7 @@ salish={ #WIP, make sure names are actually salish
 nez_perce={ # Nez Perce
 	color= hsv{ 0.06 0.45 0.70 }
 	religion = animist
-	traits = { indigenous_american_heritage penutian }
+	traits = { indigenous_american_heritage penutian_trait }
 	male_common_first_names={
 		Allalimya_Takanin
 		Apash_Wyakaikt
@@ -1713,7 +1713,7 @@ kutenai={
 nakoda={
 	color= { 105 145 186 }
 	religion = animist
-	traits = { indigenous_american_heritage plains siouan }
+	traits = { indigenous_american_heritage plains_trait siouan_trait }
 	male_common_first_names={
 	WIP
 	}
@@ -1738,7 +1738,7 @@ nakoda={
 blackfoot={
 	color = hsv{ 0.63 0.68 0.60 }
 	religion = animist
-	traits = { indigenous_american_heritage plains algonquian }
+	traits = { indigenous_american_heritage plains_trait algonquian_trait }
 	male_common_first_names={
 	WIP
 	}
@@ -1763,7 +1763,7 @@ blackfoot={
 siouan={ #Dhegihan and Chiwere peoples
 	color= hsv{ 0.14 0.35 0.99 }
 	religion = animist
-	traits = { indigenous_american_heritage siouan }
+	traits = { indigenous_american_heritage siouan_trait }
 	male_common_first_names={
 	WIP
 	}
