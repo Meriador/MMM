@@ -39,10 +39,10 @@ je_madagscar_unification_2 = {
 	complete = {
 		calc_true_if = {
 			amount = 6
-			owns_entire_state_region = STATE_IMERINA
+			owns_entire_state_region = STATE_NORTH_MADAGASCAR
 			owns_entire_state_region = STATE_BOENY
 			owns_entire_state_region = STATE_TOAMASINA
-			owns_entire_state_region = STATE_SOUTH_HIGHLANDS
+			owns_entire_state_region = STATE_SOUTH_MADAGASCAR
 			owns_entire_state_region = STATE_MORONDAVA
 			owns_entire_state_region = STATE_SOUTHEAST_MADAGASCAR
 		}
@@ -56,7 +56,9 @@ je_madagscar_unification_2 = {
 }
 
 je_madagascar_nationalism = {
-
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	
 }
 
 je_madagascar_social_reform = {
