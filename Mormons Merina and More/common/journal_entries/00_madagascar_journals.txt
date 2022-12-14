@@ -4,10 +4,10 @@
 	complete = {
 		calc_true_if = {
 			amount = 6
-			owns_entire_state_region = STATE_IMERINA
+			owns_entire_state_region = STATE_NORTH_MADAGASCAR
 			owns_entire_state_region = STATE_BOENY
 			owns_entire_state_region = STATE_TOAMASINA
-			owns_entire_state_region = STATE_SOUTH_HIGHLANDS
+			owns_entire_state_region = STATE_SOUTH_MADAGASCAR
 			owns_entire_state_region = STATE_MORONDAVA
 			owns_entire_state_region = STATE_SOUTHEAST_MADAGASCAR
 		}

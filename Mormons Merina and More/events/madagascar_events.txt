@@ -1,3 +1,5 @@
+﻿namespace = madagascar
+
 mad_unif.1 = {
 	type = country_event
 	placement = ROOT
@@ -7,6 +9,13 @@ mad_unif.1 = {
 	flavor = mad_unif.1.f
 	
 	duration = 3
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
 	
 	option = {
 		name = mad_unif.1.a
@@ -32,6 +41,13 @@ mad_unif.2 = {
 	flavor = mad_unif.2.f
 	
 	duration = 3
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
 	
 	option = {
 		name = mad_unif.2.a
