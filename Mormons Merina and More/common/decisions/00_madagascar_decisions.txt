@@ -1,0 +1,42 @@
+﻿bara_unification = {
+	is_shown = {
+		country_has_primary_culture = cu:bara
+		NOT = {
+			has_variable = bara_var
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		OR = {
+			owns_entire_state_region = STATE_SOUTH_MADAGASCAR
+			AND = {
+				has_state_in_state_region = STATE_SOUTH_MADAGASCAR
+				has_state_in_state_region = STATE_SOUTHEAST_MADAGASCAR
+				OR = {
+					c:BBE = ROOT
+					c:BBE = { is_country_alive = no }
+				}
+				OR = {
+					c:IMM = ROOT
+					c:IMM = { is_country_alive = no}
+				}
+				OR = {
+					c:IAN = ROOT
+					c:IAN = { is_country_alive = no}
+				}
+			}
+		}
+	}
+
+	when_taken = {
+		change_tag = BAR
+		set_variable = {
+			name = bara_var
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}

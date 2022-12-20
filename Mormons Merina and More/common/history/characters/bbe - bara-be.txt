@@ -1,23 +1,25 @@
 ﻿CHARACTERS = {
 	c:BBE = {
 		create_character = {
-			first_name = "Rakitroka_Ratsileondrafy"
+			first_name = "Retsila"
 			last_name = "None"
 			ruler = yes
-			age = 82 #"old." he dies in the first year irl
-			culture = cu:bara
-			interest_group = ig_landowners
-		}
-		create_character = {
-			first_name = "Tonanahary"
-			last_name = "None"
-			heir = yes
 			age = 45
 			culture = cu:bara
 			interest_group = ig_landowners
 			traits = {
-				cruel
-				arrogant
+				direct
+			}
+		}
+		create_character = {
+			first_name = "Inapaka"
+			last_name = "None"
+			heir = yes
+			age = 2
+			culture = cu:bara
+			interest_group = ig_landowners
+			traits = {
+				brave
 			}
 		}
 	}

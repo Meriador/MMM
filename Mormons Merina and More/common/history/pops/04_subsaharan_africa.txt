@@ -1736,7 +1736,7 @@
 		region_state:MER = {
 			create_pop = {
 				culture = bara
-				size = 70000
+				size = 10000
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1745,7 +1745,7 @@
 			}
 			create_pop = {
 				culture = merina
-				size = 290000
+				size = 350000
 			}
 		}
 		region_state:BBE = {

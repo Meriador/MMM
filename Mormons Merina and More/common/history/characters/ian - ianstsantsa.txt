@@ -1,15 +1,27 @@
 ﻿CHARACTERS = {
 	c:IAN = {
 		create_character = {
-			first_name = "Ratsimamotoa"
+			first_name = "Imasoandro"
 			last_name = "None"
-			heir = yes
-			age = 42
+			ruler = yes
+			age = 52
 			culture = cu:bara
 			interest_group = ig_landowners
 			traits = {
-				romantic
+				
+			}
+		}
+		create_character = {
+			first_name = "Tsimanompo"
+			last_name = "None"
+			heir = yes
+			age = 18
+			culture = cu:bara
+			interest_group = ig_landowners
+			traits = {
+				
 			}
 		}
 	}
 }
+#dunno what traits to give these guys, but I'd like to give them something

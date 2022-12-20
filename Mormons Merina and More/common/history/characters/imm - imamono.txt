@@ -3,12 +3,23 @@
 		create_character = {
 			first_name = "Ratsimivily"
 			last_name = "None"
-			heir = yes
-			age = 42
+			ruler = yes
+			age = 72
 			culture = cu:bara
 			interest_group = ig_landowners
 			traits = {
 				ambitious
+			}
+		}
+		create_character = {
+			first_name = "Rehandry"
+			last_name = "None"
+			heir = yes
+			age = 32
+			culture = cu:bara
+			interest_group = ig_landowners
+			traits = {
+				innovative
 			}
 		}
 	}

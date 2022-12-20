@@ -9,14 +9,4 @@
 			type = vassal
 		}
 	}
-	c:BBE = {
-		create_diplomatic_pact = {
-			country = c:IMM
-			type = personal_union
-		}
-		create_diplomatic_pact = {
-			country = c:IAN
-			type = personal_union
-		}
-	}
 }
