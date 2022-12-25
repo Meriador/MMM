@@ -67,15 +67,53 @@ je_madagascar_nationalism = {
 		exists = c:MAD
 	}
 	
+}
+
+je_madagascar_fanompoana = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
 	complete = {
-		
+		NOR = {
+			has_law = law_type:law_serfdom
+			has_law = law_type:law_peasant_levies
+			has_law = law_type:law_land_based_taxation
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = mad_fanompoana.1 }
+		remove_modifier = fanompoana
 	}
 }
 
-je_madagascar_social_reform = {
-
-}
-
-je_madagascar_international = {
-
+je_madagascar_autarky = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	
+	immediate = {
+		
+	}
+	
+	complete = {
+		gdp >
+		OR = {
+			AND = {
+				NOT = {
+					any_market_goods = {
+						market_goods_imports > 15
+					}
+				}
+				any_market_goods = {
+					market_goods_exports > 50
+				}
+			}
+			NOT = {
+				any_market_goods = {
+					market_goods_imports > 0 
+				}
+				any_market_goods = {
+					market_goods_exports > 0 
+				}
+			}
+		}
+	}
 }

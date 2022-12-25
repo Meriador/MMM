@@ -1514,7 +1514,7 @@
 		region_state:IAN = {
 			create_pop = {
 				culture = bara
-				size = 50000
+				size = 45000
 			}
 		}
 	}
@@ -1741,7 +1741,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = bara
-				size = 10000
+				size = 5000
 			}
 			create_pop = {
 				culture = merina
@@ -1751,13 +1751,13 @@
 		region_state:BBE = {
 			create_pop = {
 				culture = bara
-				size = 60000
+				size = 50000
 			}
 		}
 		region_state:IMM = {
 			create_pop = {
 				culture = bara
-				size = 50000
+				size = 60000
 			}
 		}
 	}
