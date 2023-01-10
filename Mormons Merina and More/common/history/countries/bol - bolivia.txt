@@ -1,37 +1,27 @@
 ﻿COUNTRIES = {
-	c:MEX = {
+	c:BOL = {		
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_conservative = yes
 		
-		add_technology_researched = claim_new_mexico
-		add_technology_researched = claim_arizona
-		add_technology_researched = claim_texas
-		add_technology_researched = claim_utah
-		add_technology_researched = claim_colorado
-		add_technology_researched = claim_california
-		add_technology_researched = claim_nevada
-		
 		activate_law = law_type:law_presidential_republic
-		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_mercantilism
-		activate_law = law_type:law_agrarianism
+		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_colonial_exploitation
-		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_no_police
 		
 		set_tariffs_import_priority = g:artillery
 		set_tariffs_import_priority = g:small_arms		
-		
-		ig:ig_armed_forces = { # Barragan was head of state, on paper, but Antonio Lopez de Santa Anna had his finger in every political pie
-			add_ruling_interest_group = yes
+
+		ig:ig_armed_forces = {
 			add_ideology = ideology_caudillismo
+			add_ruling_interest_group = yes
 		}
 
 		ig:ig_landowners = {
-			add_ruling_interest_group = yes
 			remove_ideology = ideology_paternalistic
 			add_ideology = ideology_caudillismo
 		}

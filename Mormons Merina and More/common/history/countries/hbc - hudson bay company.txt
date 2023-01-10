@@ -27,6 +27,10 @@
 			remove_ideology = ideology_isolationist
 			add_ideology = ideology_isolationist_expansionism
 		}
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
 		add_taxed_goods = g:grain
 	}
 }

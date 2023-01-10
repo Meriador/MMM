@@ -63,6 +63,11 @@
 			add_ideology = ideology_republican_paternalistic
 			add_ruling_interest_group = yes
 		}
+		
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
 
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelicals
