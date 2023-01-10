@@ -368,3 +368,647 @@ TSL_communist = {
 		instance = { scale = { 0.4 0.4 } position = { 0.25 0.25 } }
 	}
 }
+#North American Natives (MMM Additions)
+SHO = { # Shoshone Nation
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_lakota_medicine_wheel.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+CNE = { # Cheyenne Band
+	pattern = "pattern_solid.tga"
+	color1 = "light_blue"
+
+	colored_emblem = {
+		texture = "ce_cheyenne_arrow.dds"
+		color1 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+NPA = { # Northern Paiute
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_feathered_headress.dds"
+		instance = { scale = { 0.70 0.70 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_stripe_bottom_nkp.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+PAI = { # Southern Paiute
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_feathered_headress.dds"
+		instance = { scale = { 0.70 0.70 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_stripe_bottom_nkp.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+CTF = { # The Three Fires Council
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	textured_emblem = {
+		texture = "te_three_fires.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+HDA = { # Haida
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_haida_eagle.dds"
+		instance = { scale = { 0.70 0.70 } position = { 0.5 0.5 } }
+	}
+}
+CSH = { # Coast Salish
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_tlingit_eagle.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+YKM = { # Yakima Nation
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_thunderbird.dds"
+		color1 = "yellow"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+MSC = { # Seminole/Muscogee Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_quadcolor_horizontal.dds"
+		color1 = "black"
+		color2 = "red"
+		color3 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+MME = { # Menominee Nation
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_thunderbird.dds"
+		color1 = "red"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+YVP = { # Yavapai/Arizona Nation
+	pattern = "pattern_solid.tga"
+	color1 = "peach"
+
+	textured_emblem = {
+		texture = "te_yavapai_person_wheel.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+SRO = { # Serrano/Mojave Nation
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle_roundel_triangles.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "blue"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_palm_tree.dds"
+		color1 = "brown"
+		color2 = "green"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}
+}
+CDA = { # Coeur d'Alene/Schitsu’umsh Nation
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_feathered_headress.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_sacred_heart.dds"
+		color1 = "pink"
+		color2 = "green"
+		color3 = "orange"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}
+}
+SYX = { # Syilx Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bend_sinister_fimbriated.dds"
+		color1 = "blue"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_bear_california.dds"
+		color1 = "brown"
+		instance = { scale = { 0.7 0.7 } position = { 0.75 0.75 } }
+	}
+	colored_emblem = {
+		texture = "ce_fish_oudh.dds"
+		color1 = "grey"
+		color2 = "brown"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.25 } }
+	}
+}
+FTH = { # Flathead Nation
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_feathered_arrow.dds"
+		color1 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+WKS = { # Wakashan Nation
+	pattern = "pattern_solid.tga"
+	color1 = "grey"
+	
+	colored_emblem = {
+		texture = "ce_hiawathas_belt.dds"
+		color1 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+UMT = { # Umatilla Nation
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.75 } }
+	}
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "brown"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.25 } }
+	}
+}
+SPK = { # Spokane Nation
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_feathered_arrow.dds"
+		color1 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+KTH = { # Klamath Nation
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.25 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_swan.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 0.7 0.7 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_fish_oudh.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 0.4 0.4 } position = { 0.75 0.50 } }
+	}
+}
+UMP = { # Umpqua Nation
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_eagle_native_american.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+SAB = { # South Athabaskans People/Apachean Dehe Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_feathered_arrow.dds"
+		color1 = "blue"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+MWK = { # Miwok Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_quarterly_per_fess_wavy.dds"
+		color1 = "brown"
+		color2 = "yellow"
+		color3 = "red"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+MDN = { # Maidun Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_feathered_arrow.dds"
+		color1 = "red"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+WTN = { # Wintun Nation
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	textured_emblem = {
+		texture = "te_dehe.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+SHT = { # Shasta Nation
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_feathered_arrow.dds"
+		color1= "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+PTT = { # Pit River Tribal Band
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_fish_circle.dds"
+		color1= "blue"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+YKT = { # Yokut Tribal Band
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_howling_coyote.dds"
+		color1= "black"
+		color2= "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+TSI = { # Tsimshian Nation
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	textured_emblem = {
+		texture = "te_tsi_eagle.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+LLT = { # St'at'imc Nation
+	pattern = "pattern_solid.tga"
+	color1 = "peach"
+	
+	colored_emblem = {
+		texture = "ce_thunderbird.dds"
+		color1 = "brown"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+DKL = { # Dakelh Nation
+	pattern = "pattern_solid.tga"
+	color1 = "light_blue"
+	
+	colored_emblem = {
+		texture = "ce_fish_oudh.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+TLT = { # Tahltan Band
+	pattern = "pattern_solid.tga"
+	color1 = "grey"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "red"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_howling_coyote.dds"
+		color1 = "black"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+SWP = { # Shuswap Nation
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_howling_coyote_no_moon.dds"
+		color1 = "grey"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_latvia.dds"
+		color1 = "black"
+		color2 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+KTN = { # Kutenai Nation
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_crescent_three.dds"
+		color1 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+DNZ = { # Dane-zaa Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle_triangles.dds"
+		color1 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_beaver.dds"
+		color1 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+TTC = { # Tutchone Nation
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle_doted.dds"
+		color1 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_horse_tribal.dds"
+		color1 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+SVY = { # Slavey Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_waves.dds"
+		color1 = "blue"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_sunburst.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.25 } }
+	}
+}
+KYK = { # Koyukon Nation
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "blue"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+TNN = { # Tanana Nation
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_waves_latvia.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05_tilted.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.25 0.25 } position = { 0.75 0.25 } }
+	}
+}
+GWC = { # Gwich'in Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_reindeer.dds"
+		color1 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+CPW = { # Chipewyan Nation
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_thunderbird.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle_doted.dds"
+		color1 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+SWC = { # Homeguard Cree Band
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_thick.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+OJI = { # Oji-Cree Band
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_na_eagle.dds"
+		color1 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+DGB = { # Dogrib Band
+	pattern = "pattern_solid.tga"
+	color1 = "light_blue"
+	
+	colored_emblem = {
+		texture = "ce_waves_latvia.dds"
+		color1 = "white"
+		color2 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05_tilted.dds"
+		color1 = "white"
+		instance = { scale = { 0.25 0.25 } position = { 0.75 0.25 } }
+	}
+}
+ECR = { # Eastern Cree Band
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_per_saltire_counterchanged.dds"
+		color1 = "red"
+		color2 = "black"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+INN = { # Innu Band
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	textured_emblem = {
+		texture = "te_innu.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_tricolor_fimbriated_large.dds"
+		color1 = "grey"
+		color2 = "light_blue"
+		color3 = "grey"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+WSH = { # Washo Nation
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_washo_seal.dds"
+		color1 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+
+#Inuit Tribes
+INV = { # Inuviaaluktun Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_left.dds"
+		color1 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_inuksuk.dds"
+		color1 = "red"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+INK = { # Inuktitut Nation
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "light_blue"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_inuksuk.dds"
+		color1 = "red"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+}
+IPQ = { # Iñupiak Nation
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "purple"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_inuksuk.dds"
+		color1 = "red"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}
+}
