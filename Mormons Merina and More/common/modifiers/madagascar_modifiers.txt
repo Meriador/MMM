@@ -25,3 +25,9 @@ fanompoana = {
 	building_group_bg_manufacturing_tax_mult = 0.1
 	building_group_bg_resource_tax_mult = 0.1
 }
+
+fanompoana_ended = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	
+	interest_group_approval_add = 3
+}

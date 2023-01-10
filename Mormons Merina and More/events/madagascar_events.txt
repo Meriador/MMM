@@ -63,3 +63,39 @@ mad_unif.2 = {
 		}
 	}
 }
+
+mad_fanompoana.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = mad_fanompoana.1.t
+	desc = mad_fanompoana.1.d
+	flavor = mad_fanompoana.1.f
+	
+	duration = 3
+	
+	event_image = {
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = 
+	
+	option = {
+		name = mad_fanompoana.1.a
+		ig:ig_rural_folk = {
+			add_modifier = {
+				name = fanompoana_ended
+				months = long_modifier_time
+			}
+		ig:ig_petite_bourgeoisie = {
+			add_modifier = {
+				name = fanompoana_ended
+				months = long_modifier_time
+			}
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = fanompoana_ended
+				months = long_modifier_time
+			}
+	}

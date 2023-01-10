@@ -67,6 +67,10 @@ je_madagascar_nationalism = {
 		exists = c:MAD
 	}
 	
+	on_complete = {
+		trigger_event = { id = mad_nationalism.1 }
+	}
+	
 }
 
 je_madagascar_fanompoana = {
@@ -93,8 +97,22 @@ je_madagascar_autarky = {
 		
 	}
 	
+	on_monthly_pulse = {
+		effect = {
+			set_variable = {
+				name = imerina_goal
+				value = global_gdp
+			}
+			change_variable = {
+                name = imerina_goal
+                multiply = 0.03
+            }
+		}
+	}
+	
 	complete = {
-		gdp >
+		has_healthy_economy = yes
+		gdp > imerina_goal
 		OR = {
 			AND = {
 				NOT = {
@@ -115,5 +133,34 @@ je_madagascar_autarky = {
 				}
 			}
 		}
+		OR = {
+			mg:clothes = {
+				market_goods_imports = 0
+			}
+			mg:luxury_clothes = {
+				market_goods_imports = 0
+			}
+		}
+		OR = {
+			mg:paper = {
+				market_goods_imports = 0
+			}
+			mg:furniture = {
+				market_goods_imports = 0
+			}
+			mg:glass = {
+				market_goods_imports = 0
+			}
+		}
+		mg:small_arms = {
+			market_goods_imports = 0
+		}
+		mg:ammunition = {
+			market_goods_imports = 0
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = mad_autarky.1 }
 	}
 }

@@ -1,0 +1,36 @@
+﻿ig_trait_principled_society = {
+	icon = "gfx/interface/icons/ig_trait_icons/principled_society.dds"
+
+	# type is for display order
+	type = in_government
+
+	min_approval = loyal
+	
+	modifier = {
+		country_legitimacy_base_add	= 10
+	}
+}
+
+ig_trait_benevolent_empire = {
+	icon = "gfx/interface/icons/ig_trait_icons/benevolent_empire.dds"
+
+	type = happy
+
+	min_approval = happy
+	
+	modifier = {
+		state_radicals_from_sol_change_mult = -0.1
+	}
+}
+
+ig_trait_moral_outrage = {
+	icon = "gfx/interface/icons/ig_trait_icons/moral_outrage.dds"
+
+	type = unhappy
+
+	max_approval = unhappy
+	
+	modifier = {
+		political_movement_radicalism_mult = 0.1
+	}
+}
