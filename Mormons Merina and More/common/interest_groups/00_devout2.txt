@@ -1,5 +1,5 @@
 ﻿ig_devout2 = {
-	color = hsv{ .55 1 1  }
+	color = { 230 201 0 }
 	texture = "gfx/interface/icons/ig_icons/devout2.dds"
 	
 	ideologies = {
@@ -23,11 +23,13 @@
 	on_character_ig_membership = {}
 	
 	pop_potential = {
-		shares_heritage_trait_with_state_religion = scope:country
-	}
+		religion = {
+			shares_trait_with_state_religion = ROOT.owner
+		}
+	} #This does not actually work mechanically, that's handled below. It does make a tooltip show up that accurately describes my intention though, so it's useful for that.
 	
 	pop_weight = {
-		value = 15
+		value = 10
 		
 		add = {
 			desc = "POP_CLERGYMEN"
@@ -37,7 +39,7 @@
 				}
 				value = 100
 			}
-		}	
+		}
 		
 		add = {
 			desc = "POP_SHOPKEEPERS"
@@ -87,7 +89,7 @@
 				}
 				value = 50
 			}
-		}	
+		}
 		
 		add = {
 			desc = "LITERACY_50_60"
@@ -97,9 +99,9 @@
 					literacy_rate >= 0.50
 					literacy_rate < 0.60
 				}
-				add = 4
+				add = 2
 			}
-		}		
+		}
 
 		add = {
 			desc = "LITERACY_60_70"
@@ -109,7 +111,7 @@
 					literacy_rate >= 0.60
 					literacy_rate < 0.70
 				}
-				add = 6
+				add = 4
 			}
 		}
 
@@ -121,9 +123,9 @@
 					literacy_rate >= 0.70
 					literacy_rate < 0.80
 				}
-				add = 8
+				add = 6
 			}
-		}		
+		}
 	
 		add = {
 			desc = "LITERACY_80_90"
@@ -133,9 +135,9 @@
 					literacy_rate >= 0.80
 					literacy_rate < 0.90
 				}
-				add = 10
+				add = 8
 			}
-		}		
+		}
 
 		add = {
 			desc = "LITERACY_90_100"
@@ -144,9 +146,9 @@
 				limit = { 
 					literacy_rate >= 0.90
 				}
-				add = 12
+				add = 10
 			}
-		}	
+		}
 	
 		multiply = {
 			desc = "LEADER_POPULARITY"
@@ -159,16 +161,32 @@
 					min = 0.75
 				}
 			}
-		}	
+		}
+		
+		multiply = {
+			desc = "WRONG_RELIGIOUS_GROUP"
+			value = 1.0
+			
+			if = {
+				limit = {
+					NOT = {
+						religion = {
+							shares_heritage_trait_with_state_religion = ROOT.owner
+						}
+					}
+				}
+				value = 0.0
+			} #this is why pops of the wrong religions don't join
+		}
 	}
 	
 	monarch_weight = {
 		value = 0.25
-	}	
+	}
 	
 	commander_weight = {
 		value = 1.0
-	}	
+	}
 	
 	noble_chance = {
 		value = 0.3

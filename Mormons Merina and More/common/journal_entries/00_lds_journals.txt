@@ -1,0 +1,52 @@
+﻿je_lds_migration = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	on_monthly_pulse = {
+		random_events = {
+			1 = lds_premigration_r.1 #mormon farms attacked
+			1 = lds_premigration_r.2 #forced vigilante disavowals
+			1 = lds_premigration_r.3 #church land dispute
+			1 = lds_premigration_r.4 #nonmormons threatened by expansion
+			1 = lds_premigration_r.5 #rumors of theocracy
+			1 = lds_premigration_r.6 #rumors of infidelity
+			1 = lds_premigration_r.7 #local election violence
+			36 = 0
+		}
+	}
+	
+	complete = {
+		has_global_variable = smith_assassination
+	}
+	
+	on_complete = {
+		trigger_event = { id = lds_migration.1 }
+	}
+	
+	fail = {
+		OR = {
+			cu:mormon = {
+				culture_is_discriminated_in = ROOT
+			}
+			has_law = lawtype:law_state_religion
+		}	
+	}
+	
+	on_fail = {
+		trigger_event = { id = lds_migration.0 }
+	}
+	
+	invalid = {
+		
+	}
+	
+	on_invalid = {
+		trigger_event = { id = lds_migration.2 }
+	}
+	
+	timeout = 3650
+	
+	on_timeout = {
+		trigger_event = { id = lds_migration.3 }
+	}
+	
+}

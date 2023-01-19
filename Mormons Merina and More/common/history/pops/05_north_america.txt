@@ -650,7 +650,7 @@
 			}
 			create_pop = {
 				culture = mormon
-				size = 12500
+				size = 10500
 			}
 		}
 	}
@@ -803,7 +803,7 @@
 			}
 			create_pop = {
 				culture = mormon
-				size = 500
+				size = 2500
 			}
 		}
 	}

@@ -63,7 +63,7 @@ ideology_familialist = {
 	}		
 	
 	lawgroup_rights_of_women = {
-		law_no_womens_rights = neutral
+		law_no_womens_rights = approve
 		law_women_own_property = approve
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = disapprove
@@ -96,4 +96,32 @@ ideology_nativist = {
 	}
 }
 
-
+ideology_buddhist_pacifism = {
+	icon = "gfx/interface/icons/ideology_icons/buddhist_pacifism.dds"
+	
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = strongly_approve
+		law_total_separation = neutral
+	}
+	
+	lawgroup_free_speech = {
+		law_protected_speech = disapprove
+		law_right_of_assembly = approve
+		law_censorship = disaprove
+		law_outlawed_dissent = strongly_disapprove
+	}
+	
+	lawgroup_colonization = {
+		law_no_colonial_affairs = approve
+		law_colonial_resettlement = disapprove
+		law_colonial_exploitation = disapprove 
+	}
+	
+	lawgroup_army_model = {
+		law_national_militia = approve
+		law_professional_army = neutral
+		law_peasant_levies = neutral
+		law_mass_conscription = neutral
+	}
+}

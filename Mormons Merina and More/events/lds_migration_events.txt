@@ -1,0 +1,136 @@
+namespace = lds
+
+lds_migration.0 = { #USA begins formal discrimination
+	type = country_event
+	placement = root
+	title = lds_migration.0.t
+	desc = lds_migration.0.d
+	flavor = lds_migration.0.f
+	
+	
+}
+
+lds_migration.1 = { #Smiths assassinated, mormons prepare to leave
+	type = country_event
+	placement = scope:lds_assassination_scope
+	title = lds_migration.0.t
+	desc = lds_migration.0.d
+	flavor = lds_migration.0.f
+	
+	
+}
+
+lds_migration.2 = { #journal invalidated
+
+}
+
+lds_migration.3 = { #Stability maintained, Missouri and Illinois remain mormon homeland
+	type = country_event
+	placement = root
+	title = lds_migration.0.t
+	desc = lds_migration.0.d
+	flavor = lds_migration.0.f
+
+}
+
+lds_premigration_r.1 = { #mormon farms attacked
+	type = country_event
+	placement = scope:lds_farms_scope
+	title = lds_premigration_r.1.t
+	desc = lds_premigration_r.1.d
+	flavor = lds_premigration_r.1.f
+	
+	
+}
+
+lds_premigration_r.2 = { #forced vigilante disavowals
+	type = country_event
+	placement = scope:lds_vigilante_scope
+	title = lds_premigration_r.2.t
+	desc = lds_premigration_r.2.d
+	flavor = lds_premigration_r.2.f
+	
+	
+}
+
+lds_premigration_r.3 = { #church land dispute
+	type = country_event
+	placement = scope:lds_schism_scope
+	title = lds_premigration_r.3.t
+	desc = lds_premigration_r.3.d
+	flavor = lds_premigration_r.3.f
+	
+	
+}
+
+lds_premigration_r.4 = { #nonmormons threatened by expansion
+	type = country_event
+	placement = scope:lds_expansion_scope
+	title = lds_premigration_r.4.t
+	desc = lds_premigration_r.4.d
+	flavor = lds_premigration_r.4.f
+	
+	
+}
+
+lds_premigration_r.5 = { #rumors of theocracy
+	type = country_event
+	placement = scope:lds_theocracy_scope
+	title = lds_premigration_r.5.t
+	desc = lds_premigration_r.5.d
+	flavor = lds_premigration_r.5.f
+	
+	
+}
+
+lds_premigration_r.6 = { #rumors of infidelity
+	type = country_event
+	placement = scope:lds_polygamy_scope
+	title = lds_premigration_r.6.t
+	desc = lds_premigration_r.6.d
+	flavor = lds_premigration_r.6.f
+	
+	
+}
+
+lds_premigration_r.7 = { #local election violence
+	type = country_event
+	placement = scope:lds_local_election_scope
+	title = lds_premigration_r.7.t
+	desc = lds_premigration_r.7.d
+	flavor = lds_premigration_r.7.f
+	
+	
+}
+
+lds.premigration.1 = { #kirtland safety society
+
+}
+
+lds.premigration.2 = { #missouri mormon war
+
+}
+
+lds.premigration.3 = { # opposition newspaper destroyed
+
+}
+
+lds.premigration.4 = { # smiths arrested
+
+}
+
+lds.premigration.5 = { # election violence
+
+}
+
+lds.premigration.6 = { # governor assassination attempt
+
+}
+
+lds.premigration.7 = { # rockwell trial convicts
+
+}
+
+lds.premigration.8 = { # rockwell released
+
+}
