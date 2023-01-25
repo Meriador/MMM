@@ -30,7 +30,8 @@ lds_migration.3 = { #Stability maintained, Missouri and Illinois remain mormon h
 	title = lds_migration.0.t
 	desc = lds_migration.0.d
 	flavor = lds_migration.0.f
-
+	
+	
 }
 
 lds_premigration_r.1 = { #mormon farms attacked
@@ -40,7 +41,59 @@ lds_premigration_r.1 = { #mormon farms attacked
 	desc = lds_premigration_r.1.d
 	flavor = lds_premigration_r.1.f
 	
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_farm_cooldown
+		}
+	}
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_pop = {
+					religion = rel:lds
+					pop_employment_building_group = bg_agriculture
+				}
+				save_scope_as = lds_farms_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_farm_cooldown
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #unsympathetic
+		name = lds_premigration_r.1.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		scope:lds_farms_scope = {
+			add_radicals = {
+				value = very_large_radicals
+				religion = lds
+			}
+		}
+	}
+	
+	option = { #sympathetic
+		name = lds_premigration_r.1.b
+		change_variable = {
+			name = lds_agitation
+			add = -1
+		}
+		scope:lds_farms_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+	}
 }
 
 lds_premigration_r.2 = { #forced vigilante disavowals
@@ -50,17 +103,111 @@ lds_premigration_r.2 = { #forced vigilante disavowals
 	desc = lds_premigration_r.2.d
 	flavor = lds_premigration_r.2.f
 	
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_vigilante_cooldown
+		}
+	}
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_state = {
+					is_homeland = cu:mormon
+					radical_fraction = {
+						value > .2
+						religion = lds
+					}
+				}
+				save_scope_as = lds_vigilante_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_vigilante_cooldown
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #unsympathetic
+		name = lds_premigration_r.2.a
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+		scope:lds_farms_scope = {
+			add_radicals = {
+				value = .01
+			}
+		}
+	}
+	
+	option = { #sympathetic
+		name = lds_premigration_r.2.b
+		change_variable = {
+			name = lds_agitation
+			add = -1
+		}
+		scope:lds_farms_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+	}
 }
 
-lds_premigration_r.3 = { #church land dispute
+lds_premigration_r.3 = { #church land dispute/salt sermon
 	type = country_event
 	placement = scope:lds_schism_scope
 	title = lds_premigration_r.3.t
 	desc = lds_premigration_r.3.d
 	flavor = lds_premigration_r.3.f
 	
+	trigger = {
+		NOT = {
+			has_variable = danites_formed 
+			has_variable = lds_cooldown	
+		}
+	}
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_state = {
+					is_homeland = cu:mormon
+					radical_fraction = {
+						value > .2
+						religion = lds
+					}
+				}
+				save_scope_as = lds_schism_scope
+			}
+		}
+		set_variable = {
+			name = danites_formed
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+	}
+	
+	option = { #only option, will not be well recieved
+		name = lds_premigration_r.3.a
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+		scope:lds_schism_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+	}
 }
 
 lds_premigration_r.4 = { #nonmormons threatened by expansion
@@ -70,7 +217,60 @@ lds_premigration_r.4 = { #nonmormons threatened by expansion
 	desc = lds_premigration_r.4.d
 	flavor = lds_premigration_r.4.f
 	
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_expansion_cooldown
+		}
+	}
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_state = {
+					is_homeland = cu:mormon
+				}
+				save_scope_as = lds_expansion_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_expansion_cooldown
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #restriction on settlement
+		name = lds_premigration_r.4.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		scope:lds_expansion_scope = {
+			add_radicals = {
+				value = small_radicals
+				religion = lds
+			}
+			add_radicals = {
+				value = -.1
+				religion = protestant
+			}
+			add_radicals = {
+				value = -.1
+				religion = catholic
+			}
+		}
+	}
+	option = { #taking advantage of new block
+		name = lds_premigration_r.4.b
+		add_modifier = {
+			name = influential_state
+			months = normal_modifier_time
+		}
+	}
 }
 
 lds_premigration_r.5 = { #rumors of theocracy
@@ -80,7 +280,38 @@ lds_premigration_r.5 = { #rumors of theocracy
 	desc = lds_premigration_r.5.d
 	flavor = lds_premigration_r.5.f
 	
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_theocracy_cooldown
+		}
+	}
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_pop = {
+					religion = rel:lds
+				}
+				save_scope_as = lds_theocracy_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_theocracy_cooldown
+			months = normal_modifier_time
+		}
+	}
+	option = { 
+		name = lds_premigration_r.5.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+	}
 }
 
 lds_premigration_r.6 = { #rumors of infidelity
@@ -90,7 +321,39 @@ lds_premigration_r.6 = { #rumors of infidelity
 	desc = lds_premigration_r.6.d
 	flavor = lds_premigration_r.6.f
 	
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_infidelity_cooldown
+		}
+	}
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_pop = {
+					religion = rel:lds
+				}
+				save_scope_as = lds_polygamy_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_infidelity_cooldown
+			months = normal_modifier_time
+		}
+	}
+	
+	option = { 
+		name = lds_premigration_r.6.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+	}
 }
 
 lds_premigration_r.7 = { #local election violence
@@ -100,37 +363,144 @@ lds_premigration_r.7 = { #local election violence
 	desc = lds_premigration_r.7.d
 	flavor = lds_premigration_r.7.f
 	
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_election_cooldown
+		}
+	}
+	any_scope_state = {
+					
+				}
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_state = {
+					is_homeland = cu:mormon
+					radical_fraction = {
+						value > .1
+					}
+				}
+				save_scope_as = lds_local_election_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_election_cooldown
+			months = short_modifier_time
+		}
+	}
 	
+	option = { #endorsement of vote suppression
+		name = lds_premigration_r.7.a
+		change_variable = {
+			name = lds_agitation
+			add = 3
+		}
+		scope:lds_local_election_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+			add_radicals = {
+				value = very_large_radicals
+				religion = lds
+			}
+			add_loyalists = {
+				value = .03
+			}
+		}
+	}
+	
+	option = { #leaving well enough alone
+		name = lds_premigration_r.7.b
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+	}
 }
 
 lds.premigration.1 = { #kirtland safety society
-
+	type = country_event
+	placement = scope:kirtland_scope
+	title = lds.premigration.1.t
+	desc = lds.premigration.1.d
+	flavor = lds.premigration.1.f
+	
+	trigger = {
+	
+	}
 }
 
 lds.premigration.2 = { #missouri mormon war
-
+	type = country_event
+	placement = scope:far_west_scope
+	title = lds.premigration.2.t
+	desc = lds.premigration.2.d
+	flavor = lds.premigration.2.f
+	
+	
 }
 
 lds.premigration.3 = { # opposition newspaper destroyed
-
+	type = country_event
+	placement = scope:lds_newspaper_scope
+	title = lds.premigration.3.t
+	desc = lds.premigration.3.d
+	flavor = lds.premigration.3.f
+	
+	
 }
 
 lds.premigration.4 = { # smiths arrested
-
+	type = country_event
+	placement = scope:lds_arrest_scope
+	title = lds.premigration.4.t
+	desc = lds.premigration.4.d
+	flavor = lds.premigration.4.f
+	
+	
 }
 
 lds.premigration.5 = { # election violence
-
+	type = country_event
+	placement = scope:lds_election_scope
+	title = lds.premigration.5.t
+	desc = lds.premigration.5.d
+	flavor = lds.premigration.5.f
+	
+	
 }
 
 lds.premigration.6 = { # governor assassination attempt
-
+	type = country_event
+	placement = scope:boggs_scope
+	title = lds.premigration.6.t
+	desc = lds.premigration.6.d
+	flavor = lds.premigration.6.f
+	
+	
 }
 
 lds.premigration.7 = { # rockwell trial convicts
-
+	type = country_event
+	placement = scope:boggs_scope
+	title = lds.premigration.7.t
+	desc = lds.premigration.7.d
+	flavor = lds.premigration.7.f
+	
+	
 }
 
 lds.premigration.8 = { # rockwell released
-
+	type = country_event
+	placement = scope:boggs_scope
+	title = lds.premigration.7.t
+	desc = lds.premigration.7.d
+	flavor = lds.premigration.7.f
+	
+	
 }
