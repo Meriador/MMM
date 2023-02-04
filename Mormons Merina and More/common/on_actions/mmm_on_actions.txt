@@ -1,0 +1,162 @@
+﻿# For on_actions launched by the code itself.
+
+# Root = Country
+on_monthly_pulse_country = {
+	events = {
+		lds_csa_revolt
+	}
+	effect = {
+	}
+	random_events = {
+	}
+}
+
+on_yearly_pulse_country = {
+	random_events = {
+	}
+}
+
+on_yearly_pulse_country = {
+	random_events = {
+	}
+}
+on_half_yearly_pulse_country = {
+	random_events = {
+	}
+}
+on_five_year_pulse_country = {
+	events = {
+	}
+}
+
+
+on_decade_pulse_country = {
+	random_events = {
+	}
+}
+
+# Root = Character
+on_monthly_pulse_character = {}
+on_yearly_pulse_character = {}
+on_half_yearly_pulse_character = {}
+on_five_year_pulse_character = {}
+on_decade_pulse_character = {}
+
+# Root = State
+on_monthly_pulse_state = {}
+on_half_yearly_pulse_state = {}
+on_yearly_pulse_state = {
+	random_events = {}
+	on_actions = {}
+}
+on_five_year_pulse_state = {}
+on_decade_pulse_state = {}
+
+
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_independent = {
+	effect = {
+		scope:target = {
+			if = {
+				limit = {
+					country_has_state_religion = rel:theravada
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:vajrayana
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:mahayana
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+		}
+	}
+}
+
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_own_subject = {
+	effect = {
+		scope:target = {
+			if = {
+				limit = {
+					country_has_state_religion = rel:theravada
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:vajrayana
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:mahayana
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+		}
+	}
+}
+
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_overlord_subject = {
+	effect = {
+		scope:target = {
+			if = {
+				limit = {
+					country_has_state_religion = rel:theravada
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:vajrayana
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:mahayana
+				}
+				ig:ig_devout2 = {
+					remove_ideology = ideology_evangelist
+					add_ideology = ideology_buddhist_pacifism
+				}
+			}
+		}
+	}
+}

@@ -1,16 +1,10 @@
 ﻿je_lds_migration = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
-	on_monthly_pulse = {
-		random_events = {
-			1 = lds_premigration_r.1 #mormon farms attacked
-			1 = lds_premigration_r.2 #forced vigilante disavowals
-			4 = lds_premigration_r.3 #church land dispute
-			2 = lds_premigration_r.4 #nonmormons threatened by expansion
-			1 = lds_premigration_r.5 #rumors of theocracy
-			1 = lds_premigration_r.6 #rumors of infidelity
-			2 = lds_premigration_r.7 #local election violence
-			36 = 0
+	immediate = {
+		add_to_global_variable_list = { 
+			name = deseret_potential
+			target = { STATE_CALIFORNIA STATE_OREGON STATE_WASHINGTON STATE_BRITISH_COLUMBIA STATE_NEVADA STATE_IDAHO STATE_MONTANA STATE_ALBERTA STATE_SASKATCHEWAN STATE_ARIZONA STATE_UTAH STATE_NEW_MEXICO STATE_COLORADO STATE_WYOMING STATE_WYOMING STATE_SOUTH_DAKOTA STATE_NORTH_DAKOTA STATE_KANSAS STATE_NEBRASKA }
 		}
 	}
 	
@@ -38,7 +32,16 @@
 	}
 	
 	invalid = {
-		
+		OR = {
+			AND = {
+				has_variable = lds_far_west
+				NOT = { any_scope_state = { has_variable = far_west } }
+			}
+			AND = {
+				has_variable = lds_nauvoo
+				NOT = { any_scope_state = { has_variable = nauvoo_site } }
+			}
+		}
 	}
 	
 	on_invalid = {
@@ -56,11 +59,40 @@
 	}
 	
 	goal_add_value = {
-		add = 16
+		add >= 16
 	}
 	
 	progressbar = yes
 	
 	weight = 5000
 	should_be_pinned_by_default = yes
+	
+	on_monthly_pulse = {
+		random_events = {
+			1 = lds_premigration_r.1 #mormon farms attacked
+			1 = lds_premigration_r.2 #forced vigilante disavowals
+			6 = lds_premigration_r.3 #church land dispute
+			2 = lds_premigration_r.4 #nonmormons threatened by expansion
+			1 = lds_premigration_r.5 #rumors of theocracy
+			1 = lds_premigration_r.6 #rumors of infidelity
+			2 = lds_premigration_r.7 #local election violence
+			34 = 0
+		}
+	}
+	
+	on_yearly_pulse = {
+		random_events = {
+			1 = lds_premigration.6 #boggs assassination
+			3 = 0
+		}
+	}
+	
+	on_weekly_pulse = {
+		lds_premigration.1 #kirtland safety society
+		lds.contingency.1 #if ohio stops being america first
+		lds_premigration.2 #missouri mormon war
+		lds_contingency.2
+		lds_premigration.3 # opposition newspaper destroyed
+		lds_premigration.5 # election campaign
+	}
 }

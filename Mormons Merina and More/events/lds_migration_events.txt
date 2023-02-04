@@ -1,4 +1,4 @@
-namespace = lds
+﻿namespace = lds
 
 lds_migration.0 = { #USA begins formal discrimination
 	type = country_event
@@ -7,31 +7,993 @@ lds_migration.0 = { #USA begins formal discrimination
 	desc = lds_migration.0.d
 	flavor = lds_migration.0.f
 	
+	immediate = {
+		if = {
+			limit = {
+				has_variable = lds_nauvoo
+			}
+			random_scope_state = {
+				limit = {
+					has_variable = nauvoo_site
+				}
+				remove_homeland = mormon
+			}
+		}
+		ifelse = {
+			limit = {
+				has_variable = lds_kirtland
+			}
+			s:STATE_OHIO = {
+				remove_homeland = mormon
+			}
+		}
+		s:STATE_MISSOURI = {
+			remove_homeland = mormon
+		}
+	}
 	
+	option = {
+		name = lds_migration.0.a
+		hidden_effect = {
+			trigger_event = { 
+				id = lds_migration.6 days = 120
+			}
+		}
+	}
 }
 
 lds_migration.1 = { #Smiths assassinated, mormons prepare to leave
 	type = country_event
 	placement = scope:lds_assassination_scope
-	title = lds_migration.0.t
-	desc = lds_migration.0.d
-	flavor = lds_migration.0.f
+	title = lds_migration.1.t
+	desc = lds_migration.1.d
+	flavor = lds_migration.1.f
 	
+	immediate = {
+		if = {
+			limit = {
+				has_variable = lds_nauvoo
+			}
+			random_scope_state = {
+				limit = {
+					has_variable = nauvoo_site
+				}
+				save_scope_as = lds_assassination_scope
+				remove_homeland = mormon
+			}
+		}
+		ifelse = {
+			limit = {
+				has_variable = lds_kirtland
+			}
+			s:STATE_OHIO = {
+				save_scope_as = lds_assassination_scope
+				remove_homeland = mormon
+			}
+		}
+		ifelse = {
+			s:STATE_MISSOURI = {
+				save_scope_as = lds_assassination_scope
+			}
+		}
+		s:STATE_MISSOURI = {
+			remove_homeland = mormon
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = is_joseph_smith
+			}
+			kill_character = yes
+		}
+	}
 	
+	option = {
+		name = lds_migration.1.a
+		
+		hidden_effect = {
+			trigger_event = { 
+				id = lds_migration.4 days = 120
+			}
+		}
+	}
 }
 
-lds_migration.2 = { #journal invalidated
-
-}
-
-lds_migration.3 = { #Stability maintained, Missouri and Illinois remain mormon homeland
+lds_migration.2 = { #journal invalidated, most likely by Smith being in the wrong country. 
 	type = country_event
 	placement = root
-	title = lds_migration.0.t
-	desc = lds_migration.0.d
-	flavor = lds_migration.0.f
+	title = lds_migration.2.t
+	desc = lds_migration.2.d
+	flavor = lds_migration.2.f
 	
+	option = {
+		name = lds_migration.2.a
+		hidden_effect = {
+			random_scope_character = {
+				limit = {
+					has_variable = is_joseph_smith
+				}
+				place_character_in_void = 6
+			}
+		}
+	}
+}
+
+lds_csa_revolt = {
+	type = country_event
+	placement = scope:lds_rebel_state
+	title = lds_csa_revolt.t
+	desc = lds_csa_revolt.d
+	flavor = lds_csa_revolt.f
 	
+	trigger = {
+		exists = c:CSA
+		this = c:CSA
+		c:CSA = {
+			any_scope_state = {
+				OR = {
+					has_variable = far_west
+					has_variable = nauvoo_site
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				OR = {
+					has_variable = far_west
+					has_variable = nauvoo_site
+				}
+			}
+			save_scope_as:lds_rebel_state
+		}
+		every_character_in_void = {
+			limit = {
+				has_variable = is_joseph_smith
+			}
+			save_scope_as:joe_smith
+		}
+		if = {
+			s:STATE_MISSOURI = {
+				has_variable = far_west
+			}
+			create_country = {
+				tag = ZIO
+				origin = c:USA
+				province = { } #WIP, find appropriate provinces
+				on_created = {
+					#WIP, provide appropriate modifications to IGs and add/move characters here
+					if = {
+						limit = {
+							exists = scope:joe_smith
+						}
+						scope:joe_smith = {
+							transfer_character = c:ZIO
+							free_character_from_void = yes
+							add_character_role = ruler
+							remove_trait = arrogant
+							add_trait = charismatic
+						}
+					}
+					if_else = {
+						limit = {}
+						create_character = {
+							first_name = Joseph
+							last_name = Smith
+							culture = mormon
+							religion = lds
+							ruler = yes
+							interest_group = ig_devout
+							birth_date = 1805.12.23
+							dna = ecchi_dna_joseph_smith
+							ideology = ideology_reformer
+							traits = {
+								imperious
+								charismatic
+								basic_political_operator
+							}
+							on_created = {
+								set_variable = {
+									name = is_joseph_smith
+								}				
+							}
+						}
+					}
+				}
+			}
+		}
+		if_else = {
+			s:STATE_ILLINOIS = {
+				has_variable = nauvoo_site
+			}
+			create_country = {
+				tag = ZIO
+				origin = c:USA
+				province = { } #WIP, find appropriate provinces
+				on_created = {
+					#WIP, provide appropriate modifications to IGs and add/move characters here
+					if = {
+						limit = {
+							exists = scope:joe_smith
+						}
+						scope:joe_smith = {
+							transfer_character = c:ZIO
+							free_character_from_void = yes
+							add_character_role = ruler
+							remove_trait = arrogant
+							add_trait = charismatic
+						}
+					}
+					if_else = {
+						limit = {}
+						create_character = {
+							first_name = Joseph
+							last_name = Smith
+							culture = mormon
+							religion = lds
+							ruler = yes
+							interest_group = ig_devout
+							birth_date = 1805.12.23
+							dna = ecchi_dna_joseph_smith
+							ideology = ideology_reformer
+							traits = {
+								imperious
+								charismatic
+								basic_political_operator
+							}
+							on_created = {
+								set_variable = {
+									name = is_joseph_smith
+								}				
+							}
+						}
+					}
+				}
+			}
+		}
+		if_else = {
+			s:STATE_IOWA = {
+				has_variable = nauvoo_site
+			}
+			create_country = {
+				tag = ZIO
+				origin = c:USA
+				province = { } #WIP, find appropriate provinces
+				on_created = {
+					#WIP, provide appropriate modifications to IGs and add/move characters here
+					if = {
+						limit = {
+							exists = scope:joe_smith
+						}
+						scope:joe_smith = {
+							transfer_character = c:ZIO
+							free_character_from_void = yes
+							add_character_role = ruler
+							remove_trait = arrogant
+							add_trait = charismatic
+						}
+					}
+					if_else = {
+						limit = {}
+						create_character = {
+							first_name = Joseph
+							last_name = Smith
+							culture = mormon
+							religion = lds
+							ruler = yes
+							interest_group = ig_devout
+							birth_date = 1805.12.23
+							dna = ecchi_dna_joseph_smith
+							ideology = ideology_reformer
+							traits = {
+								imperious
+								charismatic
+								basic_political_operator
+							}
+							on_created = {
+								set_variable = {
+									name = is_joseph_smith
+								}				
+							}
+						}
+					}
+				}
+			}
+		}
+		if_else = {
+			s:STATE_KANSAS = {
+				has_variable = nauvoo_site
+			}
+			create_country = {
+				tag = ZIO
+				origin = c:USA
+				province = { } #WIP, find appropriate provinces
+				on_created = {
+					#WIP, provide appropriate modifications to IGs and add/move characters here
+					if = {
+						limit = {
+							exists = scope:joe_smith
+						}
+						scope:joe_smith = {
+							transfer_character = c:ZIO
+							free_character_from_void = yes
+							add_character_role = ruler
+							remove_trait = arrogant
+							add_trait = charismatic
+						}
+					}
+					if_else = {
+						limit = {}
+						create_character = {
+							first_name = Joseph
+							last_name = Smith
+							culture = mormon
+							religion = lds
+							ruler = yes
+							interest_group = ig_devout
+							birth_date = 1805.12.23
+							dna = ecchi_dna_joseph_smith
+							ideology = ideology_reformer
+							traits = {
+								imperious
+								charismatic
+								basic_political_operator
+							}
+							on_created = {
+								set_variable = {
+									name = is_joseph_smith
+								}				
+							}
+						}
+					}
+				}
+			}
+		}
+		if_else = {
+			s:STATE_NEBRASKA = {
+				has_variable = nauvoo_site
+			}
+			create_country = {
+				tag = ZIO
+				origin = c:USA
+				province = { } #WIP, find appropriate provinces
+				on_created = {
+					#WIP, provide appropriate modifications to IGs and add/move characters here
+					if = {
+						limit = {
+							exists = scope:joe_smith
+						}
+						scope:joe_smith = {
+							transfer_character = c:ZIO
+							free_character_from_void = yes
+							add_character_role = ruler
+							remove_trait = arrogant
+							add_trait = charismatic
+						}
+					}
+					if_else = {
+						limit = {}
+						create_character = {
+							first_name = Joseph
+							last_name = Smith
+							culture = mormon
+							religion = lds
+							ruler = yes
+							interest_group = ig_devout
+							birth_date = 1805.12.23
+							dna = ecchi_dna_joseph_smith
+							ideology = ideology_reformer
+							traits = {
+								imperious
+								charismatic
+								basic_political_operator
+							}
+							on_created = {
+								set_variable = {
+									name = is_joseph_smith
+								}				
+							}
+						}
+					}
+				}
+			}
+		}
+		create_diplomatic_play = {
+			name = zion_secession
+			initiator = c:ZIO
+			type = secession
+		}
+	}
+}
+
+lds_csa_revolt_usa = {
+	type = country_event
+	placement = root
+	title = lds_csa_revolt_usa.t
+	desc = lds_csa_revolt_usa.d
+	flavor = lds_csa_revolt_usa.f
+	
+	trigger = {
+		exists = c:CSA
+		this = c:USA
+		NOT = { has_global_variable = lds_csa }
+		c:CSA = {
+			any_scope_state = {
+				OR = {
+					has_variable = far_west
+					has_variable = nauvoo_site
+				}
+			}
+		}
+	}
+	
+	option = { #help them
+		name = lds_csa_revolt_usa.a
+		create_diplomatic_pact = {
+			country = c:ZIO
+			type = puppet
+		}
+		set_global_variable = lds_csa
+	}
+	
+	option = { #leave them to the wolves
+		name = lds_csa_revolt_usa.b
+		set_global_variable = lds_csa
+	}
+	
+	option = { #kill them
+		name = lds_csa_revolt.c
+		create_diplomatic_play = {
+			name = zion_secession
+			initiator = c:ZIO
+			type = secession
+		}
+		set_global_variable = lds_csa
+	}
+}
+
+lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon homeland
+	type = country_event
+	placement = root
+	title = lds_migration.3.t
+	desc = lds_migration.3.d
+	flavor = lds_migration.3.f
+	
+	option = {
+		if = {
+			limit = {
+				cu:mormon = {
+					NOT = { has_homeland = s:STATE_MISSOURI }
+				}
+			}
+			s:STATE_MISSOURI = {
+				add_homeland = mormon
+			}
+		}
+	}
+}
+
+lds_migration.4 = { #Founding of Deseret, Young Edition
+	type = country_event
+	placement = deseret_capital
+	title = lds_migration.4.t
+	desc = lds_migration.4.d
+	flavor = lds_migration.4.f
+	
+	immediate = {
+		random_in_global_list = {
+			name = deseret_potential
+			weight = {
+				value = 0
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							owner = {
+								is_country_type = decentralized
+							}
+						}
+					}
+					add = 25
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							any_scope_state = {
+								owner = {
+									OR = {
+										is_country_type = colonial
+										is_country_type = recognized
+									}
+								}
+							}
+						}
+					}
+					add = 25
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							is_incorporated = no
+						}
+					}
+					add = 10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							is_incorporated = yes
+						}
+					}
+					add = -50
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							OR = {
+								owner = c:USA
+								owner = c:CSA
+								owner = c:FSA
+							}
+						}
+					}
+					add = -20
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 1
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 2
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 3
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 4
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 5
+						}
+					}
+					add = -10
+				}
+			}
+			save_scope_as:deseret_capital
+		}
+		scope:deseret_capital = {
+			if = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = colonial
+								is_country_type = recognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+			ifelse = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = unrecognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+			ifelse = {
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+		}
+		create_country = {
+			tag = DES
+			origin = c:USA
+			state = { deseret_state }
+			on_created = {
+				#WIP, provide appropriate modifications to IGs and add/move characters here
+			}
+		}
+	}
+	
+	option = {
+		name = lds_migration.4.a
+	}
+	
+	option = {
+		name = lds_migration.4.b
+		play_as = c:DES
+	}
+}
+
+lds_migration.5 = { #Founding of Deseret, Hyrum Edition
+	type = country_event
+	placement = scope:deseret_capital
+	title = lds_migration.5.t
+	desc = lds_migration.5.d
+	flavor = lds_migration.5.f
+	
+	immediate = {
+		random_in_global_list = {
+			name = deseret_potential
+			weight = {
+				value = 0
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							owner = {
+								is_country_type = decentralized
+							}
+						}
+					}
+					add = 25
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							any_scope_state = {
+								owner = {
+									OR = {
+										is_country_type = colonial
+										is_country_type = recognized
+									}
+								}
+							}
+						}
+					}
+					add = 25
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							is_incorporated = no
+						}
+					}
+					add = 10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							is_incorporated = yes
+						}
+					}
+					add = -50
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							OR = {
+								owner = c:USA
+								owner = c:CSA
+								owner = c:FSA
+							}
+						}
+					}
+					add = -20
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 1
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 2
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 3
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 4
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 5
+						}
+					}
+					add = -10
+				}
+			}
+			save_scope_as:deseret_capital
+		}
+		scope:deseret_capital = {
+			if = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = colonial
+								is_country_type = recognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+			ifelse = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = unrecognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+			ifelse = {
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+		}
+		create_country = {
+			tag = DES
+			origin = c:USA
+			state = { deseret_state }
+			on_created = {
+				#WIP, provide appropriate modifications to IGs and add/move characters here
+			}
+		}
+	}
+	
+	option = {
+		name = lds_migration.5.a
+	}
+	
+	option = {
+		name = lds_migration.5.b
+		play_as = c:DES
+	}
+}
+
+lds_migration.6 = { #Founding of Deseret, Joseph Edition
+	type = country_event
+	placement = scope:deseret_capital
+	title = lds_migration.6.t
+	desc = lds_migration.6.d
+	flavor = lds_migration.6.f
+	
+	immediate = {
+		random_in_global_list = {
+			name = deseret_potential
+			weight = {
+				value = 0
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							owner = {
+								is_country_type = decentralized
+							}
+						}
+					}
+					add = 25
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							any_scope_state = {
+								owner = {
+									OR = {
+										is_country_type = colonial
+										is_country_type = recognized
+									}
+								}
+							}
+						}
+					}
+					add = 25
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							is_incorporated = no
+						}
+					}
+					add = 10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							is_incorporated = yes
+						}
+					}
+					add = -50
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							OR = {
+								owner = c:USA
+								owner = c:CSA
+								owner = c:FSA
+							}
+						}
+					}
+					add = -20
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 1
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 2
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 3
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 4
+						}
+					}
+					add = -10
+				}
+				
+				if = {
+					limit = {
+						any_scope_state = {
+							total_urbanization >= 5
+						}
+					}
+					add = -10
+				}
+			}
+			save_scope_as:deseret_capital
+		}
+		scope:deseret_capital = {
+			if = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = colonial
+								is_country_type = recognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+			ifelse = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = unrecognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+			ifelse = {
+				random_scope_state = {
+					save_scope_as:deseret_state
+				}
+			}
+		}
+		create_country = {
+			tag = DES
+			origin = c:USA
+			state = { deseret_state }
+			on_created = {
+				#WIP, provide appropriate modifications to IGs and add/move characters here
+			}
+		}
+	}
+	
+	option = {
+		name = lds_migration.6.a
+	}
+	
+	option = {
+		name = lds_migration.6.b
+		play_as = c:DES
+	}
 }
 
 lds_premigration_r.1 = { #mormon farms attacked
@@ -305,6 +1267,7 @@ lds_premigration_r.5 = { #rumors of theocracy
 			months = normal_modifier_time
 		}
 	}
+	
 	option = { 
 		name = lds_premigration_r.5.a
 		change_variable = {
@@ -364,14 +1327,12 @@ lds_premigration_r.7 = { #local election violence
 	flavor = lds_premigration_r.7.f
 	
 	trigger = {
-		NOT = { 
+		NOT = {
 			has_variable = lds_cooldown
 			has_variable = lds_election_cooldown
 		}
 	}
-	any_scope_state = {
-					
-				}
+	
 	immediate = {
 		random_scope_state = {
 			limit = {
@@ -423,84 +1384,585 @@ lds_premigration_r.7 = { #local election violence
 	}
 }
 
-lds.premigration.1 = { #kirtland safety society
+lds_premigration.1 = { #kirtland safety society
 	type = country_event
 	placement = scope:kirtland_scope
-	title = lds.premigration.1.t
-	desc = lds.premigration.1.d
-	flavor = lds.premigration.1.f
+	title = lds_premigration.1.t
+	desc = lds_premigration.1.d
+	flavor = lds_premigration.1.f
 	
 	trigger = {
+		has_variable = lds_kirtland
+		year > 1837
+	}
 	
+	immediate = {
+		s:STATE_OHIO = {
+			random_scope_state = {
+				save_scope_as = kirtland_scope
+				every_scope_pop	= {
+					limit = {
+						religion = lds
+						culture = mormon
+					}
+					change_pop_culture = { target = cu:yankee value = .1 }
+				}
+			}
+		}
+		s:STATE_MISSOURI = {
+			random_scope_state = {
+				set_variable = far_west
+			}
+		set_variable = lds_far_west
+		remove_variable = lds_kirtland
+		set_variable = {
+			name = lds_major_cooldown
+			months = 5
+		}
+	}
+	
+	option = {
+		name = lds_premigration.1.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		scope:kirtland_scope = {
+			every_scope_pop = {
+				limit = {
+					religion = lds
+					culture = mormon
+				}
+				move_pop = s:STATE_MISSOURI.region_state:USA
+			}
+			remove_homeland = mormon
+		}
 	}
 }
 
-lds.premigration.2 = { #missouri mormon war
+lds.contingency.1 = { #if ohio stops being america first
+	type = country_event
+	placement = scope:kirtland_scope
+	title = lds_premigration.1.t
+	desc = lds_premigration.1.d
+	flavor = lds_premigration.1.f
+	
+	trigger = {
+		has_variable = lds_kirtland
+		NOT = {
+			C:USA = {
+				has_state_in_state_region = s:STATE_OHIO
+			}
+		}
+	}
+	immediate = {
+		s:STATE_OHIO.region_state:USA = {
+			save_scope_as = kirtland_scope
+		}
+		set_variable = lds_far_west
+		remove_variable = lds_kirtland
+	}
+	option = {
+		name = lds.contingency.1.a
+	}
+}
+
+lds_premigration.2 = { #missouri mormon war
 	type = country_event
 	placement = scope:far_west_scope
-	title = lds.premigration.2.t
-	desc = lds.premigration.2.d
-	flavor = lds.premigration.2.f
+	title = lds_premigration.2.t
+	desc = lds_premigration.2.d
+	flavor = lds_premigration.2.f
 	
+	trigger = {
+		has_variable = lds_far_west
+		NOT = { has_variable = lds_major_cooldown }
+		OR = {
+			S:STATE_MISSOURI.region_state:USA = {
+				turmoil > .25
+			}
+			lds_agitation > 6
+		}
+		c:USA = {
+			has_state_in_state_region = {
+				OR = {
+					STATE_KANSAS
+					STATE_NEBRASKA
+					STATE_IOWA
+					STATE_ILLINOIS
+				}
+			}
+		}
+	}
 	
+	immediate = {
+		s:STATE_MISSOURI = {
+			save_scope_as = far_west_scope
+			remove_variable = far_west
+		}
+		random_scope_state = {
+			limit = {
+				OR = { 
+					s:STATE_KANSAS.region_state:USA
+					s:STATE_NEBRASKA.region_state:USA
+					s:STATE_IOWA.region_state:USA
+					s:STATE_ILLINOIS.region_state:USA
+				}
+			}
+			weight = {
+				value = 0
+				
+				if = {
+					limit = {
+						is_incorporated = yes
+					}
+					add = 1000
+				}
+				
+				if = {
+					limit = {
+						is_slave_state = yes
+					}
+					add = -1000
+				}
+				
+			}
+			save_scope_as = nauvoo_scope
+		}
+		set_variable = lds_nauvoo
+		remove_variable = lds_far_west
+	}
+	
+	option = {
+		name = lds_premigration.2.a
+		
+		scope:far_west_scope = {
+			every_scope_pop = {
+				limit = {
+					religion = lds
+					culture = mormon
+				}
+				move_pop = scope:nauvoo_scope
+			}
+		}
+		scope:nauvoo_scope = {
+			add_modifier = {
+				name = recent_refugees
+				months = 13
+			}
+			add_homeland = mormon
+			add_variable = nauvoo_site
+		}
+	}
 }
 
-lds.premigration.3 = { # opposition newspaper destroyed
+lds_contingency.2 = { #missouri mormon war, if other countries are specifically trying to ruin my nice event above
+	type = country_event
+	placement = scope:far_west_scope
+	title = lds_premigration.2.t
+	desc = lds_premigration.2.d
+	flavor = lds_premigration.2.f
+	
+	trigger = {
+		has_variable = lds_far_west
+		NOT = { has_variable = lds_major_cooldown }
+		OR = {
+			S:STATE_MISSOURI.region_state:USA = {
+				turmoil > .25
+			}
+			lds_agitation > 3
+		}
+		c:USA = {
+			NOT = {
+				has_state_in_state_region = {
+					OR = {
+						STATE_KANSAS
+						STATE_NEBRASKA
+						STATE_IOWA
+						STATE_ILLINOIS
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		s:STATE_MISSOURI.region_state:USA = {
+			save_scope_as = far_west_scope
+			remove_variable = far_west
+			any_neighboring_state = {
+				owner = {
+					NOT = {
+						c:USA
+					}
+				}
+				save_scope_as = nauvoo_scope
+			}
+		}
+		set_variable = lds_nauvoo
+		remove_variable = lds_far_west
+	}
+	
+	option = {
+		name = lds_contingency.2.a
+		
+		scope:far_west_scope = {
+			every_scope_pop = {
+				limit = {
+					religion = lds
+					culture = mormon
+				}
+				move_pop = scope:nauvoo_scope
+			}
+		}
+		scope:nauvoo_scope = {
+			add_modifier = {
+				name = recent_refugees
+				months = 13
+			}
+			add_homeland = mormon
+			add_variable = nauvoo_site
+		}
+	}
+}
+
+lds_premigration.3 = { # opposition newspaper destroyed
 	type = country_event
 	placement = scope:lds_newspaper_scope
-	title = lds.premigration.3.t
-	desc = lds.premigration.3.d
-	flavor = lds.premigration.3.f
+	title = lds_premigration.3.t
+	desc = lds_premigration.3.d
+	flavor = lds_premigration.3.f
 	
+	trigger = {
+		has_variable = lds_nauvoo
+		lds_agitation > 13
+		NOT = { has_variable = lds_major_cooldown }
+	}
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = nauvoo_site
+			}
+			save_scope_as = nauvoo_scope
+		}
+	}
+	
+	option = {
+		name = lds_premigration.3.a
+		
+		scope:nauvoo_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+		hidden_effect = { 
+			trigger_event = { 
+				id = lds_premigration.4 days = 15
+			}
+		}
+	}
+	option = {
+		name = lds_premigration.3.b
+		trigger = {
+			c:USA = {
+				OR = {
+					has_law = lawtype:law_outlawed_dissent
+					has_law = lawtype:law_censorship
+				}
+			}
+		}
+		
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+		
+		scope:nauvoo_scope = {
+			add_radicals = {
+				value = small_radicals
+				NOT = { religion = lds }
+			}
+			add_radicals = {
+				value = very_large_radicals
+				religion = lds
+			}
+			add_loyalists = {
+				value = .03
+				NOT = { religion = lds }
+			}
+		}
+	}
 }
 
-lds.premigration.4 = { # smiths arrested
+lds_premigration.4 = { # smiths arrested
 	type = country_event
-	placement = scope:lds_arrest_scope
-	title = lds.premigration.4.t
-	desc = lds.premigration.4.d
-	flavor = lds.premigration.4.f
+	placement = scope:nauvoo_scope
+	title = lds_premigration.4.t
+	desc = lds_premigration.4.d
+	flavor = lds_premigration.4.f
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = nauvoo_site
+			}
+			save_scope_as = nauvoo_scope
+		}
+	}
 	
+	option = {
+		name = lds_premigration.4.a
+		
+		scope:nauvoo_scope = {
+			add_radicals = {
+				value = large_radicals
+				religion = lds
+			}
+		}
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
 }
 
-lds.premigration.5 = { # election violence
+lds_premigration.5 = { # election campaign
 	type = country_event
-	placement = scope:lds_election_scope
-	title = lds.premigration.5.t
-	desc = lds.premigration.5.d
-	flavor = lds.premigration.5.f
+	placement = scope:lds_nauvoo
+	title = lds_premigration.5.t
+	desc = lds_premigration.5.d
+	flavor = lds_premigration.5.f
 	
+	trigger = {
+		ROOT = { in_election_campaign = yes }
+		has_variable = lds_nauvoo
+		NOT = { has_variable = smith_campaign }
+	}
 	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = nauvoo_site
+			}
+			save_scope_as = nauvoo_scope
+		}
+		set_variable = smith_campaign
+	}
+	
+	option = {
+		name = lds_premigration.5.a
+		
+		if = {
+			limit = {
+				ig:ig_devout2 = { has_party = no } 
+			}
+			create_character = {
+				first_name = Joseph
+				last_name = Smith
+				culture = mormon
+				religion = lds
+				ig_leader = yes
+				interest_group = ig_devout2
+				birth_date = 1805.12.23
+				dna = ecchi_dna_joseph_smith
+				ideology = ideology_abolitionist
+				traits = {
+					imperious
+					arrogant
+					basic_political_operator
+				}
+				on_created = {
+					set_variable = {
+						name = is_joseph_smith
+					}				
+				}
+			}
+		}
+		ifelse = {
+			limit = {
+				ig:ig_armed_forces = { has_party = no }
+				ROOT = { has_law:law_national_militia }
+			}
+			create_character = {
+				first_name = Joseph
+				last_name = Smith
+				culture = mormon
+				religion = lds
+				ig_leader = yes
+				interest_group = ig_armed_forces
+				birth_date = 1805.12.23
+				dna = ecchi_dna_joseph_smith
+				ideology = ideology_abolitionist
+				traits = {
+					imperious
+					arrogant
+					basic_political_operator
+				}
+				on_created = {
+					set_variable = {
+						name = is_joseph_smith
+					}				
+				}
+			}
+		}
+		ifelse = {
+			limit = {
+				ig:ig_rural_folk = { has_party = no } 
+			}
+			create_character = {
+				first_name = Joseph
+				last_name = Smith
+				culture = mormon
+				religion = lds
+				ig_leader = yes
+				interest_group = ig_rural_folk
+				birth_date = 1805.12.23
+				dna = ecchi_dna_joseph_smith
+				ideology = ideology_abolitionist
+				traits = {
+					imperious
+					arrogant
+					basic_political_operator
+				}
+				on_created = {
+					set_variable = {
+						name = is_joseph_smith
+					}				
+				}
+			}
+		}
+		ifelse = {
+			change_variable = {
+				name = lds_agitation
+				add = 1
+			}
+		}
+	}
 }
 
-lds.premigration.6 = { # governor assassination attempt
+lds_premigration.6 = { # governor assassination attempt
 	type = country_event
 	placement = scope:boggs_scope
-	title = lds.premigration.6.t
-	desc = lds.premigration.6.d
-	flavor = lds.premigration.6.f
+	title = lds_premigration.6.t
+	desc = lds_premigration.6.d
+	flavor = lds_premigration.6.f
 	
+	trigger = {
+		has_variable = lds_nauvoo
+		NOT = { has_variable = boggs_assassination }
+		NOT = { has_variable = lds_major_cooldown }
+		c:USA = {
+			has_state_in_state_region = STATE_MISSOURI
+		}
+	}
 	
+	immediate = {
+		s:STATE_MISSOURI.region_state:USA = {
+			save_scope_as = boggs_scope
+		}
+		set_variable = boggs_assassination
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+	}
+	
+	option = { #A prominent lawyer
+		name = lds_premigration.6.a
+		hidden_effect = { 
+			random_list = {
+				10 = { 
+					trigger_event = { 
+						id = lds_premigration.7 days = 360
+					}
+				}
+				90 = {
+					trigger_event = { 
+						id = lds_premigration.8 days = 360
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #clearly guilty
+		name = lds_premigration.6.a
+		hidden_effect = { 
+			random_list = {
+				90 = { 
+					trigger_event = { 
+						id = lds_premigration.7 days = 360
+					}
+				}
+				10 = {
+					trigger_event = { 
+						id = lds_premigration.8 days = 360
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #leave it to the court
+		name = lds_premigration.6.a
+		hidden_effect = { 
+			random_list = {
+				50 = { 
+					trigger_event = { 
+						id = lds_premigration.7 days = 360
+					}
+				}
+				50 = {
+					trigger_event = { 
+						id = lds_premigration.8 days = 360
+					}
+				}
+			}
+		}
+	}
 }
 
-lds.premigration.7 = { # rockwell trial convicts
+lds_premigration.7 = { # rockwell trial convicts
 	type = country_event
 	placement = scope:boggs_scope
-	title = lds.premigration.7.t
-	desc = lds.premigration.7.d
-	flavor = lds.premigration.7.f
+	title = lds_premigration.7.t
+	desc = lds_premigration.7.d
+	flavor = lds_premigration.7.f
 	
+	immediate = {
+		set_global_variable = rockwell_imprisoned
+		s:STATE_MISSOURI.region_state:USA = {
+			save_scope_as = boggs_scope
+		}
+	}
 	
+	option = {
+		name = lds_premigration.7.a
+		change_variable = {
+			name = lds_agitation
+			add = 6
+		}
+	}
 }
 
-lds.premigration.8 = { # rockwell released
+lds_premigration.8 = { # rockwell released
 	type = country_event
 	placement = scope:boggs_scope
-	title = lds.premigration.7.t
-	desc = lds.premigration.7.d
-	flavor = lds.premigration.7.f
+	title = lds_premigration.8.t
+	desc = lds_premigration.8.d
+	flavor = lds_premigration.8.f
 	
+	immediate = {
+		s:STATE_MISSOURI.region_state:USA = {
+			save_scope_as = boggs_scope
+		}
+	}
 	
+	option = {
+		name = lds_premigration.8.a
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+	}
 }

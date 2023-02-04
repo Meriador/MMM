@@ -30,7 +30,6 @@ STATES = {
 		
 		add_homeland = yankee
 		add_homeland = iroquoian
-		add_homeland = mormon
 	}
 	s:STATE_VIRGINIA = {
 		create_state = {
@@ -884,7 +883,6 @@ STATES = {
 		}
 		
 		add_homeland = yankee
-		add_homeland = mormon
 	}
 	s:STATE_CONNECTICUT = {
 		create_state = {

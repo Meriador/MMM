@@ -9,6 +9,17 @@
 	capital = STATE_UTAH
 }
 
+ZIO = {
+	color = { 181 148 16 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { mormon }
+	capital = STATE_MISSOURI
+}
+
 SHO = {
 	color = { 184  149  200 }
 	

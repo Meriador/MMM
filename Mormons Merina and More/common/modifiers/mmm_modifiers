@@ -37,3 +37,9 @@ influential_state = {
 	
 	state_pop_pol_str_mult = 0.2
 }
+
+recent_refugees = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+
+	state_lds_standard_of_living_add = -2
+}

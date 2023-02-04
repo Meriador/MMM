@@ -650,7 +650,7 @@
 			}
 			create_pop = {
 				culture = mormon
-				size = 10500
+				size = 8000
 			}
 		}
 	}
@@ -803,7 +803,7 @@
 			}
 			create_pop = {
 				culture = mormon
-				size = 2500
+				size = 5200
 			}
 		}
 	}
@@ -1093,6 +1093,10 @@
 			create_pop = {
 				culture = ojibwe
 				size = 2000
+			}
+			create_pop = {
+				culture = mormon
+				size = 500
 			}
 		}
 	}
