@@ -161,7 +161,7 @@ lds_csa_revolt = {
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { } #WIP, find appropriate provinces
+				province = { x7B0051 x701948 xF5005E x84487E xBF3FF3 x4D6DEF x0AC4E5 x8ADB9A }
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -210,7 +210,7 @@ lds_csa_revolt = {
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { } #WIP, find appropriate provinces
+				province = { xB90E0D x6B3BE8 xCD3BFC x746E6F x977A71 x33B258 x9EA280 x3FEEB5 }				
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -259,7 +259,7 @@ lds_csa_revolt = {
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { } #WIP, find appropriate provinces
+				province = { x002D4B x71153F x5832CE xC6264B x9A3850 xAB3179 x606DBE x5BA80C x91CECE }
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -308,7 +308,7 @@ lds_csa_revolt = {
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { } #WIP, find appropriate provinces
+				province = { x1B1E8B x2D821B x6C6CF4 xCF5B71 xE5842F x24CC25 }
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -357,7 +357,7 @@ lds_csa_revolt = {
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { } #WIP, find appropriate provinces
+				province = { x394431 x924593 x3E62DB x9B4CC5 x6298F3 xD5A04C x90C040 x5BD057 x76F2C5 }
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
