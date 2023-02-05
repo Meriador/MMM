@@ -75,7 +75,10 @@
 
 		add_journal_entry = { type = je_texas_usa }
 		add_journal_entry = { type = je_acw_countdown }
-		add_journal_entry = { type = je_lds_migration }
+		
+		trigger_event = {
+			id = lds_premigration.0
+		}
 
 		add_modifier = {
 			name = missouri_compromise

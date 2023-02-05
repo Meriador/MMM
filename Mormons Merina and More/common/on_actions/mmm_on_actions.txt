@@ -3,7 +3,8 @@
 # Root = Country
 on_monthly_pulse_country = {
 	events = {
-		lds_csa_revolt
+		lds_migration.7
+		lds_migration.8
 	}
 	effect = {
 	}

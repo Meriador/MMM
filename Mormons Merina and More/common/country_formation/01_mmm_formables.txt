@@ -36,7 +36,7 @@ VLC = {
 	ai_will_do = { always = yes }
 	
 	possible = {
-		has_global_flag = aromania_romania_aromania
+		has_global_variable = aromania_romania_aromania
 	}
 }
 
@@ -48,7 +48,7 @@ ARJ = {
 	ai_will_do = { always = yes }
 	
 	possible = {
-		has_global_flag = aromania_romania_romania
+		has_global_variable = aromania_romania_romania
 	}
 }
 

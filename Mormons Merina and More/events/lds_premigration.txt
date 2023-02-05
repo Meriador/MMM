@@ -1,0 +1,1206 @@
+﻿namespace = lds_premigration
+
+lds_premigration.0 = {
+	type = country_event
+	placement = scope:lds_farms_scope
+	title = lds_premigration.0.t
+	desc = lds_premigration.0.d
+	flavor = lds_premigration.0.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	immediate = {
+		set_variable = {
+			name = lds_agitation
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_lds_migration
+		}
+	}
+	
+	option = {
+		name = lds_premigration.0.a
+	}
+}
+
+lds_premigration.1r = { #mormon farms attacked
+	type = country_event
+	placement = scope:lds_farms_scope
+	title = lds_premigration.1r.t
+	desc = lds_premigration.1r.d
+	flavor = lds_premigration.1r.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_farm_cooldown
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_pop = {
+					religion = rel:lds
+					pop_employment_building_group = bg_agriculture
+				}
+				save_scope_as = lds_farms_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_farm_cooldown
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #unsympathetic
+		name = lds_premigration.1r.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		scope:lds_farms_scope = {
+			add_radicals = {
+				value = very_large_radicals
+				religion = lds
+			}
+		}
+	}
+	
+	option = { #sympathetic
+		name = lds_premigration.1r.b
+		change_variable = {
+			name = lds_agitation
+			add = -1
+		}
+		scope:lds_farms_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+	}
+}
+
+lds_premigration.2r = { #forced vigilante disavowals
+	type = country_event
+	placement = scope:lds_vigilante_scope
+	title = lds_premigration.2r.t
+	desc = lds_premigration.2r.d
+	flavor = lds_premigration.2r.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_vigilante_cooldown
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_state = {
+					is_homeland = cu:mormon
+					radical_fraction = {
+						value > .2
+						religion = lds
+					}
+				}
+				save_scope_as = lds_vigilante_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_vigilante_cooldown
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #unsympathetic
+		name = lds_premigration.2r.a
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+		scope:lds_farms_scope = {
+			add_radicals = {
+				value = .01
+			}
+		}
+	}
+	
+	option = { #sympathetic
+		name = lds_premigration.2r.b
+		change_variable = {
+			name = lds_agitation
+			add = -1
+		}
+		scope:lds_farms_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+	}
+}
+
+lds_premigration.3r = { #church land dispute/salt sermon
+	type = country_event
+	placement = scope:lds_schism_scope
+	title = lds_premigration.3r.t
+	desc = lds_premigration.3r.d
+	flavor = lds_premigration.3r.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		NOT = {
+			has_variable = danites_formed 
+			has_variable = lds_cooldown	
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_state = {
+					is_homeland = cu:mormon
+					radical_fraction = {
+						value > .2
+						religion = lds
+					}
+				}
+				save_scope_as = lds_schism_scope
+			}
+		}
+		set_variable = {
+			name = danites_formed
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+	}
+	
+	option = { #only option, will not be well recieved
+		name = lds_premigration.3r.a
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+		scope:lds_schism_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+	}
+}
+
+lds_premigration.4r = { #nonmormons threatened by expansion
+	type = country_event
+	placement = scope:lds_expansion_scope
+	title = lds_premigration.4r.t
+	desc = lds_premigration.4r.d
+	flavor = lds_premigration.4r.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_expansion_cooldown
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_state = {
+					is_homeland = cu:mormon
+				}
+				save_scope_as = lds_expansion_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_expansion_cooldown
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #restriction on settlement
+		name = lds_premigration.4r.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		scope:lds_expansion_scope = {
+			add_radicals = {
+				value = small_radicals
+				religion = lds
+			}
+			add_radicals = {
+				value = -.1
+				religion = protestant
+			}
+			add_radicals = {
+				value = -.1
+				religion = catholic
+			}
+		}
+	}
+	option = { #taking advantage of new block
+		name = lds_premigration.4r.b
+		add_modifier = {
+			name = influential_state
+			months = normal_modifier_time
+		}
+	}
+}
+
+lds_premigration.5r = { #rumors of theocracy
+	type = country_event
+	placement = scope:lds_theocracy_scope
+	title = lds_premigration.5r.t
+	desc = lds_premigration.5r.d
+	flavor = lds_premigration.5r.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_theocracy_cooldown
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_pop = {
+					religion = rel:lds
+				}
+				save_scope_as = lds_theocracy_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_theocracy_cooldown
+			months = normal_modifier_time
+		}
+	}
+	
+	option = { 
+		name = lds_premigration.5r.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+	}
+}
+
+lds_premigration.6r = { #rumors of infidelity
+	type = country_event
+	placement = scope:lds_polygamy_scope
+	title = lds_premigration.6r.t
+	desc = lds_premigration.6r.d
+	flavor = lds_premigration.6r.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		NOT = { 
+			has_variable = lds_cooldown
+			has_variable = lds_infidelity_cooldown
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_pop = {
+					religion = rel:lds
+				}
+				save_scope_as = lds_polygamy_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_infidelity_cooldown
+			months = normal_modifier_time
+		}
+	}
+	
+	option = { 
+		name = lds_premigration.6r.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+	}
+}
+
+lds_premigration.7r = { #local election violence
+	type = country_event
+	placement = scope:lds_local_election_scope
+	title = lds_premigration.7r.t
+	desc = lds_premigration.7r.d
+	flavor = lds_premigration.7r.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		NOT = {
+			has_variable = lds_cooldown
+			has_variable = lds_election_cooldown
+		}
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_state = {
+					is_homeland = cu:mormon
+					radical_fraction = {
+						value > .1
+					}
+				}
+				save_scope_as = lds_local_election_scope
+			}
+		}
+		set_variable = {
+			name = lds_cooldown
+			months = 5
+		}
+		set_variable = {
+			name = lds_election_cooldown
+			months = short_modifier_time
+		}
+	}
+	
+	option = { #endorsement of vote suppression
+		name = lds_premigration.7r.a
+		change_variable = {
+			name = lds_agitation
+			add = 3
+		}
+		scope:lds_local_election_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+			add_radicals = {
+				value = very_large_radicals
+				religion = lds
+			}
+			add_loyalists = {
+				value = .03
+			}
+		}
+	}
+	
+	option = { #leaving well enough alone
+		name = lds_premigration.7r.b
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+	}
+}
+
+lds_premigration.1 = { #kirtland safety society
+	type = country_event
+	placement = scope:kirtland_scope
+	title = lds_premigration.1.t
+	desc = lds_premigration.1.d
+	flavor = lds_premigration.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		has_variable = lds_kirtland
+		year > 1837
+	}
+	
+	immediate = {
+		s:STATE_OHIO = {
+			random_scope_state = {
+				save_scope_as = kirtland_scope
+				every_scope_pop	= {
+					limit = {
+						religion = lds
+						culture = mormon
+					}
+					change_pop_culture = { target = cu:yankee value = .1 }
+				}
+			}
+		}
+		s:STATE_MISSOURI = {
+			random_scope_state = {
+				set_variable = far_west
+			}
+		set_variable = lds_far_west
+		remove_variable = lds_kirtland
+		set_variable = {
+			name = lds_major_cooldown
+			months = 5
+		}
+	}
+	
+	option = {
+		name = lds_premigration.1.a
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		scope:kirtland_scope = {
+			every_scope_pop = {
+				limit = {
+					religion = lds
+					culture = mormon
+				}
+				move_pop = s:STATE_MISSOURI.region_state:USA
+			}
+			remove_homeland = mormon
+		}
+	}
+}
+
+lds_premigration.1c = { #if ohio stops being america first
+	type = country_event
+	placement = scope:kirtland_scope
+	title = lds_premigration.1c.t
+	desc = lds_premigration.1c.d
+	flavor = lds_premigration.1c.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		has_variable = lds_kirtland
+		NOT = {
+			C:USA = {
+				has_state_in_state_region = s:STATE_OHIO
+			}
+		}
+	}
+	immediate = {
+		s:STATE_OHIO.region_state:USA = {
+			save_scope_as = kirtland_scope
+		}
+		set_variable = lds_far_west
+		remove_variable = lds_kirtland
+	}
+	option = {
+		name = lds.contingency.1.a
+	}
+}
+
+lds_premigration.2 = { #missouri mormon war
+	type = country_event
+	placement = scope:far_west_scope
+	title = lds_premigration.2.t
+	desc = lds_premigration.2.d
+	flavor = lds_premigration.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		has_variable = lds_far_west
+		NOT = { has_variable = lds_major_cooldown }
+		OR = {
+			S:STATE_MISSOURI.region_state:USA = {
+				turmoil > .25
+			}
+			lds_agitation > 6
+		}
+		c:USA = {
+			has_state_in_state_region = {
+				OR = {
+					STATE_KANSAS
+					STATE_NEBRASKA
+					STATE_IOWA
+					STATE_ILLINOIS
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		s:STATE_MISSOURI = {
+			save_scope_as = far_west_scope
+			remove_variable = far_west
+		}
+		random_scope_state = {
+			limit = {
+				OR = { 
+					s:STATE_KANSAS.region_state:USA
+					s:STATE_NEBRASKA.region_state:USA
+					s:STATE_IOWA.region_state:USA
+					s:STATE_ILLINOIS.region_state:USA
+				}
+			}
+			weight = {
+				value = 0
+				
+				if = {
+					limit = {
+						is_incorporated = yes
+					}
+					add = 1000
+				}
+				
+				if = {
+					limit = {
+						is_slave_state = yes
+					}
+					add = -1000
+				}
+				
+			}
+			save_scope_as = nauvoo_scope
+		}
+		set_variable = lds_nauvoo
+		remove_variable = lds_far_west
+	}
+	
+	option = {
+		name = lds_premigration.2.a
+		
+		scope:far_west_scope = {
+			every_scope_pop = {
+				limit = {
+					religion = lds
+					culture = mormon
+				}
+				move_pop = scope:nauvoo_scope
+			}
+		}
+		scope:nauvoo_scope = {
+			add_modifier = {
+				name = recent_refugees
+				months = 13
+			}
+			add_homeland = mormon
+			add_variable = nauvoo_site
+		}
+	}
+}
+
+lds_premigration.2c = { #missouri mormon war, if other countries are specifically trying to ruin my nice event above
+	type = country_event
+	placement = scope:far_west_scope
+	title = lds_premigration.2c.t
+	desc = lds_premigration.2c.d
+	flavor = lds_premigration.2c.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		has_variable = lds_far_west
+		NOT = { has_variable = lds_major_cooldown }
+		OR = {
+			S:STATE_MISSOURI.region_state:USA = {
+				turmoil > .25
+			}
+			lds_agitation > 3
+		}
+		c:USA = {
+			NOT = {
+				has_state_in_state_region = {
+					OR = {
+						STATE_KANSAS
+						STATE_NEBRASKA
+						STATE_IOWA
+						STATE_ILLINOIS
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		s:STATE_MISSOURI.region_state:USA = {
+			save_scope_as = far_west_scope
+			remove_variable = far_west
+			any_neighboring_state = {
+				owner = {
+					NOT = {
+						c:USA
+					}
+				}
+				save_scope_as = nauvoo_scope
+			}
+		}
+		set_variable = lds_nauvoo
+		remove_variable = lds_far_west
+	}
+	
+	option = {
+		name = lds_contingency.2.a
+		
+		scope:far_west_scope = {
+			every_scope_pop = {
+				limit = {
+					religion = lds
+					culture = mormon
+				}
+				move_pop = scope:nauvoo_scope
+			}
+		}
+		scope:nauvoo_scope = {
+			add_modifier = {
+				name = recent_refugees
+				months = 13
+			}
+			add_homeland = mormon
+			add_variable = nauvoo_site
+		}
+	}
+}
+
+lds_premigration.3 = { # opposition newspaper destroyed
+	type = country_event
+	placement = scope:lds_newspaper_scope
+	title = lds_premigration.3.t
+	desc = lds_premigration.3.d
+	flavor = lds_premigration.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		has_variable = lds_nauvoo
+		lds_agitation > 13
+		NOT = { has_variable = lds_major_cooldown }
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = nauvoo_site
+			}
+			save_scope_as = nauvoo_scope
+		}
+	}
+	
+	option = {
+		name = lds_premigration.3.a
+		
+		scope:nauvoo_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+		hidden_effect = { 
+			trigger_event = { 
+				id = lds_premigration.4 days = 15
+			}
+		}
+	}
+	option = {
+		name = lds_premigration.3.b
+		trigger = {
+			c:USA = {
+				OR = {
+					has_law = lawtype:law_outlawed_dissent
+					has_law = lawtype:law_censorship
+				}
+			}
+		}
+		
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+		
+		scope:nauvoo_scope = {
+			add_radicals = {
+				value = small_radicals
+				NOT = { religion = lds }
+			}
+			add_radicals = {
+				value = very_large_radicals
+				religion = lds
+			}
+			add_loyalists = {
+				value = .03
+				NOT = { religion = lds }
+			}
+		}
+	}
+}
+
+lds_premigration.4 = { # smiths arrested
+	type = country_event
+	placement = scope:nauvoo_scope
+	title = lds_premigration.4.t
+	desc = lds_premigration.4.d
+	flavor = lds_premigration.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = nauvoo_site
+			}
+			save_scope_as = nauvoo_scope
+		}
+	}
+	
+	option = {
+		name = lds_premigration.4.a
+		
+		scope:nauvoo_scope = {
+			add_radicals = {
+				value = large_radicals
+				religion = lds
+			}
+		}
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+}
+
+lds_premigration.5 = { # election campaign
+	type = country_event
+	placement = scope:lds_nauvoo
+	title = lds_premigration.5.t
+	desc = lds_premigration.5.d
+	flavor = lds_premigration.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		ROOT = { in_election_campaign = yes }
+		has_variable = lds_nauvoo
+		NOT = { has_variable = smith_campaign }
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = nauvoo_site
+			}
+			save_scope_as = nauvoo_scope
+		}
+		set_variable = smith_campaign
+	}
+	
+	option = {
+		name = lds_premigration.5.a
+		
+		if = {
+			limit = {
+				ig:ig_devout2 = { has_party = no } 
+			}
+			create_character = {
+				first_name = Joseph
+				last_name = Smith
+				culture = mormon
+				religion = lds
+				ig_leader = yes
+				interest_group = ig_devout2
+				birth_date = 1805.12.23
+				dna = ecchi_dna_joseph_smith
+				ideology = ideology_abolitionist
+				traits = {
+					imperious
+					arrogant
+					basic_political_operator
+				}
+				on_created = {
+					set_variable = {
+						name = is_joseph_smith
+					}				
+				}
+			}
+		}
+		ifelse = {
+			limit = {
+				ig:ig_armed_forces = { has_party = no }
+				ROOT = { has_law:law_national_militia }
+			}
+			create_character = {
+				first_name = Joseph
+				last_name = Smith
+				culture = mormon
+				religion = lds
+				ig_leader = yes
+				interest_group = ig_armed_forces
+				birth_date = 1805.12.23
+				dna = ecchi_dna_joseph_smith
+				ideology = ideology_abolitionist
+				traits = {
+					imperious
+					arrogant
+					basic_political_operator
+				}
+				on_created = {
+					set_variable = {
+						name = is_joseph_smith
+					}				
+				}
+			}
+		}
+		ifelse = {
+			limit = {
+				ig:ig_rural_folk = { has_party = no } 
+			}
+			create_character = {
+				first_name = Joseph
+				last_name = Smith
+				culture = mormon
+				religion = lds
+				ig_leader = yes
+				interest_group = ig_rural_folk
+				birth_date = 1805.12.23
+				dna = ecchi_dna_joseph_smith
+				ideology = ideology_abolitionist
+				traits = {
+					imperious
+					arrogant
+					basic_political_operator
+				}
+				on_created = {
+					set_variable = {
+						name = is_joseph_smith
+					}				
+				}
+			}
+		}
+		ifelse = {
+			change_variable = {
+				name = lds_agitation
+				add = 1
+			}
+		}
+	}
+}
+
+lds_premigration.6 = { # governor assassination attempt
+	type = country_event
+	placement = scope:boggs_scope
+	title = lds_premigration.6.t
+	desc = lds_premigration.6.d
+	flavor = lds_premigration.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+
+	trigger = {
+		has_variable = lds_nauvoo
+		NOT = { has_variable = boggs_assassination }
+		NOT = { has_variable = lds_major_cooldown }
+		c:USA = {
+			has_state_in_state_region = STATE_MISSOURI
+		}
+	}
+	
+	immediate = {
+		s:STATE_MISSOURI.region_state:USA = {
+			save_scope_as = boggs_scope
+		}
+		set_variable = boggs_assassination
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+	}
+	
+	option = { #A prominent lawyer
+		name = lds_premigration.6.a
+		hidden_effect = { 
+			random_list = {
+				10 = { 
+					trigger_event = { 
+						id = lds_premigration.7 days = 360
+					}
+				}
+				90 = {
+					trigger_event = { 
+						id = lds_premigration.8 days = 360
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #clearly guilty
+		name = lds_premigration.6.a
+		hidden_effect = { 
+			random_list = {
+				90 = { 
+					trigger_event = { 
+						id = lds_premigration.7 days = 360
+					}
+				}
+				10 = {
+					trigger_event = { 
+						id = lds_premigration.8 days = 360
+					}
+				}
+			}
+		}
+	}
+	
+	option = { #leave it to the court
+		name = lds_premigration.6.a
+		hidden_effect = { 
+			random_list = {
+				50 = { 
+					trigger_event = { 
+						id = lds_premigration.7 days = 360
+					}
+				}
+				50 = {
+					trigger_event = { 
+						id = lds_premigration.8 days = 360
+					}
+				}
+			}
+		}
+	}
+}
+
+lds_premigration.7 = { # rockwell trial convicts
+	type = country_event
+	placement = scope:boggs_scope
+	title = lds_premigration.7.t
+	desc = lds_premigration.7.d
+	flavor = lds_premigration.7.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+	immediate = {
+		set_global_variable = rockwell_imprisoned
+		s:STATE_MISSOURI.region_state:USA = {
+			save_scope_as = boggs_scope
+		}
+	}
+	
+	option = {
+		name = lds_premigration.7.a
+		change_variable = {
+			name = lds_agitation
+			add = 6
+		}
+	}
+}
+
+lds_premigration.8 = { # rockwell released
+	type = country_event
+	placement = scope:boggs_scope
+	title = lds_premigration.8.t
+	desc = lds_premigration.8.d
+	flavor = lds_premigration.8.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+	immediate = {
+		s:STATE_MISSOURI.region_state:USA = {
+			save_scope_as = boggs_scope
+		}
+	}
+	
+	option = {
+		name = lds_premigration.8.a
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+	}
+}
