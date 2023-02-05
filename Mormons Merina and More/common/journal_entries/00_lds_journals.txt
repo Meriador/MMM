@@ -1,13 +1,6 @@
 ﻿je_lds_migration = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
-	immediate = {
-		add_to_global_variable_list = { 
-			name = deseret_potential
-			target = { STATE_CALIFORNIA STATE_OREGON STATE_WASHINGTON STATE_BRITISH_COLUMBIA STATE_NEVADA STATE_IDAHO STATE_MONTANA STATE_ALBERTA STATE_SASKATCHEWAN STATE_ARIZONA STATE_UTAH STATE_NEW_MEXICO STATE_COLORADO STATE_WYOMING STATE_WYOMING STATE_SOUTH_DAKOTA STATE_NORTH_DAKOTA STATE_KANSAS STATE_NEBRASKA }
-		}
-	}
-	
 	complete = {
 		scope:journal_entry = {
 			is_goal_complete = yes
@@ -28,18 +21,18 @@
 	}
 	
 	on_fail = {
-		trigger_event = { id = lds_migration.0 }
+		trigger_event = { id = lds_migration.9 }
 	}
 	
 	invalid = {
 		OR = {
 			AND = {
 				has_variable = lds_far_west
-				NOT = { any_scope_state = { has_variable = far_west } }
+				NOT = { any_scope_state = { state_region = { has_variable = far_west } } }
 			}
 			AND = {
 				has_variable = lds_nauvoo
-				NOT = { any_scope_state = { has_variable = nauvoo_site } }
+				NOT = { any_scope_state = { state_region = { has_variable = nauvoo_site } } }
 			}
 		}
 	}
@@ -69,13 +62,13 @@
 	
 	on_monthly_pulse = {
 		random_events = {
-			1 = lds_premigration.1r #mormon farms attacked
-			1 = lds_premigration.2r #forced vigilante disavowals
-			6 = lds_premigration.3r #church land dispute
-			2 = lds_premigration.4r #nonmormons threatened by expansion
-			1 = lds_premigration.5r #rumors of theocracy
-			1 = lds_premigration.6r #rumors of infidelity
-			2 = lds_premigration.7r #local election violence
+			1 = lds_premigration.10 #mormon farms attacked
+			1 = lds_premigration.11 #forced vigilante disavowals
+			6 = lds_premigration.12 #church land dispute
+			2 = lds_premigration.13 #nonmormons threatened by expansion
+			1 = lds_premigration.14 #rumors of theocracy
+			1 = lds_premigration.15 #rumors of infidelity
+			2 = lds_premigration.16 #local election violence
 			34 = 0
 		}
 	}
@@ -89,9 +82,9 @@
 	
 	on_weekly_pulse = {
 		lds_premigration.1 #kirtland safety society
-		lds_premigration.1c #if ohio stops being america first
+		lds_premigration.101 #if ohio stops being america first
 		lds_premigration.2 #missouri mormon war
-		lds_premigration.2c
+		lds_premigration.102
 		lds_premigration.3 # opposition newspaper destroyed
 		lds_premigration.5 # election campaign
 	}

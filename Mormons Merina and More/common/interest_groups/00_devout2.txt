@@ -42,7 +42,7 @@
 			multiply = { value = 0 } #this is why pops of the wrong religions don't join
 		}
 		
-		ifelse = {
+		else = {
 			add = {
 				desc = "POP_CLERGYMEN"
 				if = {

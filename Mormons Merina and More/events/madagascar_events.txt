@@ -79,7 +79,7 @@ mad_fanompoana.1 = {
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = 
+	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm"
 	
 	option = {
 		name = mad_fanompoana.1.a
@@ -88,14 +88,18 @@ mad_fanompoana.1 = {
 				name = fanompoana_ended
 				months = long_modifier_time
 			}
+		}
 		ig:ig_petty_bourgeoisie = {
 			add_modifier = {
 				name = fanompoana_ended
 				months = long_modifier_time
 			}
+		}
 		ig:ig_trade_unions = {
 			add_modifier = {
 				name = fanompoana_ended
 				months = long_modifier_time
 			}
+		}
 	}
+}

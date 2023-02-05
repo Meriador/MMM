@@ -1550,7 +1550,7 @@
 				size = 12000
 			}
 		}
-		region_state:NTD = {
+		region_state:MHF = {
 			create_pop = {
 				culture = sakalava
 				size = 60000

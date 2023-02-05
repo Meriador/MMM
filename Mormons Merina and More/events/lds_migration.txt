@@ -1,58 +1,6 @@
 ﻿namespace = lds_migration
 
 #WIP - change out the islam images and noises with more appropriate images and sound
-lds_migration.0 = { #USA begins formal discrimination
-	type = country_event
-	placement = root
-	title = lds_migration.0.t
-	desc = lds_migration.0.d
-	flavor = lds_migration.0.f
-
-	event_image = {
-		video = "gfx/event_pictures/middleeast_islam.bk2"
-	}
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
-	
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	
-	duration = 3
-
-	immediate = {
-		if = {
-			limit = {
-				has_variable = lds_nauvoo
-			}
-			random_scope_state = {
-				limit = {
-					has_variable = nauvoo_site
-				}
-				remove_homeland = mormon
-			}
-		}
-		ifelse = {
-			limit = {
-				has_variable = lds_kirtland
-			}
-			s:STATE_OHIO = {
-				remove_homeland = mormon
-			}
-		}
-		s:STATE_MISSOURI = {
-			remove_homeland = mormon
-		}
-	}
-	
-	option = {
-		name = lds_migration.0.a
-		hidden_effect = {
-			trigger_event = { 
-				id = lds_migration.6 days = 120
-			}
-		}
-	}
-}
 
 lds_migration.1 = { #Smiths assassinated, mormons prepare to leave
 	type = country_event
@@ -79,23 +27,29 @@ lds_migration.1 = { #Smiths assassinated, mormons prepare to leave
 			}
 			random_scope_state = {
 				limit = {
-					has_variable = nauvoo_site
+					state_region = {
+						has_variable = nauvoo_site
+					}
 				}
 				save_scope_as = lds_assassination_scope
-				remove_homeland = mormon
+				state_region = {
+					remove_homeland = mormon
+				}
 			}
 		}
-		ifelse = {
+		else_if = {
 			limit = {
 				has_variable = lds_kirtland
 			}
 			s:STATE_OHIO = {
-				save_scope_as = lds_assassination_scope
+				region_state:USA = {
+					save_scope_as = lds_assassination_scope
+				}
 				remove_homeland = mormon
 			}
 		}
-		ifelse = {
-			s:STATE_MISSOURI = {
+		else_if = {
+			s:STATE_MISSOURI.region_state:USA = {
 				save_scope_as = lds_assassination_scope
 			}
 		}
@@ -138,7 +92,6 @@ lds_migration.2 = { #journal invalidated, most likely by Smith being in the wron
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	option = {
 		name = lds_migration.2.a
@@ -207,7 +160,7 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 
 	immediate = {
 		random_in_global_list = {
-			name = deseret_potential
+			list = deseret_potential
 			weight = {
 				value = 0
 				
@@ -332,7 +285,7 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 					save_scope_as:deseret_state
 				}
 			}
-			ifelse = {
+			else_if = {
 				limit = {
 					any_scope_state = {
 						owner = {
@@ -346,7 +299,7 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 					save_scope_as:deseret_state
 				}
 			}
-			ifelse = {
+			else_if = {
 				random_scope_state = {
 					save_scope_as:deseret_state
 				}
@@ -393,7 +346,7 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 
 	immediate = {
 		random_in_global_list = {
-			name = deseret_potential
+			list = deseret_potential
 			weight = {
 				value = 0
 				
@@ -518,7 +471,7 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 					save_scope_as:deseret_state
 				}
 			}
-			ifelse = {
+			else_if = {
 				limit = {
 					any_scope_state = {
 						owner = {
@@ -532,7 +485,7 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 					save_scope_as:deseret_state
 				}
 			}
-			ifelse = {
+			else_if = {
 				random_scope_state = {
 					save_scope_as:deseret_state
 				}
@@ -579,7 +532,7 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 
 	immediate = {
 		random_in_global_list = {
-			name = deseret_potential
+			list = deseret_potential
 			weight = {
 				value = 0
 				
@@ -704,7 +657,7 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 					save_scope_as:deseret_state
 				}
 			}
-			ifelse = {
+			else_if = {
 				limit = {
 					any_scope_state = {
 						owner = {
@@ -718,7 +671,7 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 					save_scope_as:deseret_state
 				}
 			}
-			ifelse = {
+			else_if = {
 				random_scope_state = {
 					save_scope_as:deseret_state
 				}
@@ -769,9 +722,11 @@ lds_migration.7 = { #CSA Zion revolt
 		this = c:CSA
 		c:CSA = {
 			any_scope_state = {
-				OR = {
-					has_variable = far_west
-					has_variable = nauvoo_site
+				state_region = {
+					OR = {
+						has_variable = far_west
+						has_variable = nauvoo_site
+					}
 				}
 			}
 		}
@@ -781,8 +736,10 @@ lds_migration.7 = { #CSA Zion revolt
 		random_scope_state = {
 			limit = {
 				OR = {
-					has_variable = far_west
-					has_variable = nauvoo_site
+					state_region = {
+						has_variable = far_west
+						has_variable = nauvoo_site
+					}
 				}
 			}
 			save_scope_as:lds_rebel_state
@@ -794,13 +751,15 @@ lds_migration.7 = { #CSA Zion revolt
 			save_scope_as:joe_smith
 		}
 		if = {
-			s:STATE_MISSOURI = {
-				has_variable = far_west
+			limit = {
+				s:STATE_MISSOURI = {
+					has_variable = far_west
+				}
 			}
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { x7B0051 x701948 xF5005E x84487E xBF3FF3 x4D6DEF x0AC4E5 x8ADB9A }
+				province = { "x7B0051" "x701948" "xF5005E" "x84487E" "xBF3FF3" "x4D6DEF" "x0AC4E5" "x8ADB9A" }
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -815,7 +774,7 @@ lds_migration.7 = { #CSA Zion revolt
 							add_trait = charismatic
 						}
 					}
-					if_else = {
+					else_if = {
 						limit = {}
 						create_character = {
 							first_name = Joseph
@@ -842,14 +801,16 @@ lds_migration.7 = { #CSA Zion revolt
 				}
 			}
 		}
-		if_else = {
-			s:STATE_ILLINOIS = {
-				has_variable = nauvoo_site
+		else_if = {
+			limit = {
+				s:STATE_ILLINOIS = {
+					has_variable = nauvoo_site
+				}
 			}
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { xB90E0D x6B3BE8 xCD3BFC x746E6F x977A71 x33B258 x9EA280 x3FEEB5 }				
+				province = { "xB90E0D" "x6B3BE8" "xCD3BFC" "x746E6F" "x977A71" "x33B258" "x9EA280" "x3FEEB5" }				
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -864,7 +825,7 @@ lds_migration.7 = { #CSA Zion revolt
 							add_trait = charismatic
 						}
 					}
-					if_else = {
+					else_if = {
 						limit = {}
 						create_character = {
 							first_name = Joseph
@@ -891,14 +852,16 @@ lds_migration.7 = { #CSA Zion revolt
 				}
 			}
 		}
-		if_else = {
-			s:STATE_IOWA = {
-				has_variable = nauvoo_site
+		else_if = {
+			limit = {
+				s:STATE_IOWA = {
+					has_variable = nauvoo_site
+				}
 			}
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { x002D4B x71153F x5832CE xC6264B x9A3850 xAB3179 x606DBE x5BA80C x91CECE }
+				province = { "x002D4B" "x71153F" "x5832CE" "xC6264B" "x9A3850" "xAB3179" "x606DBE" "x5BA80C" "x91CECE" }
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -913,7 +876,7 @@ lds_migration.7 = { #CSA Zion revolt
 							add_trait = charismatic
 						}
 					}
-					if_else = {
+					else_if = {
 						limit = {}
 						create_character = {
 							first_name = Joseph
@@ -940,14 +903,16 @@ lds_migration.7 = { #CSA Zion revolt
 				}
 			}
 		}
-		if_else = {
-			s:STATE_KANSAS = {
-				has_variable = nauvoo_site
+		else_if = {
+			limit = {
+				s:STATE_KANSAS = {
+					has_variable = nauvoo_site
+				}
 			}
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { x1B1E8B x2D821B x6C6CF4 xCF5B71 xE5842F x24CC25 }
+				province = { "x1B1E8B" "x2D821B" "x6C6CF4" "xCF5B71" "xE5842F" "x24CC25" }
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -962,7 +927,7 @@ lds_migration.7 = { #CSA Zion revolt
 							add_trait = charismatic
 						}
 					}
-					if_else = {
+					else_if = {
 						limit = {}
 						create_character = {
 							first_name = Joseph
@@ -989,14 +954,16 @@ lds_migration.7 = { #CSA Zion revolt
 				}
 			}
 		}
-		if_else = {
-			s:STATE_NEBRASKA = {
-				has_variable = nauvoo_site
+		else_if = {
+			limit = {
+				s:STATE_NEBRASKA = {
+					has_variable = nauvoo_site
+				}
 			}
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { x394431 x924593 x3E62DB x9B4CC5 x6298F3 xD5A04C x90C040 x5BD057 x76F2C5 }
+				province = { "x394431" "x924593" "x3E62DB" "x9B4CC5" "x6298F3" "xD5A04C" "x90C040" "x5BD057" "x76F2C5" }
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -1011,7 +978,7 @@ lds_migration.7 = { #CSA Zion revolt
 							add_trait = charismatic
 						}
 					}
-					if_else = {
+					else_if = {
 						limit = {}
 						create_character = {
 							first_name = Joseph
@@ -1038,10 +1005,12 @@ lds_migration.7 = { #CSA Zion revolt
 				}
 			}
 		}
-		create_diplomatic_play = {
-			name = zion_secession
-			initiator = c:ZIO
-			type = secession
+		c:CSA = {
+			create_diplomatic_play = {
+				name = zion_secession
+				initiator = c:ZIO
+				type = secession
+			}
 		}
 	}
 }
@@ -1067,13 +1036,16 @@ lds_migration.8 = { #USA response to CSA revolt
 
 	trigger = {
 		exists = c:CSA
+		exists = c:USA
 		this = c:USA
 		NOT = { has_global_variable = lds_csa }
 		c:CSA = {
 			any_scope_state = {
-				OR = {
-					has_variable = far_west
-					has_variable = nauvoo_site
+				state_region = {
+					OR = {
+						has_variable = far_west
+						has_variable = nauvoo_site
+					}
 				}
 			}
 		}
@@ -1095,11 +1067,70 @@ lds_migration.8 = { #USA response to CSA revolt
 	
 	option = { #kill them
 		name = lds_migration.8.c
-		create_diplomatic_play = {
-			name = zion_secession
-			initiator = c:ZIO
-			type = secession
+		c:USA = {
+			create_diplomatic_play = {
+				name = zion_secession
+				initiator = c:ZIO
+				type = secession
+			}
 		}
 		set_global_variable = lds_csa
+	}
+}
+
+lds_migration.9 = { #USA begins formal discrimination
+	type = country_event
+	placement = root
+	title = lds_migration.9.t
+	desc = lds_migration.9.d
+	flavor = lds_migration.9.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+	
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+
+	immediate = {
+		if = {
+			limit = {
+				has_variable = lds_nauvoo
+			}
+			random_scope_state = {
+				limit = {
+					state_region = {
+						has_variable = nauvoo_site
+					}
+				}
+				state_region = {
+					remove_homeland = mormon
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = lds_kirtland
+			}
+			s:STATE_OHIO = {
+				remove_homeland = mormon
+			}
+		}
+		s:STATE_MISSOURI = {
+			remove_homeland = mormon
+		}
+	}
+	
+	option = {
+		name = lds_migration.9.a
+		hidden_effect = {
+			trigger_event = { 
+				id = lds_migration.6 days = 120
+			}
+		}
 	}
 }
