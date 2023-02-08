@@ -13,10 +13,12 @@
 	
 	fail = {
 		OR = {
-			cu:mormon = {
-				culture_is_discriminated_in = ROOT
-			}
-			has_law = lawtype:law_state_religion
+			has_law = law_type:law_state_religion
+			has_law = law_type:law_ethnostate
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_monarchy
+			has_law = law_type:law_theocracy
 		}
 	}
 	
@@ -76,16 +78,18 @@
 	on_yearly_pulse = {
 		random_events = {
 			1 = lds_premigration.6 #boggs assassination
-			3 = 0
+			2 = 0
 		}
 	}
 	
 	on_weekly_pulse = {
-		lds_premigration.1 #kirtland safety society
-		lds_premigration.101 #if ohio stops being america first
-		lds_premigration.2 #missouri mormon war
-		lds_premigration.102
-		lds_premigration.3 # opposition newspaper destroyed
-		lds_premigration.5 # election campaign
+		events = {
+			lds_premigration.1 #kirtland safety society
+			lds_premigration.101 #if ohio stops being america first
+			lds_premigration.2 #missouri mormon war
+			lds_premigration.102 #missouri mormon war but contrived
+			lds_premigration.3 # opposition newspaper destroyed
+			lds_premigration.5 # election campaign
+		}
 	}
 }

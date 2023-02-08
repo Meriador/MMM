@@ -126,6 +126,7 @@ lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon hom
 
 
 	option = {
+		name = lds_migration.3.a
 		if = {
 			limit = {
 				cu:mormon = {
@@ -141,7 +142,7 @@ lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon hom
 
 lds_migration.4 = { #Founding of Deseret, Young Edition
 	type = country_event
-	placement = deseret_capital
+	placement = deseret_state
 	title = lds_migration.4.t
 	desc = lds_migration.4.d
 	flavor = lds_migration.4.f
@@ -162,112 +163,104 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 		random_in_global_list = {
 			list = deseret_potential
 			weight = {
-				value = 0
+				base = 0
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							owner = {
-								is_country_type = decentralized
-							}
+				modifier = {
+					any_scope_state = {
+						owner = {
+							is_country_type = decentralized
 						}
 					}
-					add = 25
+					add = 40
+					desc = "decentralized_state"
 				}
 				
-				if = {
-					limit = {
-						NOT = {
-							any_scope_state = {
-								owner = {
-									OR = {
-										is_country_type = colonial
-										is_country_type = recognized
-									}
+				modifier = {
+					NOT = {
+						any_scope_state = {
+							owner = {
+								OR = {
+									is_country_type = colonial
+									is_country_type = recognized
 								}
 							}
 						}
 					}
 					add = 25
+					desc = "recognized_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							is_incorporated = no
-						}
+				modifier = {
+					any_scope_state = {
+						is_incorporated = no
 					}
 					add = 10
+					desc = "unincorporated_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							is_incorporated = yes
-						}
+				modifier = {
+					any_scope_state = {
+						is_incorporated = yes
 					}
 					add = -50
+					desc = "incorporated_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							OR = {
-								owner = c:USA
-								owner = c:CSA
-								owner = c:FSA
-							}
+				modifier = {
+					any_scope_state = {
+						OR = {
+							owner = c:USA
+							owner = c:CSA
+							owner = c:FSA
+							owner = c:NEN
+							owner = c:UOM
 						}
 					}
 					add = -20
+					desc = "usonian_aversion"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 1
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 1
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 2
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 2
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 3
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 3
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 4
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 4
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 5
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 5
 					}
 					add = -10
+					desc = "already_settled"
 				}
 			}
-			save_scope_as:deseret_capital
+			save_scope_as = deseret_capital
 		}
 		scope:deseret_capital = {
 			if = {
@@ -282,7 +275,7 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 					}
 				}
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
 				}
 			}
 			else_if = {
@@ -296,27 +289,29 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 					}
 				}
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
 				}
 			}
-			else_if = {
+			else = {
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
 				}
 			}
 		}
 		create_country = {
+			origin = ROOT
 			tag = DES
-			origin = c:USA
-			state = { deseret_state }
-			on_created = {
-				#WIP, provide appropriate modifications to IGs and add/move characters here
-			}
+			state = scope:deseret_state
 		}
+		scope:deseret_capital = {
+			add_claim = c:DES
+		}
+		#WIP, provide appropriate modifications to IGs and add/move characters here
 	}
 	
 	option = {
 		name = lds_migration.4.a
+		default_option = yes
 	}
 	
 	option = {
@@ -348,112 +343,104 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 		random_in_global_list = {
 			list = deseret_potential
 			weight = {
-				value = 0
+				base = 0
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							owner = {
-								is_country_type = decentralized
-							}
+				modifier = {
+					any_scope_state = {
+						owner = {
+							is_country_type = decentralized
 						}
 					}
-					add = 25
+					add = 40
+					desc = "decentralized_state"
 				}
 				
-				if = {
-					limit = {
-						NOT = {
-							any_scope_state = {
-								owner = {
-									OR = {
-										is_country_type = colonial
-										is_country_type = recognized
-									}
+				modifier = {
+					NOT = {
+						any_scope_state = {
+							owner = {
+								OR = {
+									is_country_type = colonial
+									is_country_type = recognized
 								}
 							}
 						}
 					}
 					add = 25
+					desc = "recognized_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							is_incorporated = no
-						}
+				modifier = {
+					any_scope_state = {
+						is_incorporated = no
 					}
 					add = 10
+					desc = "unincorporated_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							is_incorporated = yes
-						}
+				modifier = {
+					any_scope_state = {
+						is_incorporated = yes
 					}
 					add = -50
+					desc = "incorporated_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							OR = {
-								owner = c:USA
-								owner = c:CSA
-								owner = c:FSA
-							}
+				modifier = {
+					any_scope_state = {
+						OR = {
+							owner = c:USA
+							owner = c:CSA
+							owner = c:FSA
+							owner = c:NEN
+							owner = c:UOM
 						}
 					}
 					add = -20
+					desc = "usonian_aversion"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 1
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 1
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 2
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 2
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 3
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 3
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 4
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 4
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 5
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 5
 					}
 					add = -10
+					desc = "already_settled"
 				}
 			}
-			save_scope_as:deseret_capital
+			save_scope_as = deseret_capital
 		}
 		scope:deseret_capital = {
 			if = {
@@ -468,7 +455,7 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 					}
 				}
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
 				}
 			}
 			else_if = {
@@ -482,27 +469,65 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 					}
 				}
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
 				}
 			}
 			else_if = {
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
+				}
+			}
+		}
+		scope:deseret_capital = {
+			if = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = colonial
+								is_country_type = recognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as = deseret_state
+				}
+			}
+			else_if = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = unrecognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as = deseret_state
+				}
+			}
+			else_if = {
+				random_scope_state = {
+					save_scope_as = deseret_state
 				}
 			}
 		}
 		create_country = {
+			origin = ROOT
 			tag = DES
-			origin = c:USA
-			state = { deseret_state }
-			on_created = {
-				#WIP, provide appropriate modifications to IGs and add/move characters here
-			}
+			state = scope:deseret_state
 		}
+		scope:deseret_capital = {
+			add_claim = c:DES
+		}
+		#WIP, provide appropriate modifications to IGs and add/move characters here
 	}
 	
 	option = {
 		name = lds_migration.5.a
+		default_option = yes
 	}
 	
 	option = {
@@ -534,112 +559,104 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 		random_in_global_list = {
 			list = deseret_potential
 			weight = {
-				value = 0
+				base = 0
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							owner = {
-								is_country_type = decentralized
-							}
+				modifier = {
+					any_scope_state = {
+						owner = {
+							is_country_type = decentralized
 						}
 					}
-					add = 25
+					add = 40
+					desc = "decentralized_state"
 				}
 				
-				if = {
-					limit = {
-						NOT = {
-							any_scope_state = {
-								owner = {
-									OR = {
-										is_country_type = colonial
-										is_country_type = recognized
-									}
+				modifier = {
+					NOT = {
+						any_scope_state = {
+							owner = {
+								OR = {
+									is_country_type = colonial
+									is_country_type = recognized
 								}
 							}
 						}
 					}
 					add = 25
+					desc = "recognized_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							is_incorporated = no
-						}
+				modifier = {
+					any_scope_state = {
+						is_incorporated = no
 					}
 					add = 10
+					desc = "unincorporated_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							is_incorporated = yes
-						}
+				modifier = {
+					any_scope_state = {
+						is_incorporated = yes
 					}
 					add = -50
+					desc = "incorporated_state"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							OR = {
-								owner = c:USA
-								owner = c:CSA
-								owner = c:FSA
-							}
+				modifier = {
+					any_scope_state = {
+						OR = {
+							owner = c:USA
+							owner = c:CSA
+							owner = c:FSA
+							owner = c:NEN
+							owner = c:UOM
 						}
 					}
 					add = -20
+					desc = "usonian_aversion"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 1
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 1
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 2
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 2
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 3
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 3
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 4
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 4
 					}
 					add = -10
+					desc = "already_settled"
 				}
 				
-				if = {
-					limit = {
-						any_scope_state = {
-							total_urbanization >= 5
-						}
+				modifier = {
+					any_scope_state = {
+						total_urbanization >= 5
 					}
 					add = -10
+					desc = "already_settled"
 				}
 			}
-			save_scope_as:deseret_capital
+			save_scope_as = deseret_capital
 		}
 		scope:deseret_capital = {
 			if = {
@@ -654,7 +671,7 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 					}
 				}
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
 				}
 			}
 			else_if = {
@@ -668,30 +685,69 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 					}
 				}
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
 				}
 			}
 			else_if = {
 				random_scope_state = {
-					save_scope_as:deseret_state
+					save_scope_as = deseret_state
+				}
+			}
+		}
+		scope:deseret_capital = {
+			if = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = colonial
+								is_country_type = recognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as = deseret_state
+				}
+			}
+			else_if = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								is_country_type = unrecognized
+							}
+						}
+					}
+				}
+				random_scope_state = {
+					save_scope_as = deseret_state
+				}
+			}
+			else_if = {
+				random_scope_state = {
+					save_scope_as = deseret_state
 				}
 			}
 		}
 		create_country = {
+			origin = ROOT
 			tag = DES
-			origin = c:USA
-			state = { deseret_state }
-			on_created = {
-				#WIP, provide appropriate modifications to IGs and add/move characters here
-			}
+			state = scope:deseret_state
 		}
+		scope:deseret_capital = {
+			add_claim = c:DES
+		}
+		#WIP, provide appropriate modifications to IGs and add/move characters here
 	}
 	
 	option = {
 		name = lds_migration.6.a
+		default_option = yes
 	}
 	
 	option = {
+		trigger = { is_player = yes }
 		name = lds_migration.6.b
 		play_as = c:DES
 	}
@@ -701,9 +757,9 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 lds_migration.7 = { #CSA Zion revolt
 	type = country_event
 	placement = scope:lds_rebel_state
-	title = lds_csa_revolt.t
-	desc = lds_csa_revolt.d
-	flavor = lds_csa_revolt.f
+	title = lds_migration.7.t
+	desc = lds_migration.7.d
+	flavor = lds_migration.7.f
 
 	event_image = {
 		video = "gfx/event_pictures/middleeast_islam.bk2"
@@ -742,13 +798,13 @@ lds_migration.7 = { #CSA Zion revolt
 					}
 				}
 			}
-			save_scope_as:lds_rebel_state
+			save_scope_as = lds_rebel_state
 		}
 		every_character_in_void = {
 			limit = {
 				has_variable = is_joseph_smith
 			}
-			save_scope_as:joe_smith
+			save_scope_as = joe_smith
 		}
 		if = {
 			limit = {
@@ -759,7 +815,14 @@ lds_migration.7 = { #CSA Zion revolt
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { "x7B0051" "x701948" "xF5005E" "x84487E" "xBF3FF3" "x4D6DEF" "x0AC4E5" "x8ADB9A" }
+				province = p:x7B0051
+				province = p:x701948
+				province = p:xF5005E
+				province = p:x84487E
+				province = p:xBF3FF3
+				province = p:x4D6DEF
+				province = p:x0AC4E5
+				province = p:x8ADB9A
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -810,7 +873,14 @@ lds_migration.7 = { #CSA Zion revolt
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { "xB90E0D" "x6B3BE8" "xCD3BFC" "x746E6F" "x977A71" "x33B258" "x9EA280" "x3FEEB5" }				
+				province = p:xB90E0D
+				province = p:x6B3BE8
+				province = p:xCD3BFC
+				province = p:x746E6F
+				province = p:x977A71
+				province = p:x33B258
+				province = p:x9EA280
+				province = p:x3FEEB5
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -861,7 +931,15 @@ lds_migration.7 = { #CSA Zion revolt
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { "x002D4B" "x71153F" "x5832CE" "xC6264B" "x9A3850" "xAB3179" "x606DBE" "x5BA80C" "x91CECE" }
+				province = p:x002D4B
+				province = p:x71153F
+				province = p:x5832CE
+				province = p:xC6264B
+				province = p:x9A3850
+				province = p:xAB3179
+				province = p:x606DBE
+				province = p:x5BA80C
+				province = p:x91CECE
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -912,7 +990,12 @@ lds_migration.7 = { #CSA Zion revolt
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { "x1B1E8B" "x2D821B" "x6C6CF4" "xCF5B71" "xE5842F" "x24CC25" }
+				province = p:x1B1E8B
+				province = p:x2D821B
+				province = p:x6C6CF4
+				province = p:xCF5B71
+				province = p:xE5842F
+				province = p:x24CC25
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -963,7 +1046,15 @@ lds_migration.7 = { #CSA Zion revolt
 			create_country = {
 				tag = ZIO
 				origin = c:USA
-				province = { "x394431" "x924593" "x3E62DB" "x9B4CC5" "x6298F3" "xD5A04C" "x90C040" "x5BD057" "x76F2C5" }
+				province = p:x394431
+				province = p:x924593
+				province = p:x3E62DB
+				province = p:x9B4CC5
+				province = p:x6298F3
+				province = p:xD5A04C
+				province = p:x90C040
+				province = p:x5BD057
+				province = p:x76F2C5
 				on_created = {
 					#WIP, provide appropriate modifications to IGs and add/move characters here
 					if = {
@@ -1008,10 +1099,21 @@ lds_migration.7 = { #CSA Zion revolt
 		c:CSA = {
 			create_diplomatic_play = {
 				name = zion_secession
-				initiator = c:ZIO
-				type = secession
+				target_country = c:ZIO
+				type = dp_secession
 			}
 		}
+	}
+	
+	option = {
+		name = lds_migration.7.a
+		default_option = yes
+	}
+	
+	option = {
+		trigger = { is_player = yes }
+		name = lds_migration.7.b
+		play_as = c:ZIO
 	}
 }
 
@@ -1063,6 +1165,7 @@ lds_migration.8 = { #USA response to CSA revolt
 	option = { #leave them to the wolves
 		name = lds_migration.8.b
 		set_global_variable = lds_csa
+		default_option = yes
 	}
 	
 	option = { #kill them
@@ -1070,8 +1173,8 @@ lds_migration.8 = { #USA response to CSA revolt
 		c:USA = {
 			create_diplomatic_play = {
 				name = zion_secession
-				initiator = c:ZIO
-				type = secession
+				target_country = c:ZIO
+				type = dp_secession
 			}
 		}
 		set_global_variable = lds_csa

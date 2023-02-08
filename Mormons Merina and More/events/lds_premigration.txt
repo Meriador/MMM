@@ -53,7 +53,7 @@ lds_premigration.1 = { #kirtland safety society
 	option = {
 		name = lds_premigration.1.a
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 1
 		}
 		scope:kirtland_scope = {
@@ -64,7 +64,9 @@ lds_premigration.1 = { #kirtland safety society
 				}
 				move_pop = s:STATE_MISSOURI.region_state:USA
 			}
-			remove_homeland = mormon
+			state_region = {
+				remove_homeland = mormon
+			}
 		}
 	}
 }
@@ -137,10 +139,10 @@ lds_premigration.2 = { #missouri mormon war
 		}
 		c:USA = {
 			OR = {
-				has_state_in_state_region = { s:STATE_KANSAS }
-				has_state_in_state_region = { s:STATE_NEBRASKA }
-				has_state_in_state_region = { s:STATE_IOWA }
-				has_state_in_state_region = { s:STATE_ILLINOIS }
+				has_state_in_state_region = s:STATE_KANSAS
+				has_state_in_state_region = s:STATE_NEBRASKA
+				has_state_in_state_region = s:STATE_IOWA
+				has_state_in_state_region = s:STATE_ILLINOIS
 			}
 		}
 	}
@@ -152,32 +154,28 @@ lds_premigration.2 = { #missouri mormon war
 			}
 			remove_variable = far_west
 		}
+		s:STATE_ILLINOIS.region_state:USA = { set_variable = nauvoo_candidate }
+		s:STATE_IOWA.region_state:USA = { set_variable = nauvoo_candidate }
+		s:STATE_KANSAS.region_state:USA = { set_variable = nauvoo_candidate }
+		s:STATE_NEBRASKA.region_state:USA = { set_variable = nauvoo_candidate }
 		random_scope_state = {
 			limit = {
-				OR = { 
-					s:STATE_KANSAS.region_state:USA
-					s:STATE_NEBRASKA.region_state:USA
-					s:STATE_IOWA.region_state:USA
-					s:STATE_ILLINOIS.region_state:USA
-				}
+				has_variable = nauvoo_candidate
 			}
 			weight = {
-				value = 0
+				base = 0
 				
-				if = {
-					limit = {
-						is_incorporated = yes
-					}
+				modifier = {
+					is_incorporated = yes
 					add = 1000
+					desc = "incorporated_state"
 				}
 				
-				if = {
-					limit = {
-						is_slave_state = yes
-					}
+				modifier = {
+					is_slave_state = yes
 					add = -1000
+					desc = "slave_state"
 				}
-				
 			}
 			save_scope_as = nauvoo_scope
 		}
@@ -204,7 +202,7 @@ lds_premigration.2 = { #missouri mormon war
 			}
 			add_homeland = mormon
 			state_region = {
-				add_variable = nauvoo_site
+				set_variable = nauvoo_site
 			}
 		}
 	}
@@ -240,13 +238,11 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 		}
 		c:USA = {
 			NOT = {
-				has_state_in_state_region = {
-					OR = {
-						STATE_KANSAS
-						STATE_NEBRASKA
-						STATE_IOWA
-						STATE_ILLINOIS
-					}
+				OR = {
+					has_state_in_state_region = s:STATE_KANSAS
+					has_state_in_state_region = s:STATE_NEBRASKA
+					has_state_in_state_region = s:STATE_IOWA
+					has_state_in_state_region = s:STATE_ILLINOIS
 				}
 			}
 		}
@@ -258,7 +254,7 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 		}
 		s:STATE_MISSOURI.region_state:USA = {
 			save_scope_as = far_west_scope
-			any_neighboring_state = {
+			any_neighbouring_state = {
 				owner = {
 					NOT = {
 						c:USA
@@ -290,7 +286,7 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 			}
 			add_homeland = mormon
 			state_region = {
-				add_variable = nauvoo_site
+				set_variable = nauvoo_site
 			}
 		}
 	}
@@ -334,6 +330,7 @@ lds_premigration.3 = { # opposition newspaper destroyed
 	
 	option = {
 		name = lds_premigration.3.a
+		default_option = yes
 		
 		scope:nauvoo_scope = {
 			add_radicals = {
@@ -349,31 +346,39 @@ lds_premigration.3 = { # opposition newspaper destroyed
 	option = {
 		name = lds_premigration.3.b
 		trigger = {
-			c:USA = {
+			ROOT = {
 				OR = {
-					has_law = lawtype:law_outlawed_dissent
-					has_law = lawtype:law_censorship
+					has_law = law_type:law_outlawed_dissent
+					has_law = law_type:law_censorship
 				}
 			}
 		}
 		
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 2
 		}
 		
 		scope:nauvoo_scope = {
 			add_radicals = {
 				value = small_radicals
-				NOT = { religion = lds }
+				religion = rel:protestant
+			}
+			add_radicals = {
+				value = small_radicals
+				religion = rel:catholic
 			}
 			add_radicals = {
 				value = very_large_radicals
-				religion = lds
+				religion = rel:lds
 			}
 			add_loyalists = {
 				value = 0.03
-				NOT = { religion = lds }
+				religion = rel:protestant
+			}
+			add_loyalists = {
+				value = 0.03
+				religion = rel:catholic
 			}
 		}
 	}
@@ -415,18 +420,19 @@ lds_premigration.4 = { # smiths arrested
 		scope:nauvoo_scope = {
 			add_radicals = {
 				value = large_radicals
-				religion = lds
+				religion = rel:lds
 			}
 		}
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 2
 		}
+	}
 }
 
 lds_premigration.5 = { # election campaign
 	type = country_event
-	placement = scope:lds_nauvoo
+	placement = scope:nauvoo_scope
 	title = lds_premigration.5.t
 	desc = lds_premigration.5.d
 	flavor = lds_premigration.5.f
@@ -464,90 +470,96 @@ lds_premigration.5 = { # election campaign
 	option = {
 		name = lds_premigration.5.a
 		
-		if = {
-			limit = {
-				ig:ig_devout2 = { has_party = no } 
+		trigger = {
+			ig:ig_devout2 = { has_party = no } 
+		}
+
+		create_character = {
+			first_name = Joseph
+			last_name = Smith
+			culture = mormon
+			religion = lds
+			ig_leader = yes
+			interest_group = ig_devout2
+			birth_date = 1805.12.23
+			dna = ecchi_dna_joseph_smith
+			ideology = ideology_abolitionist
+			traits = {
+				imperious
+				arrogant
+				basic_political_operator
 			}
-			create_character = {
-				first_name = Joseph
-				last_name = Smith
-				culture = mormon
-				religion = lds
-				ig_leader = yes
-				interest_group = ig_devout2
-				birth_date = 1805.12.23
-				dna = ecchi_dna_joseph_smith
-				ideology = ideology_abolitionist
-				traits = {
-					imperious
-					arrogant
-					basic_political_operator
-				}
-				on_created = {
-					set_variable = {
-						name = is_joseph_smith
-					}				
-				}
+			on_created = {
+				set_variable = {
+					name = is_joseph_smith
+				}				
 			}
 		}
-		else_if = {
-			limit = {
-				ig:ig_armed_forces = { has_party = no }
-				ROOT = { has_law:law_national_militia }
+	}
+
+	option = {
+		name = lds_premigration.5.b
+
+		trigger = {
+			has_law = law_type:law_national_militia
+			ig:ig_armed_forces = { has_party = no }
+		}
+
+		create_character = {
+			first_name = Joseph
+			last_name = Smith
+			culture = mormon
+			religion = lds
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			birth_date = 1805.12.23
+			dna = ecchi_dna_joseph_smith
+			ideology = ideology_abolitionist
+			traits = {
+				imperious
+				arrogant
+				basic_political_operator
 			}
-			create_character = {
-				first_name = Joseph
-				last_name = Smith
-				culture = mormon
-				religion = lds
-				ig_leader = yes
-				interest_group = ig_armed_forces
-				birth_date = 1805.12.23
-				dna = ecchi_dna_joseph_smith
-				ideology = ideology_abolitionist
-				traits = {
-					imperious
-					arrogant
-					basic_political_operator
-				}
-				on_created = {
-					set_variable = {
-						name = is_joseph_smith
-					}				
-				}
+			on_created = {
+				set_variable = {
+					name = is_joseph_smith
+				}				
 			}
 		}
-		else_if = {
-			limit = {
-				ig:ig_rural_folk = { has_party = no } 
+	}
+	option = {
+		name = lds_premigration.5.c
+		trigger = {
+			ig:ig_rural_folk = { has_party = no } 
+		}
+		create_character = {
+			first_name = Joseph
+			last_name = Smith
+			culture = mormon
+			religion = lds
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			birth_date = 1805.12.23
+			dna = ecchi_dna_joseph_smith
+			ideology = ideology_abolitionist
+			traits = {
+				imperious
+				arrogant
+				basic_political_operator
 			}
-			create_character = {
-				first_name = Joseph
-				last_name = Smith
-				culture = mormon
-				religion = lds
-				ig_leader = yes
-				interest_group = ig_rural_folk
-				birth_date = 1805.12.23
-				dna = ecchi_dna_joseph_smith
-				ideology = ideology_abolitionist
-				traits = {
-					imperious
-					arrogant
-					basic_political_operator
-				}
-				on_created = {
-					set_variable = {
-						name = is_joseph_smith
-					}				
-				}
+			on_created = {
+				set_variable = {
+					name = is_joseph_smith
+				}				
 			}
 		}
-		else_if = {
-			change_variable = {
-				name = var:lds_agitation
-				add = 1
-			}
+	}
+	option = {
+		default_option = yes
+		name = lds_premigration.5.e
+		change_variable = {
+			name = lds_agitation
+			add = 1
 		}
 	}
 }
@@ -586,7 +598,7 @@ lds_premigration.6 = { # governor assassination attempt
 		}
 		set_variable = boggs_assassination
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 1
 		}
 	}
@@ -610,16 +622,16 @@ lds_premigration.6 = { # governor assassination attempt
 	}
 	
 	option = { #clearly guilty
-		name = lds_premigration.6.a
-		hidden_effect = { 
+		name = lds_premigration.6.b
+		hidden_effect = {
 			random_list = {
-				90 = { 
-					trigger_event = { 
+				90 = {
+					trigger_event = {
 						id = lds_premigration.7 days = 360
 					}
 				}
 				10 = {
-					trigger_event = { 
+					trigger_event = {
 						id = lds_premigration.8 days = 360
 					}
 				}
@@ -628,16 +640,17 @@ lds_premigration.6 = { # governor assassination attempt
 	}
 	
 	option = { #leave it to the court
-		name = lds_premigration.6.a
-		hidden_effect = { 
+		name = lds_premigration.6.c
+		default_option = yes
+		hidden_effect = {
 			random_list = {
-				50 = { 
-					trigger_event = { 
+				50 = {
+					trigger_event = {
 						id = lds_premigration.7 days = 360
 					}
 				}
 				50 = {
-					trigger_event = { 
+					trigger_event = {
 						id = lds_premigration.8 days = 360
 					}
 				}
@@ -674,7 +687,7 @@ lds_premigration.7 = { # rockwell trial convicts
 	option = {
 		name = lds_premigration.7.a
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 6
 		}
 	}
@@ -707,13 +720,13 @@ lds_premigration.8 = { # rockwell released
 	option = {
 		name = lds_premigration.8.a
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 2
 		}
 	}
 }
 
-lds_premigration.9 = {
+lds_premigration.9 = { #opening event
 	type = country_event
 	placement = root
 	title = lds_premigration.9.t
@@ -733,16 +746,32 @@ lds_premigration.9 = {
 	
 	immediate = {
 		set_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			value = 0
 		}
 		set_variable = lds_kirtland
-		add_journal_entry = {
-			type = je_lds_migration
-			}
+		add_journal_entry = { type = je_lds_migration }
 		add_to_global_variable_list = {
-			list = deseret_potential
-			target = { s:STATE_CALIFORNIA s:STATE_OREGON s:STATE_WASHINGTON s:STATE_BRITISH_COLUMBIA s:STATE_NEVADA s:STATE_IDAHO s:STATE_MONTANA s:STATE_ALBERTA s:STATE_SASKATCHEWAN s:STATE_ARIZONA s:STATE_UTAH s:STATE_NEW_MEXICO s:STATE_COLORADO s:STATE_WYOMING s:STATE_WYOMING s:STATE_SOUTH_DAKOTA s:STATE_NORTH_DAKOTA s:STATE_KANSAS s:STATE_NEBRASKA }
+			name = deseret_potential
+			target = s:STATE_CALIFORNIA
+			target = s:STATE_OREGON 
+			target = s:STATE_WASHINGTON 
+			target = s:STATE_BRITISH_COLUMBIA 
+			target = s:STATE_NEVADA 
+			target = s:STATE_IDAHO 
+			target = s:STATE_MONTANA 
+			target = s:STATE_ALBERTA 
+			target = s:STATE_SASKATCHEWAN 
+			target = s:STATE_ARIZONA 
+			target = s:STATE_UTAH 
+			target = s:STATE_NEW_MEXICO 
+			target = s:STATE_COLORADO 
+			target = s:STATE_WYOMING 
+			target = s:STATE_WYOMING 
+			target = s:STATE_SOUTH_DAKOTA 
+			target = s:STATE_NORTH_DAKOTA 
+			target = s:STATE_KANSAS 
+			target = s:STATE_NEBRASKA
 		}
 	}
 	
@@ -798,14 +827,15 @@ lds_premigration.10 = { #mormon farms attacked
 	
 	option = { #unsympathetic
 		name = lds_premigration.10.a
+		default_option = yes
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 1
 		}
 		scope:lds_farms_scope = {
 			add_radicals = {
 				value = very_large_radicals
-				religion = lds
+				religion = rel:lds
 			}
 		}
 	}
@@ -813,13 +843,14 @@ lds_premigration.10 = { #mormon farms attacked
 	option = { #sympathetic
 		name = lds_premigration.10.b
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = -1
 		}
 		scope:lds_farms_scope = {
 			add_radicals = {
 				value = small_radicals
 			}
+			add_treasury = -50000
 		}
 	}
 }
@@ -848,20 +879,29 @@ lds_premigration.11 = { #forced vigilante disavowals
 			has_variable = lds_cooldown
 			has_variable = lds_vigilante_cooldown
 		}
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:mormon
+			}
+			radical_fraction = {
+				value > 0.2
+				religion = rel:lds
+			}
+		}
 	}
 	
 	immediate = {
 		random_scope_state = {
 			limit = {
-				any_scope_state = {
+				state_region = {
 					is_homeland = cu:mormon
-					radical_fraction = {
-						value > .2
-						religion = lds
-					}
 				}
-				save_scope_as = lds_vigilante_scope
+				radical_fraction = {
+					value > 0.2
+					religion = rel:lds
+				}
 			}
+			save_scope_as = lds_vigilante_scope
 		}
 		set_variable = {
 			name = lds_cooldown
@@ -875,13 +915,14 @@ lds_premigration.11 = { #forced vigilante disavowals
 	
 	option = { #unsympathetic
 		name = lds_premigration.11.a
+		default_option = yes
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 2
 		}
 		scope:lds_farms_scope = {
 			add_radicals = {
-				value = .01
+				value = 0.01
 			}
 		}
 	}
@@ -889,7 +930,7 @@ lds_premigration.11 = { #forced vigilante disavowals
 	option = { #sympathetic
 		name = lds_premigration.11.b
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = -1
 		}
 		scope:lds_farms_scope = {
@@ -918,23 +959,31 @@ lds_premigration.12 = { #church land dispute/salt sermon
 	
 	duration = 3
 
-
 	trigger = {
 		NOT = {
 			has_variable = danites_formed 
 			has_variable = lds_cooldown	
+		}
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:mormon
+			}
+			radical_fraction = {
+				value > 0.2
+				religion = rel:lds
+			}
 		}
 	}
 	
 	immediate = {
 		random_scope_state = {
 			limit = {
-				any_scope_state = {
+				state_region = {
 					is_homeland = cu:mormon
-					radical_fraction = {
-						value > 0.2
-						religion = lds
-					}
+				}
+				radical_fraction = {
+					value > 0.2
+					religion = rel:lds
 				}
 			}
 			save_scope_as = lds_schism_scope
@@ -951,7 +1000,7 @@ lds_premigration.12 = { #church land dispute/salt sermon
 	option = { #only option, will not be well recieved
 		name = lds_premigration.12.a
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 2
 		}
 		scope:lds_schism_scope = {
@@ -991,7 +1040,7 @@ lds_premigration.13 = { #nonmormons threatened by expansion
 	immediate = {
 		random_scope_state = {
 			limit = {
-				any_scope_state = {
+				state_region = {
 					is_homeland = cu:mormon
 				}
 			}
@@ -1009,13 +1058,14 @@ lds_premigration.13 = { #nonmormons threatened by expansion
 	
 	option = { #restriction on settlement
 		name = lds_premigration.13.a
+		default_option = yes
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 1
 		}
 		scope:lds_expansion_scope = {
 			add_radicals = {
-				value = small_radicals
+				value = -0.3
 				religion = rel:lds
 			}
 			add_radicals = {
@@ -1030,9 +1080,15 @@ lds_premigration.13 = { #nonmormons threatened by expansion
 	}
 	option = { #taking advantage of new block
 		name = lds_premigration.13.b
-		add_modifier = {
-			name = influential_state
-			months = normal_modifier_time
+		scope:lds_expansion_scope = {
+			add_modifier = {
+				name = influential_state
+				months = normal_modifier_time
+			}
+		}
+		change_variable = {
+			name = lds_agitation
+			add = 2
 		}
 	}
 }
@@ -1085,7 +1141,7 @@ lds_premigration.14 = { #rumors of theocracy
 	option = { 
 		name = lds_premigration.14.a
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 1
 		}
 	}
@@ -1139,7 +1195,7 @@ lds_premigration.15 = { #rumors of infidelity
 	option = { 
 		name = lds_premigration.15.a
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
 			add = 1
 		}
 	}
@@ -1174,11 +1230,11 @@ lds_premigration.16 = { #local election violence
 	immediate = {
 		random_scope_state = {
 			limit = {
-				any_scope_state = {
+				state_region = {
 					is_homeland = cu:mormon
-					radical_fraction = {
-						value > 0.1
-					}
+				}
+				radical_fraction = {
+					value > 0.1
 				}
 			}
 			save_scope_as = lds_local_election_scope
@@ -1193,10 +1249,19 @@ lds_premigration.16 = { #local election violence
 		}
 	}
 	
-	option = { #endorsement of vote suppression
+	option = { #leaving well enough alone
 		name = lds_premigration.16.a
+		default_option = yes
 		change_variable = {
-			name = var:lds_agitation
+			name = lds_agitation
+			add = 1
+		}
+	}
+	
+	option = { #endorsement of vote suppression
+		name = lds_premigration.16.b
+		change_variable = {
+			name = lds_agitation
 			add = 3
 		}
 		scope:lds_local_election_scope = {
@@ -1210,14 +1275,6 @@ lds_premigration.16 = { #local election violence
 			add_loyalists = {
 				value = 0.03
 			}
-		}
-	}
-	
-	option = { #leaving well enough alone
-		name = lds_premigration.16.b
-		change_variable = {
-			name = var:lds_agitation
-			add = 1
 		}
 	}
 }
