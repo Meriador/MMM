@@ -124,7 +124,6 @@ lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon hom
 	
 	duration = 3
 
-
 	option = {
 		name = lds_migration.3.a
 		if = {
@@ -157,7 +156,6 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	immediate = {
 		random_in_global_list = {
@@ -337,7 +335,6 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	immediate = {
 		random_in_global_list = {
@@ -554,7 +551,6 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 	
 	duration = 3
 
-
 	immediate = {
 		random_in_global_list = {
 			list = deseret_potential
@@ -753,7 +749,6 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 	}
 }
 
-
 lds_migration.7 = { #CSA Zion revolt
 	type = country_event
 	placement = scope:lds_rebel_state
@@ -771,7 +766,6 @@ lds_migration.7 = { #CSA Zion revolt
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	trigger = {
 		exists = c:CSA
@@ -1134,7 +1128,6 @@ lds_migration.8 = { #USA response to CSA revolt
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	trigger = {
 		exists = c:CSA

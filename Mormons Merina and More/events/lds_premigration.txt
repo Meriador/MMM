@@ -89,7 +89,6 @@ lds_premigration.101 = { #if ohio stops being america first
 	
 	duration = 3
 
-
 	trigger = {
 		has_variable = lds_kirtland
 		NOT = {
@@ -226,7 +225,6 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 	
 	duration = 3
 
-
 	trigger = {
 		has_variable = lds_far_west
 		NOT = { has_variable = lds_major_cooldown }
@@ -309,7 +307,6 @@ lds_premigration.3 = { # opposition newspaper destroyed
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	trigger = {
 		has_variable = lds_nauvoo
@@ -402,7 +399,6 @@ lds_premigration.4 = { # smiths arrested
 	
 	duration = 3
 
-
 	immediate = {
 		random_scope_state = {
 			limit = {
@@ -447,7 +443,6 @@ lds_premigration.5 = { # election campaign
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	trigger = {
 		ROOT = { in_election_campaign = yes }
@@ -581,7 +576,6 @@ lds_premigration.6 = { # governor assassination attempt
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	trigger = {
 		has_variable = lds_nauvoo
@@ -1029,7 +1023,6 @@ lds_premigration.13 = { #nonmormons threatened by expansion
 	
 	duration = 3
 
-
 	trigger = {
 		NOT = { 
 			has_variable = lds_cooldown
@@ -1111,7 +1104,6 @@ lds_premigration.14 = { #rumors of theocracy
 	
 	duration = 3
 
-
 	trigger = {
 		NOT = { 
 			has_variable = lds_cooldown
@@ -1165,7 +1157,6 @@ lds_premigration.15 = { #rumors of infidelity
 	
 	duration = 3
 
-
 	trigger = {
 		NOT = { 
 			has_variable = lds_cooldown
@@ -1218,7 +1209,6 @@ lds_premigration.16 = { #local election violence
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
-
 
 	trigger = {
 		NOT = {

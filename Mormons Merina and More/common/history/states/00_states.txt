@@ -269,6 +269,7 @@ STATES = {
 		add_homeland = inuit
 		add_homeland = athabaskan
 		add_homeland = tlingit
+		add_claim = c:RUS
 	}
 	s:STATE_WASHINGTON = {
 		create_state = {
@@ -317,6 +318,8 @@ STATES = {
 		add_homeland = nez_perce
 		add_homeland = salish
 		add_homeland = penutian
+
+		add_claim = c:ORG
 	}
 	s:STATE_OREGON = {
 		create_state = {
@@ -366,6 +369,8 @@ STATES = {
 		add_homeland = nez_perce
 		add_homeland = paiute
 		add_homeland = penutian
+
+		add_claim = c:ORG
 	}
 	s:STATE_IDAHO = {
 		create_state = {
@@ -397,6 +402,8 @@ STATES = {
 		add_homeland = paiute
 		add_homeland = shoshone
 		add_homeland = salish
+
+		add_claim = c:ORG
 	}
 	s:STATE_COLORADO = {
 		create_state = {
@@ -420,6 +427,8 @@ STATES = {
 		}
 		add_homeland = arapaho
 		add_homeland = ute
+		add_claim = c:MEX
+		add_claim = c:USA
 	}
 	s:STATE_WYOMING = {
 		create_state = {
@@ -450,6 +459,8 @@ STATES = {
 		add_homeland = absaroka
 		add_homeland = cheyenne
 		add_homeland = arapaho
+		add_claim = c:MEX
+		add_claim = c:USA
 	}
 	s:STATE_MONTANA = {
 		create_state = {
@@ -500,6 +511,7 @@ STATES = {
 		add_homeland = salish
 		add_homeland = nakoda
 		add_homeland = blackfoot
+		add_claim = c:USA
 	}
 	s:STATE_NORTH_DAKOTA = {
 		create_state = {
@@ -517,6 +529,7 @@ STATES = {
 		
 		add_homeland = dakota
 		add_homeland = nakoda
+		add_claim = c:USA
 	}
 	s:STATE_SOUTH_DAKOTA = {
 		create_state = {
@@ -542,6 +555,7 @@ STATES = {
 		
 		add_homeland = dakota
 		add_homeland = cheyenne
+		add_claim = c:USA
 	}
 	s:STATE_NEBRASKA = {
 		create_state = {
@@ -582,6 +596,7 @@ STATES = {
 		add_homeland = arapaho
 		add_homeland = caddoan
 		add_homeland = siouan
+		add_claim = c:USA
 	}
 	s:STATE_KANSAS = {
 		create_state = {
@@ -612,6 +627,7 @@ STATES = {
 		add_homeland = siouan
 		add_homeland = arapaho
 		add_homeland = caddoan
+		add_claim = c:USA
 	}
 	s:STATE_OKLAHOMA = {
 		create_state = {
@@ -631,6 +647,8 @@ STATES = {
 		add_homeland = cherokee
 		add_homeland = siouan
 		add_homeland = caddoan
+		add_claim = c:USA
+		add_claim = c:SEQ
 	}
 	s:STATE_ARKANSAS = {
 		create_state = {
@@ -696,6 +714,7 @@ STATES = {
 		add_homeland = dakota
 		add_homeland = algonquian
 		add_homeland = ojibwe
+		add_claim = c:USA
 	}
 	s:STATE_WISCONSIN = {
 		create_state = {
@@ -721,6 +740,7 @@ STATES = {
 		add_homeland = dakota
 		add_homeland = algonquian
 		add_homeland = ojibwe
+		add_claim = c:USA
 	}
 	s:STATE_INDIANA = {
 		create_state = {
@@ -748,6 +768,7 @@ STATES = {
 		add_homeland = yankee
 		add_homeland = algonquian
 		add_homeland = ojibwe
+		add_claim = c:USA
 	}
 	s:STATE_OHIO = {
 		create_state = {
@@ -815,6 +836,7 @@ STATES = {
 		add_homeland = dixie
 		add_homeland = afro_american	
 		add_homeland = muskogean
+		add_claim = c:USA
 	}
 	s:STATE_GEORGIA = {
 		create_state = {
@@ -991,6 +1013,8 @@ STATES = {
 		}
 		add_homeland = athabaskan
 		add_homeland = inuit
+
+		add_claim = c:HBC
 	}
 	s:STATE_NORTHWEST_TERRITORIES = {
 		create_state = {
@@ -1027,6 +1051,8 @@ STATES = {
 		}
 		add_homeland = athabaskan
 		add_homeland = inuit
+		
+		add_claim = c:HBC
 	}
 	s:STATE_NUNAVUT = {
 		create_state = {
@@ -1048,6 +1074,8 @@ STATES = {
 			}
 		}
 		add_homeland = inuit
+
+		add_claim = c:HBC
 	}
 	s:STATE_BRITISH_COLUMBIA = {
 		create_state = {
@@ -1140,7 +1168,8 @@ STATES = {
 		add_homeland = salish
 		add_homeland = wakashan
 		add_homeland = penutian
-		
+
+		add_claim = c:ORG
 	}
 	s:STATE_ALBERTA = {
 		create_state = {
@@ -1186,6 +1215,8 @@ STATES = {
 		add_homeland = anglo_canadian
 		add_homeland = athabaskan
 		add_homeland = blackfoot
+		
+		add_claim = c:HBC
 	}
 	s:STATE_SASKATCHEWAN = {
 		create_state = {
@@ -1225,6 +1256,8 @@ STATES = {
 		add_homeland = anglo_canadian
 		add_homeland = athabaskan
 		add_homeland = nakoda
+
+		add_claim = c:HBC
 	}
 	s:STATE_MANITOBA = {
 		create_state = {
@@ -1262,6 +1295,8 @@ STATES = {
 		add_homeland = anglo_canadian
 		add_homeland = cree
 		add_homeland = nakoda
+
+		add_claim = c:HBC
 	}
 	s:STATE_ONTARIO = {
 		create_state = {
@@ -1300,6 +1335,9 @@ STATES = {
 		add_homeland = algonquian
 		add_homeland = cree
 		add_homeland = ojibwe
+
+		add_claim = c:HBC
+		add_claim = c:ONT
 	}
 	s:STATE_QUEBEC = {
 		create_state = {
@@ -1337,6 +1375,9 @@ STATES = {
 		add_homeland = cree
 		add_homeland = inuit
 		add_homeland = algonquian
+
+		add_claim = c:QUE
+		add_claim = c:HBC
 	}
 	s:STATE_NEWFOUNDLAND = {
 		create_state = {
@@ -2097,6 +2138,7 @@ STATES = {
 		add_homeland = paiute
 		add_homeland = shoshone
 		add_homeland = hokan
+		add_claim = c:MEX
 	}
 	s:STATE_ARIZONA = {
 		create_state = {
@@ -2135,6 +2177,7 @@ STATES = {
 		add_homeland = pueblo
 		add_homeland = oodham
 		add_homeland = hokan
+		add_claim = c:MEX
 	}
 	s:STATE_NEW_MEXICO = {
 		create_state = {
@@ -2169,6 +2212,7 @@ STATES = {
 		add_homeland = comanche
 		add_homeland = apache
 		add_claim = c:TEX
+		add_claim = c:MEX
 	}
 	s:STATE_CALIFORNIA = {
 		create_state = {
@@ -2253,6 +2297,7 @@ STATES = {
 		add_homeland = hokan
 		add_homeland = penutian
 		add_homeland = serrano
+		add_claim = c:MEX
 	}
 	s:STATE_SONORA = {
 		create_state = {
@@ -7583,6 +7628,7 @@ STATES = {
 		add_homeland = paiute
 		add_homeland = shoshone
 		add_homeland = ute
+		add_claim = c:MEX
 	}
 	s:STATE_SOUTH_CAROLINA = {
 		create_state = {
