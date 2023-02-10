@@ -141,7 +141,7 @@ lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon hom
 
 lds_migration.4 = { #Founding of Deseret, Young Edition
 	type = country_event
-	placement = deseret_state
+	placement = root
 	title = lds_migration.4.t
 	desc = lds_migration.4.d
 	flavor = lds_migration.4.f
@@ -356,7 +356,7 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 
 lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 	type = country_event
-	placement = scope:deseret_capital
+	placement = root
 	title = lds_migration.5.t
 	desc = lds_migration.5.d
 	flavor = lds_migration.5.f
@@ -571,7 +571,7 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 
 lds_migration.6 = { #Founding of Deseret, Joseph Edition
 	type = country_event
-	placement = scope:deseret_capital
+	placement = root
 	title = lds_migration.6.t
 	desc = lds_migration.6.d
 	flavor = lds_migration.6.f
