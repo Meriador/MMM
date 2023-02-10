@@ -3,14 +3,6 @@
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_conservative = yes
 		
-		add_technology_researched = claim_new_mexico
-		add_technology_researched = claim_arizona
-		add_technology_researched = claim_texas
-		add_technology_researched = claim_utah
-		add_technology_researched = claim_colorado
-		add_technology_researched = claim_california
-		add_technology_researched = claim_nevada
-		
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_cultural_exclusion

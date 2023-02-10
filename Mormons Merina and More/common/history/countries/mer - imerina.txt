@@ -17,7 +17,7 @@
 
 		add_modifier = {
 			name = modifier_tangena_ordeal
-		}	
+		}
 		
 		add_journal_entry = { type = je_madagscar_unification }
 	}

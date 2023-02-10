@@ -1,0 +1,25 @@
+﻿l_english:
+ 
+ # IG ideologies
+ ideology_nativist: "Nativist"
+ ideology_nativist_desc: "#lore This group seeks to exclude other peoples from their traditions and social institutions.#!"
+ 
+ ideology_charitable: "Charitable"
+ ideology_charitable_desc: "#lore This group seeks to build up social institutions, such that the fortunate care for the less so.#!"
+ 
+ ideology_familialist: "Familialist"
+ ideology_familialist_desc: "#lore This group promotes the family unit as the basic underpinning of society.#!"
+ 
+ ideology_evangelist: "Evangelist"
+ ideology_evangelist_desc: "#lore This group believes the government should facilitate spreading the good word, domestically and abroad.#!"
+ 
+ ideology_buddhist_pacifism: "Nonviolence"
+ ideology_buddhist_pacifism_desc: "#lore This group wishes for people to direct their energies inward, to prioritize internal reflection over external ambitions.#!"
+ 
+ ideology_ottomanist: "Ottomanist"
+ ideology_ottomanist_desc: "#lore This group seeks to reform the Ottoman Empire into a pluralistic, constitutional monarchy.#!"
+ 
+ # Leader Ideologies
+ ideology_autarkic: "Autarkic"
+ ideology_autarkic_desc: "#lore This leader believes that their nation is best served by closing off the outside world, and relying only on itself so far as is possible.#!"
+ 

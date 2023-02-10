@@ -676,8 +676,8 @@ european_colonies_east_africa = {
 		owns_entire_state_region = STATE_MORONDAVA
 		owns_entire_state_region = STATE_BOENY
 		owns_entire_state_region = STATE_TOAMASINA
-		owns_entire_state_region = STATE_IMERINA
-		owns_entire_state_region = STATE_SOUTH_HIGHLANDS
+		owns_entire_state_region = STATE_NORTH_MADAGASCAR
+		owns_entire_state_region = STATE_SOUTH_MADAGASCAR
 	}
 }
 

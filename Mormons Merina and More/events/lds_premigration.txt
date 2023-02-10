@@ -93,7 +93,7 @@ lds_premigration.101 = { #if ohio stops being america first
 		has_variable = lds_kirtland
 		NOT = {
 			C:USA = {
-				has_state_in_state_region = s:STATE_OHIO
+				has_state_in_state_region = STATE_OHIO
 			}
 		}
 	}
@@ -138,10 +138,10 @@ lds_premigration.2 = { #missouri mormon war
 		}
 		c:USA = {
 			OR = {
-				has_state_in_state_region = s:STATE_KANSAS
-				has_state_in_state_region = s:STATE_NEBRASKA
-				has_state_in_state_region = s:STATE_IOWA
-				has_state_in_state_region = s:STATE_ILLINOIS
+				has_state_in_state_region = STATE_KANSAS
+				has_state_in_state_region = STATE_NEBRASKA
+				has_state_in_state_region = STATE_IOWA
+				has_state_in_state_region = STATE_ILLINOIS
 			}
 		}
 	}
@@ -237,10 +237,10 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 		c:USA = {
 			NOT = {
 				OR = {
-					has_state_in_state_region = s:STATE_KANSAS
-					has_state_in_state_region = s:STATE_NEBRASKA
-					has_state_in_state_region = s:STATE_IOWA
-					has_state_in_state_region = s:STATE_ILLINOIS
+					has_state_in_state_region = STATE_KANSAS
+					has_state_in_state_region = STATE_NEBRASKA
+					has_state_in_state_region = STATE_IOWA
+					has_state_in_state_region = STATE_ILLINOIS
 				}
 			}
 		}
@@ -745,28 +745,6 @@ lds_premigration.9 = { #opening event
 		}
 		set_variable = lds_kirtland
 		add_journal_entry = { type = je_lds_migration }
-		add_to_global_variable_list = {
-			name = deseret_potential
-			target = s:STATE_CALIFORNIA
-			target = s:STATE_OREGON 
-			target = s:STATE_WASHINGTON 
-			target = s:STATE_BRITISH_COLUMBIA 
-			target = s:STATE_NEVADA 
-			target = s:STATE_IDAHO 
-			target = s:STATE_MONTANA 
-			target = s:STATE_ALBERTA 
-			target = s:STATE_SASKATCHEWAN 
-			target = s:STATE_ARIZONA 
-			target = s:STATE_UTAH 
-			target = s:STATE_NEW_MEXICO 
-			target = s:STATE_COLORADO 
-			target = s:STATE_WYOMING 
-			target = s:STATE_WYOMING 
-			target = s:STATE_SOUTH_DAKOTA 
-			target = s:STATE_NORTH_DAKOTA 
-			target = s:STATE_KANSAS 
-			target = s:STATE_NEBRASKA
-		}
 	}
 	
 	option = {
@@ -806,8 +784,8 @@ lds_premigration.10 = { #mormon farms attacked
 					religion = rel:lds
 					pop_employment_building_group = bg_agriculture
 				}
-				save_scope_as = lds_farms_scope
 			}
+			save_scope_as = lds_farms_scope
 		}
 		set_variable = {
 			name = lds_cooldown
@@ -914,7 +892,7 @@ lds_premigration.11 = { #forced vigilante disavowals
 			name = lds_agitation
 			add = 2
 		}
-		scope:lds_farms_scope = {
+		scope:lds_vigilante_scope = {
 			add_radicals = {
 				value = 0.01
 			}
@@ -927,7 +905,7 @@ lds_premigration.11 = { #forced vigilante disavowals
 			name = lds_agitation
 			add = -1
 		}
-		scope:lds_farms_scope = {
+		scope:lds_vigilante_scope = {
 			add_radicals = {
 				value = small_radicals
 			}

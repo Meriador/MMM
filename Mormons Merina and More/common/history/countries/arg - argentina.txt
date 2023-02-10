@@ -24,8 +24,8 @@
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
 			level = 2
-		}		
-
+		}	
+		
 		ig:ig_armed_forces = {
 			add_ideology = ideology_caudillismo
 			add_ruling_interest_group = yes
