@@ -18,8 +18,20 @@
  
  ideology_ottomanist: "Ottomanist"
  ideology_ottomanist_desc: "#lore This group seeks to reform the Ottoman Empire into a pluralistic, constitutional monarchy.#!"
+
+ ideology_theodemocratic: "Theodemocratic"
+ ideology_theodemocratic_desc: "#lore This group seeks to build a nation in which God and the people rule together, in righteousness.#!"
+
+ ideology_yeomanism: "Yeomanism"
+ ideology_yeomanism_desc: "#lore This group believes in creating a government that serves, and answers to, a rurally centered society.#!"
+
+ ideology_laissez_faire_secular: "Secular Laissez-Faire"
+ ideology_laissez_faire_secular_desc: "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments - and the Church.#!"
  
  # Leader Ideologies
  ideology_autarkic: "Autarkic"
  ideology_autarkic_desc: "#lore This leader believes that their nation is best served by closing off the outside world, and relying only on itself so far as is possible.#!"
+
+ ideology_free_thought_reformer: "Free Thought Reformer"
+ ideology_free_thought_reformer_desc: "#lore This leader wishes to reform away active restrictions on free thought and the exchange of ideas, but is less willing to pursue radical institutional change.#!"
  

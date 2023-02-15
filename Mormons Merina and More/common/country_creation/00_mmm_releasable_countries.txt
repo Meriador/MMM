@@ -125,3 +125,26 @@ BNT = {
 	ai_will_do = { always = no }
 }
 
+ZIO = {
+	use_culture_states = yes
+
+	possible = {
+		custom_tooltip = {
+			text = lds_timeout_occurred
+			has_global_variable = lds_stay_put
+		}
+	}
+	ai_will_do = { always = no }
+}
+
+DES = {
+	use_culture_states = yes
+
+	possible = {
+		custom_tooltip = {
+			text = lds_journal_finished
+			has_global_variable = lds_migrated
+		}
+	}
+	ai_will_do = { always = no }
+}

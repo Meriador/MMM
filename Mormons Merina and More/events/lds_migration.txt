@@ -102,6 +102,7 @@ lds_migration.2 = { #journal invalidated, most likely by Smith being in the wron
 				}
 				place_character_in_void = 6
 			}
+			set_global_variable = lds_stay_put
 		}
 	}
 }
@@ -136,6 +137,9 @@ lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon hom
 				add_homeland = mormon
 			}
 		}
+		hidden_effect = {
+			set_global_variable = lds_stay_put
+		}
 	}
 }
 
@@ -158,6 +162,7 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 	duration = 3
 
 	immediate = {
+		set_global_variable = lds_migrated
 		s:STATE_CALIFORNIA = { add_to_list = deseret_potential }
 		s:STATE_OREGON = { add_to_list = deseret_potential }
 		s:STATE_WASHINGTON = { add_to_list = deseret_potential }
@@ -223,11 +228,26 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 				modifier = {
 					any_scope_state = {
 						OR = {
-							owner = c:USA
-							owner = c:CSA
-							owner = c:FSA
-							owner = c:NEN
-							owner = c:UOM
+							AND = {
+								exists = c:USA
+								owner = c:USA
+							}
+							AND = {
+								exists = c:CSA
+								owner = c:CSA
+							}
+							AND = {
+								exists = c:FSA
+								owner = c:FSA
+							}
+							AND = {
+								exists = c:NEN
+								owner = c:NEN
+							}
+							AND = {
+								exists = c:UOM
+								owner = c:UOM
+							}
 						}
 					}
 					add = -20
@@ -301,6 +321,9 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 						}
 					}
 					save_scope_as = deseret_state
+					owner = {
+						save_scope_as = deseret_overlord
+					}
 				}
 			}
 			else_if = {
@@ -322,11 +345,32 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 						}
 					}
 					save_scope_as = deseret_state
+					owner = {
+						save_scope_as = deseret_overlord
+					}
 				}
 			}
 			else = {
 				random_scope_state = {
 					save_scope_as = deseret_state
+					state_region = { save_scope_as = deseret_region }
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_claim = {
+								scope:deseret_region
+							}
+						}
+					}
+					random_country = {
+						limit = {
+							has_claim = {
+								scope:deseret_region
+							}
+						}
+						save_scope_as = deseret_overlord
+					}
 				}
 			}
 		}
@@ -334,13 +378,99 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 			origin = ROOT
 			tag = DES
 			state = scope:deseret_state
+			on_created = {
+				if = {
+					limit = {
+						exists = scope:deseret_overlord
+					}
+					scope:deseret_overlord = {
+						create_diplomatic_pact = {
+							country = c:DES
+							type = puppet
+						}
+					}
+				}
+				create_character = {
+					first_name = "Brigham"
+					last_name = "Young"
+					noble = yes
+					ruler = yes
+					ig_leader = yes
+					birth_date = 1801.6.1
+					dna = ecchi_usa_brigham_young
+					ideology = ideology_slaver
+					interest_group = ig_devout
+					traits = {
+						ambitious
+						pious
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_variable = rockwell_imprisoned
+						}
+					}
+					create_character = {
+						first_name = "Porter"
+						last_name = "Rockwell"
+						ig_leader = yes
+						birth_date = 1813.6.28
+						dna = dna_porter_rockwell
+						ideology = ideology_traditionalist
+						interest_group = ig_petty_bourgeoisie
+						traits = {
+							alcoholic
+							reckless
+							brave
+						}
+					}
+				}
+				create_character = {
+					first_name = "Daniel"
+					last_name = "Wells"
+					ig_leader = yes
+					is_general = yes
+					birth_date = 1814.10.27
+					dna = dna_daniel_h_wells
+					ideology = ideology_free_thought_reformer
+					interest_group = ig_armed_forces
+					traits = {
+						persistent
+						stalwart_defender
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_lds_church
+					remove_ideology = ideology_moralist
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_theodemocratic
+					add_ideology = ideology_agrarian
+				}
+				ig:ig_rural_folk = {
+					remove_ideology = ideology_agrarian
+					add_ideology = ideology_yeomanism
+				}
+				ig:ig_petty_bourgeoisie = {
+					remove_ideology = ideology_reactionary
+					add_ideology = ideology_nativist
+				}
+				ig:ig_industrialists = {
+					remove_ideology = ideology_laissez_faire
+					add_ideology = ideology_laissez_faire_secular
+				}
+				ig:ig_landowners = {
+					remove_ideology = ideology_paternalistic
+					add_ideology = ideology_elitist
+				}
+			}
 		}
 		scope:deseret_state = {
 			region_state = {
 				add_claim = c:DES
+				add_homeland = cu:mormon
 			}
 		}
-		#WIP, provide appropriate modifications to IGs and add/move characters here
 	}
 	
 	option = {
@@ -372,7 +502,15 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 	
 	duration = 3
 
+	trigger = {
+		has_global_variable = lds_csa
+		NOT = {
+			exists = c:ZIO
+		}
+	}
+
 	immediate = {
+		set_global_variable = lds_migrated
 		s:STATE_CALIFORNIA = { add_to_list = deseret_potential }
 		s:STATE_OREGON = { add_to_list = deseret_potential }
 		s:STATE_WASHINGTON = { add_to_list = deseret_potential }
@@ -438,11 +576,26 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 				modifier = {
 					any_scope_state = {
 						OR = {
-							owner = c:USA
-							owner = c:CSA
-							owner = c:FSA
-							owner = c:NEN
-							owner = c:UOM
+							AND = {
+								exists = c:USA
+								owner = c:USA
+							}
+							AND = {
+								exists = c:CSA
+								owner = c:CSA
+							}
+							AND = {
+								exists = c:FSA
+								owner = c:FSA
+							}
+							AND = {
+								exists = c:NEN
+								owner = c:NEN
+							}
+							AND = {
+								exists = c:UOM
+								owner = c:UOM
+							}
 						}
 					}
 					add = -20
@@ -549,13 +702,102 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 			origin = ROOT
 			tag = DES
 			state = scope:deseret_state
+			on_created = {
+				if = {
+					limit = {
+						exists = scope:deseret_overlord
+					}
+					scope:deseret_overlord = {
+						create_diplomatic_pact = {
+							country = c:DES
+							type = puppet
+						}
+					}
+				}
+				create_character = {
+					first_name = "Hyrum"
+					last_name = "Smith"
+					noble = yes
+					ruler = yes
+					ig_leader = yes
+					birth_date = 1800.2.9
+					dna = dna_hyrum_smith 
+					interest_group = ig_devout
+					traits = {
+						reserved
+						pious
+						wounded
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_variable = rockwell_imprisoned
+						}
+					}
+					create_character = {
+						first_name = "Porter"
+						last_name = "Rockwell"
+						ig_leader = yes
+						birth_date = 1813.6.28
+						dna = dna_porter_rockwell
+						ideology = ideology_traditionalist
+						interest_group = ig_petty_bourgeoisie
+						traits = {
+							alcoholic
+							reckless
+							brave
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_global_variable = danites_formed
+					}
+					create_character = {
+						first_name = "Sampson"
+						last_name = "Avard"
+						ig_leader = yes
+						is_general = yes
+						birth_date = 1800.10.23
+						ideology = ideology_jingoist_leader
+						interest_group = ig_armed_forces
+						traits = {
+							wrathful
+						}
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_lds_church
+					remove_ideology = ideology_moralist
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_theodemocratic
+					add_ideology = ideology_agrarian
+				}
+				ig:ig_rural_folk = {
+					remove_ideology = ideology_agrarian
+					add_ideology = ideology_yeomanism
+				}
+				ig:ig_petty_bourgeoisie = {
+					remove_ideology = ideology_reactionary
+					add_ideology = ideology_nativist
+				}
+				ig:ig_industrialists = {
+					remove_ideology = ideology_laissez_faire
+					add_ideology = ideology_laissez_faire_secular
+				}
+				ig:ig_landowners = {
+					remove_ideology = ideology_paternalistic
+					add_ideology = ideology_elitist
+				}
+			}
 		}
 		scope:deseret_state = {
 			region_state = {
 				add_claim = c:DES
+				add_homeland = cu:mormon
 			}
 		}
-		#WIP, provide appropriate modifications to IGs and add/move characters here
 	}
 	
 	option = {
@@ -588,6 +830,7 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 	duration = 3
 
 	immediate = {
+		set_global_variable = lds_migrated
 		s:STATE_CALIFORNIA = { add_to_list = deseret_potential }
 		s:STATE_OREGON = { add_to_list = deseret_potential }
 		s:STATE_WASHINGTON = { add_to_list = deseret_potential }
@@ -653,11 +896,26 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 				modifier = {
 					any_scope_state = {
 						OR = {
-							owner = c:USA
-							owner = c:CSA
-							owner = c:FSA
-							owner = c:NEN
-							owner = c:UOM
+							AND = {
+								exists = c:USA
+								owner = c:USA
+							}
+							AND = {
+								exists = c:CSA
+								owner = c:CSA
+							}
+							AND = {
+								exists = c:FSA
+								owner = c:FSA
+							}
+							AND = {
+								exists = c:NEN
+								owner = c:NEN
+							}
+							AND = {
+								exists = c:UOM
+								owner = c:UOM
+							}
 						}
 					}
 					add = -20
@@ -764,13 +1022,128 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 			origin = ROOT
 			tag = DES
 			state = scope:deseret_state
+			on_created = {
+				if = {
+					limit = {
+						exists = scope:deseret_overlord
+					}
+					scope:deseret_overlord = {
+						create_diplomatic_pact = {
+							country = c:DES
+							type = puppet
+						}
+					}
+				}
+				if = {
+					limit = {
+						c:USA = {
+							any_scope_character = {
+								has_variable = is_joseph_smith
+							}
+						}
+						c:USA = {
+							random_scope_character = {
+								limit = {
+									has_variable = is_joseph_smith
+								}
+								transfer_character = c:DES
+								add_character_role = ruler
+								remove_trait = arrogant
+								add_trait = charismatic
+							}
+						}
+					}
+				}
+				else = {
+					create_character = {
+						first_name = "Joseph"
+						last_name = "Smith"
+						ig_leader = yes
+						interest_group = ig_rural_folk
+						birth_date = 1805.12.23
+						dna = ecchi_usa_joseph_smith
+						ideology = ideology_republican_leader
+						traits = {
+							imperious
+							charismatic
+							basic_political_operator
+						}
+						on_created = {
+							set_variable = {
+								name = is_joseph_smith
+							}				
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_variable = rockwell_imprisoned
+						}
+					}
+					create_character = {
+						first_name = "Porter"
+						last_name = "Rockwell"
+						ig_leader = yes
+						birth_date = 1813.6.28
+						dna = dna_porter_rockwell
+						ideology = ideology_traditionalist
+						interest_group = ig_petty_bourgeoisie
+						traits = {
+							alcoholic
+							reckless
+							brave
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_global_variable = danites_formed
+					}
+					create_character = {
+						first_name = "Sampson"
+						last_name = "Avard"
+						ig_leader = yes
+						is_general = yes
+						birth_date = 1800.10.23
+						ideology = ideology_jingoist_leader
+						interest_group = ig_armed_forces
+						traits = {
+							wrathful
+						}
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_lds_church
+					remove_ideology = ideology_moralist
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_theodemocratic
+					add_ideology = ideology_agrarian
+				}
+				ig:ig_rural_folk = {
+					remove_ideology = ideology_agrarian
+					add_ideology = ideology_yeomanism
+				}
+				ig:ig_petty_bourgeoisie = {
+					remove_ideology = ideology_reactionary
+					add_ideology = ideology_nativist
+				}
+				ig:ig_industrialists = {
+					remove_ideology = ideology_laissez_faire
+					add_ideology = ideology_laissez_faire_secular
+				}
+				ig:ig_landowners = {
+					remove_ideology = ideology_paternalistic
+					add_ideology = ideology_elitist
+				}
+			}
 		}
 		scope:deseret_state = {
 			region_state = {
 				add_claim = c:DES
+				add_homeland = cu:mormon
 			}
 		}
-		#WIP, provide appropriate modifications to IGs and add/move characters here
 	}
 	
 	option = {
@@ -875,9 +1248,10 @@ lds_migration.7 = { #CSA Zion revolt
 							culture = mormon
 							religion = lds
 							ruler = yes
+							ig_leader = yes
 							interest_group = ig_devout
 							birth_date = 1805.12.23
-							dna = ecchi_dna_joseph_smith
+							dna = ecchi_usa_joseph_smith
 							ideology = ideology_reformer
 							traits = {
 								imperious
@@ -933,9 +1307,10 @@ lds_migration.7 = { #CSA Zion revolt
 							culture = mormon
 							religion = lds
 							ruler = yes
+							ig_leader = yes
 							interest_group = ig_devout
 							birth_date = 1805.12.23
-							dna = ecchi_dna_joseph_smith
+							dna = ecchi_usa_joseph_smith
 							ideology = ideology_reformer
 							traits = {
 								imperious
@@ -992,9 +1367,10 @@ lds_migration.7 = { #CSA Zion revolt
 							culture = mormon
 							religion = lds
 							ruler = yes
+							ig_leader = yes
 							interest_group = ig_devout
 							birth_date = 1805.12.23
-							dna = ecchi_dna_joseph_smith
+							dna = ecchi_usa_joseph_smith
 							ideology = ideology_reformer
 							traits = {
 								imperious
@@ -1048,9 +1424,10 @@ lds_migration.7 = { #CSA Zion revolt
 							culture = mormon
 							religion = lds
 							ruler = yes
+							ig_leader = yes
 							interest_group = ig_devout
 							birth_date = 1805.12.23
-							dna = ecchi_dna_joseph_smith
+							dna = ecchi_usa_joseph_smith
 							ideology = ideology_reformer
 							traits = {
 								imperious
@@ -1107,9 +1484,10 @@ lds_migration.7 = { #CSA Zion revolt
 							culture = mormon
 							religion = lds
 							ruler = yes
+							ig_leader = yes
 							interest_group = ig_devout
 							birth_date = 1805.12.23
-							dna = ecchi_dna_joseph_smith
+							dna = ecchi_usa_joseph_smith
 							ideology = ideology_reformer
 							traits = {
 								imperious
@@ -1188,12 +1566,20 @@ lds_migration.8 = { #USA response to CSA revolt
 			country = c:ZIO
 			type = puppet
 		}
-		set_global_variable = lds_csa
+		set_global_variable = {
+			name = lds_csa
+			value = yes
+			days = 1800
+		}
 	}
 	
 	option = { #leave them to the wolves
 		name = lds_migration.8.b
-		set_global_variable = lds_csa
+		set_global_variable = {
+			name = lds_csa
+			value = yes
+			days = 1800
+		}
 		default_option = yes
 	}
 	
@@ -1206,7 +1592,11 @@ lds_migration.8 = { #USA response to CSA revolt
 				type = dp_secession
 			}
 		}
-		set_global_variable = lds_csa
+		set_global_variable = {
+			name = lds_csa
+			value = yes
+			days = 1800
+		}
 	}
 }
 

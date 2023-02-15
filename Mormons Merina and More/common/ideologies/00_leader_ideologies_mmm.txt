@@ -115,5 +115,103 @@
 			
 	}
 }
+
+ideology_free_thought_reformer = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_free_thought_reformer.dds"
+
+	character_ideology = yes
+
+	lawgroup_church_and_state = {
+		law_state_religion = neutral
+		law_freedom_of_conscience = strongly_approve
+		law_total_separation = neutral
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_disapprove
+		law_censorship = neutral
+		law_right_of_assembly = approve
+		law_protected_speech = neutral
+	}
+
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = strongly_approve
+		law_no_home_affairs = approve
+		law_national_guard = neutral
+		law_secret_police = disapprove
+	}
+
+	possible = {
+		owner = {
+			has_technology_researched = rationalism
+		}
+		scope:interest_group = {
+			OR = {
+				is_interest_group_type = ig_devout2
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_industrialists
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_anarchism
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+
+	leader_weight = {
+		value = 100
+		#less likely if irrelevant
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_right_of_assembly
+						has_law = law_type:law_protected_speech
+						has_law = law_type:law_total_separation
+					}
+				}
+			}
+			add = -100
+		}
+		#more likely if issue is pressing
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_secret_police
+						has_law = law_type:law_outlawed_dissent
+					}
+				}
+			}
+			add = 100
+		}
+		#less likely if the plebs needs smushing
+		if = {
+			limit = {
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_armed_forces
+						is_interest_group_type = ig_industrialists
+						is_interest_group_type = ig_petty_bourgeoisie
+					}
+				}
+				any_scope_state = {
+					is_incorporated = yes
+					turmoil >= 0.25
+				}
+			}
+			add = -50
+		}
+		#if the ability to do so arises I'd want to make it even more likely for the industrialists and the armed forces if a country is badly behind in tech and has censorship
+	}
+}
 			
 			

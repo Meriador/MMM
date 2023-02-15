@@ -161,3 +161,112 @@ ideology_ottomanist = {
 		law_council_republic = disapprove
 	}
 }
+
+ideology_theodemocratic = {
+	icon = "gfx/interface/icons/ideology_icons/theodemocratic.dds"
+
+	lawgroup_church_and_state = {
+		law_total_separation = neutral
+		law_freedom_of_conscience = strongly_approve
+		law_state_religion = approve
+	}
+
+	lawgroup_distribution_of_power = {
+		law_anarchy = strongly_disapprove
+		law_universal_suffrage = approve
+		law_census_voting = strongly_approve
+		law_wealth_voting = approve
+		law_landed_voting = approve
+		law_oligarchy = neutral
+		law_autocracy = disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_disapprove
+		law_national_supremacy = approve
+		law_racial_segregation = strongly_approve
+		law_cultural_exclusion = neutral
+		law_multicultural = disapprove
+	}
+
+	lawgroup_bureaucracy = {
+		law_elected_bureaucrats = approve
+		law_appointed_bureaucrats = disapprove
+		law_hereditary_bureaucrats = disapprove
+	}
+}
+
+ideology_yeomanism = {
+	icon = "gfx/interface/icons/ideology_icons/yeomanism.dds"
+
+	lawgroup_economic_system = {		
+		law_agrarianism = approve
+		law_traditionalism = neutral
+		law_interventionism = neutral
+		law_laissez_faire = disapprove
+		law_command_economy = strongly_disapprove
+	}
+	
+	lawgroup_trade_policy = {		
+		law_isolationism = approve
+		law_protectionism = approve
+		law_mercantilism = neutral
+		law_free_trade = disapprove
+	}
+
+	lawgroup_taxation = {
+		law_consumption_based_taxation = approve
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = neutral
+		law_graduated_taxation = neutral
+		law_land_based_taxation = disapprove
+	}
+
+	lawgroup_distribution_of_power = {
+		law_anarchy = neutral
+		law_universal_suffrage = strongly_approve
+		law_census_voting = approve
+		law_wealth_voting = disapprove
+		law_landed_voting = neutral
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove
+	}
+}
+
+ideology_laissez_faire_secular = {
+	icon = "gfx/interface/icons/ideology_icons/laissez_faire_secular.dds"
+
+	lawgroup_economic_system = {	
+		law_laissez_faire = strongly_approve
+		law_interventionism = approve
+		law_agrarianism = neutral
+		law_traditionalism = disapprove		
+		law_command_economy = strongly_disapprove
+	}
+	
+	lawgroup_trade_policy = {		
+		law_free_trade = approve	
+		law_mercantilism = neutral
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+	}
+	
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = approve
+		law_restricted_child_labor = neutral
+		law_compulsory_primary_school = disapprove
+	}
+	
+	lawgroup_labor_rights = {
+		law_serfdom_banned = neutral
+		law_serfdom = disapprove
+		law_regulatory_bodies = disapprove
+		law_worker_protections = strongly_disapprove
+	}
+	
+	lawgroup_church_and_state = {
+		law_total_separation = strongly_approve
+		law_freedom_of_conscience = neutral
+		law_state_religion = strongly_disapprove
+	}
+}

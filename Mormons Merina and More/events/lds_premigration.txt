@@ -470,14 +470,14 @@ lds_premigration.5 = { # election campaign
 		}
 
 		create_character = {
-			first_name = Joseph
-			last_name = Smith
+			first_name = "Joseph"
+			last_name = "Smith"
 			culture = mormon
 			religion = lds
 			ig_leader = yes
 			interest_group = ig_devout2
 			birth_date = 1805.12.23
-			dna = ecchi_dna_joseph_smith
+			dna = ecchi_usa_joseph_smith
 			ideology = ideology_abolitionist
 			traits = {
 				imperious
@@ -501,14 +501,14 @@ lds_premigration.5 = { # election campaign
 		}
 
 		create_character = {
-			first_name = Joseph
-			last_name = Smith
+			first_name = "Joseph"
+			last_name = "Smith"
 			culture = mormon
 			religion = lds
 			ig_leader = yes
 			interest_group = ig_armed_forces
 			birth_date = 1805.12.23
-			dna = ecchi_dna_joseph_smith
+			dna = ecchi_usa_joseph_smith
 			ideology = ideology_abolitionist
 			traits = {
 				imperious
@@ -528,14 +528,14 @@ lds_premigration.5 = { # election campaign
 			ig:ig_rural_folk = { has_party = no } 
 		}
 		create_character = {
-			first_name = Joseph
-			last_name = Smith
+			first_name = "Joseph"
+			last_name = "Smith"
 			culture = mormon
 			religion = lds
 			ig_leader = yes
 			interest_group = ig_rural_folk
 			birth_date = 1805.12.23
-			dna = ecchi_dna_joseph_smith
+			dna = ecchi_usa_joseph_smith
 			ideology = ideology_abolitionist
 			traits = {
 				imperious
@@ -933,7 +933,7 @@ lds_premigration.12 = { #church land dispute/salt sermon
 
 	trigger = {
 		NOT = {
-			has_variable = danites_formed 
+			has_global_variable = danites_formed 
 			has_variable = lds_cooldown	
 		}
 		any_scope_state = {
@@ -960,7 +960,7 @@ lds_premigration.12 = { #church land dispute/salt sermon
 			}
 			save_scope_as = lds_schism_scope
 		}
-		set_variable = {
+		set_global_variable = {
 			name = danites_formed
 		}
 		set_variable = {
