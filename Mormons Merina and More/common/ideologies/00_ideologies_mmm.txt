@@ -60,7 +60,7 @@ ideology_familialist = {
 		law_regulatory_bodies = approve
 		law_serfdom_banned = neutral
 		law_serfdom = strongly_disapprove
-	}		
+	}
 	
 	lawgroup_rights_of_women = {
 		law_no_womens_rights = approve

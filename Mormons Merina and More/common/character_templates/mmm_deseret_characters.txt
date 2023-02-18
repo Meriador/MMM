@@ -23,5 +23,471 @@
         earliest_usage_date = 1868.10.1
         latest_usage_date = 1900.1.1
         chance = 75
-    }   
+    }
+}
+
+des_hill_character_template = {
+    first_name = Joe
+    last_name = Hill
+    culture = cu:swedish
+    ideology = ideology_anarchist
+    interest_group = ig_trade_unions
+    birth_date = 1879.10.7
+    traits = {
+        direct
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_trade_unions
+            } 
+        }
+        earliest_usage_date = 1910.1.1
+        latest_usage_date = 1920.1.1
+        chance = 75
+    }
+}
+
+des_maeser_character_template = {
+    first_name = Karl
+    last_name = Maeser
+    ideology = ideology_leader_pious
+    interest_group = ig_devout2
+    birth_date = 1828.1.16
+    traits = {
+        pious
+        innovative
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_devout2
+            }
+        }
+        earliest_usage_date = 1870.1.1
+        latest_usage_date = 1900.1.1
+        chance = 50
+    }
+}
+
+des_skliris_character_template = {
+    first_name = Leonidas
+    last_name = Skliris
+    culture = cu:greek
+    ideology = ideology_market_liberal
+    interest_group = ig_industrialists
+    birth_date = 1880.4.1 #I only know the year
+    traits = {
+        imperious
+        basic_political_operator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+            c:DES = {
+                any_scope_pop = {
+                    has_pop_culture = greek
+                }
+            }
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_industrialists
+            }
+        }
+        earliest_usage_date = 1902.1.1
+        latest_usage_date = 1920.1.1
+        chance = 80
+    }
+}
+
+des_bamberger_character_template = {
+    first_name = Simon
+    last_name = Bamberger
+    culture = cu:ashkenazi
+    noble = yes
+    ideology = ideology_progressive
+    interest_group = ig_industrialists
+    birth_date = 1845.2.27
+    traits = {
+        charismatic
+        experienced_political_operator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+            c:DES = {
+                any_scope_pop = {
+                    has_pop_religion = jewish
+                }
+            }
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_industrialists
+            }
+        }
+        earliest_usage_date = 1898.1.1
+        latest_usage_date = 1922.1.1
+        chance = 80
+    }
+}
+
+des_eccles_character_template = {
+    first_name = David
+    last_name = Eccles
+    noble = yes
+    ideology = ideology_market_liberal
+    interest_group = ig_industrialists
+    birth_date = 1846.5.12
+    traits = {
+        persistent
+        basic_diplomat
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_industrialists
+            }
+        }
+        earliest_usage_date = 1875.1.1
+        latest_usage_date = 1912.1.1
+        chance = 50
+    }
+}
+
+des_kearns_character_template = {
+    first_name = Thomas
+    last_name = Kearns
+    religion = rel:catholic
+    ideology = ideology_moderate
+    interest_group = ig_industrialists
+    birth_date = 1862.4.11
+    traits = {
+        persistent
+        basic_political_operator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+            c:DES = {
+                any_scope_pop = {
+                    has_pop_religion = catholic
+                }
+            }
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_industrialists
+                is_interest_group_type = ig_intelligentsia
+            }
+        }
+        earliest_usage_date = 1895.1.1
+        latest_usage_date = 1911.1.1
+        chance = 60
+    }
+}
+
+des_browning_character_template = {
+    first_name = John
+    last_name = Browning
+    ideology = ideology_moderate
+    interest_group = ig_armed_forces
+    birth_date = 1855.1.23
+    traits = {
+        innovative
+        meticulous
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_armed_forces
+            }
+        }
+        earliest_usage_date = 1898.1.1
+        latest_usage_date = 1922.1.1
+        chance = 50
+    }
+}
+
+des_hyde_character_template = {
+    first_name = Orson
+    last_name = Hyde
+    noble = yes
+    ideology = ideology_pacifist
+    interest_group = ig_devout
+    birth_date = 1805.1.8
+    traits = {
+        tactful
+        basic_diplomat
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1868.1.1
+        latest_usage_date = 1875.1.1
+        chance = 50
+    }
+}
+
+des_pratt_character_template = {
+    first_name = Orson
+    last_name = Pratt
+    noble = yes
+    ideology = ideology_reformer
+    interest_group = ig_devout
+    birth_date = 1811.9.19
+    traits = {
+        innovative
+        pious
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1868.1.1
+        latest_usage_date = 1875.1.1
+        chance = 75
+    }
+}
+
+des_taylor_character_template = {
+    first_name = John
+    last_name = Taylor
+    noble = yes
+    ideology = ideology_moderate
+    interest_group = ig_devout
+    birth_date = 1808.11.1
+    traits = {
+        romantic
+        basic_colonial_administrator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1875.1.1
+        latest_usage_date = 1887.1.1
+        chance = 75
+    }
+}
+
+des_kimball_character_template = {
+    first_name = Heber_C
+    last_name = Kimball
+    noble = yes
+    ideology = ideology_moderate
+    interest_group = ig_devout
+    birth_date = 1801.6.14
+    traits = {
+        pious
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1847.1.1
+        latest_usage_date = 1868.1.1
+        chance = 75
+    }
+}
+
+des_woodruff_character_template = {
+    first_name = Wilford
+    last_name = Woodruff
+    noble = yes
+    ideology = ideology_anti_censorship
+    interest_group = ig_devout
+    birth_date = 1807.3.1
+    traits = {
+        cautious
+        experienced_diplomat
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1877.1.1
+        latest_usage_date = 1898.1.1
+        chance = 75
+    }
+}
+
+des_snow_character_template = {
+    first_name = Lorenzo
+    last_name = Snow
+    noble = yes
+    ideology = ideology_anti_censorship
+    interest_group = ig_devout
+    birth_date = 1814.4.3
+    traits = {
+        meticulous
+        basic_colonial_administrator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1889.1.1
+        latest_usage_date = 1901.1.1
+        chance = 75
+    }
+}
+
+des_smith_character_template = {
+    first_name = Joseph_F
+    last_name = Smith
+    noble = yes
+    ideology = ideology_moderate
+    interest_group = ig_devout
+    birth_date = 1838.11.13
+    traits = {
+        pious
+        cautious
+        experienced_political_operator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1901.1.1
+        latest_usage_date = 1918.1.1
+        chance = 75
+    }
+}
+
+des_cannon_character_template = {
+    first_name = George_Q
+    last_name = Cannon
+    noble = yes
+    ideology = ideology_moderate
+    interest_group = ig_devout
+    birth_date = 1827.1.11
+    traits = {
+        persistent
+        expert_political_operator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1898.1.1
+        latest_usage_date = 1901.1.1
+        chance = 80
+    }
+}
+
+des_young_character_template = {
+    first_name = Brigham
+    last_name = Young
+    noble = yes
+    ideology = ideology_moderate
+    interest_group = ig_devout
+    birth_date = 1836.12.18
+    traits = {
+        brave
+        basic_colonial_administrator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:DES
+            this = c:DES
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_devout
+            }
+        }
+        earliest_usage_date = 1899.1.1
+        latest_usage_date = 1903.1.1
+        chance = 75
+    }
 }

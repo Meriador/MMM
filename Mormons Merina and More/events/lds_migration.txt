@@ -401,8 +401,10 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 					ideology = ideology_slaver
 					interest_group = ig_devout
 					traits = {
-						ambitious
+						bigoted
 						pious
+						demagogue
+						experienced_colonial_administrator
 					}
 				}
 				if = {
@@ -427,13 +429,13 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 					}
 				}
 				create_character = {
-					first_name = "Daniel"
+					first_name = "Daniel_H"
 					last_name = "Wells"
 					ig_leader = yes
 					is_general = yes
 					birth_date = 1814.10.27
 					dna = dna_daniel_h_wells
-					ideology = ideology_free_thought_reformer
+					ideology = ideology_anti_censorship
 					interest_group = ig_armed_forces
 					traits = {
 						persistent

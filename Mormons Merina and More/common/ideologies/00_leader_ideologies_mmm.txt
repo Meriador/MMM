@@ -1,5 +1,5 @@
 ﻿ideology_autarkic = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader_autarkic.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_isolationist.dds"
 	
 	character_ideology = yes
 	
@@ -116,8 +116,8 @@
 	}
 }
 
-ideology_free_thought_reformer = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_free_thought_reformer.dds"
+ideology_anti_censorship = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_anti_censorship.dds"
 
 	character_ideology = yes
 
@@ -214,4 +214,175 @@ ideology_free_thought_reformer = {
 	}
 }
 			
-			
+ideology_leader_pious = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_pious.dds"
+
+	character_ideology = yes
+
+	lawgroup_education_system = {
+		law_public_schools = neutral
+		law_private_schools = disapprove
+		law_no_schools = neutral
+		law_religious_schools = approve	
+	}
+	
+	lawgroup_health_system = {
+		law_private_health_insurance = neutral
+		law_no_health_system = disapprove
+		law_charitable_health_system = approve
+		law_public_health_insurance = neutral
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = approve
+		law_total_separation = neutral
+	}
+
+	possible = {
+		scope:interest_group = {
+			OR = {
+				is_interest_group_type = ig_devout2
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_anarchism
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+
+	leader_weight = {
+		value = 25
+
+		#more likely for pious characters
+		if = {
+			limit = {
+				has_trait = pious 
+			}
+			add = 100
+		}
+		#more likely if the devout are gone and IGs are unhappy
+		if = {
+			limit = {
+				AND = {
+					owner = {
+						ig:ig_devout = {
+							marginal = yes
+						}
+					}
+					scope:interest_group = {
+						ig_approval < -5
+					}
+				}
+			}
+			add = 100
+		}
+		#more likely if people are happy in a religious state
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_theocracy
+						has_law = law_type:law_state_religion
+					}
+				}
+				scope:interest_group = {
+					ig_approval > 5
+				}
+			}
+			add = 100
+		}
+		#less likely if issue is irrelevant
+		if = {
+			limit = {
+				owner = {
+					AND = {
+						has_law = law_type:law_charitable_health_system
+						has_law = law_type:law_religious_schools
+						OR = {
+							has_law = law_type:law_state_religion
+							has_law = law_type:law_freedom_of_conscience
+						}
+					}
+				}
+			}
+			add = -100
+		}
+	}
+}
+
+ideology_progressive = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_liberal.dds"
+
+	character_ideology = yes
+
+	lawgroup_bureaucracy = {
+		law_elected_bureaucrats = approve
+		law_appointed_bureaucrats = disapprove
+		law_hereditary_bureaucrats = strongly_disapprove
+	}
+
+	lawgroup_education_system = {
+		law_public_schools = strongly_approve
+		law_private_schools = approve
+		law_no_schools = disapprove
+		law_religious_schools = neutral	
+	}
+
+	lawgroup_health_system = {
+		law_private_health_insurance = approve
+		law_no_health_system = disapprove
+		law_charitable_health_system = neutral
+		law_public_health_insurance = approve
+	}
+
+	lawgroup_labor_rights = {		
+		law_worker_protections = strongly_approve
+		law_regulatory_bodies = approve
+		law_serfdom_banned = disapprove
+		law_serfdom = strongly_disapprove
+	}
+
+	lawgroup_childrens_rights = {
+		law_compulsory_primary_school = approve
+		law_restricted_child_labor = neutral
+		law_child_labor_allowed = disapprove
+	}
+
+	possible = {
+		owner = {
+			has_technology_researched = human_rights
+		}
+		scope:interest_group = {
+			OR = {
+				is_interest_group_type = ig_devout2
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_industrialists
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_anarchism
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	leader_weight = {
+		value = 100
+
+		#WIP
+	}
+}

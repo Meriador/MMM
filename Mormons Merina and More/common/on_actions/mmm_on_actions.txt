@@ -119,6 +119,10 @@ on_country_released_as_independent = {
 			if = {
 				limit = {
 					is_country_type = colonial
+					NOT = {
+						exists = c:BRZ
+						c:BRZ = scope:target
+					}
 				}
 				ig:ig_petty_bourgeoisie = {
 					remove_ideology = ideology_reactionary
@@ -219,6 +223,10 @@ on_country_released_as_own_subject = {
 			if = {
 				limit = {
 					is_country_type = colonial
+					NOT = {
+						exists = c:BRZ
+						c:BRZ = scope:target
+					}
 				}
 				ig:ig_petty_bourgeoisie = {
 					remove_ideology = ideology_reactionary
@@ -303,7 +311,7 @@ on_country_released_as_overlord_subject = {
 				}
 				ig:ig_landowners = {
 					remove_ideology = ideology_paternalistic
-					add_ideology = ideology_elitist
+					add_ideology = ideology_republican_paternalistic
 				}
 			}
 			if = {
@@ -319,6 +327,10 @@ on_country_released_as_overlord_subject = {
 			if = {
 				limit = {
 					is_country_type = colonial
+					NOT = {
+						exists = c:BRZ
+						c:BRZ = scope:target
+					}
 				}
 				ig:ig_petty_bourgeoisie = {
 					remove_ideology = ideology_reactionary

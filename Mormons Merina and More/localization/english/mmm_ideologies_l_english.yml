@@ -32,6 +32,12 @@
  ideology_autarkic: "Autarkic"
  ideology_autarkic_desc: "#lore This leader believes that their nation is best served by closing off the outside world, and relying only on itself so far as is possible.#!"
 
- ideology_free_thought_reformer: "Free Thought Reformer"
- ideology_free_thought_reformer_desc: "#lore This leader wishes to reform away active restrictions on free thought and the exchange of ideas, but is less willing to pursue radical institutional change.#!"
+ ideology_anti_censorship: "Anti-Censorship"
+ ideology_anti_censorship_desc: "#lore This leader wishes to reform away active restrictions on free thought and the exchange of ideas, but is less willing to pursue radical institutional change.#!"
+
+ ideology_leader_pious: "Pious"
+ ideology_leader_pious_desc: "#lore This leader values their faith highly, and believes their nation benefits from giving faith a place in governance.#!"
+
+ ideology_progressive: "Progressive"
+ ideology_progressive_desc: "#lore This leader seeks to improve public conditions via social and political reform.#!"
  
