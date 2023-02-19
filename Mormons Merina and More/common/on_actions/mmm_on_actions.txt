@@ -103,7 +103,7 @@ on_country_released_as_independent = {
 				}
 				ig:ig_landowners = {
 					remove_ideology = ideology_paternalistic
-					add_ideology = ideology_elitist
+					add_ideology = ideology_republican_paternalistic
 				}
 			}
 			if = {
@@ -207,7 +207,7 @@ on_country_released_as_own_subject = {
 				}
 				ig:ig_landowners = {
 					remove_ideology = ideology_paternalistic
-					add_ideology = ideology_elitist
+					add_ideology = ideology_republican_paternalistic
 				}
 			}
 			if = {

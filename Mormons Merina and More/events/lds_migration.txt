@@ -213,7 +213,7 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 					any_scope_state = {
 						is_incorporated = no
 					}
-					add = 10
+					add = -20
 					desc = "unincorporated_state"
 				}
 				
@@ -321,56 +321,41 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 						}
 					}
 					save_scope_as = deseret_state
-					owner = {
-						save_scope_as = deseret_overlord
-					}
 				}
 			}
 			else_if = {
 				limit = {
 					any_scope_state = {
 						owner = {
-							OR = {
-								is_country_type = unrecognized
-							}
+							is_country_type = unrecognized
 						}
 					}
 				}
 				random_scope_state = {
 					limit = {
 						owner = {
-							OR = {
-								is_country_type = unrecognized
-							}
+							is_country_type = unrecognized
 						}
 					}
 					save_scope_as = deseret_state
-					owner = {
-						save_scope_as = deseret_overlord
+				}
+			}
+			else_if = { #this just makes it look nicer if they pick one of those states
+				limit = {
+					any_scope_state = {
+						owner = c:SHO
 					}
+				}
+				random_scope_state = {
+					limit = {
+						owner = c:SHO
+					}
+					save_scope_as = deseret_state
 				}
 			}
 			else = {
 				random_scope_state = {
 					save_scope_as = deseret_state
-					state_region = { save_scope_as = deseret_region }
-				}
-				if = {
-					limit = {
-						any_country = {
-							has_claim = {
-								scope:deseret_region
-							}
-						}
-					}
-					random_country = {
-						limit = {
-							has_claim = {
-								scope:deseret_region
-							}
-						}
-						save_scope_as = deseret_overlord
-					}
 				}
 			}
 		}
@@ -381,9 +366,14 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 			on_created = {
 				if = {
 					limit = {
-						exists = scope:deseret_overlord
+						any_country = {
+							has_claim = c:DES.capital
+						}
 					}
-					scope:deseret_overlord = {
+					random_country = {
+						limit = {
+							has_claim = c:DES.capital
+						}
 						create_diplomatic_pact = {
 							country = c:DES
 							type = puppet
@@ -463,14 +453,24 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 				}
 				ig:ig_landowners = {
 					remove_ideology = ideology_paternalistic
-					add_ideology = ideology_elitist
+					add_ideology = ideology_republican_paternalistic
 				}
+				activate_law = law_type:law_no_schools
+				activate_law = law_type:law_no_health_system
+				activate_law = law_type:law_freedom_of_conscience
 			}
 		}
+		every_scope_pop = {
+			limit = {
+				has_pop_religion = lds
+				has_pop_culture = mormon
+			}
+			move_pop = c:DES.capital
+		}
 		scope:deseret_state = {
-			region_state = {
+			state_region = {
 				add_claim = c:DES
-				add_homeland = cu:mormon
+				add_homeland = mormon
 			}
 		}
 	}
@@ -563,7 +563,7 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 					any_scope_state = {
 						is_incorporated = no
 					}
-					add = 10
+					add = -20
 					desc = "unincorporated_state"
 				}
 				
@@ -677,19 +677,28 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 				limit = {
 					any_scope_state = {
 						owner = {
-							OR = {
-								is_country_type = unrecognized
-							}
+							is_country_type = unrecognized
 						}
 					}
 				}
 				random_scope_state = {
 					limit = {
 						owner = {
-							OR = {
-								is_country_type = unrecognized
-							}
+							is_country_type = unrecognized
 						}
+					}
+					save_scope_as = deseret_state
+				}
+			}
+			else_if = { #this just makes it look nicer if they pick one of those states
+				limit = {
+					any_scope_state = {
+						owner = c:SHO
+					}
+				}
+				random_scope_state = {
+					limit = {
+						owner = c:SHO
 					}
 					save_scope_as = deseret_state
 				}
@@ -707,9 +716,14 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 			on_created = {
 				if = {
 					limit = {
-						exists = scope:deseret_overlord
+						any_country = {
+							has_claim = c:DES.capital
+						}
 					}
-					scope:deseret_overlord = {
+					random_country = {
+						limit = {
+							has_claim = c:DES.capital
+						}
 						create_diplomatic_pact = {
 							country = c:DES
 							type = puppet
@@ -790,14 +804,24 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 				}
 				ig:ig_landowners = {
 					remove_ideology = ideology_paternalistic
-					add_ideology = ideology_elitist
+					add_ideology = ideology_republican_paternalistic
 				}
+				activate_law = law_type:law_no_schools
+				activate_law = law_type:law_no_health_system
+				activate_law = law_type:law_freedom_of_conscience
 			}
 		}
+		every_scope_pop = {
+			limit = {
+				has_pop_religion = lds
+				has_pop_culture = mormon
+			}
+			move_pop = c:DES.capital
+		}
 		scope:deseret_state = {
-			region_state = {
+			state_region = {
 				add_claim = c:DES
-				add_homeland = cu:mormon
+				add_homeland = mormon
 			}
 		}
 	}
@@ -833,6 +857,19 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 
 	immediate = {
 		set_global_variable = lds_migrated
+		if = {
+			limit = {
+				any_scope_character = {
+					has_variable = is_joseph_smith
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_variable = is_joseph_smith
+				}
+				save_scope_as = joseph_smith_scope
+			}
+		}
 		s:STATE_CALIFORNIA = { add_to_list = deseret_potential }
 		s:STATE_OREGON = { add_to_list = deseret_potential }
 		s:STATE_WASHINGTON = { add_to_list = deseret_potential }
@@ -883,7 +920,7 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 					any_scope_state = {
 						is_incorporated = no
 					}
-					add = 10
+					add = -20
 					desc = "unincorporated_state"
 				}
 				
@@ -997,19 +1034,29 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 				limit = {
 					any_scope_state = {
 						owner = {
-							OR = {
-								is_country_type = unrecognized
-							}
+							is_country_type = unrecognized
 						}
 					}
 				}
 				random_scope_state = {
 					limit = {
 						owner = {
-							OR = {
-								is_country_type = unrecognized
-							}
+							is_country_type = unrecognized
 						}
+					}
+					save_scope_as = deseret_state
+				}
+			}
+			else_if = { #this just makes it look nicer if they pick one of those states
+				limit = {
+					any_scope_state = {
+						owner = c:SHO
+					}
+				}
+				random_scope_state = {
+					limit = {
+						owner = c:SHO
+						NOT = { state_region = s:STATE_MONTANA }
 					}
 					save_scope_as = deseret_state
 				}
@@ -1027,9 +1074,14 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 			on_created = {
 				if = {
 					limit = {
-						exists = scope:deseret_overlord
+						any_country = {
+							has_claim = c:DES.capital
+						}
 					}
-					scope:deseret_overlord = {
+					random_country = {
+						limit = {
+							has_claim = c:DES.capital
+						}
 						create_diplomatic_pact = {
 							country = c:DES
 							type = puppet
@@ -1038,21 +1090,25 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 				}
 				if = {
 					limit = {
-						c:USA = {
-							any_scope_character = {
-								has_variable = is_joseph_smith
-							}
-						}
-						c:USA = {
-							random_scope_character = {
-								limit = {
-									has_variable = is_joseph_smith
-								}
-								transfer_character = c:DES
-								add_character_role = ruler
-								remove_trait = arrogant
-								add_trait = charismatic
-							}
+						exists = scope:joseph_smith_scope
+					}
+					scope:joseph_smith_scope = {
+						transfer_character = c:DES
+						remove_trait = arrogant
+						add_trait = charismatic
+						set_as_interest_group_leader = yes
+					}
+					create_character = {
+						first_name = "Hyrum"
+						last_name = "Smith"
+						noble = yes
+						ig_leader = yes
+						birth_date = 1800.2.9
+						dna = dna_hyrum_smith 
+						interest_group = ig_devout
+						traits = {
+							reserved
+							pious
 						}
 					}
 				}
@@ -1061,7 +1117,9 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 						first_name = "Joseph"
 						last_name = "Smith"
 						ig_leader = yes
-						interest_group = ig_rural_folk
+						noble = yes
+						ruler = yes
+						interest_group = ig_devout
 						birth_date = 1805.12.23
 						dna = ecchi_usa_joseph_smith
 						ideology = ideology_republican_leader
@@ -1136,14 +1194,42 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 				}
 				ig:ig_landowners = {
 					remove_ideology = ideology_paternalistic
-					add_ideology = ideology_elitist
+					add_ideology = ideology_republican_paternalistic
+				}
+				activate_law = law_type:law_no_schools
+				activate_law = law_type:law_no_health_system
+				activate_law = law_type:law_freedom_of_conscience
+				if = {
+					limit = {
+						OR = {
+							has_law = law_type:law_monarchy
+							has_law = law_type:law_theocracy
+							has_law = law_type:law_council_republic
+						}
+					}
+					activate_law = law_type:law_presidential_republic
+				}
+				if = {
+					limit = {
+						OR = {
+							has_law = law_type:ethnostate
+						}
+					}
+					activate_law = law_type:law_racial_segregation
 				}
 			}
 		}
+		every_scope_pop = {
+			limit = {
+				has_pop_religion = lds
+				has_pop_culture = mormon
+			}
+			move_pop = c:DES.capital
+		}
 		scope:deseret_state = {
-			region_state = {
+			state_region = {
 				add_claim = c:DES
-				add_homeland = cu:mormon
+				add_homeland = mormon
 			}
 		}
 	}

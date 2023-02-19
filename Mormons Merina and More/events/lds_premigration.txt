@@ -101,6 +101,9 @@ lds_premigration.101 = { #if ohio stops being america first
 		s:STATE_OHIO.region_state:USA = {
 			save_scope_as = kirtland_scope
 		}
+		s:STATE_MISSOURI = {
+			set_variable = far_west
+		}
 		set_variable = lds_far_west
 		remove_variable = lds_kirtland
 	}
@@ -232,7 +235,7 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 			S:STATE_MISSOURI.region_state:USA = {
 				turmoil > 0.25
 			}
-			var:lds_agitation > 3
+			var:lds_agitation > 6
 		}
 		c:USA = {
 			NOT = {
@@ -252,7 +255,7 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 		}
 		s:STATE_MISSOURI.region_state:USA = {
 			save_scope_as = far_west_scope
-			any_neighbouring_state = {
+			random_neighbouring_state = {
 				owner = {
 					NOT = {
 						c:USA
@@ -1192,6 +1195,16 @@ lds_premigration.16 = { #local election violence
 		NOT = {
 			has_variable = lds_cooldown
 			has_variable = lds_election_cooldown
+		}
+		any_scope_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:mormon
+				}
+				radical_fraction = {
+					value > 0.1
+				}
+			}
 		}
 	}
 	

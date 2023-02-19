@@ -203,9 +203,11 @@ ideology_anti_censorship = {
 						is_interest_group_type = ig_petty_bourgeoisie
 					}
 				}
-				any_scope_state = {
-					is_incorporated = yes
-					turmoil >= 0.25
+				owner = {
+					any_scope_state = {
+						is_incorporated = yes
+						turmoil >= 0.25
+					}
 				}
 			}
 			add = -50
@@ -383,6 +385,85 @@ ideology_progressive = {
 	leader_weight = {
 		value = 100
 
-		#WIP
+		#Electoralism should be something of a prerequisite
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_anarchy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+					}
+				}
+			}
+			add = -200
+		}
+		#less likely if most of its goals are addressed already
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_public_schools
+					OR = {
+						has_law = law_type:law_private_health_insurance
+						has_law = law_type:law_public_health_insurance
+					}
+					OR = {
+						has_law = law_type:law_worker_protections
+						has_law = law_type:law_regulatory_bodies
+					}
+				}
+			}
+			add = -100
+		}
+		#More likely for the petite bourgeoisie and moralists
+		if = {
+			limit = {
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_petty_bourgeoisie
+						is_interest_group_type = ig_devout2
+					}
+				}
+			}
+			add = 50
+		}
+		#more likely for industrialists if the trade unions are unhappy
+		if = {
+			limit = {
+				AND = {
+					scope:interest_group = {
+						is_interest_group_type = ig_industrialists
+					}
+					owner = {
+						ig:ig_trade_unions = {
+							ig_approval < -5
+						}
+					}
+				}
+			}
+			add = 100
+		}
+		#more likely for the "middle-class" IGs if communism is afoot
+		if = {
+			limit = {
+				AND = {
+					owner = {
+						any_interest_group = {
+							OR = {
+								has_ideology = ideology_anarchist
+								has_ideology = ideology_communist
+								has_ideology = ideology_vanguardist
+							}
+						}
+					}
+					scope:interest_group = {
+						NOT = {
+							is_interest_group_type = ig_rural_folk
+						}
+					}
+				}
+			}
+			add = 100
+		}
 	}
 }
