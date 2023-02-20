@@ -179,64 +179,212 @@ aromanian={
 	graphics = european
 }
 
-# WIP: namelists for all, these are a mix at the moment
-merina={
+# WIP: namelists, the Merina are ok but the Betsimisaraka and Amtaimoro still need more. They are, at least, not starting countries, so this is less urgent.
+merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a geneology for the Merina royal family. Hopefully none of these are weird for a 19th century rando lol
 	color= hsv{ 0.35 0.26 0.64 }
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
-		Rabiby
-		Rainilaiarivony
-		Rainivoninahitriniony
-		Razakaratrimo
-		Mbahoaka
-		Ramboasalama
-		Ralaitokana
-		Ratsiantahana
-		Rakotomavo
+		Ilaidama
+		Iringitra
+		Isomotra
+		Laidama
 		Mampandry
+		Manalina
+		Manalina
+		Mbahoaka
+		Mparany
+		Rabehety
+		Rabezaka
+		Rabiby
+		Radama
+		Rafidy
+		Rahenry
+		Rahetilahy
 		Rainiharo
 		Rainijohary
-		Rasata
-		Manalina
-		Rahenry
-		Ratsimihety
+		Rajaona
+		Rakotomavo
+		Ralainanahary
 		Ralainony
-		Rabehety
+		Ralaitokana
+		Ramanantsara
+		Ramanitrahasina
+		Ramanjakaraibe
+		Ramanjakaray
+		Ramarotafika
+		Ramavolahy
+		Ramboasalama
+		Ramboatsimandrasa
+		Ramboavao
+		Ramena
+		Ramorasata
+		Raonimamina
+		Rasata
+		Ratolotra
+		Ratsiantahana
+		Ratsimandresy
+		Ratsimba
+		Ratsimihety
+		Ratsitohaina
+		Ravonjy
+		Razafianaka
+		Razafimbahiny
+		Razafinjara
+		Razakaratrimo
+		Tsinompo
+		Tsitakatrandriana
 	}
 	male_regal_first_names = {
+		Andriamamilazabe
 		Andriamampandry
-		Rainijohary
-		Razakaratrimo 
-		Radama
-		Rainilaiarivony
-		Andriambahoaka
-		Ramboasalama
-		Ralaitokana
-		Ratsiantahana
-		Andriamampandry
-		Rasata
-		Andrianantara
 		Andriamanalina
-		Rahenry
-		Ratsimihety
-		Ralainony
+		Andriamanforalambo
+		Andriamasoandro
+		Andriambahoaka
 		Andriambelonandro
-		Raonimamina
+		Andriampanarivomanga
+		Andriamparany
+		Andriampolofantsy
+		Andriampontany
+		Andrianaivo
+		Andrianakotrina
+		Andrianaly
+		Andrianantara
+		Andriandanimena
+		Andrianilana
+		Andrianimpitoekemanjaka
+		Andrianimpitomangoro
+		Andrianjaka
+		Andriantompobe
+		Andriantsinompo
+		Andriantsitakatrandriana
+		Andriantsolo
+		Andrikiborilavahoho
+		Ilaidama
+		Iringitra
+		Isomotra
+		Laidama
 		Rabehety
+		Rabezaka
+		Radama
+		Rafidy
+		Rahenry
+		Rahetilahy
+		Rainiharo
+		Rainijohary
+		Rainilaiarivony
+		Rajaona
+		Ralainanahary
+		Ralainony
+		Ralaitokana
+		Ramanantsara
+		Ramanitrahasina
+		Ramanjakaraibe
+		Ramanjakaray
+		Ramarotafika
+		Ramavolahy
+		Ramboasalama
+		Ramboatsimandrasa
+		Ramboavao
+		Ramena
+		Ramorasata
+		Raonimamina
+		Rasata
+		Ratolotra
+		Ratsiantahana
+		Ratsimandresy
+		Ratsimba
+		Ratsimihety
+		Ratsitohaina
+		Ravonjy
+		Razafianaka
+		Razafimbahiny
+		Razafinjara
+		Razakaratrimo
+		Zafindralambo
 	}
 	female_common_first_names = {
-		Ramasindrazana
-		Rasendranoro
-		Raketaka
-		Razafinandriamanitra
-		Ranavalona
-		Tahina
-		Ranavalontsimitovy
-		Ramoma
-		Rafarasoa
-		Rabodomiarana
+		Imaitsoanala
+		Rabehavina
 		Rabodofotsy
+		Rabodomiarana
+		Rafarasoa
+		Rafaravavy
+		Rafotsitohinamanjaka
+		Raketaka
+		Ramalama
+		Ramaromanompo
+		Ramasindrazana
+		Rambavy
+		Ramoma
+		Ranavalona
+		Ranavalontsimitovy
+		Randapavola
+		Renibodonimerina
+		Rasoarivony
+		Ramavokely
+		Rasalama
+		Rasendranoro
+		Rasolobe
+		Ratomponivololona
+		Ratsitohininamanjaka
+		Ravadifo
+		Ravololondralambo
+		Razafinandriamanitra
+		Tahina
+		Tsaravoninahitra
+		Rafoloalina
+		Rangory
+		Ravelonambiroa
+		Ravaomasina
+		Ramanalimanana
+		Ramanjakaraibe
+		Rabodomanjaka
+		Ravalomisa
+		Ramiangaly
+		Ramanitrasina
+		Ramanitrahasina
+		Ramanantenasoa
+		Rafaramanjaka
+		Ramatoaratavy
+		Ratavy
+		Razafitrimo
+		Rabodozafimanjaka
+		Rakarabo
+		Rasamona
+		Rambolamasoandro
+		Rabodosahondra
+		Ramarivelo
+		Ratsiadala
+		Ratsimanompo
+		Rabodo
+		Rambolamanana
+		Razafinavalona
+		Razafinamboa
+		Ravaomanjaka
+		Rafotsirahety
+		Rasoamananoro
+		Ramasy
+		Rabodondrainibe
+		Ramatoaramisa
+		Ramisa
+		Ratsimiantahasoa
+		Ratsararay
+		Rabodomanana
+		Ravaomanana
+		Ravorombato
+		Rasalimo
+		Ravao
+		Renindrabodonimerina
+		Rangita
+		Ramboandrenibe
+		Ramatoatsiantahana
+		Razanamanga
+		Razanatsoa
+		Rakaloanosy
+		Ranoro
+		Rasoafaravavy
 	}	
 	noble_last_names = {
 		None
@@ -255,29 +403,34 @@ betsimisaraka={
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
-		Ratsimilaho
-		Zanahary
+		Similaho
 		Ratsiraka
 		Ramanano
 		Iavy
 		Zakavolo
+		Tsihala
 		Tsiranana
-		Ramaromanompo 
+		Siba
+		Tsifanda
 	}
 	male_regal_first_names = {
 		Ratsimilaho
 		Zanahary
 		Ratsiraka
 		Ramanano
+		Tsihala
 		Iavy
 		Zakavolo
 		Tsiranana
-		Ramaromanompo 
+		Siba
+		Tsifanda
 	}
 	female_common_first_names = {
 		Bety
 		Betia
 		Rahena
+		Rehana
+		Matavy
 		Vohilakatsy
 		Rambahira
 		Soanaomby
@@ -285,7 +438,8 @@ betsimisaraka={
 		Nenimoana
 		Tsiresy
 		Ravahiny
-	}	#first 3 names specifically betsimisaraka, those thereafter to fill out the list
+		Matave
+	}	#first 5 names specifically betsimisaraka, those thereafter to fill out the list
 	noble_last_names = {
 		None
 	}
@@ -303,33 +457,62 @@ bara={
 	religion = animist
 	traits = { malagasy_language african_heritage }
 	male_common_first_names={
+		Imasoandro
+		Isambo
+		Mandana
+		Rabararatavokoky
 		Rabiby
-		Ratsimivila
-		Tonanahary
-		Ratsimivily
-		Ratsimamotoa
-		Raselea
-		Retsila
+		Rafiraraza
+		Rakanjobe
+		Rakitroka
+		Rakonjobe
+		Ramanetaka
 		Ramieba
 		Ramitongoa
-		Imasoandro
+		Ramtongoa
+		Rapapango
+		Raselea
+		Ratsileondrafy
+		Ratsimamotoa
+		Ratsimivila
+		Ratsimivily
+		Ravatoverere
+		Rebiby
+		Rehandry
+		Retsila
+		Tonanahary
 		Tsimanompo
-		Rakonjobe
-		Isambo
 	}
 	male_regal_first_names = {
+		Adriamandana
+		Andriamanafotsarivo
 		Andriamanely
+		Andriamanetaka
+		Andriamena
+		Andriankeoheo
 		Andriantompoinairivo
-		Rabiby
-		Ratsimivila
-		Tonanahary
-		Ratsimivily
-		Ratsimamotoa
-		Ramitongoa
 		Imasoandro
-		Tsimanompo
-		Rakonjobe
 		Isambo
+		Rabararatavokoky
+		Rabiby
+		Rafiraraza
+		Rakanjobe
+		Rakitroka
+		Rakonjobe
+		Ramieba
+		Ramitongoa
+		Ramtongoa
+		Rapapango
+		Ratsileondrafy
+		Ratsimamotoa
+		Ratsimivila
+		Ratsimivily
+		Ravatoverere
+		Rebiby
+		Rehandry
+		Retsila
+		Tonanahary
+		Tsimanompo
 	}
 	female_common_first_names = {
 		Vohilakatsy
@@ -380,10 +563,14 @@ sakalava={
 		Tsoarivo
 		Rainasa
 		Mahatindriarivo
+		Lahifotsy
+		Tsimenta
+		Toakafo
 	}
 	male_regal_first_names = {
 		Andriamisara
 		Andriantsoly
+		Andrianbaba
 		Andriantsirotso
 		Lamboina
 		Tshimbola
@@ -403,6 +590,10 @@ sakalava={
 		Andriamahatindriarivo 
 		Olembetsitoto
 		Tsiampondy
+		Lahifotsy
+		Tsimenta
+		Toakafo
+		Tsimanongarivo
 	}
 	female_common_first_names = {
 		Vohilakatsy
@@ -420,6 +611,8 @@ sakalava={
 		Tsimalomo
 		Tombola
 		Kelisambay
+		Matave
+		Matavy
 	}	
 	noble_last_names = {
 		None
@@ -452,6 +645,7 @@ antaimoro={
 	}
 	male_regal_first_names = {
 		Andriamahazonoro
+		Andriandramaka
 		Rivoekembahoaka
 		Ratsilikaina
 		Ramakararube
@@ -466,6 +660,9 @@ antaimoro={
 		Andriamasi
 		Andriamarofotana
 		Andriapanolaha
+		Tsiambany
+		Andriantsanjoa
+		Andrianjerivao
 	}
 	female_common_first_names = {
 		Mahazonoro
@@ -479,7 +676,7 @@ antaimoro={
 		Nenimoana
 		Tsiresy
 		Ravahiny
-	}	#the first 4 are specifically antaimoro-connected name i found, i just gave them a few more
+	}	#the first 4 are specifically antaimoro-connected names i found, i just gave them a few more
 	noble_last_names = {
 		None
 	}

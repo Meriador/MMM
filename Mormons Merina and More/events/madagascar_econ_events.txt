@@ -1,0 +1,125 @@
+﻿namespace = madagascar_econ
+
+#namespace for various events about Madagascar's efforts to industrialize. Will include conflicts over fanompoana and international capital-sourcing. I should see if there's a way I can get specific cultures advantages to qualifications, and to move small numbers of pops to madagascar - make it so you can get a boost to your investment pool at the cost of a very foreign capitalist class across a few events.
+
+madagascar_econ.1 = { #fanompoana ended, success condition of journal
+	type = country_event
+	placement = ROOT
+
+	title = madagascar_econ.1.t
+	desc = madagascar_econ.1.d
+	flavor = madagascar_econ.1.f
+	
+	duration = 3
+	
+	event_image = {
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm"
+	
+	option = {
+		name = madagascar_econ.1.a
+		ig:ig_rural_folk = {
+			add_modifier = {
+				name = fanompoana_ended
+				months = long_modifier_time
+			}
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_modifier = {
+				name = fanompoana_ended
+				months = long_modifier_time
+			}
+		}
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = fanompoana_ended
+				months = long_modifier_time
+			}
+		}
+	}
+}
+
+madagascar_econ.2 = { #Success event for autarky journal
+	type = country_event
+	placement = ROOT
+
+	title = madagascar_econ.2.t
+	desc = madagascar_econ.2.d
+	flavor = madagascar_econ.2.f
+	
+	duration = 3
+	
+	event_image = {
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2" #wip
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #wip
+	
+
+}
+
+madagascar_econ.3 = { #basic event for aquiring a "benefactor" that I may repurpose as a general event for such things
+	type = country_event
+	placement = ROOT
+
+	title = madagascar_econ.3.t
+	desc = madagascar_econ.3.d
+	flavor = madagascar_econ.3.f
+
+	duration = 3
+	
+	event_image = {
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2" #WIP
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear" 
+	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #WIP
+
+	trigger = {
+		any_country = {
+			country_rank >= rank_value:major_power
+			has_interest_marker_in_region = ROOT.capital.region
+			OR = {
+				has_attitude = {
+					who = ROOT
+					attitude = domineering
+				}
+				has_attitude = {
+					who = ROOT
+					attitude = protective
+				}
+				has_attitude = {
+					who = ROOT
+					attitude = cooperative
+				}
+			}
+		}
+	}
+
+	immediate = {
+		
+	}
+}
+
+madagascar_econ.4 = { #starting event, Ranavalona decides whether to adopt a 0 foreigners policy right off the bat, or try to use what remains of existing ties to her ends
+	type = country_event
+	placement = ROOT
+
+	title = madagascar_econ.4.t
+	desc = madagascar_econ.4.d
+	flavor = madagascar_econ.4.f
+	
+	duration = 3
+	
+	event_image = {
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2" #wip
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #wip
+	
+}

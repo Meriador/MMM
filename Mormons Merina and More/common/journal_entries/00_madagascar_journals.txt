@@ -2,15 +2,12 @@
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
 	complete = {
-		calc_true_if = {
-			amount = 6
-			country_or_subject_owns_entire_state_region = STATE_NORTH_MADAGASCAR
-			country_or_subject_owns_entire_state_region = STATE_BOENY
-			country_or_subject_owns_entire_state_region = STATE_TOAMASINA
-			country_or_subject_owns_entire_state_region = STATE_SOUTH_MADAGASCAR
-			country_or_subject_owns_entire_state_region = STATE_MORONDAVA
-			country_or_subject_owns_entire_state_region = STATE_SOUTHEAST_MADAGASCAR
-		}
+		country_or_subject_owns_entire_state_region = STATE_NORTH_MADAGASCAR
+		country_or_subject_owns_entire_state_region = STATE_BOENY
+		country_or_subject_owns_entire_state_region = STATE_TOAMASINA
+		country_or_subject_owns_entire_state_region = STATE_SOUTH_MADAGASCAR
+		country_or_subject_owns_entire_state_region = STATE_MORONDAVA
+		country_or_subject_owns_entire_state_region = STATE_SOUTHEAST_MADAGASCAR
 	}
 	
 	on_complete = {
@@ -37,15 +34,12 @@ je_madagscar_unification_2 = {
 	}
 	
 	complete = {
-		calc_true_if = {
-			amount = 6
-			country_or_subject_owns_entire_state_region = STATE_NORTH_MADAGASCAR
-			country_or_subject_owns_entire_state_region = STATE_BOENY
-			country_or_subject_owns_entire_state_region = STATE_TOAMASINA
-			country_or_subject_owns_entire_state_region = STATE_SOUTH_MADAGASCAR
-			country_or_subject_owns_entire_state_region = STATE_MORONDAVA
-			country_or_subject_owns_entire_state_region = STATE_SOUTHEAST_MADAGASCAR
-		}
+		country_or_subject_owns_entire_state_region = STATE_NORTH_MADAGASCAR
+		country_or_subject_owns_entire_state_region = STATE_BOENY
+		country_or_subject_owns_entire_state_region = STATE_TOAMASINA
+		country_or_subject_owns_entire_state_region = STATE_SOUTH_MADAGASCAR
+		country_or_subject_owns_entire_state_region = STATE_MORONDAVA
+		country_or_subject_owns_entire_state_region = STATE_SOUTHEAST_MADAGASCAR
 	}
 	
 	on_complete = {
@@ -113,50 +107,52 @@ je_madagascar_autarky = {
 	complete = {
 		has_healthy_economy = yes
 		gdp > imerina_goal
-		OR = {
-			AND = {
-				NOT = {
+		market = {
+			OR = {
+				AND = {
+					NOT = {
+						any_market_goods = {
+							market_goods_imports > 15
+						}
+					}
 					any_market_goods = {
-						market_goods_imports > 15
+						market_goods_exports > 50
 					}
 				}
-				any_market_goods = {
-					market_goods_exports > 50
+				NOT = {
+					any_market_goods = {
+						market_goods_imports > 0 
+					}
+					any_market_goods = {
+						market_goods_exports > 0 
+					}
 				}
 			}
-			NOT = {
-				any_market_goods = {
-					market_goods_imports > 0 
+			OR = {
+				mg:clothes = {
+					market_goods_imports = 0
 				}
-				any_market_goods = {
-					market_goods_exports > 0 
+				mg:luxury_clothes = {
+					market_goods_imports = 0
 				}
 			}
-		}
-		OR = {
-			mg:clothes = {
+			OR = {
+				mg:paper = {
+					market_goods_imports = 0
+				}
+				mg:furniture = {
+					market_goods_imports = 0
+				}
+				mg:glass = {
+					market_goods_imports = 0
+				}
+			}
+			mg:small_arms = {
 				market_goods_imports = 0
 			}
-			mg:luxury_clothes = {
+			mg:ammunition = {
 				market_goods_imports = 0
 			}
-		}
-		OR = {
-			mg:paper = {
-				market_goods_imports = 0
-			}
-			mg:furniture = {
-				market_goods_imports = 0
-			}
-			mg:glass = {
-				market_goods_imports = 0
-			}
-		}
-		mg:small_arms = {
-			market_goods_imports = 0
-		}
-		mg:ammunition = {
-			market_goods_imports = 0
 		}
 	}
 	

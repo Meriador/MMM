@@ -7,4 +7,12 @@
 			target = c:SAF.market
 		}
 	}
+	c:FRA = {
+		create_trade_route = {
+			goods = meat
+			level = 1
+			direction = import
+			target = c:MER.market
+		}
+	}
 }
