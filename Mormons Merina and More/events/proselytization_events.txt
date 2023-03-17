@@ -49,7 +49,25 @@ missionary.2 = { #LDS after migration, Deseret perspective
 	placement = ROOT
 
 	title = missionary.2.t
-	desc = missionary.2.d
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = missionary.2.d
+				trigger = {
+					exists = scope:lds_third_target
+				}
+			}
+			triggered_desc = {
+				desc = missionary.2.d2
+				trigger = {
+					exists = scope:lds_second_target
+				}
+			}
+			triggered_desc = {
+				desc = missionary.2.d3
+			}
+		}
+	}
 	flavor = missionary.2.f
 
 	#should be triggered by decision
@@ -58,14 +76,12 @@ missionary.2 = { #LDS after migration, Deseret perspective
 		random_country = {
 			limit = {
 				any_scope_state = {
-					state_region = {
-						is_homeland = {
-							any_scope_culture = {
-								NOT = {
-									culture_is_discriminated_in = c:DES
-								}
-							}
+					any_scope_pop = {
+						culture = { 
+							has_homeland = PREVPREV
+							NOT = { culture_is_discriminated_in = c:DES }
 						}
+						NOT = { has_pop_religion = lds }
 					}
 				}
 			}
@@ -73,37 +89,33 @@ missionary.2 = { #LDS after migration, Deseret perspective
 		}
 		random_country = {
 			limit = {
+				NOT = { scope:lds_first_target }
 				any_scope_state = {
-					state_region = {
-						is_homeland = {
-							any_scope_culture = {
-								NOT = {
-									culture_is_discriminated_in = c:DES
-								}
-							}
+					any_scope_pop = {
+						culture = { 
+							has_homeland = PREVPREV
+							NOT = { culture_is_discriminated_in = c:DES }
 						}
+						NOT = { has_pop_religion = lds }
 					}
 				}
-				NOT = { scope:lds_first_target }
 			}
 			save_scope_as = lds_second_target
 		}
 		random_country = {
 			limit = {
-				any_scope_state = {
-					state_region = {
-						is_homeland = {
-							any_scope_culture = {
-								NOT = {
-									culture_is_discriminated_in = c:DES
-								}
-							}
-						}
-					}
-				}
 				NOR = { 
 					scope:lds_first_target
 					scope:lds_second_target
+				}
+				any_scope_state = {
+					any_scope_pop = {
+						culture = { 
+							has_homeland = PREVPREV
+							NOT = { culture_is_discriminated_in = c:DES }
+						}
+						NOT = { has_pop_religion = lds }
+					}
 				}
 			}
 			save_scope_as = lds_third_target
@@ -113,22 +125,34 @@ missionary.2 = { #LDS after migration, Deseret perspective
 	option = {
 		name = missionary.2.a
 		ai_chance = 100
-		scope:lds_first_target = {
-			trigger_event = {
-				id = missionary.3
-				days = 10
+		hidden_effect = {
+			scope:lds_first_target = {
+				trigger_event = {
+					id = missionary.3
+					days = 10
+				}
 			}
-		}
-		scope:lds_second_target = {
-			trigger_event = {
-				id = missionary.3
-				days = 20
+			if = {
+				limit = {
+					exists = scope:lds_second_target
+				}
+				scope:lds_second_target = {
+					trigger_event = {
+						id = missionary.3
+						days = 20
+					}
+				}
 			}
-		}
-		scope:lds_third_target = {
-			trigger_event = {
-				id = missionary.3
-				days = 30
+			if = {
+				limit = {
+					exists = scope:lds_third_target
+				}
+				scope:lds_third_target = {
+					trigger_event = {
+						id = missionary.3
+						days = 30
+					}
+				}
 			}
 		}
 	}
@@ -147,13 +171,10 @@ missionary.3 = { #LDS after migration, target perspective
 	immediate = {
 		random_scope_state = {
 			limit = {
-				state_region = {
-					is_homeland = {
-						any_scope_culture = {
-							NOT = {
-								culture_is_discriminated_in = c:DES
-							}
-						}
+				any_scope_pop = {
+					culture = { 
+						has_homeland = PREVPREV
+						NOT = { culture_is_discriminated_in = c:DES }
 					}
 				}
 			}
@@ -164,14 +185,12 @@ missionary.3 = { #LDS after migration, target perspective
 
 	option = { #ban them
 		trigger = {
-			NOT = {
-				OR = {
-					has_law = law_type:law_total_separation
-					has_law = law_type:protected_speech
-					AND = {
-						has_law = law_type:law_freedom_of_conscience
-						has_law = law_type:law_freedom_of_assembly
-					}
+			NOR = {
+				has_law = law_type:law_total_separation
+				has_law = law_type:protected_speech
+				AND = {
+					has_law = law_type:law_freedom_of_conscience
+					has_law = law_type:law_freedom_of_assembly
 				}
 			}
 		}
@@ -286,7 +305,6 @@ missionary.3 = { #LDS after migration, target perspective
 			}
 		}
 	}
-
 }
 
 missionary.4 = { #mission failed

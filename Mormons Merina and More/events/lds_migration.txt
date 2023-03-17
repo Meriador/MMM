@@ -1471,7 +1471,7 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 				if = {
 					limit = {
 						OR = {
-							has_law = law_type:ethnostate
+							has_law = law_type:law_ethnostate
 						}
 					}
 					activate_law = law_type:law_racial_segregation

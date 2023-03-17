@@ -286,7 +286,7 @@ ideology_laissez_faire_secular = {
 	}
 }
 
-ideology_patriotic_ecomomy = {
+ideology_patriotic_economy = {
 	icon = "gfx/interface/icons/ideology_icons/patriotic_local.dds"
 
 	lawgroup_policing = {

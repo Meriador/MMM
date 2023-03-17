@@ -777,7 +777,7 @@ lds_premigration.10 = { #slaveowners complaining about proselytization
 
 	trigger = {
 		any_scope_pop = {
-			is_pop_type = slave
+			is_pop_type = slaves
 			has_pop_religion = lds
 		}
 		NOT = { 
@@ -813,7 +813,7 @@ lds_premigration.10 = { #slaveowners complaining about proselytization
 		}
 		scope:complaining_slaveowners_scope = {
 			add_radicals = {
-				value = .02
+				value = 0.02
 				pop_type = aristocrats
 			}
 		}
@@ -832,7 +832,7 @@ lds_premigration.10 = { #slaveowners complaining about proselytization
 		}
 		scope:complaining_slaveowners_scope = {
 			add_radicals = {
-				value = .04
+				value = 0.04
 				pop_type = aristocrats
 			}
 		}

@@ -2,11 +2,14 @@
 	is_shown = {
 		exists = c:DES
 		THIS = c:DES
+		total_population <= 100000
 	}
 
 	possible = {
 		NOT = {
 			has_variable = recent_mission
+			has_law = law_type:law_ethnostate
+			total_population > 100000
 		}
 	}
 
@@ -21,5 +24,4 @@
 			months = 60
 		}
 	}
-
 }
