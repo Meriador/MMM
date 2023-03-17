@@ -1,5 +1,5 @@
 ﻿ig_devout2 = {
-	color = { 230 201 0 }
+	color = { 229 228 226 }
 	texture = "gfx/interface/icons/ig_icons/devout2.dds"
 	
 	ideologies = {
@@ -33,6 +33,15 @@
 		
 		if = {
 			limit = {
+				owner = {
+					is_country_type = decentralized
+				}
+			}
+			multiply = { value = 0 } 
+		}
+
+		elseif = {
+			limit = { 
 				NOT = {
 					religion = {
 						shares_heritage_trait_with_state_religion = ROOT.owner
@@ -44,42 +53,91 @@
 		
 		else = {
 			add = {
-				desc = "POP_CLERGYMEN"
+				desc = "POP_CLERGYMEN_URBAN"
 				if = {
 					limit = { 
 						is_pop_type = clergymen
+						pop_employment_building = building_urban_center
 					}
-					value = 100
+					value = 300
+				}
+			}
+
+			add = {
+				desc = "POP_CLERGYMEN_LAWS"
+				if = {
+					limit = {
+						is_pop_type = clergyman
+					}
+					if = {
+						limit = {
+							owner = {
+								has_law = law_type:law_freedom_of_conscience
+							}
+						}
+						value = 50
+					}
+					else_if = {
+						limit = {
+							owner = {
+								has_law = law_type:law_total_separation
+							}
+						}
+						value = 100
+					}
+				}
+			}
+
+			add = {
+				desc = "POP_CLERGYMEN_RELIGION"
+				if = {
+					limit = {
+						is_pop_type = clergyman
+						is_state_religion = no
+					}
+					value = 200
 				}
 			}
 			
 			add = {
-				desc = "POP_SHOPKEEPERS"
+				desc = "POP_SHOPKEEPERS_RELIGION"
 				if = {
 					limit = { 
 						is_pop_type = shopkeepers
+						is_state_religion = no
 					}
 					value = 50
 				}
 			}
-			
+
+			add = {
+				desc = "POP_CLERKS"
+				if = {
+					limit = { 
+						is_pop_type = clerks
+					}
+					value = 50
+				}
+			}
+
 			add = {
 				desc = "POP_BUREAUCRATS"
 				if = {
 					limit = { 
 						is_pop_type = bureaucrats
 					}
-					value = 50
+					value = 25
 				}
 			}
 			
 			add = {
-				desc = "POP_ARISTOCRATS"
+				desc = "POP_BUREAUCRATS_RELIGION"
 				if = {
 					limit = { 
-						is_pop_type = aristocrats
+						is_pop_type = bureaucrats
+						is_state_religion = yes
 					}
-					value = 50
+					value = 25
 				}
 			}
 			

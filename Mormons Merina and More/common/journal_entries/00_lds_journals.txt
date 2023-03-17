@@ -64,13 +64,14 @@
 	
 	on_monthly_pulse = {
 		random_events = {
-			1 = lds_premigration.10 #mormon farms attacked
+			2 = lds_premigration.10 #mormon farms attacked
 			1 = lds_premigration.11 #forced vigilante disavowals
-			6 = lds_premigration.12 #church land dispute
+			4 = lds_premigration.12 #church land dispute
 			2 = lds_premigration.13 #nonmormons threatened by expansion
 			1 = lds_premigration.14 #rumors of theocracy
 			1 = lds_premigration.15 #rumors of infidelity
-			2 = lds_premigration.16 #local election violence
+			4 = lds_premigration.16 #local election violence
+			2 = missionary.1 #successful mission
 			34 = 0
 		}
 	}

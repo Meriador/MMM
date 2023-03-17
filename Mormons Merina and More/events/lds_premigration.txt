@@ -52,6 +52,7 @@ lds_premigration.1 = { #kirtland safety society
 	
 	option = {
 		name = lds_premigration.1.a
+		ai_chance = 100
 		change_variable = {
 			name = lds_agitation
 			add = 1
@@ -97,6 +98,7 @@ lds_premigration.101 = { #if ohio stops being america first
 			}
 		}
 	}
+
 	immediate = {
 		s:STATE_OHIO.region_state:USA = {
 			save_scope_as = kirtland_scope
@@ -107,8 +109,10 @@ lds_premigration.101 = { #if ohio stops being america first
 		set_variable = lds_far_west
 		remove_variable = lds_kirtland
 	}
+
 	option = {
 		name = lds_premigration.101.a
+		ai_chance = 100
 	}
 }
 
@@ -187,6 +191,7 @@ lds_premigration.2 = { #missouri mormon war
 	
 	option = {
 		name = lds_premigration.2.a
+		ai_chance = 100
 		
 		scope:far_west_scope = {
 			every_scope_pop = {
@@ -270,6 +275,7 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 	
 	option = {
 		name = lds_premigration.102.a
+		ai_chance = 100
 		
 		scope:far_west_scope = {
 			every_scope_pop = {
@@ -329,6 +335,7 @@ lds_premigration.3 = { # opposition newspaper destroyed
 	}
 	
 	option = {
+		ai_chance = 10
 		name = lds_premigration.3.a
 		default_option = yes
 		
@@ -344,6 +351,7 @@ lds_premigration.3 = { # opposition newspaper destroyed
 		}
 	}
 	option = {
+		ai_chance = 100
 		name = lds_premigration.3.b
 		trigger = {
 			ROOT = {
@@ -362,11 +370,6 @@ lds_premigration.3 = { # opposition newspaper destroyed
 		scope:nauvoo_scope = {
 			add_radicals = {
 				value = small_radicals
-				religion = rel:protestant
-			}
-			add_radicals = {
-				value = small_radicals
-				religion = rel:catholic
 			}
 			add_radicals = {
 				value = very_large_radicals
@@ -493,6 +496,7 @@ lds_premigration.5 = { # election campaign
 				}				
 			}
 		}
+		ai_chance = 100
 	}
 
 	option = {
@@ -524,6 +528,7 @@ lds_premigration.5 = { # election campaign
 				}				
 			}
 		}
+		ai_chance = 100
 	}
 	option = {
 		name = lds_premigration.5.c
@@ -551,6 +556,7 @@ lds_premigration.5 = { # election campaign
 				}				
 			}
 		}
+		ai_chance = 100
 	}
 	option = {
 		default_option = yes
@@ -559,6 +565,7 @@ lds_premigration.5 = { # election campaign
 			name = lds_agitation
 			add = 1
 		}
+		ai_chance = 0
 	}
 }
 
@@ -602,6 +609,7 @@ lds_premigration.6 = { # governor assassination attempt
 	
 	option = { #A prominent lawyer
 		name = lds_premigration.6.a
+		ai_chance = 50
 		hidden_effect = { 
 			random_list = {
 				10 = { 
@@ -620,6 +628,7 @@ lds_premigration.6 = { # governor assassination attempt
 	
 	option = { #clearly guilty
 		name = lds_premigration.6.b
+		ai_chance = 50
 		hidden_effect = {
 			random_list = {
 				90 = {
@@ -638,6 +647,7 @@ lds_premigration.6 = { # governor assassination attempt
 	
 	option = { #leave it to the court
 		name = lds_premigration.6.c
+		ai_chance = 100
 		default_option = yes
 		hidden_effect = {
 			random_list = {
@@ -683,6 +693,7 @@ lds_premigration.7 = { # rockwell trial convicts
 	
 	option = {
 		name = lds_premigration.7.a
+		ai_chance = 100
 		change_variable = {
 			name = lds_agitation
 			add = 6
@@ -716,6 +727,7 @@ lds_premigration.8 = { # rockwell released
 	
 	option = {
 		name = lds_premigration.8.a
+		ai_chance = 100
 		change_variable = {
 			name = lds_agitation
 			add = 2
@@ -752,80 +764,81 @@ lds_premigration.9 = { #opening event
 	
 	option = {
 		name = lds_premigration.9.a
+		ai_chance = 100
 	}
 }
 
-lds_premigration.10 = { #mormon farms attacked
+lds_premigration.10 = { #slaveowners complaining about proselytization
 	type = country_event
-	placement = scope:lds_farms_scope
+	placement = scope:complaining_slaveowners_scope
 	title = lds_premigration.10.t
 	desc = lds_premigration.10.d
 	flavor = lds_premigration.10.f
 
-	event_image = {
-		video = "gfx/event_pictures/middleeast_islam.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
-
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	
-	duration = 3
-
 	trigger = {
+		any_scope_pop = {
+			is_pop_type = slave
+			has_pop_religion = lds
+		}
 		NOT = { 
-			has_variable = lds_cooldown
-			has_variable = lds_farm_cooldown
+			has_variable = lds_cooldown 
+			has_variable = lds_slaves_avoided
+			has_variable = lds_slaves_embraced
 		}
 	}
-	
+
 	immediate = {
 		random_scope_state = {
 			limit = {
 				any_scope_pop = {
-					religion = rel:lds
-					pop_employment_building_group = bg_agriculture
+					is_pop_type = slaves
+					has_pop_religion = lds
 				}
 			}
-			save_scope_as = lds_farms_scope
+			save_scope_as = complaining_slaveowners_scope
 		}
 		set_variable = {
 			name = lds_cooldown
 			months = 5
 		}
-		set_variable = {
-			name = lds_farm_cooldown
-			months = short_modifier_time
-		}
 	}
-	
-	option = { #unsympathetic
+
+	option = { #ask permission
 		name = lds_premigration.10.a
+		ai_chance = 100
 		default_option = yes
 		change_variable = {
 			name = lds_agitation
 			add = 1
 		}
-		scope:lds_farms_scope = {
+		scope:complaining_slaveowners_scope = {
 			add_radicals = {
-				value = very_large_radicals
-				religion = rel:lds
+				value = .02
+				pop_type = aristocrats
 			}
+		}
+		custom_tooltip = lds_defensive_tt
+		hidden_effect = {
+			set_variable = lds_slaves_avoided
 		}
 	}
-	
-	option = { #sympathetic
-		name = lds_premigration.10.b
+
+	option = { #fuck you
+		name = lds_premigration.10.a
+		ai_chance = 100
 		change_variable = {
 			name = lds_agitation
-			add = -1
+			add = 1
 		}
-		scope:lds_farms_scope = {
+		scope:complaining_slaveowners_scope = {
 			add_radicals = {
-				value = small_radicals
+				value = .04
+				pop_type = aristocrats
 			}
-			add_treasury = -50000
+		}
+		custom_tooltip = lds_anti_racist_tt
+		hidden_effect = {
+			set_variable = lds_slaves_embraced
 		}
 	}
 }
@@ -852,7 +865,8 @@ lds_premigration.11 = { #forced vigilante disavowals
 	trigger = {
 		NOT = { 
 			has_variable = lds_cooldown
-			has_variable = lds_vigilante_cooldown
+			has_variable = lds_vigilantes_justified
+			has_variable = lds_vigilantes_unwise
 		}
 		any_scope_state = {
 			state_region = {
@@ -882,36 +896,42 @@ lds_premigration.11 = { #forced vigilante disavowals
 			name = lds_cooldown
 			months = 5
 		}
-		set_variable = {
-			name = lds_vigilante_cooldown
-			months = short_modifier_time
-		}
 	}
 	
-	option = { #unsympathetic
+	option = { #justified
 		name = lds_premigration.11.a
+		ai_chance = 100
 		default_option = yes
 		change_variable = {
 			name = lds_agitation
-			add = 2
-		}
-		scope:lds_vigilante_scope = {
-			add_radicals = {
-				value = 0.01
-			}
-		}
-	}
-	
-	option = { #sympathetic
-		name = lds_premigration.11.b
-		change_variable = {
-			name = lds_agitation
-			add = -1
+			add = 1
 		}
 		scope:lds_vigilante_scope = {
 			add_radicals = {
 				value = small_radicals
 			}
+		}
+		custom_tooltip = lds_aggressive_tt
+		hidden_effect = {
+			set_variable = lds_vigilantes_justified
+		}
+	}
+	
+	option = { #unwise
+		name = lds_premigration.11.b
+		ai_chance = 100
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		scope:lds_vigilante_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+		custom_tooltip = lds_defensive_tt
+		hidden_effect = {
+			set_variable = lds_vigilantes_unwise
 		}
 	}
 }
@@ -936,7 +956,7 @@ lds_premigration.12 = { #church land dispute/salt sermon
 
 	trigger = {
 		NOT = {
-			has_global_variable = danites_formed 
+			has_global_variable = danites_formed
 			has_variable = lds_cooldown	
 		}
 		any_scope_state = {
@@ -972,8 +992,9 @@ lds_premigration.12 = { #church land dispute/salt sermon
 		}
 	}
 	
-	option = { #only option, will not be well recieved
+	option = { #Completely endorse
 		name = lds_premigration.12.a
+		ai_chance = 100
 		change_variable = {
 			name = lds_agitation
 			add = 2
@@ -982,6 +1003,47 @@ lds_premigration.12 = { #church land dispute/salt sermon
 			add_radicals = {
 				value = small_radicals
 			}
+		}
+		custom_tooltip = lds_aggressive_tt
+		hidden_effect = {
+			set_variable = danites_embraced
+		}
+	}
+
+	option = { #moderate position
+		name = lds_premigration.12.b
+		default_option = yes
+		ai_chance = 100
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+		scope:lds_vigilante_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+		custom_tooltip = lds_institutional_tt
+		hidden_effect = {
+			set_variable = danites_accepted
+		}
+	}
+	
+	option = { #alarmed by militancy
+		name = lds_premigration.12.c
+		ai_chance = 100
+		change_variable = {
+			name = lds_agitation
+			add = 2
+		}
+		scope:lds_vigilante_scope = {
+			add_radicals = {
+				value = small_radicals
+			}
+		}
+		custom_tooltip = lds_defensive_tt
+		hidden_effect = {
+			set_variable = danites_rebuffed
 		}
 	}
 }
@@ -1032,6 +1094,7 @@ lds_premigration.13 = { #nonmormons threatened by expansion
 	
 	option = { #restriction on settlement
 		name = lds_premigration.13.a
+		ai_chance = 100
 		default_option = yes
 		change_variable = {
 			name = lds_agitation
@@ -1054,6 +1117,7 @@ lds_premigration.13 = { #nonmormons threatened by expansion
 	}
 	option = { #taking advantage of new block
 		name = lds_premigration.13.b
+		ai_chance = 100
 		scope:lds_expansion_scope = {
 			add_modifier = {
 				name = influential_state
@@ -1088,7 +1152,8 @@ lds_premigration.14 = { #rumors of theocracy
 	trigger = {
 		NOT = { 
 			has_variable = lds_cooldown
-			has_variable = lds_theocracy_cooldown
+			has_variable = lds_theocracy_embraced
+			has_variable = lds_republic_embraced
 		}
 	}
 	
@@ -1105,17 +1170,30 @@ lds_premigration.14 = { #rumors of theocracy
 			name = lds_cooldown
 			months = 5
 		}
-		set_variable = {
-			name = lds_theocracy_cooldown
-			months = normal_modifier_time
-		}
 	}
 	
-	option = { 
+	option = { #embracing theocratic ideals
 		name = lds_premigration.14.a
 		change_variable = {
 			name = lds_agitation
 			add = 1
+		}
+		custom_tooltip = lds_theocrat_tt
+		hidden_effect = {
+			set_variable = lds_theocracy_embraced
+		}
+	}
+
+	option = { #embracing republican ideals
+		name = lds_premigration.14.b
+		default_option = yes
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		custom_tooltip = lds_institutional_tt
+		hidden_effect = {
+			set_variable = lds_republic_embraced
 		}
 	}
 }
@@ -1141,7 +1219,8 @@ lds_premigration.15 = { #rumors of infidelity
 	trigger = {
 		NOT = { 
 			has_variable = lds_cooldown
-			has_variable = lds_infidelity_cooldown
+			has_variable = lds_polygamy_rejected
+			has_variable = lds_polygamy_condoned
 		}
 	}
 	
@@ -1158,17 +1237,32 @@ lds_premigration.15 = { #rumors of infidelity
 			name = lds_cooldown
 			months = 5
 		}
-		set_variable = {
-			name = lds_infidelity_cooldown
-			months = normal_modifier_time
-		}
 	}
 	
-	option = { 
+	option = { #completely reject polygamy
 		name = lds_premigration.15.a
+		ai_chance = 100
 		change_variable = {
 			name = lds_agitation
 			add = 1
+		}
+		custom_tooltip = lds_anti_polygamy_tt
+		hidden_effect = {
+			set_variable = lds_polygamy_rejected
+		}
+	}
+	
+	option = { #non-response
+		name = lds_premigration.15.b
+		default_option = yes
+		ai_chance = 100
+		change_variable = {
+			name = lds_agitation
+			add = 1
+		}
+		custom_tooltip = lds_polygamy_tt
+		hidden_effect = {
+			set_variable = lds_polygamy_condoned
 		}
 	}
 }
@@ -1197,13 +1291,11 @@ lds_premigration.16 = { #local election violence
 			has_variable = lds_election_cooldown
 		}
 		any_scope_state = {
-			limit = {
-				state_region = {
-					is_homeland = cu:mormon
-				}
-				radical_fraction = {
-					value > 0.1
-				}
+			state_region = {
+				is_homeland = cu:mormon
+			}
+			radical_fraction = {
+				value > 0.1
 			}
 		}
 	}
@@ -1232,6 +1324,7 @@ lds_premigration.16 = { #local election violence
 	
 	option = { #leaving well enough alone
 		name = lds_premigration.16.a
+		ai_chance = 100
 		default_option = yes
 		change_variable = {
 			name = lds_agitation
@@ -1241,6 +1334,7 @@ lds_premigration.16 = { #local election violence
 	
 	option = { #endorsement of vote suppression
 		name = lds_premigration.16.b
+		ai_chance = 10
 		change_variable = {
 			name = lds_agitation
 			add = 3

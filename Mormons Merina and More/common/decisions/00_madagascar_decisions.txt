@@ -1,9 +1,7 @@
 ﻿bara_unification = {
 	is_shown = {
 		country_has_primary_culture = cu:bara
-		NOT = {
-			has_variable = bara_var
-		}
+		NOT = { THIS = c:BAR } 
 	}
 
 	possible = {
@@ -14,16 +12,16 @@
 				has_state_in_state_region = STATE_SOUTH_MADAGASCAR
 				has_state_in_state_region = STATE_SOUTHEAST_MADAGASCAR
 				OR = {
-					c:BBE = ROOT
-					c:BBE = { is_country_alive = no }
+					THIS = c:BBE
+					NOT = { exists = c:BBE }
 				}
 				OR = {
-					c:IMM = ROOT
-					c:IMM = { is_country_alive = no}
+					THIS = c:IMM
+					NOT = { exists = c:IMM }
 				}
 				OR = {
-					c:IAN = ROOT
-					c:IAN = { is_country_alive = no}
+					THIS = c:IAN
+					NOT = { exists = c:IAN }
 				}
 			}
 		}
@@ -31,9 +29,6 @@
 
 	when_taken = {
 		change_tag = BAR
-		set_variable = {
-			name = bara_var
-		}
 	}
 
 	ai_chance = {

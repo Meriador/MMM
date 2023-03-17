@@ -2,7 +2,7 @@
 
 #namespace for various events about Madagascar's efforts to industrialize. Will include conflicts over fanompoana and international capital-sourcing. I should see if there's a way I can get specific cultures advantages to qualifications, and to move small numbers of pops to madagascar - make it so you can get a boost to your investment pool at the cost of a very foreign capitalist class across a few events.
 
-madagascar_econ.1 = { #fanompoana ended, success condition of journal
+madagascar_econ.1 = { #fanompoana ended
 	type = country_event
 	placement = ROOT
 
@@ -20,28 +20,34 @@ madagascar_econ.1 = { #fanompoana ended, success condition of journal
 	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm"
 	
 	option = {
+		default_option = yes
+		ai_chance = 100
 		name = madagascar_econ.1.a
+		remove_modifier = fanompoana_modifier
 		ig:ig_rural_folk = {
 			add_modifier = {
 				name = fanompoana_ended
 				months = long_modifier_time
+				is_decaying = yes
 			}
 		}
 		ig:ig_petty_bourgeoisie = {
 			add_modifier = {
 				name = fanompoana_ended
 				months = long_modifier_time
+				is_decaying = yes
 			}
 		}
 		ig:ig_trade_unions = {
 			add_modifier = {
 				name = fanompoana_ended
 				months = long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
 }
-
+#WIP
 madagascar_econ.2 = { #Success event for autarky journal
 	type = country_event
 	placement = ROOT
@@ -59,53 +65,54 @@ madagascar_econ.2 = { #Success event for autarky journal
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #wip
 	
+	option = {
+		name = madagascar_econ.2.a
+		ai_chance = 50
 
+		trigger = {
+			NOT = {
+				has_law = law_type:law_isolationism
+			}
+		}
+
+		add_modifier = {
+			name = esteemed_trade_partner
+			months = -1
+		}
+	}
+
+	option = {
+		name = madagascar_econ.2.b
+		ai_chance = 50
+		default_option = yes
+
+		add_modifier = {
+			name = confident_industrialization
+			months = -1
+		}
+	}
 }
 
-madagascar_econ.3 = { #basic event for aquiring a "benefactor" that I may repurpose as a general event for such things
+madagascar_econ.3 = { #Fail event for autarky journal
 	type = country_event
 	placement = ROOT
 
 	title = madagascar_econ.3.t
 	desc = madagascar_econ.3.d
 	flavor = madagascar_econ.3.f
-
+	
 	duration = 3
 	
 	event_image = {
-		video = "gfx/event_pictures/africa_prosperous_farm.bk2" #WIP
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2" #wip
 	}
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear" 
-	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #WIP
-
-	trigger = {
-		any_country = {
-			country_rank >= rank_value:major_power
-			has_interest_marker_in_region = ROOT.capital.region
-			OR = {
-				has_attitude = {
-					who = ROOT
-					attitude = domineering
-				}
-				has_attitude = {
-					who = ROOT
-					attitude = protective
-				}
-				has_attitude = {
-					who = ROOT
-					attitude = cooperative
-				}
-			}
-		}
-	}
-
-	immediate = {
-		
-	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #wip
+	
 }
 
-madagascar_econ.4 = { #starting event, Ranavalona decides whether to adopt a 0 foreigners policy right off the bat, or try to use what remains of existing ties to her ends
+madagascar_econ.4 = { #Fanompoana reformed
 	type = country_event
 	placement = ROOT
 
@@ -122,4 +129,250 @@ madagascar_econ.4 = { #starting event, Ranavalona decides whether to adopt a 0 f
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #wip
 	
+	option = {
+		name = madagascar_econ.4.a
+		default_option = yes
+		ai_chance = 1
+		remove_modifier = fanompoana_modifier
+		add_modifier = {
+			name = fanompoana_reformed
+			months = -1
+		}
+	}
+	
+	option = {
+		trigger = {
+			has_technology_researched = central_planning
+			NOT = {
+				has_law = law_type:law_command_economy
+			}
+		}
+		name = madagascar_econ.4.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				trigger = { country_has_voting_franchise = yes }
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					has_strategy = ai_strategy_nationalist_agenda
+				}
+				add = 100
+			}
+			modifier = {
+				trigger = {
+					has_strategy = ai_strategy_conservative_agenda
+				}
+				add = 40
+			}
+			modifier = {
+				trigger = {
+					OR = {
+						has_strategy = ai_strategy_reactionary_agenda
+						has_strategy = ai_strategy_progressive_agenda
+						has_strategy = ai_strategy_egalitarian_agenda
+					}
+				}
+				add = -50
+			}
+		}
+
+		remove_modifier = fanompoana_modifier
+		add_modifier = {
+			name = fanompoana_reformed
+			months = -1
+		}
+		activate_law = law_type:law_command_economy
+		ig:ig_armed_forces = {
+			remove_ideology = ideology_patriotic
+			add_ideology = ideology_patriotic_economy
+		}
+		ig:ig_petty_bourgeoisie = {
+			remove_ideology = ideology_patriotic
+			add_ideology = ideology_patriotic_economy
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = { has_technology_researched = central_planning }
+		}
+		ai_chance = 100
+		name = madagascar_econ.4.c
+		remove_modifier = fanompoana_modifier
+		add_modifier = {
+			name = fanompoana_reformed
+			months = -1
+		}
+		add_technology_progress = {
+			progress = 12000
+			technology = central_planning
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = { has_technology_researched = central_planning }
+		}
+		name = madagascar_econ.4.e
+		ai_chance = {
+			base = 50
+			modifier = {
+				trigger = { country_has_voting_franchise = yes }
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					has_strategy = ai_strategy_nationalist_agenda
+				}
+				add = 100
+			}
+			modifier = {
+				trigger = {
+					has_strategy = ai_strategy_conservative_agenda
+				}
+				add = 40
+			}
+			modifier = {
+				trigger = {
+					OR = {
+						has_strategy = ai_strategy_reactionary_agenda
+						has_strategy = ai_strategy_progressive_agenda
+						has_strategy = ai_strategy_egalitarian_agenda
+					}
+				}
+				add = -50
+			}
+		}
+
+		remove_modifier = fanompoana_modifier
+		add_modifier = {
+			name = fanompoana_reformed
+			months = -1
+		}
+		add_technology_progress = {
+			progress = 12000
+			technology = central_planning
+		}
+		ig:ig_armed_forces = {
+			remove_ideology = ideology_patriotic
+			add_ideology = ideology_patriotic_economy
+		}
+		ig:ig_petty_bourgeoisie = {
+			remove_ideology = ideology_patriotic
+			add_ideology = ideology_patriotic_economy
+		}
+	}
 }
+
+#This stuff will be revisited when I've got more colonial stuff set up
+
+#madagascar_econ.3 = { #event to aquire a benefactor if Ranavalona stops being the one in charge after kicking everyone out. May try repurposing this for use more generally
+#	type = country_event
+#	placement = ROOT
+#
+#	title = madagascar_econ.3.t
+#	desc = madagascar_econ.3.d
+#	flavor = madagascar_econ.3.f
+#
+#	duration = 3
+#	
+#	event_image = {
+#		video = "gfx/event_pictures/africa_prosperous_farm.bk2" #WIP
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear" 
+#	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #WIP
+#
+#	trigger = {
+#		any_country = {
+#			country_rank >= rank_value:major_power
+#			has_interest_marker_in_region = ROOT.capital.region
+#			OR = {
+#				has_attitude = {
+#					who = ROOT
+#					attitude = domineering
+#				}
+#				has_attitude = {
+#					who = ROOT
+#					attitude = protective
+#				}
+#				has_attitude = {
+#					who = ROOT
+#					attitude = cooperative
+#				}
+#			}
+#		}
+#		any_country = {
+#			has_variable = madagascar_open
+#		}
+#	}
+#
+#	immediate = {
+#		
+#	}
+#}
+#
+#madagascar_econ.4 = { #starting event, Ranavalona decides whether to adopt a 0 foreigners policy right off the bat, or try to use what remains of existing ties to her ends
+#	type = country_event
+#	placement = ROOT
+#
+#	title = madagascar_econ.4.t
+#	desc = madagascar_econ.4.d
+#	flavor = madagascar_econ.4.f
+#	
+#	duration = 3
+#	
+#	event_image = {
+#		video = "gfx/event_pictures/africa_prosperous_farm.bk2" #wip
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#	on_opened_soundeffect = "event:/SFX/Events/africa/prosperous_farm" #wip
+#
+#	option = { #use them for your ends. Gives Laborde
+#		name = madagascar_econ.4.a
+#
+#		create_character = { #WIP dna
+#			first_name = Jean
+#			last_name = Laborde
+#			birth_date = 1805.10.16
+#			interest_group = ig_industrialists
+#			ideology = ideology_moderate
+#			ig_leader = yes
+#			traits = {
+#				ambitious
+#				explorer
+#				basic_diplomat
+#			}
+#		}
+#		
+#		custom_tooltip = {
+#			text = foreign_influence_tt
+#			c:GBR = {
+#				every_primary_culture = {
+#					add_to_variable_list = influential_cultures
+#				}
+#			}
+#			c:FRA = {
+#				every_primary_culture = {
+#					add_to_variable_list = influential_cultures
+#				}
+#			}
+#		}
+#		
+#		hidden_effect = {
+#			set_variable = madagascar_open
+#		}
+#	}
+#
+#	option = {
+#		name = madagascar_econ.4.a
+#		
+#		custom_tooltip = {
+#			text = madagascar_closed_tt
+#			set_variable = madagascar_closed
+#		}
+#	}
+#}

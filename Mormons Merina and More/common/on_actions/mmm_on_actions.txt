@@ -7,8 +7,6 @@ on_monthly_pulse_country = {
 		lds_migration.7
 		lds_migration.8
 	}
-	effect = {
-	}
 	random_events = {
 	}
 }
@@ -58,214 +56,36 @@ on_decade_pulse_state = {}
 # Root = Releasing Country
 # scope:target = Released Country
 on_country_released_as_independent = {
-	effect = {
-		scope:target = {
-			if = {
-				limit = {
-					country_has_state_religion = rel:theravada
-				}
-				ig:ig_devout2 = {
-					remove_ideology = ideology_evangelist
-					add_ideology = ideology_buddhist_pacifism
-				}
-			}
-			if = {
-				limit = {
-					country_has_state_religion = rel:vajrayana
-				}
-				ig:ig_devout2 = {
-					remove_ideology = ideology_evangelist
-					add_ideology = ideology_buddhist_pacifism
-				}
-			}
-			if = {
-				limit = {
-					country_has_state_religion = rel:mahayana
-				}
-				ig:ig_devout2 = {
-					remove_ideology = ideology_evangelist
-					add_ideology = ideology_buddhist_pacifism
-				}
-			}
-			if = {
-				limit = {
-					country_has_state_religion = rel:lds
-				}
-				ig:ig_devout = {
-					remove_ideology = ideology_moralist
-					remove_ideology = ideology_patriarchal
-					add_ideology = ideology_agrarian
-					add_ideology = ideology_theodemocratic
-				}
-				ig:ig_industrialists = {
-					remove_ideology = ideology_laissez_faire
-					add_ideology = ideology_laissez_faire_secular
-				}
-				ig:ig_landowners = {
-					remove_ideology = ideology_paternalistic
-					add_ideology = ideology_republican_paternalistic
-				}
-			}
-			if = {
-				limit = {
-					exists = c:TUR
-					c:TUR = scope:target
-				}
-				ig:ig_devout2 = {
-					remove_ideology = ideology_evangelist
-					add_ideology = ideology_ottomanist
-				}
-			}
-			if = {
-				limit = {
-					is_country_type = colonial
-					NOT = {
-						exists = c:BRZ
-						c:BRZ = scope:target
-					}
-				}
-				ig:ig_petty_bourgeoisie = {
-					remove_ideology = ideology_reactionary
-					add_ideology = ideology_nativist
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						country_has_primary_culture = {
-							OR = {
-								cu:yankee
-								cu:dixie
-								cu:afro_american
-								cu:mormon
-								cu:british
-								cu:scottish
-								cu:welsh
-								cu:australian
-								cu:anglo_canadian
-							}
-						}
-						NOT = {
-							c:EIC = scope:target
-						}
-					}
-				}
-				ig:ig_rural_folk = {
-					remove_ideology = ideology_agrarian
-					add_ideology = ideology_yeomanism
-				}
-			}
-		}
+	on_actions = {
+		new_country_ideology_assignment
 	}
 }
 
 # Root = Releasing Country
 # scope:target = Released Country
 on_country_released_as_own_subject = {
-	effect = {
-		scope:target = {
-			if = {
-				limit = {
-					country_has_state_religion = rel:theravada
-				}
-				ig:ig_devout2 = {
-					remove_ideology = ideology_evangelist
-					add_ideology = ideology_buddhist_pacifism
-				}
-			}
-			if = {
-				limit = {
-					country_has_state_religion = rel:vajrayana
-				}
-				ig:ig_devout2 = {
-					remove_ideology = ideology_evangelist
-					add_ideology = ideology_buddhist_pacifism
-				}
-			}
-			if = {
-				limit = {
-					country_has_state_religion = rel:mahayana
-				}
-				ig:ig_devout2 = {
-					remove_ideology = ideology_evangelist
-					add_ideology = ideology_buddhist_pacifism
-				}
-			}
-			if = {
-				limit = {
-					country_has_state_religion = rel:lds
-				}
-				ig:ig_devout = {
-					remove_ideology = ideology_moralist
-					remove_ideology = ideology_patriarchal
-					add_ideology = ideology_agrarian
-					add_ideology = ideology_theodemocratic
-				}
-				ig:ig_industrialists = {
-					remove_ideology = ideology_laissez_faire
-					add_ideology = ideology_laissez_faire_secular
-				}
-				ig:ig_landowners = {
-					remove_ideology = ideology_paternalistic
-					add_ideology = ideology_republican_paternalistic
-				}
-			}
-			if = {
-				limit = {
-					exists = c:TUR
-					c:TUR = scope:target
-				}
-				ig:ig_devout2 = {
-					remove_ideology = ideology_evangelist
-					add_ideology = ideology_ottomanist
-				}
-			}
-			if = {
-				limit = {
-					is_country_type = colonial
-					NOT = {
-						exists = c:BRZ
-						c:BRZ = scope:target
-					}
-				}
-				ig:ig_petty_bourgeoisie = {
-					remove_ideology = ideology_reactionary
-					add_ideology = ideology_nativist
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						country_has_primary_culture = {
-							OR = {
-								cu:yankee
-								cu:dixie
-								cu:afro_american
-								cu:mormon
-								cu:british
-								cu:scottish
-								cu:welsh
-								cu:australian
-								cu:anglo_canadian
-							}
-						}
-						NOT = {
-							c:EIC = scope:target
-						}
-					}
-				}
-				ig:ig_rural_folk = {
-					remove_ideology = ideology_agrarian
-					add_ideology = ideology_yeomanism
-				}
-			}
-		}
+	on_actions = {
+		new_country_ideology_assignment
 	}
 }
 
 # Root = Releasing Country
 # scope:target = Released Country
 on_country_released_as_overlord_subject = {
+	on_actions = {
+		new_country_ideology_assignment
+	}
+}
+
+# Root = Country
+# scope:target = Uprising country
+on_revolution_start = {
+	on_actions = {
+		new_country_ideology_assignment
+	}
+}
+
+new_country_ideology_assignment = {
 	effect = {
 		scope:target = {
 			if = {
@@ -340,18 +160,16 @@ on_country_released_as_overlord_subject = {
 			if = {
 				limit = {
 					AND = {
-						country_has_primary_culture = {
-							OR = {
-								cu:yankee
-								cu:dixie
-								cu:afro_american
-								cu:mormon
-								cu:british
-								cu:scottish
-								cu:welsh
-								cu:australian
-								cu:anglo_canadian
-							}
+						OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							country_has_primary_culture = cu:afro_american
+							country_has_primary_culture = cu:mormon
+							country_has_primary_culture = cu:british
+							country_has_primary_culture = cu:scottish
+							country_has_primary_culture = cu:welsh
+							country_has_primary_culture = cu:australian
+							country_has_primary_culture = cu:anglo_canadian
 						}
 						NOT = {
 							c:EIC = scope:target

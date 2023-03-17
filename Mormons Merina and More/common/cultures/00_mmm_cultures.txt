@@ -179,7 +179,7 @@ aromanian={
 	graphics = european
 }
 
-# WIP: namelists, the Merina are ok but the Betsimisaraka and Amtaimoro still need more. They are, at least, not starting countries, so this is less urgent.
+# WIP: namelists, the Merina are ok but the Betsimisaraka and Amtaimoro especially still need more. They are, at least, not starting countries, so this is less urgent.
 merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a geneology for the Merina royal family. Hopefully none of these are weird for a 19th century rando lol
 	color= hsv{ 0.35 0.26 0.64 }
 	religion = animist
@@ -196,6 +196,7 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 		Mparany
 		Rabehety
 		Rabezaka
+		Rabezavana
 		Rabiby
 		Radama
 		Rafidy
@@ -204,6 +205,7 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 		Rainiharo
 		Rainijohary
 		Rajaona
+		Rajaonay
 		Rakotomavo
 		Ralainanahary
 		Ralainony
@@ -252,6 +254,7 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 		Andrianaly
 		Andrianantara
 		Andriandanimena
+		Andrianifahana
 		Andrianilana
 		Andrianimpitoekemanjaka
 		Andrianimpitomangoro
@@ -307,6 +310,7 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 	female_common_first_names = {
 		Imaitsoanala
 		Rabehavina
+		Rabodo
 		Rabodofotsy
 		Rabodomiarana
 		Rafarasoa
@@ -322,6 +326,7 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 		Ranavalontsimitovy
 		Randapavola
 		Renibodonimerina
+		Rasoanalina
 		Rasoarivony
 		Ramavokely
 		Rasalama
@@ -412,6 +417,8 @@ betsimisaraka={
 		Tsiranana
 		Siba
 		Tsifanda
+		Rahidy
+		Linta
 	}
 	male_regal_first_names = {
 		Ratsimilaho
@@ -424,6 +431,8 @@ betsimisaraka={
 		Tsiranana
 		Siba
 		Tsifanda
+		Rahidy
+		Linta
 	}
 	female_common_first_names = {
 		Bety

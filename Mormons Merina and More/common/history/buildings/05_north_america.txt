@@ -1295,12 +1295,6 @@
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
-			create_building={
-				building="building_barracks"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_line_infantry" }
-			}
 		}
 		region_state:ONT={
 			create_building={
@@ -1656,7 +1650,7 @@
 		region_state:MEX={
 			create_building={
 				building="building_government_administration"
-				level=6
+				level=7
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}
@@ -1717,13 +1711,7 @@
 		}
 	}
 	s:STATE_VERACRUZ = {
-		region_state:MEX={		
-			create_building={
-				building="building_government_administration"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_simple_organization" }
-			}			
+		region_state:MEX={				
 			create_building={
 				building="building_textile_mills"
 				level=1
@@ -1840,7 +1828,7 @@
 		region_state:MEX={
 			create_building={
 				building="building_government_administration"
-				level=3
+				level=4
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}
@@ -1902,7 +1890,7 @@
 		region_state:MEX={
 			create_building={
 				building="building_government_administration"
-				level=2
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}
@@ -1953,103 +1941,3 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

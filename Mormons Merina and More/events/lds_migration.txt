@@ -112,7 +112,6 @@ lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon hom
 	placement = root
 	title = lds_migration.3.t
 	desc = lds_migration.3.d
-	flavor = lds_migration.3.f
 
 	event_image = {
 		video = "gfx/event_pictures/middleeast_islam.bk2"
@@ -124,6 +123,15 @@ lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon hom
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_homeland = cu:mormon
+			}
+			save_scope_as = mormon_homeland_state
+		}
+	}
 
 	option = {
 		name = lds_migration.3.a
@@ -380,21 +388,262 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 						}
 					}
 				}
-				create_character = {
-					first_name = "Brigham"
-					last_name = "Young"
-					noble = yes
-					ruler = yes
-					ig_leader = yes
-					birth_date = 1801.6.1
-					dna = ecchi_usa_brigham_young
-					ideology = ideology_slaver
-					interest_group = ig_devout
-					traits = {
-						bigoted
-						pious
-						demagogue
-						experienced_colonial_administrator
+
+				random_list = {
+					40 = {
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_slaves_embraced
+								}
+							}
+							add = -10
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_vigilantes_justified
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									OR = {
+										has_variable = danites_embraced
+										has_variable = danites_rebuffed
+									}
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_theocracy_embraced
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_polygamy_rejected
+								}
+							}
+							add = -15
+						}
+						create_character = {
+							first_name = "Brigham"
+							last_name = "Young"
+							noble = yes
+							ruler = yes
+							ig_leader = yes
+							birth_date = 1801.6.1
+							dna = ecchi_usa_brigham_young
+							ideology = ideology_slaver
+							interest_group = ig_devout
+							traits = {
+								bigoted
+								romantic
+								demagogue
+								experienced_colonial_administrator
+							}
+						}
+					}
+					40 = {
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_slaves_embraced
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_vigilantes_justified
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									OR = {
+										has_variable = danites_embraced
+										has_variable = danites_accepted
+									}
+								}
+							}
+							add = -10
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_republic_embraced
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_polygamy_condoned
+								}
+							}
+							add = -15
+						}
+						create_character = {
+							first_name = "Emma"
+							last_name = "Smith"
+							noble = yes
+							ruler = yes
+							female = yes
+							birth_date = 1804.7.10
+							#dna = 
+							ideology = ideology_theocrat
+							interest_group = ig_devout
+							traits = {
+								cautious
+								basic_diplomat
+							}
+						}
+						create_character = {
+							first_name = "Joseph"
+							last_name = "Smith"
+							noble = yes
+							ig_leader = yes
+							birth_date = 1832.11.6
+							ideology = ideology_reformer
+							interest_group = ig_devout
+							traits = {
+								tactful
+							}
+						}
+					}
+					40 = {
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_slaves_avoided
+								}
+							}
+							add = -10
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_vigilantes_unwise
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									OR = {
+										has_variable = danites_embraced
+										has_variable = danites_rebuffed
+									}
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_republic_embraced
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_polygamy_rejected
+								}
+							}
+							add = -15
+						}
+						create_character = {
+							first_name = "James"
+							last_name = "Strang"
+							noble = yes
+							ruler = yes
+							ig_leader = yes
+							birth_date = 1813.3.21
+							#dna = 
+							ideology = ideology_royalist
+							interest_group = ig_devout
+							traits = {
+								ambitious
+								basic_political_operator
+							}
+						}
+					}
+					40 = {
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_slaves_avoided
+								}
+							}
+							add = -10
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_vigilantes_unwise
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									OR = {
+										has_variable = danites_rebuffed
+										has_variable = danites_accepted
+									}
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_theocracy_embraced
+								}
+							}
+							add = -5
+						}
+						modifier = {
+							if = {
+								limit = {
+									has_variable = lds_polygamy_condoned
+								}
+							}
+							add = -15
+						}
+						create_character = {
+							first_name = "Sidney"
+							last_name = "Rigdon"
+							noble = yes
+							ruler = yes
+							ig_leader = yes
+							birth_date = 1793.2.19
+							#dna = 
+							ideology = ideology_moderate
+							interest_group = ig_devout
+							traits = {
+								experienced_political_operator
+								firebrand
+								reckless
+							}
+						}
 					}
 				}
 				if = {
@@ -471,6 +720,11 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 			state_region = {
 				add_claim = c:DES
 				add_homeland = mormon
+			}
+		}
+		c:DES = {
+			ruler = {
+				save_scope_as = deseret_leader
 			}
 		}
 	}
@@ -822,6 +1076,11 @@ lds_migration.5 = { #Founding of Deseret, Hyrum Edition
 			state_region = {
 				add_claim = c:DES
 				add_homeland = mormon
+			}
+		}
+		c:DES = {
+			ruler = {
+				save_scope_as = deseret_leader
 			}
 		}
 	}
@@ -1230,6 +1489,11 @@ lds_migration.6 = { #Founding of Deseret, Joseph Edition
 			state_region = {
 				add_claim = c:DES
 				add_homeland = mormon
+			}
+		}
+		c:DES = {
+			ruler = {
+				save_scope_as = deseret_leader
 			}
 		}
 	}

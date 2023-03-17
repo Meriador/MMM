@@ -1,0 +1,569 @@
+﻿namespace = missionary
+
+missionary.1 = { #LDS before migration
+	type = country_event
+	placement = conversion_state_scope
+
+	title = missionary.1.t
+	desc = missionary.1.d
+	flavor = missionary.1.f
+
+	trigger = {
+		not = { has_variable = recent_lds_conversion }
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			save_scope_as = conversion_state_scope
+		}
+		set_variable = {
+			name = lds_mission_successful
+			months = short_modifier_time
+		}
+	}
+
+	option = {
+		name = missionary.1.a
+		ai_chance = 100
+		scope:conversion_state_scope = {
+			convert_population = { target = rel:lds value = 0.005 }
+			every_scope_pop = {
+				limit = {
+					pop_is_discriminated = no
+					has_pop_religion = lds
+				}
+				change_pop_culture = {
+					target = cu:mormon
+					value = 0.9
+				}
+			}
+		}
+	}
+}
+
+missionary.2 = { #LDS after migration, Deseret perspective
+	type = country_event
+	placement = ROOT
+
+	title = missionary.2.t
+	desc = missionary.2.d
+	flavor = missionary.2.f
+
+	#should be triggered by decision
+
+	immediate = {
+		random_country = {
+			limit = {
+				any_scope_state = {
+					state_region = {
+						is_homeland = {
+							any_scope_culture = {
+								NOT = {
+									culture_is_discriminated_in = c:DES
+								}
+							}
+						}
+					}
+				}
+			}
+			save_scope_as = lds_first_target
+		}
+		random_country = {
+			limit = {
+				any_scope_state = {
+					state_region = {
+						is_homeland = {
+							any_scope_culture = {
+								NOT = {
+									culture_is_discriminated_in = c:DES
+								}
+							}
+						}
+					}
+				}
+				NOT = { scope:lds_first_target }
+			}
+			save_scope_as = lds_second_target
+		}
+		random_country = {
+			limit = {
+				any_scope_state = {
+					state_region = {
+						is_homeland = {
+							any_scope_culture = {
+								NOT = {
+									culture_is_discriminated_in = c:DES
+								}
+							}
+						}
+					}
+				}
+				NOR = { 
+					scope:lds_first_target
+					scope:lds_second_target
+				}
+			}
+			save_scope_as = lds_third_target
+		}
+	}
+
+	option = {
+		name = missionary.2.a
+		ai_chance = 100
+		scope:lds_first_target = {
+			trigger_event = {
+				id = missionary.3
+				days = 10
+			}
+		}
+		scope:lds_second_target = {
+			trigger_event = {
+				id = missionary.3
+				days = 20
+			}
+		}
+		scope:lds_third_target = {
+			trigger_event = {
+				id = missionary.3
+				days = 30
+			}
+		}
+	}
+}
+
+missionary.3 = { #LDS after migration, target perspective
+	type = country_event
+	placement = lds_proselyte_state_scope
+
+	title = missionary.3.t
+	desc = missionary.3.d
+	flavor = missionary.3.f
+
+	#triggered by previous event
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = {
+					is_homeland = {
+						any_scope_culture = {
+							NOT = {
+								culture_is_discriminated_in = c:DES
+							}
+						}
+					}
+				}
+			}
+			save_scope_as = lds_proselyte_state_scope
+			set_variable = lds_proselyte_state
+		}
+	}
+
+	option = { #ban them
+		trigger = {
+			NOT = {
+				OR = {
+					has_law = law_type:law_total_separation
+					has_law = law_type:protected_speech
+					AND = {
+						has_law = law_type:law_freedom_of_conscience
+						has_law = law_type:law_freedom_of_assembly
+					}
+				}
+			}
+		}
+
+		name = missionary.3.a
+		ai_chance = 100
+
+		random_list = {
+			25 = { 
+				if = {
+					limit = {
+						limit = {
+							NOT = {
+								country_has_state_religion = rel:protestant
+							}
+						}
+					}
+					add = -15
+				}
+				modifier = {
+					if = {
+						limit = {
+							scope:lds_proselyte_state_scope = {
+								OR = {
+									is_homeland = cu:english
+									is_homeland = cu:scottish
+									is_homeland = cu:australian
+									is_homeland = cu:welsh
+								}
+							}
+						}
+						add = 20
+					}
+				}
+				trigger_event = { 
+					id = missionary.5 
+					days = 120
+				}
+			}
+			75 = {
+				trigger_event = { 
+					id = missionary.4 
+					days = 120
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { #let them stay
+		name = missionary.3.b
+		ai_chance = 100
+
+		random_list = {
+			60 = { 
+				modifier = {
+					if = {
+						limit = {
+							limit = {
+								NOT = {
+									country_has_state_religion = rel:protestant
+								}
+							}
+						}
+						add = -30
+					}
+				}
+				trigger_event = { 
+					id = missionary.5 
+					days = 120
+				}
+			}
+			30 = {
+				trigger_event = { 
+					id = missionary.4 
+					days = 120
+				}
+			}
+			10 = {
+				modifier = {
+					if = {
+						limit = {
+							NOT = {
+								country_has_state_religion = rel:protestant
+							}
+						}
+						add = -10
+					}
+				}
+				modifier = {
+					if = {
+						limit = {
+							scope:lds_proselyte_state_scope = {
+								OR = {
+									is_homeland = cu:english
+									is_homeland = cu:scottish
+									is_homeland = cu:australian
+									is_homeland = cu:welsh
+								}
+							}
+						}
+						add = 30
+					}
+				}
+				trigger_event = {
+					id = missionary.6
+					days = 120
+				}
+			}
+		}
+	}
+
+}
+
+missionary.4 = { #mission failed
+	type = country_event
+	placement = lds_proselyte_state_scope
+
+	title = missionary.4.t
+	desc = missionary.4.d
+	flavor = missionary.4.f
+
+	trigger = {
+		exists = c:DES
+		any_scope_state = {
+			has_variable = lds_proselyte_state
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = lds_proselyte_state
+			}
+			save_scope_as = lds_proselyte_state_scope
+		}
+	}
+
+	option = {
+		name = missionary.4.a
+		ai_chance = 100
+		hidden_effect = {
+			remove_variable = lds_proselyte_state
+			ROOT = {
+				set_variable = lds_return_mission
+			}
+			c:DES = {
+				trigger_event = {
+					id = missionary.7
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+missionary.5 = { #mission succeeds
+	type = country_event
+	placement = lds_proselyte_state_scope
+
+	title = missionary.5.t
+	desc = missionary.5.d
+	flavor = missionary.5.f
+
+	duration = 1
+
+	trigger = {
+		exists = c:DES
+		any_scope_state = {
+			has_variable = lds_proselyte_state
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = lds_proselyte_state
+			}
+			save_scope_as = lds_proselyte_state_scope
+		}
+		c:DES = {
+			random_scope_state = {
+				save_scope_as = lds_destination
+				set_variable = lds_destination_var
+			}
+		}
+	}
+
+	option = {
+		name = missionary.4.a
+		ai_chance = 100
+		every_scope_pop = {
+			limit = {
+				culture = {
+					NOT = {
+						culture_is_discriminated_in = c:DES
+					}
+				}
+			}
+			change_pop_religion = {
+				target = rel:lds
+				value = 0.01
+			}
+		}
+		every_scope_pop = {
+			limit = {
+				religion = rel:lds
+				wealth > 8
+			}
+			move_pop = scope:lds_destination
+		}
+		hidden_effect = {
+			remove_variable = lds_proselyte_state
+			ROOT = {
+				set_variable = lds_return_mission
+			}
+			scope:lds_destination = {
+				set_variable = lds_destination_var
+			}
+			c:DES = {
+				trigger_event = {
+					id = missionary.8
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+missionary.6 = { #significant success
+	type = country_event
+	placement = lds_proselyte_state_scope
+
+	title = missionary.6.t
+	desc = missionary.6.d
+	flavor = missionary.6.f
+
+	trigger = {
+		exists = c:DES
+		any_scope_state = {
+			has_variable = lds_proselyte_state
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_variable = lds_proselyte_state
+			}
+			save_scope_as = lds_proselyte_state_scope
+		}
+		c:DES = {
+			random_scope_state = {
+				save_scope_as = lds_destination
+				set_variable = lds_destination_var
+			}
+		}
+		ROOT = {
+			set_variable = lds_return_mission
+		}
+	}
+
+	option = {
+		name = missionary.4.a
+		ai_chance = 100
+		every_scope_pop = {
+			limit = {
+				culture = {
+					culture_is_discriminated_in = c:DES
+				}
+			}
+			change_pop_religion = {
+				target = rel:lds
+				value = 0.02
+			}
+		}
+		every_scope_pop = {
+			limit = {
+				religion = rel:lds
+				wealth > 4
+			}
+			move_pop = scope:lds_destination
+		}
+		hidden_effect = {
+			remove_variable = lds_proselyte_state
+			ROOT = {
+				set_variable = lds_return_mission
+			}
+			scope:lds_destination = {
+				set_variable = lds_destination_var
+			}
+			c:DES = {
+				trigger_event = {
+					id = missionary.9
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+missionary.7 = { #deseret informed of failure
+	type = country_event
+	placement = ROOT
+
+	title = missionary.7.t
+	desc = missionary.7.d
+	flavor = missionary.7.f
+
+	duration = 3
+
+	immediate = {
+		random_country = {
+			limit = {
+				has_variable = lds_return_mission
+			}
+			save_scope_as = lds_return_mission
+			remove_variable = lds_return_mission
+		}
+	}
+
+	option = {
+		name = missionary.7.a
+		ai_chance = 1
+	}
+}
+
+missionary.8 = { #deseret informed of success
+	type = country_event
+	placement = lds_destination_scope
+
+	title = missionary.8.t
+	desc = missionary.8.d
+	flavor = missionary.8.f
+
+	duration = 3
+
+	immediate = {
+		random_country = {
+			limit = {
+				has_variable = lds_return_mission
+			}
+			save_scope_as = lds_return_mission
+			remove_variable = lds_return_mission
+		}
+		random_scope_state = {
+			limit = {
+				has_variable = lds_destination_var
+			}
+			save_scope_as = lds_destination_scope
+			remove_variable = lds_destination_var
+		}
+	}
+
+	option = {
+		name = missionary.8.a
+		ai_chance = 1
+	}
+}
+
+missionary.9 = { #deseret informed of significant success
+	type = country_event
+	placement = lds_destination_scope
+
+	title = missionary.9.t
+	desc = missionary.9.d
+	flavor = missionary.9.f
+
+	duration = 3
+
+	immediate = {
+		random_country = {
+			limit = {
+				has_variable = lds_return_mission
+			}
+			save_scope_as = lds_return_mission
+			remove_variable = lds_return_mission
+		}
+		random_scope_state = {
+			limit = {
+				has_variable = lds_destination_var
+			}
+			save_scope_as = lds_destination_scope
+			remove_variable = lds_destination_var
+		}
+	}
+
+	option = {
+		name = missionary.9.a
+		ai_chance = 1
+	}
+}

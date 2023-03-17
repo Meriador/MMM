@@ -42,7 +42,6 @@
 	}
 }
 
-
 ideology_traditionalist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_traditionalist.dds"
 	

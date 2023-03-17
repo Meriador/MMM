@@ -38,6 +38,21 @@ ideology_evangelist = {
 		law_censorship = disaprove
 		law_outlawed_dissent = strongly_disapprove
 	}
+}
+
+ideology_proselytist = {
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = strongly_approve
+		law_total_separation = neutral
+	}
+	
+	lawgroup_free_speech = {
+		law_protected_speech = disapprove
+		law_right_of_assembly = approve
+		law_censorship = disaprove
+		law_outlawed_dissent = strongly_disapprove
+	}
 	
 	lawgroup_colonization = {
 		law_no_colonial_affairs = disapprove
@@ -197,7 +212,7 @@ ideology_theodemocratic = {
 }
 
 ideology_yeomanism = {
-	icon = "gfx/interface/icons/ideology_icons/yeomanism.dds"
+	icon = "gfx/interface/icons/ideology_icons/agrarian_local.dds"
 
 	lawgroup_economic_system = {		
 		law_agrarianism = approve
@@ -224,17 +239,17 @@ ideology_yeomanism = {
 
 	lawgroup_distribution_of_power = {
 		law_anarchy = neutral
-		law_universal_suffrage = strongly_approve
-		law_census_voting = approve
+		law_universal_suffrage = approve
+		law_census_voting = strongly_approve
 		law_wealth_voting = disapprove
-		law_landed_voting = neutral
+		law_landed_voting = approve
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
 	}
 }
 
 ideology_laissez_faire_secular = {
-	icon = "gfx/interface/icons/ideology_icons/laissez_faire_secular.dds"
+	icon = "gfx/interface/icons/ideology_icons/laissez_faire_local.dds"
 
 	lawgroup_economic_system = {	
 		law_laissez_faire = strongly_approve
@@ -268,5 +283,38 @@ ideology_laissez_faire_secular = {
 		law_total_separation = strongly_approve
 		law_freedom_of_conscience = neutral
 		law_state_religion = strongly_disapprove
+	}
+}
+
+ideology_patriotic_ecomomy = {
+	icon = "gfx/interface/icons/ideology_icons/patriotic_local.dds"
+
+	lawgroup_policing = {
+		law_militarized_police = strongly_approve
+		law_dedicated_police = approve
+		law_local_police = neutral
+		law_no_police = disapprove
+	}	
+
+	lawgroup_internal_security = {
+		law_secret_police = approve
+		law_national_guard = approve
+		law_no_home_affairs = disapprove
+		law_guaranteed_liberties = strongly_disapprove
+	}	
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_approve
+		law_censorship = approve
+		law_right_of_assembly = neutral
+		law_protected_speech = disapprove
+	}
+
+	lawgroup_economic_system = {	
+		law_laissez_faire = disapprove
+		law_interventionism = approve
+		law_agrarianism = neutral
+		law_traditionalism = neutral		
+		law_command_economy = strongly_approve
 	}
 }

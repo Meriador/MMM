@@ -1,0 +1,25 @@
+﻿deseret_missionaries = {
+	is_shown = {
+		exists = c:DES
+		THIS = c:DES
+	}
+
+	possible = {
+		NOT = {
+			has_variable = recent_mission
+		}
+	}
+
+	ai_chance = {
+		base = 60
+	}
+
+	when_taken = {
+		trigger_event = missionary.2
+		set_variable = {
+			name = recent_mission
+			months = 60
+		}
+	}
+
+}
