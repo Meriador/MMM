@@ -485,6 +485,18 @@ SVY = {
 	capital = STATE_NORTHWEST_TERRITORIES
 }
 
+STU = {
+	color = { 75 65 145 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { athabaskan }
+	
+	capital = STATE_NORTHWEST_TERRITORIES
+}
+
 IPQ = {
 	color = { 10 15 60 }
 	
@@ -601,7 +613,7 @@ INV = {
 	
 	cultures = { inuit }
 	
-	capital = STATE_NUNAVUT
+	capital = STATE_NORTHWEST_TERRITORIES
 }
 
 DGB = {

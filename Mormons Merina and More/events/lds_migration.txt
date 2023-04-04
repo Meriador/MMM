@@ -502,6 +502,7 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 							noble = yes
 							ruler = yes
 							female = yes
+							ig_leader = yes
 							birth_date = 1804.7.10
 							#dna = 
 							ideology = ideology_theocrat
@@ -511,16 +512,9 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 								basic_diplomat
 							}
 						}
-						create_character = {
-							first_name = "Joseph"
-							last_name = "Smith"
-							noble = yes
-							ig_leader = yes
-							birth_date = 1832.11.6
-							ideology = ideology_reformer
-							interest_group = ig_devout
-							traits = {
-								tactful
+						on_created = {
+							set_variable = {
+								name = is_emma_smith
 							}
 						}
 					}
@@ -1584,10 +1578,25 @@ lds_migration.7 = { #CSA Zion revolt
 						limit = {
 							exists = scope:joe_smith
 						}
+						create_character = {
+							first_name = "Sidney"
+							last_name = "Rigdon"
+							noble = yes
+							ruler = yes
+							ig_leader = yes
+							birth_date = 1793.2.19
+							#dna = 
+							ideology = ideology_moderate
+							interest_group = ig_devout
+							traits = {
+								experienced_political_operator
+								firebrand
+								reckless
+							}
+						}
 						scope:joe_smith = {
 							transfer_character = c:ZIO
 							free_character_from_void = yes
-							add_character_role = ruler
 							remove_trait = arrogant
 							add_trait = charismatic
 						}
@@ -2004,6 +2013,49 @@ lds_migration.9 = { #USA begins formal discrimination
 		hidden_effect = {
 			trigger_event = { 
 				id = lds_migration.6 days = 120
+			}
+		}
+	}
+}
+
+lds_migration.10 = {
+	type = country_event
+	placement = root
+	title = lds_migration.10.t
+	desc = lds_migration.10.d
+	flavor = lds_migration.10.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_islam.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/islam"
+	
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		any_scope_character = {
+			has_variable = is_emma_smith
+		}
+		year > 1854
+	}
+
+	option = {
+		name = lds_migration.10.a
+
+		create_character = {
+			first_name = "Joseph"
+			last_name = "Smith"
+			noble = yes
+			ig_leader = yes
+			birth_date = 1832.11.6
+			ideology = ideology_reformer
+			interest_group = ig_devout
+			traits = {
+				tactful
 			}
 		}
 	}

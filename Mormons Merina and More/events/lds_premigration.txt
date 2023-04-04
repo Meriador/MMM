@@ -243,13 +243,11 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 			var:lds_agitation > 6
 		}
 		c:USA = {
-			NOT = {
-				OR = {
-					has_state_in_state_region = STATE_KANSAS
-					has_state_in_state_region = STATE_NEBRASKA
-					has_state_in_state_region = STATE_IOWA
-					has_state_in_state_region = STATE_ILLINOIS
-				}
+			NOR = {
+				has_state_in_state_region = STATE_KANSAS
+				has_state_in_state_region = STATE_NEBRASKA
+				has_state_in_state_region = STATE_IOWA
+				has_state_in_state_region = STATE_ILLINOIS
 			}
 		}
 	}
@@ -261,12 +259,17 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 		s:STATE_MISSOURI.region_state:USA = {
 			save_scope_as = far_west_scope
 			random_neighbouring_state = {
-				owner = {
-					NOT = {
-						c:USA
+				limit = {
+					owner = {
+						NOT = {
+							c:USA
+						}
 					}
 				}
 				save_scope_as = nauvoo_scope
+				owner = {
+					save_scope_as = nauvoo_owner_scope
+				}
 			}
 		}
 		set_variable = lds_nauvoo
@@ -493,7 +496,7 @@ lds_premigration.5 = { # election campaign
 			on_created = {
 				set_variable = {
 					name = is_joseph_smith
-				}				
+				}
 			}
 		}
 		ai_chance = 100
@@ -1348,7 +1351,7 @@ lds_premigration.16 = { #local election violence
 				religion = rel:lds
 			}
 			add_loyalists = {
-				value = 0.03
+				value = 0.1
 			}
 		}
 	}

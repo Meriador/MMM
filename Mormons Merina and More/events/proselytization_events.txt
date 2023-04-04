@@ -65,6 +65,9 @@ missionary.2 = { #LDS after migration, Deseret perspective
 			}
 			triggered_desc = {
 				desc = missionary.2.d3
+				trigger = {
+					always = yes
+				}
 			}
 		}
 	}

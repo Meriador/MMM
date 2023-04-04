@@ -2,7 +2,9 @@
 	is_shown = {
 		exists = c:DES
 		THIS = c:DES
-		total_population <= 100000
+		c:DES = {
+			total_population <= 100000
+		}
 	}
 
 	possible = {
@@ -21,7 +23,7 @@
 		trigger_event = missionary.2
 		set_variable = {
 			name = recent_mission
-			months = 60
+			months = 18
 		}
 	}
 }
