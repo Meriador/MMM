@@ -1,0 +1,316 @@
+﻿law_informal_education = {
+	group = lawgroup_education_leadership
+	
+	#icon = 
+
+	progressiveness = -50
+
+	disallowing_laws = {
+		law_compulsory_primary_school
+	}
+
+	modifier = {
+		state_education_access_wealth_add = -0.01
+		country_tech_spread_mult = -0.25
+	}
+
+	possible_political_movements = {
+		law_mission_school
+	}
+
+	pop_support = {
+		value = 0	
+		add = {
+			desc = "POP_CLERGYMEN"			
+			if = {
+				limit = {
+					is_pop_type = clergymen
+					has_state_religion = yes
+				}
+				value = 0.33
+			}
+		}
+		add = {
+			desc = "POP_STATE_RELIGION"			
+			if = {
+				limit = {
+					has_state_religion = yes
+				}
+				value = 0.25
+			}
+		}
+	}
+}
+
+law_clerical_education = {
+	group = lawgroup_education_leadership
+	
+	#icon = 
+
+	progressiveness = 0
+
+	unlocking_technologies = {
+		rationalism
+	}
+
+	disallowing_laws = {
+		law_total_separation
+	}
+
+	modifier = {
+		interest_group_ig_devout_pop_attraction_mult = 0.25
+		country_clergymen_pol_str_mult = 0.5
+	}
+
+	possible_political_movements = {
+		law_school_boards
+		law_professional_academia
+		law_modern_school
+	}
+
+	pop_support = {
+		value = 0	
+		add = {
+			desc = "POP_CLERGYMEN"			
+			if = {
+				limit = {
+					is_pop_type = clergymen
+				}
+				value = 0.33
+			}
+		}
+	}
+}
+
+law_imperial_examination = {
+	group = lawgroup_education_leadership
+
+	#icon = 
+
+	progressiveness = 0
+
+	unlocking_technologies = {
+		rationalism
+	}
+
+	disallowing_laws = {
+		law_anarchy
+	}
+
+	modifier = {
+		state_education_access_wealth_add = 0.005
+		country_bureaucrats_pol_str_mult = 0.25
+		country_academics_pol_str_mult = 0.25
+		country_aristocrats_pol_str_mult = 0.1
+	}
+
+	possible_political_movements = {
+		law_school_boards
+		law_professional_academia
+		law_modern_school
+	}
+
+	pop_support = {
+		value = 0	
+		add = {
+			desc = "POP_ARISTOCRATS"			
+			if = {
+				limit = {
+					is_pop_type = aristocrats
+					has_pop_religion = mahayana
+				}
+				value = 0.33
+			}
+		}
+	}
+}
+
+law_school_boards = {
+	group = lawgroup_education_leadership
+	
+	#icon = 
+
+	progressiveness = 25
+
+	unlocking_technologies = {
+		democracy
+	}
+
+	disallowing_laws = {
+		law_autocracy
+		law_oligarchy
+		law_anarchy
+		#include federalism-related stuff if/when such stuff exists
+	}
+
+	modifier = {
+		country_farmers_pol_str_mult = 0.05
+		country_academics_pol_str_mult = 0.05
+		country_shopkeepers_pol_str_mult = 0.1
+		country_bureaucrats_pol_str_mult = 0.1
+		country_clergymen_pol_str_mult = 0.01
+	}
+
+	possible_political_movements = {
+		law_professional_academia
+		law_modern_school
+	}
+
+	pop_support = {
+		value = 0	
+		add = {
+			desc = "POP_ACADEMICS"			
+			if = {
+				limit = {
+					is_pop_type = academics
+				}
+				value = 0.2
+			}
+		}
+		add = {
+			desc = "POP_SHOPKEEPERS"			
+			if = {
+				limit = {
+					is_pop_type = shopkeepers
+				}
+				value = 0.33
+			}
+		}
+		add = {
+			desc = "POP_FARMERS"			
+			if = {
+				limit = {
+					is_pop_type = farmers
+				}
+				value = 0.2
+			}
+		}
+	}
+}
+
+law_professional_academia = {
+	group = lawgroup_education_leadership
+	
+	#icon = 
+
+	progressiveness = 25
+
+	unlocking_technologies = {
+		academia
+	}
+
+	disallowing_laws = {
+		law_hereditary_bureaucrats
+	}
+
+	modifier = {
+		country_academics_pol_str_mult = 0.2
+		country_bureaucrats_pol_str_mult = 0.2
+		interest_group_ig_intelligentsia_pop_attraction_mult = 0.25
+	}
+
+	possible_political_movements = {
+		law_school_boards
+		law_modern_school
+	}
+
+	pop_support = {
+		value = 0	
+		add = {
+			desc = "POP_ACADEMICS"			
+			if = {
+				limit = {
+					is_pop_type = academics
+				}
+				value = 0.33
+			}
+		}
+		add = {
+			desc = "POP_BUREAUCRATS"			
+			if = {
+				limit = {
+					is_pop_type = bureaucrats
+				}
+				value = 0.25
+			}
+		}
+	}
+}
+
+law_modern_school = {
+	group = lawgroup_education_leadership
+	
+	#icon = 
+
+	progressiveness = 50
+
+	unlocking_technologies = {
+		anarchism
+	}
+
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	modifier = {
+		interest_group_ig_trade_unions_pop_attraction_mult = 0.25
+		state_pop_qualifications_mult = 0.1
+	}
+
+	possible_political_movements = {
+		law_school_boards
+		law_professional_academia
+	}
+}
+
+law_mission_school = {
+	group = lawgroup_education_leadership
+
+	#icon = 
+
+	progressiveness = 0
+
+	unlocking_technologies = {
+		rationalism
+	}
+
+	unlocking_laws = {
+		law_informal_education
+	}
+
+	modifier = {
+		country_tech_spread_mult = 0.1
+	}
+
+	possible_political_movements = {
+		law_informal_education
+	}
+
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_CAPITALISTS"			
+			if = {
+				limit = {
+					is_pop_type = capitalists
+				}
+				value = 0.33
+			}
+		}
+		add = {
+			desc = "POP_CHRISTIAN"			
+			if = {
+				limit = {
+					OR = {
+						has_pop_religion = catholic
+						has_pop_religion = protestant
+						has_pop_religion = orthodox
+						has_pop_religion = oriental_orthodox
+						has_pop_religion = lds
+					}
+				}
+				value = 0.33
+			}
+		}
+	}
+}
