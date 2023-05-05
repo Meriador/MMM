@@ -1288,14 +1288,6 @@
 		}
 	}
 	s:STATE_ONTARIO={
-		region_state:HBC={
-			create_building={
-				building="building_logging_camp"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-		}
 		region_state:ONT={
 			create_building={
 				building="building_sulfur_mine"
@@ -1422,14 +1414,6 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 		}
-		region_state:HBC={
-			create_building={
-				building="building_logging_camp"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
-			}
-		}
 	}
 	s:STATE_NEWFOUNDLAND={
 		region_state:GBR={
@@ -1495,8 +1479,14 @@
 		region_state:HBC={
 		}
 	}
-	s:STATE_NUNAVUT={
+	s:STATE_RUPERTS_LAND={
 		region_state:HBC={
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
 		}
 	}
 	s:STATE_BERMUDA={
