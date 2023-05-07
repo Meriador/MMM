@@ -577,7 +577,7 @@ SWC = {
 	
 	cultures = { cree }
 	
-	capital = STATE_MANITOBA
+	capital = STATE_RUPERTS_LAND
 }
 
 OJI = {
@@ -589,7 +589,7 @@ OJI = {
 	
 	cultures = { ojibwe cree }
 	
-	capital = STATE_ONTARIO
+	capital = STATE_RUPERTS_LAND
 }
 
 INK = {
@@ -601,7 +601,7 @@ INK = {
 	
 	cultures = { inuit }
 	
-	capital = STATE_QUEBEC
+	capital = STATE_RUPERTS_LAND
 }
 
 INV = {
@@ -637,7 +637,7 @@ ECR = {
 	
 	cultures = { cree }
 	
-	capital = STATE_QUEBEC
+	capital = STATE_RUPERTS_LAND
 }
 
 INN = {
@@ -649,7 +649,7 @@ INN = {
 	
 	cultures = { cree }
 	
-	capital = STATE_QUEBEC
+	capital = STATE_RUPERTS_LAND
 }
 
 BLF = { # Niitsitapi / Blackfoot Confederacy
@@ -685,4 +685,16 @@ WSH = {
 	cultures = { hokan }
 	
 	capital = STATE_NEVADA
+}
+
+NNV = { # Nunavut
+	color = { 205 214 216 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { inuit }
+	
+	capital = STATE_NORTHWEST_TERRITORIES
 }

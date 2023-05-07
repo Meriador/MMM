@@ -40,7 +40,7 @@
 			multiply = { value = 0 } 
 		}
 
-		elseif = {
+		else_if = {
 			limit = { 
 				NOT = {
 					religion = {

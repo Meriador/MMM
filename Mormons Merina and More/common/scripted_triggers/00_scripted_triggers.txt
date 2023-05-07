@@ -856,7 +856,9 @@ law_can_hurt_minorities = {
 		is_enacting_law = law_type:law_free_trade
 		is_enacting_law = law_type:law_command_economy
 		is_enacting_law = law_type:law_private_schools
-		is_enacting_law = law_type:law_religious_schools
+		is_enacting_law = law_type:law_national_schools
+		is_enacting_law = law_type:law_clerical_education
+		is_enacting_law = law_type:law_informal_education
 		is_enacting_law = law_type:law_censorship
 		is_enacting_law = law_type:law_graduated_taxation
 		is_enacting_law = law_type:law_proportional_taxation
@@ -1054,7 +1056,12 @@ language_accepted = {
 default_auto_expand_rule = { 
 	cash_reserves_ratio > 0.95
 	state.market_access > 0.5
-	owner.construction_queue_duration < max_autoexpand_queue_weeks
+	owner = {
+		OR = {
+			construction_queue_government_duration < max_autoexpand_queue_weeks
+			has_wasted_construction = yes
+		}
+	}
 }
 
 is_in_civil_war = {
@@ -1110,5 +1117,16 @@ is_peasant_under_serfdom = {
 	is_pop_type = peasants
 	owner = {
 		has_law = law_type:law_serfdom
+	}
+}
+
+has_radical_leftist_government = {
+	has_law = law_type:law_council_republic	
+}
+
+has_radical_leftist_economy = {
+	OR = {
+		has_law = law_type:law_command_economy	
+		has_law = law_type:law_cooperative_ownership
 	}
 }

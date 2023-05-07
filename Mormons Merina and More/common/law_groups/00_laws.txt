@@ -57,6 +57,13 @@ lawgroup_army_model = {
 	regressive_movement_chance = 0.1
 }
 
+lawgroup_education_leadership = {
+	law_group_category = power_structure
+
+	progressive_movement_chance = 2
+	regressive_movement_chance = 0.25
+}
+
 lawgroup_internal_security = {
 	law_group_category = power_structure
 	
