@@ -109,7 +109,7 @@ lds_migration.2 = { #journal invalidated, most likely by Smith being in the wron
 
 lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon homeland
 	type = country_event
-	placement = root
+	placement = scope:mormon_homeland_state
 	title = lds_migration.3.t
 	desc = lds_migration.3.d
 
@@ -127,7 +127,7 @@ lds_migration.3 = { #Stability maintained, Missouri and Nauvoo remain mormon hom
 	immediate = {
 		random_scope_state = {
 			limit = {
-				is_homeland = cu:mormon
+				state_region = { is_homeland = cu:mormon }
 			}
 			save_scope_as = mormon_homeland_state
 		}
@@ -511,10 +511,10 @@ lds_migration.4 = { #Founding of Deseret, Young Edition
 								cautious
 								basic_diplomat
 							}
-						}
-						on_created = {
-							set_variable = {
-								name = is_emma_smith
+							on_created = {
+								set_variable = {
+									name = is_emma_smith
+								}
 							}
 						}
 					}

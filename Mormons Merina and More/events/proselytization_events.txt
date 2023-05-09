@@ -2,7 +2,7 @@
 
 missionary.1 = { #LDS before migration
 	type = country_event
-	placement = conversion_state_scope
+	placement = scope:conversion_state_scope
 
 	title = missionary.1.t
 	desc = missionary.1.d
@@ -79,12 +79,12 @@ missionary.2 = { #LDS after migration, Deseret perspective
 		random_country = {
 			limit = {
 				any_scope_state = {
-					any_scope_pop = {
-						culture = { 
-							has_homeland = PREVPREV
-							NOT = { culture_is_discriminated_in = c:DES }
+					any_scope_culture = { 
+						has_homeland = PREV.state_region
+						NOR = { 
+							culture_is_discriminated_in = c:DES
+							is_primary_culture_of = c:DES
 						}
-						NOT = { has_pop_religion = lds }
 					}
 				}
 			}
@@ -92,14 +92,16 @@ missionary.2 = { #LDS after migration, Deseret perspective
 		}
 		random_country = {
 			limit = {
-				NOT = { scope:lds_first_target }
+				NOT = { 
+					scope:lds_first_target = this
+				}
 				any_scope_state = {
-					any_scope_pop = {
-						culture = { 
-							has_homeland = PREVPREV
-							NOT = { culture_is_discriminated_in = c:DES }
+					any_scope_culture = { 
+						has_homeland = PREV.state_region
+						NOR = { 
+							culture_is_discriminated_in = c:DES
+							is_primary_culture_of = c:DES
 						}
-						NOT = { has_pop_religion = lds }
 					}
 				}
 			}
@@ -108,16 +110,16 @@ missionary.2 = { #LDS after migration, Deseret perspective
 		random_country = {
 			limit = {
 				NOR = { 
-					scope:lds_first_target
-					scope:lds_second_target
+					scope:lds_first_target = this 
+					scope:lds_second_target = this 
 				}
 				any_scope_state = {
-					any_scope_pop = {
-						culture = { 
-							has_homeland = PREVPREV
-							NOT = { culture_is_discriminated_in = c:DES }
+					any_scope_culture = { 
+						has_homeland = PREV.state_region
+						NOR = { 
+							culture_is_discriminated_in = c:DES
+							is_primary_culture_of = c:DES
 						}
-						NOT = { has_pop_religion = lds }
 					}
 				}
 			}
@@ -163,7 +165,7 @@ missionary.2 = { #LDS after migration, Deseret perspective
 
 missionary.3 = { #LDS after migration, target perspective
 	type = country_event
-	placement = lds_proselyte_state_scope
+	placement = scope:lds_proselyte_state_scope
 
 	title = missionary.3.t
 	desc = missionary.3.d
@@ -174,11 +176,9 @@ missionary.3 = { #LDS after migration, target perspective
 	immediate = {
 		random_scope_state = {
 			limit = {
-				any_scope_pop = {
-					culture = { 
-						has_homeland = PREVPREV
-						NOT = { culture_is_discriminated_in = c:DES }
-					}
+				any_scope_culture = { 
+					has_homeland = PREV
+					NOT = { culture_is_discriminated_in = c:DES }
 				}
 			}
 			save_scope_as = lds_proselyte_state_scope
@@ -202,16 +202,16 @@ missionary.3 = { #LDS after migration, target perspective
 		ai_chance = 100
 
 		random_list = {
-			25 = { 
-				if = {
-					limit = {
+			25 = {
+				modifier = {
+					if = {
 						limit = {
 							NOT = {
 								country_has_state_religion = rel:protestant
 							}
 						}
+						add = -15
 					}
-					add = -15
 				}
 				modifier = {
 					if = {
@@ -255,10 +255,8 @@ missionary.3 = { #LDS after migration, target perspective
 				modifier = {
 					if = {
 						limit = {
-							limit = {
-								NOT = {
-									country_has_state_religion = rel:protestant
-								}
+							NOT = {
+								country_has_state_religion = rel:protestant
 							}
 						}
 						add = -30
@@ -312,7 +310,7 @@ missionary.3 = { #LDS after migration, target perspective
 
 missionary.4 = { #mission failed
 	type = country_event
-	placement = lds_proselyte_state_scope
+	placement = scope:lds_proselyte_state_scope
 
 	title = missionary.4.t
 	desc = missionary.4.d
@@ -354,7 +352,7 @@ missionary.4 = { #mission failed
 
 missionary.5 = { #mission succeeds
 	type = country_event
-	placement = lds_proselyte_state_scope
+	placement = scope:lds_proselyte_state_scope
 
 	title = missionary.5.t
 	desc = missionary.5.d
@@ -427,7 +425,7 @@ missionary.5 = { #mission succeeds
 
 missionary.6 = { #significant success
 	type = country_event
-	placement = lds_proselyte_state_scope
+	placement = scope:lds_proselyte_state_scope
 
 	title = missionary.6.t
 	desc = missionary.6.d
@@ -525,7 +523,7 @@ missionary.7 = { #deseret informed of failure
 
 missionary.8 = { #deseret informed of success
 	type = country_event
-	placement = lds_destination_scope
+	placement = scope:lds_destination_scope
 
 	title = missionary.8.t
 	desc = missionary.8.d
@@ -558,7 +556,7 @@ missionary.8 = { #deseret informed of success
 
 missionary.9 = { #deseret informed of significant success
 	type = country_event
-	placement = lds_destination_scope
+	placement = scope:lds_destination_scope
 
 	title = missionary.9.t
 	desc = missionary.9.d

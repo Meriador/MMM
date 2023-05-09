@@ -107,14 +107,12 @@ je_madagascar_fanompoana_2 = { #reforming the system
 	}
 	
 	complete = {
-		has_law = law_type:law_religious_schools
+		NOT = { has_law = law_type:law_no_schools }
 		has_institution = institution_police
-		OR = {
-			has_law = law_type:law_compulsory_primary_school
-			institution_investment_level = {
-				institution = institution_schools
-				value >= 3
-			}
+		has_law = law_type:law_compulsory_primary_school
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
 		}
 	}
 

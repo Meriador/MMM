@@ -258,18 +258,8 @@ lds_premigration.102 = { #missouri mormon war, if other countries are specifical
 		}
 		s:STATE_MISSOURI.region_state:USA = {
 			save_scope_as = far_west_scope
-			random_neighbouring_state = {
-				limit = {
-					owner = {
-						NOT = {
-							c:USA
-						}
-					}
-				}
-				save_scope_as = nauvoo_scope
-				owner = {
-					save_scope_as = nauvoo_owner_scope
-				}
+			save_neighbor_with_state = {
+				CRITERIA = "NOT = { c:USA = this }"
 			}
 		}
 		set_variable = lds_nauvoo
