@@ -1969,7 +1969,7 @@
 		}
 		region_state:SRO = {
 			create_pop = {
-				culture = serrano
+				culture = cahuilla
 				size = 10000
 			}
 		}
@@ -1987,7 +1987,7 @@
 				size = 11996
 			}
 			create_pop = {
-				culture = serrano
+				culture = cahuilla
 				size = 500
 			}
 		}

@@ -1,0 +1,57 @@
+CHARACTERS = {
+	c:TSI = {
+		create_character = {
+			first_name = "None"
+			last_name = "Ligeex"
+			ruler = yes
+			female = no
+			age = 51 #no clue
+			culture = cu:penutian
+			interest_group = ig_landowners
+		}
+	}
+	c:WTN = {
+		create_character = {
+			first_name = "Sem-Yeto"
+			last_name = "Solano"
+			ruler = yes
+			female = no
+			age = 38
+			culture = cu:penutian
+			interest_group = ig_landowners
+		}
+	}
+	c:MDN = {
+		create_character = {
+			first_name = "Pudnuse" #Probably not actually in power yet but indigenous californian political figures are hard to find
+			last_name = "None"
+			ruler = yes
+			female = no
+			age = 38
+			culture = cu:penutian
+			interest_group = ig_landowners
+		}
+	}
+	c:YKT = {
+		create_character = {
+			first_name = "Estanislao"
+			last_name = "None"
+			ruler = yes
+			female = no
+			age = 38
+			culture = cu:penutian
+			interest_group = ig_landowners
+		} 
+	}
+	c:SRO = {
+		create_character = {
+			first_name = "Juan"
+			last_name = "Antonio"
+			ruler = yes
+			female = no
+			age = 53
+			culture = cu:cahuilla
+			interest_group = ig_landowners
+		} 
+	}
+}

@@ -488,7 +488,7 @@ YVP = { # Yavapai/Arizona Nation
 		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
 	}
 }
-SRO = { # Serrano/Mojave Nation
+SRO = { # Cahuilla/Mojave Nation
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
 	
@@ -688,7 +688,7 @@ PTT = { # Pit River Tribal Band
 		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
 	}
 }
-YKT = { # Yokut Tribal Band
+YKT = { # Yokuts Tribal Band
 	pattern = "pattern_solid.tga"
 	color1 = "white"
 	

@@ -2282,7 +2282,7 @@ STATES = {
 		
 		add_homeland = hokan
 		add_homeland = penutian
-		add_homeland = serrano
+		add_homeland = cahuilla
 		add_claim = c:MEX
 	}
 	s:STATE_SONORA = {

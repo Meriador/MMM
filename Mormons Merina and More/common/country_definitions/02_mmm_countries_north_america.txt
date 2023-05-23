@@ -276,7 +276,7 @@ SRO = {
 
 	tier = principality
 	
-	cultures = { serrano }
+	cultures = { cahuilla }
 	
 	capital = STATE_CALIFORNIA
 }

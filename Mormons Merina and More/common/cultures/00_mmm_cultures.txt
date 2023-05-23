@@ -731,6 +731,7 @@ fox={
 	
 	male_common_first_names={
 	WIP
+	Kenekuk
 	}
 	
 	female_common_first_names = {
@@ -743,6 +744,7 @@ fox={
 	
 	common_last_names={
 	WIP
+	Kahbeah
 	}
 	ethnicities = {
 		1 = native_american
@@ -1625,19 +1627,48 @@ penutian={
 	traits = { indigenous_american_heritage penutian_trait }
 	
 	male_common_first_names={
-	WIP
+	Paul
+	Arthur
+	Alfred
+	Francisco
+	Bill
+	Frank
+	Louis
+	Charles
+	Orencio
+	Estanislao
 	}
 	
 	female_common_first_names = {
-	WIP
+	Sudaal_ #Tsimshian
+	Martha
+	Elizabeth
+	Kate
+	Elvamox #Chinook
+	Jennie
+	Lucy
 	}
 	
 	noble_last_names = {
-	WIP
+	#Ligeex #Tsimshian
+	#T'amks #Tsimshian
+	Tumulth #Chinook
+	Solano #Patwin
+	Day
+	Kelly
+	Cully
+	Clah
 	}
 	
 	common_last_names={
-	WIP
+	Clah #Tsimshian
+	Datacks #Tsimshian
+	Tate
+	Diex #Tsimshian
+	Dudoward
+	Troeh #Chinook
+	Michel
+	Tells
 	}
 	ethnicities = {
 		1 = native_american
@@ -1867,24 +1898,41 @@ wakashan={
 	}
 	graphics = generic
 }
-serrano={
+cahuilla={ #WIP, good for now but it may be a good idea to make this list bigger in the future
 	color= rgb{ 176 112 56 }
 	religion = animist
 	traits= { indigenous_american_heritage southwest_american }
 	male_common_first_names={
-	WIP
+	Juan
+	Condino
+	Julio
+	Pablo
+	Santos
+	Antonio
 	}
 	
 	female_common_first_names = {
-	WIP
+	Ramona
+	Katherine
+	Roscinda
+	Marigold
+	Felicite
 	}
 	
 	noble_last_names = {
-	WIP
+	Antonio
+	Tac
+	Manuel
+	Garra
 	}
 	
 	common_last_names={
-	WIP
+	Lubo
+	Diego
+	Siva
+	Sawaxell
+	Ortega
+	Nolasquez
 	}
 	ethnicities = {
 		1 = native_american
@@ -1984,6 +2032,46 @@ siouan={ #Dhegihan and Chiwere peoples
 	
 	common_last_names={
 	WIP
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = generic
+}
+
+algonquian={ #WIP, make sure names are appropriate given the new culture split
+	color= hsv{ 0.22 0.15 0.86 }
+	religion = animist
+	traits = { indigenous_american_heritage algonquian_trait }
+	male_common_first_names={
+		Catecahassa Cottawamago Cheeseekau
+		Gakiiwegwanebi 
+		Hokoleskwa
+		Kekewepelethy
+		Lalawethika Lawoughqua
+		MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+		Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
+		Quatawapea 
+		Spemica_Lawba Shemanetoo
+		Wawahchepaehai Weyapiersenwah WeS_ihS_imo Wiliwi
+	}
+	female_common_first_names = {
+		Haayiitaapama
+		Methoataske MayataakwipiiwehS_i
+		Nonhelema
+		Peahchepeahso
+		WelepiiwehS_i
+	}
+	common_last_names={
+		Chalahgawtha
+		Eskippakithiki
+		Hokolesqua
+		Kispokotha KaskE_
+		Mecoce
+		Opessa
+		Pekowi Peckuwe 
+		ShipakA_kamithagI_
+		Thawikila
 	}
 	ethnicities = {
 		1 = native_american
