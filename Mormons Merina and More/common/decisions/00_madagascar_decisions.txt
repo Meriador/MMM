@@ -1,7 +1,7 @@
 ﻿bara_unification = {
 	is_shown = {
 		country_has_primary_culture = cu:bara
-		NOT = { THIS = c:BAR } 
+		NOT = { exists = c:BAR } 
 	}
 
 	possible = {
