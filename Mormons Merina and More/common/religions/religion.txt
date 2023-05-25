@@ -126,6 +126,11 @@ animist = {
 	color = { 0.6 0.3 0.2 }
 }
 
+atheist = {
+	texture = "gfx/interface/icons/religion_icons/atheist.dds"
+	color = { 1.0 1.0 1.0 }
+}
+
 lds = {
 	texture = "gfx/interface/icons/religion_icons/mormonism.dds"
 	traits = {

@@ -172,7 +172,7 @@ new_country_ideology_assignment = {
 							country_has_primary_culture = cu:anglo_canadian
 						}
 						NOT = {
-							c:EIC = scope:target
+							C:BIC = scope:target
 						}
 					}
 				}

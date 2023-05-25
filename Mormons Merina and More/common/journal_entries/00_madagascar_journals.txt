@@ -11,7 +11,7 @@
 	}
 	
 	on_complete = {
-		trigger_event = { id = mad_unif.1 }
+		trigger_event = { id = madagascar_unification.1 }
 	}
 	
 	weight = 200
@@ -43,7 +43,7 @@ je_madagscar_unification_2 = {
 	}
 	
 	on_complete = {
-		trigger_event = { id = mad_unif.2 }
+		trigger_event = { id = madagascar_unification.2 }
 	}
 
 	inheritable = yes
@@ -167,7 +167,7 @@ je_madagascar_autarky = {
 	}
 
 	on_fail = {
-		trigger_event = madagascar_econ.
+		trigger_event = { id = madagascar_econ.3 }
 	}
 
 	inheritable = yes
