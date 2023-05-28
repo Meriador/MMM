@@ -438,12 +438,9 @@
 		}
 		if = { # against land-based taxation
 			limit = {
-				OR = {
-					has_ideology = ideology_meritocratic
-					has_ideology = ideology_agrarian
-					leader = {
-						has_ideology = ideology_social_democrat
-					}
+				law_stance = {
+					law = law_type:law_land_based_taxation
+					value < neutral
 				}
 				owner = {
 					has_law = law_type:law_land_based_taxation
@@ -473,18 +470,12 @@
 		}
 		if = { # against free trade - peasant/communist alliance
 			limit = {
-				OR = {
-					has_ideology = ideology_proletarian
-					has_ideology = ideology_agrarian
-					has_ideology = ideology_paternalistic
+				law_stance = {
+					law = law_type:law_free_trade
+					value < neutral
 				}
 				owner = {
 					has_law = law_type:law_free_trade
-				}
-				NOT = {
-					leader = {
-						has_ideology = ideology_market_liberal
-					}
 				}
 			}
 			add = {
@@ -494,17 +485,12 @@
 		}
 		if = { # against laissez-faire - peasant/socialist alliance
 			limit = {
-				OR = {
-					has_ideology = ideology_proletarian
-					has_ideology = ideology_agrarian
+				law_stance = {
+					law = law_type:law_laissez_faire
+					value < neutral
 				}
 				owner = {
 					has_law = law_type:law_laissez_faire
-				}
-				NOT = {
-					leader = {
-						has_ideology = ideology_market_liberal
-					}
 				}
 			}
 			add = {
@@ -514,24 +500,31 @@
 		}
 		if = { # loyalist-proletarian alliance for tax reform
 			limit = {
-				OR = {
-					has_ideology = ideology_proletarian
-					leader = {
-						has_ideology = ideology_social_democrat
-					}
-					AND = {
-						has_ideology = ideology_loyalist
-						owner = {
-							NOR = {
-								has_law = law_type:law_proportional_taxation
-								has_law = law_type:law_per_capita_based_taxation
-							}
-						}
-					}
+				law_stance = {
+					law = law_type:law_graduated_taxation
+					value > neutral
 				}
 				owner = {
 					NOT = {
 						has_law = law_type:law_graduated_taxation
+					}
+				}
+				NAND = {
+					owner = {
+						has_law = law_type:law_proportional_taxation
+					}
+					law_stance = {
+						law = law_type:law_proportional_taxation
+						value > neutral
+					}
+				}
+				NAND = {
+					owner = {
+						has_law = law_type:law_per_capita_based_taxation
+					}
+					law_stance = {
+						law = law_type:law_per_capita_based_taxation
+						value > neutral
 					}
 				}
 			}
@@ -545,16 +538,9 @@
 				owner = {
 					has_law = law_type:law_serfdom
 				}
-				OR = {
-					has_ideology = ideology_egalitarian
-					has_ideology = ideology_anti_slavery
-					has_ideology = ideology_laissez_faire
-					has_ideology = ideology_particularist
-					leader = {
-						has_ideology = ideology_abolitionist
-						has_ideology = ideology_social_democrat
-						has_ideology = ideology_communist
-					}
+				law_stance = {
+					law = law_type:law_serfdom
+					value < neutral
 				}
 			}
 			add = {
@@ -568,6 +554,7 @@
 					OR = {
 						has_law = law_type:law_legacy_slavery
 						has_law = law_type:law_slave_trade
+						has_law = law_type:law_debt_slavery
 					}
 				}
 				OR = {
@@ -584,16 +571,13 @@
 		}
 		if = { # republican
 			limit = {
-				OR = {
-					has_ideology = ideology_republican
-					has_ideology = ideology_populist
-					leader = {
-						OR = {
-							has_ideology = ideology_atheist
-							has_ideology = ideology_republican_leader
-							has_ideology = ideology_radical
-						}
-					}
+				law_stance = {
+					law = law_type:law_monarchy
+					value < approve
+				}
+				law_stance = {
+					law = law_type:law_theocracy
+					value < approve
 				}
 				owner = {
 					OR = {

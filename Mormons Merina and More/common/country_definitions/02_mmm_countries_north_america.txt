@@ -577,7 +577,7 @@ SWC = {
 	
 	cultures = { cree }
 	
-	capital = STATE_RUPERTS_LAND
+	capital = STATE_NUNAVUT
 }
 
 OJI = {
@@ -589,7 +589,7 @@ OJI = {
 	
 	cultures = { ojibwe cree }
 	
-	capital = STATE_RUPERTS_LAND
+	capital = STATE_NUNAVUT
 }
 
 INK = {
@@ -601,7 +601,7 @@ INK = {
 	
 	cultures = { inuit }
 	
-	capital = STATE_RUPERTS_LAND
+	capital = STATE_NUNAVUT
 }
 
 INV = {
@@ -637,7 +637,7 @@ ECR = {
 	
 	cultures = { cree }
 	
-	capital = STATE_RUPERTS_LAND
+	capital = STATE_NUNAVUT
 }
 
 INN = {
@@ -649,7 +649,7 @@ INN = {
 	
 	cultures = { cree }
 	
-	capital = STATE_RUPERTS_LAND
+	capital = STATE_NUNAVUT
 }
 
 BLF = { # Niitsitapi / Blackfoot Confederacy

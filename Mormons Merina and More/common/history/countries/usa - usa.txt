@@ -22,7 +22,7 @@
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_local_police
-		activate_law = law_type:law_school_boards
+		activate_law = law_type:law_elected_boards
 		
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs

@@ -8,7 +8,7 @@
 		law_protectionism = disapprove
 		law_mercantilism = disapprove
 		law_free_trade = strongly_disapprove
-	}				
+	}
 	lawgroup_migration = {
 		law_closed_borders = approve
 		law_migration_controls = neutral
@@ -125,6 +125,7 @@ ideology_anti_censorship = {
 		law_state_religion = neutral
 		law_freedom_of_conscience = strongly_approve
 		law_total_separation = neutral
+		law_state_atheism = strongly_disapprove
 	}
 
 	lawgroup_free_speech = {
@@ -221,11 +222,14 @@ ideology_leader_pious = {
 
 	character_ideology = yes
 
-	lawgroup_education_system = {
-		law_public_schools = neutral
-		law_private_schools = disapprove
-		law_no_schools = neutral
-		law_religious_schools = approve	
+	lawgroup_education_leadership = {
+		law_informal_education = disapprove
+		law_clerical_education = strongly_approve
+		law_imperial_examination = neutral
+		law_elected_boards = approve
+		law_professional_academia = neutral
+		law_modern_school = strongly_disapprove
+		law_mission_school = strongly_disapprove
 	}
 	
 	lawgroup_health_system = {
@@ -239,6 +243,7 @@ ideology_leader_pious = {
 		law_state_religion = approve
 		law_freedom_of_conscience = approve
 		law_total_separation = neutral
+		law_state_atheism = strongly_disapprove
 	}
 
 	possible = {
@@ -307,7 +312,7 @@ ideology_leader_pious = {
 				owner = {
 					AND = {
 						has_law = law_type:law_charitable_health_system
-						has_law = law_type:law_religious_schools
+						has_law = law_type:law_clerical_education
 						OR = {
 							has_law = law_type:law_state_religion
 							has_law = law_type:law_freedom_of_conscience
@@ -348,8 +353,7 @@ ideology_progressive = {
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
 		law_regulatory_bodies = approve
-		law_serfdom_banned = disapprove
-		law_serfdom = strongly_disapprove
+		law_no_workers_rights = disapprove
 	}
 
 	lawgroup_childrens_rights = {

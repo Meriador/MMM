@@ -1683,7 +1683,7 @@
 			}
 		}
 	}
-	s:STATE_RUPERTS_LAND = {
+	s:STATE_NUNAVUT = {
 		region_state:HBC = {
 			create_pop = {
 				culture = cree

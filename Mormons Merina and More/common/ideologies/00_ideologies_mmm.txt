@@ -1,11 +1,12 @@
 ﻿ideology_charitable = {
 	icon = "gfx/interface/icons/ideology_icons/charitable.dds"
-	
+
 	lawgroup_education_system = {
-		law_public_schools = approve
-		law_private_schools = approve
 		law_no_schools = disapprove
-		law_religious_schools = neutral	
+		law_local_schools = neutral
+		law_private_schools = approve
+		law_public_schools = strongly_approve
+		law_national_schools = strongly_approve
 	}
 	
 	lawgroup_health_system = {
@@ -30,6 +31,7 @@ ideology_evangelist = {
 		law_state_religion = approve
 		law_freedom_of_conscience = strongly_approve
 		law_total_separation = neutral
+		law_state_atheism = strongly_disapprove
 	}
 	
 	lawgroup_free_speech = {
@@ -37,6 +39,16 @@ ideology_evangelist = {
 		law_right_of_assembly = approve
 		law_censorship = disaprove
 		law_outlawed_dissent = strongly_disapprove
+	}
+
+	lawgroup_education_leadership = {
+		law_informal_education = strongly_disapprove
+		law_clerical_education = approve
+		law_imperial_examination = disapprove
+		law_elected_boards = approve
+		law_professional_academia = neutral
+		law_modern_school = strongly_disapprove
+		law_mission_school = disapprove
 	}
 }
 
@@ -45,6 +57,7 @@ ideology_proselytist = {
 		law_state_religion = approve
 		law_freedom_of_conscience = strongly_approve
 		law_total_separation = neutral
+		law_state_atheism = strongly_disapprove
 	}
 	
 	lawgroup_free_speech = {
@@ -52,6 +65,16 @@ ideology_proselytist = {
 		law_right_of_assembly = approve
 		law_censorship = disaprove
 		law_outlawed_dissent = strongly_disapprove
+	}
+
+	lawgroup_education_leadership = {
+		law_informal_education = strongly_disapprove
+		law_clerical_education = approve
+		law_imperial_examination = disapprove
+		law_elected_boards = approve
+		law_professional_academia = neutral
+		law_modern_school = strongly_disapprove
+		law_mission_school = disapprove
 	}
 	
 	lawgroup_colonization = {
@@ -73,8 +96,7 @@ ideology_familialist = {
 	lawgroup_labor_rights = {		
 		law_worker_protections = neutral
 		law_regulatory_bodies = approve
-		law_serfdom_banned = neutral
-		law_serfdom = strongly_disapprove
+		law_no_workers_rights = neutral
 	}
 	
 	lawgroup_rights_of_women = {
@@ -86,7 +108,7 @@ ideology_familialist = {
 }
 
 ideology_nativist = {
-	icon = "gfx/interface/icons/ideology_icons/nativist.dds"
+	icon = "gfx/interface/icons/ideology_icons/reactionary_local.dds"
 	
 	lawgroup_governance_principles = {
 		law_monarchy = neutral
@@ -118,6 +140,7 @@ ideology_buddhist_pacifism = {
 		law_state_religion = approve
 		law_freedom_of_conscience = strongly_approve
 		law_total_separation = neutral
+		law_state_atheism = strongly_disapprove
 	}
 	
 	lawgroup_free_speech = {
@@ -154,8 +177,19 @@ ideology_ottomanist = {
 
 	lawgroup_church_and_state = {
 		law_state_religion = disapprove
-		law_freedom_of_conscience = neutral
-		law_total_separation = approve
+		law_freedom_of_conscience = disapprove
+		law_total_separation = neutral
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_education_leadership = {
+		law_informal_education = strongly_disapprove
+		law_clerical_education = neutral
+		law_imperial_examination = disapprove
+		law_elected_boards = approve
+		law_professional_academia = approve
+		law_modern_school = strongly_disapprove
+		law_mission_school = disapprove
 	}
 
 	lawgroup_distribution_of_power = {
@@ -184,6 +218,7 @@ ideology_theodemocratic = {
 		law_total_separation = neutral
 		law_freedom_of_conscience = strongly_approve
 		law_state_religion = approve
+		law_state_atheism = strongly_disapprove
 	}
 
 	lawgroup_distribution_of_power = {
@@ -216,9 +251,11 @@ ideology_yeomanism = {
 
 	lawgroup_economic_system = {		
 		law_agrarianism = approve
+		law_industry_banned = neutral
 		law_traditionalism = neutral
 		law_interventionism = neutral
-		law_laissez_faire = disapprove
+		law_cooperative_ownership = disapprove
+		law_laissez_faire = strongly_disapprove
 		law_command_economy = strongly_disapprove
 	}
 	
@@ -255,8 +292,10 @@ ideology_laissez_faire_secular = {
 		law_laissez_faire = strongly_approve
 		law_interventionism = approve
 		law_agrarianism = neutral
-		law_traditionalism = disapprove		
+		law_traditionalism = disapprove	
+		law_cooperative_ownership = strongly_disapprove
 		law_command_economy = strongly_disapprove
+		law_industry_banned = strongly_disapprove
 	}
 	
 	lawgroup_trade_policy = {		
@@ -273,8 +312,7 @@ ideology_laissez_faire_secular = {
 	}
 	
 	lawgroup_labor_rights = {
-		law_serfdom_banned = neutral
-		law_serfdom = disapprove
+		law_no_workers_rights = neutral
 		law_regulatory_bodies = disapprove
 		law_worker_protections = strongly_disapprove
 	}
@@ -283,6 +321,7 @@ ideology_laissez_faire_secular = {
 		law_total_separation = strongly_approve
 		law_freedom_of_conscience = neutral
 		law_state_religion = strongly_disapprove
+		law_state_atheism = disapprove
 	}
 }
 
@@ -316,5 +355,7 @@ ideology_patriotic_economy = {
 		law_agrarianism = neutral
 		law_traditionalism = neutral		
 		law_command_economy = strongly_approve
+		law_cooperative_ownership = strongly_disapprove
+		law_industry_banned = disapprove
 	}
 }

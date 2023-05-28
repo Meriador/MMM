@@ -350,9 +350,9 @@ ideology_radical = {
 	character_ideology = yes
 
 	lawgroup_governance_principles = {
-		law_monarchy = strongly_disapprove
-		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_disapprove		
+		law_monarchy = disapprove
+		law_theocracy = disapprove
+		law_council_republic = disapprove		
 		law_presidential_republic = approve
 		law_parliamentary_republic = approve
 	}
@@ -2002,15 +2002,6 @@ ideology_anarchist = {
 		law_traditionalism = strongly_disapprove	
 		law_laissez_faire = strongly_disapprove
 		law_industry_banned = disapprove
-	}
-	
-	lawgroup_economic_system = {	
-		law_cooperative_ownership = strongly_approve
-		law_interventionism = neutral
-		law_agrarianism = neutral
-		law_command_economy = disapprove
-		law_traditionalism = disapprove	
-		law_laissez_faire = strongly_disapprove
 	}
 
 	lawgroup_army_model = {

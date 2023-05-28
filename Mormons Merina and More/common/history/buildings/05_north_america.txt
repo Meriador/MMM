@@ -1479,7 +1479,7 @@
 		region_state:HBC={
 		}
 	}
-	s:STATE_RUPERTS_LAND={
+	s:STATE_NUNAVUT={
 		region_state:HBC={
 			create_building={
 				building="building_logging_camp"

@@ -234,11 +234,11 @@ social_democrat_party = {
 		}
 		leader = { # fascists and conservatives hate social democracy
 			NOT = {
-				has_ideology = ideology_fascist
-				has_ideology = ideology_ethno_nationalist
-				has_ideology = ideology_traditionalist
-				has_ideology = ideology_royalist
-				has_ideology = ideology_theocrat
+				has_ideology = ideology:ideology_fascist
+				has_ideology = ideology:ideology_ethno_nationalist
+				has_ideology = ideology:ideology_traditionalist
+				has_ideology = ideology:ideology_royalist
+				has_ideology = ideology:ideology_theocrat
 			}
 		}
 	}
@@ -253,7 +253,7 @@ social_democrat_party = {
 		if = { # social democrats love social democracy
 			limit = {
 				leader = {
-					has_ideology = ideology_social_democrat
+					has_ideology = ideology:ideology_social_democrat
 				}
 			}
 			add = {	
@@ -265,7 +265,7 @@ social_democrat_party = {
 			limit = {
 				is_powerful = yes
 				leader = {
-					has_ideology = ideology_social_democrat
+					has_ideology = ideology:ideology_social_democrat
 				}
 			}
 			add = {	
@@ -276,7 +276,7 @@ social_democrat_party = {
 		if = { # social democrats will fall in line behind stronger leftists
 			limit = {
 				leader = {
-					has_ideology = ideology_social_democrat
+					has_ideology = ideology:ideology_social_democrat
 				}
 				is_powerful = no
 				owner = {
@@ -284,9 +284,9 @@ social_democrat_party = {
 						is_powerful = yes
 						leader = {
 							OR = {
-								has_ideology = ideology_communist
-								has_ideology = ideology_vanguardist
-								has_ideology = ideology_anarchist
+								has_ideology = ideology:ideology_communist
+								has_ideology = ideology:ideology_vanguardist
+								has_ideology = ideology:ideology_anarchist
 							}
 						}
 					}
@@ -302,9 +302,9 @@ social_democrat_party = {
 				is_powerful = no
 				leader = {
 					OR = {
-						has_ideology = ideology_communist
-						has_ideology = ideology_vanguardist
-						has_ideology = ideology_anarchist
+						has_ideology = ideology:ideology_communist
+						has_ideology = ideology:ideology_vanguardist
+						has_ideology = ideology:ideology_anarchist
 					}
 				}
 				owner = {
@@ -324,12 +324,12 @@ social_democrat_party = {
 		if = {
 			limit = {
 				is_powerful = no
-				has_ideology = ideology_liberal
+				has_ideology = ideology:ideology_liberal
 				owner = {
 					any_interest_group = {
 						is_powerful = yes
 						leader = {
-							has_ideology = ideology_social_democrat
+							has_ideology = ideology:ideology_social_democrat
 						}
 					}
 				}
@@ -343,13 +343,14 @@ social_democrat_party = {
 			limit = {
 				leader = {
 					OR = {
-						has_ideology = ideology_feminist
-						has_ideology = ideology_abolitionist
-						has_ideology = ideology_pacifist
-						has_ideology = ideology_radical
-						has_ideology = ideology_reformer
-						has_ideology = ideology_republican_leader
-						has_ideology = ideology_atheist
+						has_ideology = ideology:ideology_feminist
+						has_ideology = ideology:ideology_abolitionist
+						has_ideology = ideology:ideology_pacifist
+						has_ideology = ideology:ideology_radical
+						has_ideology = ideology:ideology_reformer
+						has_ideology = ideology:ideology_republican_leader
+						has_ideology = ideology:ideology_atheist
+						has_ideology = ideology:ideology_progressive
 					}
 				}
 			}
@@ -362,7 +363,7 @@ social_democrat_party = {
 		if = {
 			limit = {
 				leader = {
-					has_ideology = ideology_market_liberal
+					has_ideology = ideology:ideology_market_liberal
 				}
 			}
 			add = {	
@@ -376,9 +377,9 @@ social_democrat_party = {
 				is_powerful = yes
 				leader = {
 					NOR = {
-						has_ideology = ideology_communist
-						has_ideology = ideology_vanguardist
-						has_ideology = ideology_anarchist
+						has_ideology = ideology:ideology_communist
+						has_ideology = ideology:ideology_vanguardist
+						has_ideology = ideology:ideology_anarchist
 					}
 				}
 			}
@@ -389,9 +390,9 @@ social_democrat_party = {
 		}
 		if = { # anti-censorship
 			limit = {
-				OR = {
-					has_ideology = ideology_liberal
-					has_ideology = ideology_egalitarian
+				law_stance = {
+					law = law_type:law_outlawed_dissent
+					value < neutral
 				}
 				owner = {
 					has_law = law_type:law_outlawed_dissent
@@ -404,12 +405,9 @@ social_democrat_party = {
 		}
 		if = { # against land-based taxation
 			limit = {
-				OR = {
-					has_ideology = ideology_meritocratic
-					has_ideology = ideology_agrarian
-					leader = {
-						has_ideology = ideology_social_democrat
-					}
+				law_stance = {
+					law = law_type:law_land_based_taxation
+					value < neutral
 				}
 				owner = {
 					has_law = law_type:law_land_based_taxation
@@ -434,16 +432,13 @@ social_democrat_party = {
 		}
 		if = { # republican
 			limit = {
-				OR = {
-					has_ideology = ideology_republican
-					has_ideology = ideology_populist
-					leader = {
-						OR = {
-							has_ideology = ideology_atheist
-							has_ideology = ideology_republican_leader
-							has_ideology = ideology_radical
-						}
-					}
+				law_stance = {
+					law = law_type:law_monarchy
+					value < approve
+				}
+				law_stance = {
+					law = law_type:law_theocracy
+					value < approve
 				}
 				owner = {
 					OR = {
@@ -459,55 +454,88 @@ social_democrat_party = {
 		}
 		if = { # against illiteracy and religious education
 			limit = {
-				OR = {
-					has_ideology = ideology_individualist
-					has_ideology = ideology_proletarian
+				law_stance = {
+					law = law_type:law_no_schools
+					value < neutral
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_religious_schools
+						has_law = law_type:law_local_schools
 						has_law = law_type:law_no_schools
 					}
 				}
 			}
 			add = {
 				value = 3
-				desc = "from_no_or_religious_schools"
+				desc = "from_no_or_limited_schools"
+			}
+		}
+		if = {
+			limit = {
+				law_stance = {
+					law = law_type:law_clerical_education
+					value < neutral
+				}
+				owner = {
+					OR = {
+						has_law = law_type:law_clerical_education
+					}
+				}
+			}
+			add = {
+				value = 3
+				desc = "from_clerical_schools"
+			}
+		}
+		if = {
+			limit = {
+				law_stance = {
+					law = law_type:law_imperial_examination
+					value < neutral
+				}
+				owner = {
+					OR = {
+						has_law = law_type:law_imperial_examination
+					}
+				}
+			}
+			add = {
+				value = 3
+				desc = "from_imperial_examination"
 			}
 		}
 		if = { # against free trade - peasant/socialist alliance
 			limit = {
-				OR = {
-					has_ideology = ideology_proletarian
-					has_ideology = ideology_agrarian
-					has_ideology = ideology_paternalistic
+				law_stance = {
+					law = law_type:law_free_trade
+					value < neutral
 				}
 				owner = {
 					has_law = law_type:law_free_trade
 				}
 				NOT = {
 					leader = {
-						has_ideology = ideology_market_liberal
+						has_ideology = ideology:ideology_market_liberal
 					}
 				}
 			}
 			add = {
 				value = 3
-				desc = "from_anti_laissez_faire"
+				desc = "from_anti_free_trade"
 			}
 		}
 		if = { # against laissez-faire - peasant/socialist alliance
 			limit = {
-				OR = {
-					has_ideology = ideology_proletarian
-					has_ideology = ideology_agrarian
+				law_stance = {
+					law = law_type:law_laissez_faire
+					value < neutral
 				}
 				owner = {
 					has_law = law_type:law_laissez_faire
 				}
 				NOT = {
 					leader = {
-						has_ideology = ideology_market_liberal
+						has_ideology = ideology:ideology_market_liberal
 					}
 				}
 			}
@@ -549,16 +577,9 @@ social_democrat_party = {
 				owner = {
 					has_law = law_type:law_serfdom
 				}
-				OR = {
-					has_ideology = ideology_egalitarian
-					has_ideology = ideology_anti_slavery
-					has_ideology = ideology_laissez_faire
-					has_ideology = ideology_particularist
-					leader = {
-						has_ideology = ideology_abolitionist
-						has_ideology = ideology_social_democrat
-						has_ideology = ideology_communist
-					}
+				law_stance = {
+					law = law_type:law_serfdom
+					value < neutral
 				}
 			}
 			add = {
@@ -572,6 +593,7 @@ social_democrat_party = {
 					OR = {
 						has_law = law_type:law_legacy_slavery
 						has_law = law_type:law_slave_trade
+						has_law = law_type:law_debt_slavery
 					}
 				}
 				OR = {

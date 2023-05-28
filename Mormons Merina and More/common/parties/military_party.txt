@@ -167,9 +167,9 @@ military_party = {
 		}
 		if = { # conservatives like police
 			limit = {
-				OR = {
-					has_paternalist_ideology = yes
-					has_ideology = ideology_patriotic
+				law_stance = {
+					law = law_type:law_no_police
+					value < neutral
 				}
 				owner = {
 					has_technology_researched = law_enforcement
@@ -183,21 +183,18 @@ military_party = {
 		}
 		if = { # opposition to peasant levies
 			limit = {
-				OR = {
-					has_ideology = ideology_jingoist
-					has_ideology = ideology_particularist
-					has_ideology = ideology_sikh_moralist
-					leader = {
-						OR = {
-							has_ideology = ideology_fascist
-							has_ideology = ideology_anarchist
-							has_ideology = ideology_pacifist
-							has_ideology = ideology_jingoist_leader
-						}
-					}
+				law_stance = {
+					law = law_type:law_peasant_levies
+					value < neutral
 				}
 				owner = {
 					has_law = law_type:law_peasant_levies
+				}
+				leader = {
+					NOT = {
+						has_ideology = ideology:ideology_anarchist
+						has_ideology = ideology:ideology_pacifist
+					}
 				}
 			}
 			add = {

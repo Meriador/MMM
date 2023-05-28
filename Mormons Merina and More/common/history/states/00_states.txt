@@ -1066,7 +1066,7 @@ STATES = {
 		
 		add_claim = c:HBC
 	}
-	s:STATE_RUPERTS_LAND = {
+	s:STATE_NUNAVUT = {
 		create_state = {
 			country = c:HBC
 			owned_provinces = { 

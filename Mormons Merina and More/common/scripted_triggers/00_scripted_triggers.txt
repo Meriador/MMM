@@ -1078,6 +1078,7 @@ has_paternalist_ideology = {
 		has_ideology = ideology:ideology_scholar_paternalistic
 		has_ideology = ideology:ideology_junker_paternalistic
 		has_ideology = ideology:ideology_papal_paternalistic
+		has_ideology = ideology:ideology_republican_paternalistic
 	}
 }
 
@@ -1170,6 +1171,7 @@ liberal_revolution_ongoing = {
 								has_ideology = ideology:ideology_social_democrat
 								has_ideology = ideology:ideology_humanitarian
 								has_ideology = ideology:ideology_feminist
+								has_ideology = ideology:ideology_progressive
 							}		
 						}
 						AND = {
@@ -1192,6 +1194,7 @@ liberal_revolution_ongoing = {
 						has_ideology = ideology:ideology_social_democrat
 						has_ideology = ideology:ideology_humanitarian
 						has_ideology = ideology:ideology_feminist
+						has_ideology = ideology:ideology_progressive
 					}
 					AND = {
 						law_stance = {
@@ -1317,6 +1320,9 @@ ig_is_liberal = {
 		}
 		leader = {
 			has_ideology = ideology:ideology_social_democrat
+		}
+		leader = {
+			has_ideology = ideology:ideology_progressive
 		}
 		AND = {
 			law_stance = {

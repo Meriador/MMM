@@ -5,8 +5,19 @@
 
 	progressiveness = -50
 
-	disallowing_laws = {
-		law_compulsory_primary_school
+	#should only be accessable to specific countries without meaningful academic institutions
+	can_enact = {
+		OR = {
+			has_law = law_type:law_informal_education
+			has_law = law_type:law_mission_school
+		}
+	}
+
+	is_visible = {
+		OR = {
+			has_law = law_type:law_informal_education
+			has_law = law_type:law_mission_school
+		}
 	}
 
 	modifier = {
@@ -57,13 +68,23 @@ law_clerical_education = {
 		law_total_separation
 	}
 
+	can_enact = {
+		OR = {
+			NOR = {
+				has_law = law_type:law_informal_education
+				has_law = law_type:law_mission_school
+			}
+			has_variable = var_can_start_school_push_clerical
+		}
+	}
+
 	modifier = {
 		interest_group_ig_devout_pop_attraction_mult = 0.25
 		country_clergymen_pol_str_mult = 0.5
 	}
 
 	possible_political_movements = {
-		law_school_boards
+		law_elected_boards
 		law_professional_academia
 		law_modern_school
 	}
@@ -104,8 +125,21 @@ law_imperial_examination = {
 		country_aristocrats_pol_str_mult = 0.1
 	}
 
+	can_enact = {
+		OR = {
+			AND = {
+				NOR = {
+					has_law = law_type:law_informal_education
+					has_law = law_type:law_mission_school
+				}
+				country_has_state_religion = rel:mahayana
+			}
+			has_variable = var_can_start_school_push_examination
+		}
+	}
+
 	possible_political_movements = {
-		law_school_boards
+		law_elected_boards
 		law_professional_academia
 		law_modern_school
 	}
@@ -125,7 +159,7 @@ law_imperial_examination = {
 	}
 }
 
-law_school_boards = {
+law_elected_boards = {
 	group = lawgroup_education_leadership
 	
 	#icon = 
@@ -154,6 +188,16 @@ law_school_boards = {
 	possible_political_movements = {
 		law_professional_academia
 		law_modern_school
+	}
+
+	can_enact = {
+		OR = {
+			NOR = {
+				has_law = law_type:law_informal_education
+				has_law = law_type:law_mission_school
+			}
+			has_variable = var_can_start_school_push_elected
+		}
 	}
 
 	pop_support = {
@@ -210,8 +254,18 @@ law_professional_academia = {
 	}
 
 	possible_political_movements = {
-		law_school_boards
+		law_elected_boards
 		law_modern_school
+	}
+
+	can_enact = {
+		OR = {
+			NOR = {
+				has_law = law_type:law_informal_education
+				has_law = law_type:law_mission_school
+			}
+			has_variable = var_can_start_school_push_professional
+		}
 	}
 
 	pop_support = {
@@ -258,8 +312,18 @@ law_modern_school = {
 	}
 
 	possible_political_movements = {
-		law_school_boards
+		law_elected_boards
 		law_professional_academia
+	}
+
+	can_enact = {
+		OR = {
+			NOR = {
+				has_law = law_type:law_informal_education
+				has_law = law_type:law_mission_school
+			}
+			has_variable = var_can_start_school_push_anarchist
+		}
 	}
 }
 
@@ -274,8 +338,19 @@ law_mission_school = {
 		rationalism
 	}
 
-	unlocking_laws = {
-		law_informal_education
+	#should only be accessable to specific countries without meaningful academic institutions
+	can_enact = {
+		OR = {
+			has_law = law_type:law_informal_education
+			has_law = law_type:law_mission_school
+		}
+	}
+
+	is_visible = {
+		OR = {
+			has_law = law_type:law_informal_education
+			has_law = law_type:law_mission_school
+		}
 	}
 
 	modifier = {
