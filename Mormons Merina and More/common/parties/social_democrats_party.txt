@@ -220,7 +220,7 @@ social_democrat_party = {
 				any_interest_group = {
 					is_marginal = no
 					leader = {
-						has_ideology = ideology_social_democrat
+						has_ideology = ideology:ideology_social_democrat
 					}
 				}
 				ig:ig_trade_unions = {
@@ -312,7 +312,7 @@ social_democrat_party = {
 					any_interest_group = {
 						is_powerful = yes
 						leader = {
-							has_ideology = ideology_social_democrat
+							has_ideology = ideology:ideology_social_democrat
 						}
 					}
 				}
@@ -420,7 +420,7 @@ social_democrat_party = {
 		}
 		if = { # loyalists will join in when their issues are relevant
 			limit = {
-				has_ideology = ideology_loyalist
+				has_ideology = ideology:ideology_loyalist
 				owner = {
 					has_law = law_type:law_consumption_based_taxation
 				}
@@ -547,12 +547,12 @@ social_democrat_party = {
 		if = { # loyalist-proletarian alliance for tax reform
 			limit = {
 				OR = {
-					has_ideology = ideology_proletarian
+					has_ideology = ideology:ideology_proletarian
 					leader = {
-						has_ideology = ideology_social_democrat
+						has_ideology = ideology:ideology_social_democrat
 					}
 					AND = {
-						has_ideology = ideology_loyalist
+						has_ideology = ideology:ideology_loyalist
 						owner = {
 							NOR = {
 								has_law = law_type:law_proportional_taxation
@@ -597,9 +597,9 @@ social_democrat_party = {
 					}
 				}
 				OR = {
-					has_ideology = ideology_anti_slavery
+					has_ideology = ideology:ideology_anti_slavery
 					leader = {
-						has_ideology = ideology_abolitionist
+						has_ideology = ideology:ideology_abolitionist
 					}
 				}
 			}

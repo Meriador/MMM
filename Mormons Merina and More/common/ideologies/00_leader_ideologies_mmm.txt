@@ -454,9 +454,9 @@ ideology_progressive = {
 					owner = {
 						any_interest_group = {
 							OR = {
-								has_ideology = ideology_anarchist
-								has_ideology = ideology_communist
-								has_ideology = ideology_vanguardist
+								has_ideology = ideology:ideology_anarchist
+								has_ideology = ideology:ideology_communist
+								has_ideology = ideology:ideology_vanguardist
 							}
 						}
 					}
