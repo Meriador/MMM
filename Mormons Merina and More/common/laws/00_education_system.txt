@@ -163,7 +163,6 @@ law_national_schools = {
 		law_anarchy
 		law_elected_boards
 		law_informal_education
-		law_modern_school
 		#include federalism stuff if that ever comes about
 	}
 

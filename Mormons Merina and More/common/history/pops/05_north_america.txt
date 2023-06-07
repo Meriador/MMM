@@ -388,7 +388,11 @@
 		region_state:BLF = {
 			create_pop = {
 				culture = blackfoot
-				size = 31000
+				size = 24500
+			}
+			create_pop = {
+				culture = arapaho
+				size = 7250
 			}
 		}
 		region_state:KTN = {
@@ -1546,7 +1550,11 @@
 		region_state:BLF = {
 			create_pop = {
 				culture = blackfoot
-				size = 15000
+				size = 5000
+			}
+			create_pop = {
+				culture = arapaho
+				size = 7000
 			}
 		}
 		region_state:IRC = {
@@ -1604,6 +1612,10 @@
 			create_pop = {
 				culture = ojibwe
 				size = 2000
+			}
+			create_pop = {
+				culture = nakoda
+				size = 1000
 			}
 		}
 		region_state:OJI = {

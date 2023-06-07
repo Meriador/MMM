@@ -27,7 +27,7 @@
 			last_name = "None"
 			ruler = yes
 			female = no
-			age = 38
+			age = 38 #also probably not true
 			culture = cu:penutian
 			interest_group = ig_landowners
 		}
@@ -53,5 +53,43 @@
 			culture = cu:cahuilla
 			interest_group = ig_landowners
 		} 
+	}
+	c:KTN = {
+		create_character = {
+			first_name = "None"
+			last_name = "Three_Moons"
+			ruler = yes
+			age = 96
+			culture = cu:kutenai
+			interest_group = ig_landowners
+		}
+		create_character = {
+			first_name = "Thomas"
+			last_name = "Blind"
+			heir = yes
+			age = 60 #no idea lol
+			culture = cu:kutenai
+			interest_group = ig_landowners
+		}
+	}
+	c:HDA = {
+		create_character = {
+			first_name = "None"
+			last_name = "Ninstints"
+			ruler = yes
+			age = 56
+			culture = cu:haida
+			interest_group = ig_landowners
+		}
+	}
+	c:ABS = {
+		create_character = {
+			first_name = "Awe_Kualawaachish"
+			last_name = "None"
+			ruler = yes
+			age = 41
+			culture = cu:absaroka
+			interest_group = ig_landowners
+		}
 	}
 }

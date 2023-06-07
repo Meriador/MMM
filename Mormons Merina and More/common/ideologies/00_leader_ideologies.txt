@@ -3307,6 +3307,16 @@ ideology_positivist = {
 		law_elected_bureaucrats = disapprove
 		law_hereditary_bureaucrats = strongly_disapprove
 	}
+
+	lawgroup_education_leadership = {
+		law_informal_education = strongly_disapprove
+		law_clerical_education = strongly_disapprove
+		law_imperial_examination = disapprove
+		law_elected_boards = approve
+		law_professional_academia = strongly_approve
+		law_modern_school = strongly_disapprove
+		law_mission_school = strongly_disapprove
+	}
 	
 	possible = {
 		# Agitators should have an ideology at odds with current laws

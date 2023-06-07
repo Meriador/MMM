@@ -402,7 +402,6 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 	}
 	graphics = generic
 }
-
 betsimisaraka={
 	color= rgb{ 226 247 138 }
 	religion = animist
@@ -460,7 +459,6 @@ betsimisaraka={
 	}
 	graphics = generic
 }
-
 bara={
 	color= rgb{ 169 33 73 }
 	religion = animist
@@ -550,7 +548,6 @@ bara={
 	}
 	graphics = african
 }
-
 sakalava={
 	color= rgb{ 155 189 73 }
 	religion = animist
@@ -634,7 +631,6 @@ sakalava={
 	}
 	graphics = mideast_indian
 }
-
 antaimoro={
 	color= rgb{ 163 29 137 }
 	religion = animist
@@ -704,54 +700,49 @@ ojibwe={
 	traits = { indigenous_american_heritage algonquian_trait }
 	
 	male_common_first_names={
-	WIP
+		Peter
+		George
+		Stephen
+		Francis
+		Peshickee
+		John
+		Ignatius
+		Joseph
+		Andrew
+		William
+		Antoine
+		Leopold
+		Simon
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Margaret
+		Jane
+		Cubaska
+		Negak
+		Negance
+		Magdelaine
+		Marie
 	}
 	
 	common_last_names={
-	WIP
+		Assikinak
+		Bonga
+		Jones
+		Copway
+		Hole-in-the-Day
+		Blackbird
+		Nekesh
+		Odjig
+		Pokagon
+		Caldwell
+		Bone
 	}
 	ethnicities = {
 		1 = native_american
 	}
 	graphics = generic
 }
-
-fox={
-	color = { 154 0 38 }
-	religion = animist
-	traits = { indigenous_american_heritage algonquian_trait }
-	
-	male_common_first_names={
-	WIP
-	Kenekuk
-	}
-	
-	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
-	}
-	
-	common_last_names={
-	WIP
-	Kahbeah
-	}
-	ethnicities = {
-		1 = native_american
-	}
-	graphics = generic
-}
-
 shoshone={
 	color = rgb{ 241 218 122 }
 	religion = animist
@@ -777,7 +768,6 @@ shoshone={
 	}
 	graphics = generic
 }
-
 paiute={ #just northern paiute
 	color = hsv{ 0.06 0.39 0.80 }
 	religion = animist
@@ -803,7 +793,6 @@ paiute={ #just northern paiute
 	}
 	graphics = generic
 }
-
 ute={ #and southern paiute
 	color= rgb{ 94 73 16 }
 	religion = animist
@@ -829,33 +818,59 @@ ute={ #and southern paiute
 	}
 	graphics = generic
 }
-
 absaroka = {
 	color = rgb{ 199 102 22 }
 	religion = animist
 	traits = { indigenous_american_heritage siouan_trait plains_trait }
 	
 	male_common_first_names={
-	WIP
+		Biitawuash
+		Peelatchiwaaxpaash
+		Issaatxaluash
+		Apitisee
+		Alaxchiiaahush
+		Chiilaphuchissaaleesh
+		Deaxitchish
+		Itchuua_Chiash
+		Uuwatchiilapish
+		Chiischipaaliash
+		Daxpitcheehisshish
+		Kaamneewiash
+		Iche_Shipite
+		Awe_Kualawaachish
+		Eelapuash
+		Itchuuwaaooshbishish
+		Iisaakiiwaanniash
+		Chiilapkalishtachiash
+		Isahpiishchoosish
+		Daasawatash
+		Buattaaxalusshish
+		Buahisshish
+		Axuachisshish
+		Ishtuwatash
+		Chiitdeehisshish
+		Shiipdeetash
+		Eshsuppeemeshish
+		Meenahtseeus
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Biliiche_Heeleelash
+		Akkeekaahuush
+		Biawacheeitchish
+		Baanashchi_Koowisse
+		Waheenee
+		Maaxiiriwia
 	}
 	
 	common_last_names={
-	WIP
+		None
 	}
 	ethnicities = {
 		1 = native_american
 	}
 	graphics = generic
 }
-
 cheyenne = {
 	color = rgb{ 7 7 77 }
 	religion = animist
@@ -881,7 +896,6 @@ cheyenne = {
 	}
 	graphics = generic
 }
-
 arapaho = { # and gros ventre
 	color = { 223 204 125 }
 	religion = animist
@@ -907,7 +921,6 @@ arapaho = { # and gros ventre
 	}
 	graphics = generic
 }
-
 metis={
 	color= rgb{ 200 111 62 }
 	religion = catholic
@@ -954,7 +967,6 @@ metis={
 	}
 	graphics = generic
 }
-
 dakota={
 	color= hsv{ 0.63 0.30 0.52 }
 	religion = animist
@@ -1006,7 +1018,6 @@ dakota={
 	}
 	graphics = generic
 }
-
 cherokee={
 	color= rgb{ 105 145 40 }
 	religion = protestant
@@ -1071,7 +1082,6 @@ cherokee={
 	}
 	graphics = generic
 }
-
 muskogean={ # Creek and Seminole
 	color= hsv{ 0.27 0.2 0.67 }
 	religion = protestant
@@ -1123,7 +1133,6 @@ muskogean={ # Creek and Seminole
 	}
 	graphics = generic
 }
-
 pueblo={
 	color= hsv{ 0.19 0.34 0.93 }
 	religion = animist
@@ -1180,7 +1189,6 @@ pueblo={
 	}
 	graphics = generic
 }
-
 inuit={
 	color= hsv{ 0.49 0.03 0.99 }
 	religion = animist
@@ -1243,7 +1251,6 @@ inuit={
 	}
 	graphics = asian
 }
-
 cree={
 	color= hsv{ 0.30 0.39 0.95 }
 	religion = animist
@@ -1293,7 +1300,6 @@ cree={
 	}
 	graphics = generic
 }
-
 navajo={
 	color= hsv{ 0.62 0.26 0.74 }
 	traits = { indigenous_american_heritage southwest_american nadene }
@@ -1342,7 +1348,6 @@ navajo={
 	}
 	graphics = generic
 }
-
 comanche={
 	color= hsv{ 0.08 0.5 0.37 }
 	religion = animist
@@ -1389,7 +1394,6 @@ comanche={
 	}
 	graphics = generic
 }
-
 iroquoian={
 	color= rgb{ 233 116 10 }
 	religion = animist
@@ -1433,7 +1437,6 @@ iroquoian={
 	}
 	graphics = generic
 }
-
 hokan={
 	color= hsv{ 0.94 0.27 0.87 }
 	religion = animist
@@ -1620,62 +1623,60 @@ caddoan={
 	}
 	graphics = generic
 }
-
 penutian={
 	color = rgb{ 186 85 211 }
 	religion = animist
 	traits = { indigenous_american_heritage penutian_trait }
 	
 	male_common_first_names={
-	Paul
-	Arthur
-	Alfred
-	Francisco
-	Bill
-	Frank
-	Louis
-	Charles
-	Orencio
-	Estanislao
+		Paul
+		Arthur
+		Alfred
+		Francisco
+		Bill
+		Frank
+		Louis
+		Charles
+		Orencio
+		Estanislao
 	}
 	
 	female_common_first_names = {
-	Sudaal_ #Tsimshian
-	Martha
-	Elizabeth
-	Kate
-	Elvamox #Chinook
-	Jennie
-	Lucy
+		Sudaal_ #Tsimshian
+		Martha
+		Elizabeth
+		Kate
+		Elvamox #Chinook
+		Jennie
+		Lucy
 	}
 	
 	noble_last_names = {
-	#Ligeex #Tsimshian
-	#T'amks #Tsimshian
-	Tumulth #Chinook
-	Solano #Patwin
-	Day
-	Kelly
-	Cully
-	Clah
+		#Ligeex #Tsimshian
+		#T'amks #Tsimshian
+		Tumulth #Chinook
+		Solano #Patwin
+		Day
+		Kelly
+		Cully
+		Clah
 	}
 	
 	common_last_names={
-	Clah #Tsimshian
-	Datacks #Tsimshian
-	Tate
-	Diex #Tsimshian
-	Dudoward
-	Troeh #Chinook
-	Michel
-	Tells
+		Clah #Tsimshian
+		Datacks #Tsimshian
+		Tate
+		Diex #Tsimshian
+		Dudoward
+		Troeh #Chinook
+		Michel
+		Tells
 	}
 	ethnicities = {
 		1 = native_american
 	}
 	graphics = generic
 }
-
 athabaskan={
 	color= rgb{ 96 108 64 }
 	religion = animist
@@ -1738,52 +1739,85 @@ athabaskan={
 	}
 	graphics = generic
 }
-
 tlingit={
 	color = rgb{ 66 158 157 }
 	religion = orthodox
 	traits = { indigenous_american_heritage nadene northwest_coast }
 	
-	male_common_first_names={
-	WIP
+	male_common_first_names = {
+		Situwuka
+		Yeilgooxu
+		Katlean
+		Yeilxaak
+		X_une_i
+		Naakil_aan
+		Shgu_ndi
+		Shgwi_ndi
 	}
 	
 	female_common_first_names = {
-	WIP
+		Katwachsnea
+		Kutxoox
+		Xoonsel_ut
+		Kahtahah
+		Khaaxhgal_aat
+		Lgeik_i
 	}
 	
 	noble_last_names = {
-	WIP
+		Kakolah
+		Kaakaltin
+		She_iksh
+		Thlunaut
+		Peratrovich
+		Kasakan
 	}
 	
-	common_last_names={
-	WIP
+	common_last_names = {
+		Kakolah
+		Kaakaltin
+		She_iksh
+		Thlunaut
+		Peratrovich
+		Kasakan
 	}
 	ethnicities = {
 		1 = native_american
 	}
 	graphics = generic
 }
-
 haida={
 	color = rgb{ 66 158 157 }
 	religion = animist
 	traits = { indigenous_american_heritage northwest_coast }
 	
 	male_common_first_names={
-	WIP
+		K'łajangk'una
+		Dah-egin
+		Eda_nsa
+		Tahaygen
+		Skaay
+		Koyah
+		Skidegate
+		Cumshewa
+		Gidansda
+		Chiits
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Qawkuna
+		Skil_Kew_Wat
+		K-woiyang
+		Jadal_q-eganga
 	}
 	
 	common_last_names={
-	WIP
+		Edenshaw
+		Skedans
+		Idinsaw
+		Yahgulanaas
+		Guujaaw
+		Gitnaii
 	}
 	ethnicities = {
 		1 = native_american
@@ -1795,32 +1829,33 @@ salish={ #WIP, make sure names are actually salish
 	religion = animist
 	traits = { indigenous_american_heritage northwest_coast }
 	male_common_first_names={
-		Cumshewa
 		Cuneah
-		Dah-egin
 		Gush_X-een
-		Guujaaw
 		Hluugitgaa
 		Masset
-		Ninstints
-		Skaay
-		Skidegate
-		Tahaygen
 		Wiisheyksh
 		Xhuuyaa
+		Seathl
+		Shweabe
+		Patkanim
+		Leschi
+		Quiemuth
+		La-kaa-nim
+		Chetzemoka
+		Lach-Ka-Nam
 	}
 	female_common_first_names = {
 		Ansnaq
-		Jadal_q-eganga
 		Kung_Jaadee
 		Kwiigeliones
-		K-woiyang
-		Qawkuna
-		Skil_Kew_Wat
+		Sholeetsa
+		La-Dalia
+		See-Hei-Met-za
+		Quah-Tum-A-Low
 	}	
 	noble_last_names = {
 		Gispwudwada
-		Idinsaw
+		Moctelme
 		Taantakwaan
 		Y-akwa-lanas
 	}
@@ -1829,7 +1864,6 @@ salish={ #WIP, make sure names are actually salish
 		Hak
 		Ni-isyuus
 		Psday
-		Yahgulanaas
 	}
 	ethnicities = {
 		1 = native_american
@@ -1879,20 +1913,38 @@ wakashan={
 	religion = animist
 	traits= { indigenous_american_heritage northwest_coast }
 	male_common_first_names={
-	WIP
+		Samuel
+		George
+		Billy
+		Jim
+		Mungo
+		Willie
+		Charles
+		James
+		Henry
+		Alfred
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Pawa
+		Eden
+		Clara
+		Ellen
+		Jody
+		Marianne
 	}
 	
 	common_last_names={
-	WIP
+		Haiyupis
+		Clutesi
+		Assu
+		Naknakim
+		Martin
+		Seeweed
+		Hunt
+		Scow
 	}
+
 	ethnicities = {
 		1 = native_american
 	}
@@ -1903,36 +1955,36 @@ cahuilla={ #WIP, good for now but it may be a good idea to make this list bigger
 	religion = animist
 	traits= { indigenous_american_heritage southwest_american }
 	male_common_first_names={
-	Juan
-	Condino
-	Julio
-	Pablo
-	Santos
-	Antonio
+		Juan
+		Condino
+		Julio
+		Pablo
+		Santos
+		Antonio
 	}
 	
 	female_common_first_names = {
-	Ramona
-	Katherine
-	Roscinda
-	Marigold
-	Felicite
+		Ramona
+		Katherine
+		Roscinda
+		Marigold
+		Felicite
 	}
 	
 	noble_last_names = {
-	Antonio
-	Tac
-	Manuel
-	Garra
+		Antonio
+		Tac
+		Manuel
+		Garra
 	}
 	
 	common_last_names={
-	Lubo
-	Diego
-	Siva
-	Sawaxell
-	Ortega
-	Nolasquez
+		Lubo
+		Diego
+		Siva
+		Sawaxell
+		Ortega
+		Nolasquez
 	}
 	ethnicities = {
 		1 = native_american
@@ -1944,26 +1996,50 @@ kutenai={
 	religion = animist
 	traits= { indigenous_american_heritage northwest_coast }
 	male_common_first_names={
-	WIP
+		Abraham
+		Isidore
+		Pierre
+		Narcisse
+		Simon
+		Aeneas
+		Isaac
+		Osey
+		Moses
 	}
 	
 	female_common_first_names = {
-	WIP
+		Amy
+		Catherine
+		Charlotte
+		Adeline
+		Rebecca
+		Mary
 	}
 	
 	noble_last_names = {
-	WIP
+		Chiqui
+		Blind
+		Big_Knife
+		Koostatah
+		Andrew
+		David
 	}
-	
+
 	common_last_names={
-	WIP
+		Trice
+		Francis
+		Basil
+		Matthias
+		Francis
+		Joseph
+		Stasso
 	}
+
 	ethnicities = {
 		1 = native_american
 	}
 	graphics = generic
 }
-
 nakoda={
 	color= { 105 145 186 }
 	religion = animist
@@ -1977,18 +2053,17 @@ nakoda={
 	}
 	
 	noble_last_names = {
-	WIP
+	None
 	}
 	
 	common_last_names={
-	WIP
+	None
 	}
 	ethnicities = {
 		1 = native_american
 	}
 	graphics = generic
 }
-
 blackfoot={
 	color = hsv{ 0.63 0.68 0.60 }
 	religion = animist
@@ -2013,7 +2088,6 @@ blackfoot={
 	}
 	graphics = generic
 }
-
 siouan={ #Dhegihan and Chiwere peoples
 	color= hsv{ 0.14 0.35 0.99 }
 	religion = animist
@@ -2038,7 +2112,6 @@ siouan={ #Dhegihan and Chiwere peoples
 	}
 	graphics = generic
 }
-
 algonquian={ #WIP, make sure names are appropriate given the new culture split
 	color= hsv{ 0.22 0.15 0.86 }
 	religion = animist
@@ -2047,7 +2120,7 @@ algonquian={ #WIP, make sure names are appropriate given the new culture split
 		Catecahassa Cottawamago Cheeseekau
 		Gakiiwegwanebi 
 		Hokoleskwa
-		Kekewepelethy
+		Kekewepelethy Kenekuk
 		Lalawethika Lawoughqua
 		MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
 		Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i
@@ -2066,7 +2139,7 @@ algonquian={ #WIP, make sure names are appropriate given the new culture split
 		Chalahgawtha
 		Eskippakithiki
 		Hokolesqua
-		Kispokotha KaskE_
+		Kispokotha KaskE_ Kahbeah
 		Mecoce
 		Opessa
 		Pekowi Peckuwe 

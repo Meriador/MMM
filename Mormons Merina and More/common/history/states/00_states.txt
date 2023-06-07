@@ -511,6 +511,7 @@ STATES = {
 		add_homeland = salish
 		add_homeland = nakoda
 		add_homeland = blackfoot
+		add_homeland = arapaho
 		add_claim = c:USA
 	}
 	s:STATE_NORTH_DAKOTA = {
@@ -627,6 +628,7 @@ STATES = {
 		add_homeland = siouan
 		add_homeland = arapaho
 		add_homeland = caddoan
+		add_homeland = algonquian
 		add_claim = c:USA
 	}
 	s:STATE_OKLAHOMA = {
@@ -681,6 +683,7 @@ STATES = {
 		
 		add_homeland = yankee		
 		add_homeland = dakota
+		add_homeland = algonquian
 	}
 	s:STATE_MINNESOTA = {
 		create_state = {
@@ -712,7 +715,6 @@ STATES = {
 			
 		add_homeland = yankee	
 		add_homeland = dakota
-		add_homeland = algonquian
 		add_homeland = ojibwe
 		add_claim = c:USA
 	}
@@ -749,6 +751,7 @@ STATES = {
 		}
 		
 		add_homeland = yankee
+		add_homeland = algonquian
 	}
 	s:STATE_MICHIGAN = {
 		create_state = {
@@ -786,7 +789,7 @@ STATES = {
 		}
 		
 		add_homeland = dixie
-		add_homeland = yankee		
+		add_homeland = yankee	
 	}
 	s:STATE_TENNESSEE = {
 		create_state = {
@@ -905,6 +908,7 @@ STATES = {
 		}
 		
 		add_homeland = yankee
+		add_homeland = algonquian
 	}
 	s:STATE_CONNECTICUT = {
 		create_state = {
@@ -1304,6 +1308,7 @@ STATES = {
 		add_homeland = anglo_canadian
 		add_homeland = athabaskan
 		add_homeland = nakoda
+		add_homeland = arapaho
 
 		add_claim = c:HBC
 	}
@@ -1343,7 +1348,6 @@ STATES = {
 		
 		add_homeland = anglo_canadian
 		add_homeland = iroquoian
-		add_homeland = algonquian
 		add_homeland = cree
 		add_homeland = ojibwe
 
