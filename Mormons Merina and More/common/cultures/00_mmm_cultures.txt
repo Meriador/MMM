@@ -793,25 +793,71 @@ paiute={ #just northern paiute
 	}
 	graphics = generic
 }
-ute={ #and southern paiute
+ute={ #and southern paiute. A lot of this list actually comes from a southern paiute dictionary by edward sapir, where i tried to change the orthography from agressively academic to something readable. I can't necessarily vouch for the accuracy of my efforts, i am not a linguist and the dictionary was hard to understand lol.
 	color= rgb{ 94 73 16 }
 	religion = animist
 	traits = { indigenous_american_heritage numic }
 	
 	male_common_first_names={
-	WIP
+		Mampuitsi
+		Naaxamampa
+		Neataipe
+		Tungkunukwe
+		Tocakavatcanga
+		Weakavakipeng
+		Tau-gu
+		Ouray
+		Guaratche
+		Shawano
+		Guerro
+		Oragis
+		Powatch
+		Kanosh
+		Kwitsi
+		Sanakutsikitsi
+		Tevwipe
+		Tomints
+		Cura_Canto
+		Colorow
+		Tcaxutsi
+		Tupiwe
+		Ieneuwetsi
+		
+		Ovingkwiiape
+		Pikaxwite
+		Tocakavatcanga
+		Tungkunukwi
+		Wannuqwomi
+		Watsii
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Maacepi
+		Paatcavui
+		Soxore
+		Tevwika
+		Totsiaxaini
+		Totsiatsi
+		Weiitsi
+
+		Pavetsi
+		Paasitsi
+		Peiraxante
+		Puraveraph
+		Kamuvuitsi
+		Tocakwiitsi
+		Paxeutsi
+		Saapi
+		Ceapi
+		Tumpwitaiiang
+		Topaatsi
+		Tosa
+		Tcaxutsi
+		Yarutsi
 	}
 	
 	common_last_names={
-	WIP
+		None
 	}
 	ethnicities = {
 		1 = native_american
