@@ -774,19 +774,49 @@ paiute={ #just northern paiute
 	traits = { indigenous_american_heritage numic }
 	
 	male_common_first_names={
-	WIP
+		Stovepipe
+		Sam
+		Jimmy
+		Mit
+		Joe
+		Charlie
+		Willie
+		Tommy
+		John
+		Peter
+		Leonard
+		Perry
+		Teddy
+		Cato
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Wuzzie
+		Mattie
+		Suzie
+		Okuwa
+		Bessie
+		Moll
+		Kaly
+		Kate
+		Annie
+		Marie
+		Bertha
+		Emma
 	}
 	
 	common_last_names={
-	WIP
+		Dick
+		George
+		Ochiho
+		Winnemucca
+		Kennedy
+		Louie
+		Adams
+		Teeman
+		Bob
+		Jim
+		Barney
 	}
 	ethnicities = {
 		1 = native_american
@@ -807,6 +837,7 @@ ute={ #and southern paiute. A lot of this list actually comes from a southern pa
 		Weakavakipeng
 		Tau-gu
 		Ouray
+		Toquer
 		Guaratche
 		Shawano
 		Guerro

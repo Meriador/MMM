@@ -92,4 +92,32 @@
 			interest_group = ig_landowners
 		}
 	}
+	c:NPA = {
+		create_character = {
+			first_name = "None"
+			last_name = "Truckee"
+			ruler = yes
+			age = 55
+			culture = cu:paiute
+			interest_group = ig_landowners
+		}
+		create_character = {
+			first_name = "None"
+			last_name = "Winnemucca"
+			heir = yes
+			age = 16
+			culture = cu:paiute
+			interest_group = ig_landowners
+		}
+	}
+	c:SHO = {
+		create_character = {
+			first_name = "None"
+			last_name = "Washakie"
+			ruler = yes
+			age = 26
+			culture = cu:shoshone
+			interest_group = ig_landowners
+		}
+	}
 }
