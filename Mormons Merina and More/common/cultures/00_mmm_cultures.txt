@@ -4,22 +4,19 @@
 	traits = { anglophone european_heritage }
 	male_common_first_names = {
 		David
-	}
-	female_common_first_names = {
-		Lucy
-	}
-	noble_last_names = {
-		Smith
-	}
-	common_last_names = {
-		Kimball
-	}
-	male_regal_first_names = {
 		Hyrum
 		Joseph
 	}
-	female_regal_first_names = {
+	female_common_first_names = {
+		Lucy
 		Emma
+	}
+	noble_last_names = {
+		Smith
+		Knight
+	}
+	common_last_names = {
+		Kimball
 	}
 
 	graphics = european
@@ -237,7 +234,7 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 		Tsinompo
 		Tsitakatrandriana
 	}
-	male_regal_first_names = {
+	male_noble_first_names = {
 		Andriamamilazabe
 		Andriamampandry
 		Andriamanalina
@@ -419,7 +416,7 @@ betsimisaraka={
 		Rahidy
 		Linta
 	}
-	male_regal_first_names = {
+	male_noble_first_names = {
 		Ratsimilaho
 		Zanahary
 		Ratsiraka
@@ -490,7 +487,7 @@ bara={
 		Tonanahary
 		Tsimanompo
 	}
-	male_regal_first_names = {
+	male_noble_first_names = {
 		Adriamandana
 		Andriamanafotsarivo
 		Andriamanely
@@ -573,7 +570,7 @@ sakalava={
 		Tsimenta
 		Toakafo
 	}
-	male_regal_first_names = {
+	male_noble_first_names = {
 		Andriamisara
 		Andriantsoly
 		Andrianbaba
@@ -648,7 +645,7 @@ antaimoro={
 		Rabesirana
 		Panolahe
 	}
-	male_regal_first_names = {
+	male_noble_first_names = {
 		Andriamahazonoro
 		Andriandramaka
 		Rivoekembahoaka
@@ -743,25 +740,133 @@ ojibwe={
 	}
 	graphics = generic
 }
-shoshone={
+shoshone={ #much of this is from https://archive.org/details/jstor-983995 some from other parts of https://shoshoniproject.utah.edu/language-materials/shoshoni-dictionary/dictionary.php
 	color = rgb{ 241 218 122 }
 	religion = animist
 	traits = { indigenous_american_heritage numic }
 	
 	male_common_first_names={
-	WIP
+		Amputih
+		Antapittseh
+		Itsapehe
+		Itsataipo
+		Muittsaittseh
+		Muttsatteh
+		Pamuseh
+		Pawoko
+		Tsikuttih
+		Tsoangkaaya'a
+		Wattsi Kahni
+		Yokottsi
+		Aipaba
+		Aigorea
+		Aipub
+		Aishiwap
+		Anggots
+		Antsi
+		Apampi
+		Arimpi
+		Boni
+		Daigi
+		Hoi
+		Inggitsi
+		Icagwaimnodsup
+		Kawiyaiya
+		Pogumpi
+		Kumorup
+		Kun
+		Maropai
+		Munai
+		Nampicuna
+		Nannantci
+		Oictu
+		Pandugan
+		Pantc
+		Pawinoitsi
+		Pidjibounts
+		Pikurink
+		Pogonup
+		Pogumpi
+		Pcangk
+		Puidja
+		Sagup
+		Si'itci
+		Cil
+		Tabi
+		Tadien
+		Taibohum
+		Toip
+		Tomuc
+		Tugan
+		Wadatsi
+		Wacidoiupa
+		Wac
+		Wes
+		Wudatci
+		Wuditci
+		Washakie
+		Potacello
+		Tonaioza
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Antannewe
+		Kiiki
+		Pa'atami
+		Siatoni'i
+		Suata'a
+		Yupi
+		Anggip
+		Ambo
+		Angkabipidup
+		Hangkarauga
+		Auwia
+		Biborin
+		Dsakup
+		Gwanasi
+		Haink
+		Hambui
+		Katsisi
+		Kiungwa
+		Kusayumain
+		Kusiamutci
+		Mantsiritc
+		Mitos
+		Morants
+		Morowintc
+		Muidsa
+		Mutsembia
+		Mutsump
+		Nanavi
+		Natcu
+		Nejika
+		Nina
+		Nowiup
+		Paiyanuk
+		Parigwitsup
+		Pasogo
+		Piawaip
+		Pigistun
+		Pigingwaci
+		Pikin
+		Pikip
+		Pigistun
+		Pinjiru
+		Pidjibui
+		Piora
+		Siuwa
+		Tuoba
+		Tuwats
+		Tsaiyap
+		Wiaso
+		Wini
+		Yagotsup
+		Yakikin
+		Sacajawea #why not lol
 	}
 	
 	common_last_names={
-	WIP
+		None
 	}
 	ethnicities = {
 		1 = native_american
@@ -948,25 +1053,317 @@ absaroka = {
 	}
 	graphics = generic
 }
-cheyenne = {
+cheyenne = { #from here: http://www.cheyennelanguage.org/words/names/names.htm    very nice source haha. my selection of names from it is arbitrary and not especially carefully curated, can probably be done more deliberately in the future
 	color = rgb{ 7 7 77 }
 	religion = animist
 	traits = { indigenous_american_heritage algonquian_trait plains_trait }
 	
 	male_common_first_names={
-	WIP
+		Aenohe_Ohno'kaestse
+		Aenohe_Ohvo'komaestse
+		Aenohe_Oxhaa'eho'oesestse
+		Aenohea'eotse
+		Aenohea'konoo'e
+		Aenohee'e
+		Aenoheeve'hatse
+		Anetaheveo'o
+		Aseske
+		Haahke'eveho
+		Haestohena'hane
+		Ho'nehevee'ese
+		Ho'neheveho
+		Ho'nehevetane
+		Ho'nehevo'ovahe
+		Ho'nehevotoomahe
+		Ho'neohma'aestse
+		Ho'neohma'heonevestse
+		Ho'neohnestooestse
+		Hotameheve
+		Hotoama'heo'o
+		Hotoa'ohpevaestse
+		Hotoa'ohtsehe'kestaestse
+		Hotoa'ohtseve'hatse
+		Hotoa'ohtsevehnestse
+		Hotoa'ohvo'komaestse
+		Hotoa'oxhaa'estaestse
+		Hotoa'oxhoo'estse
+		Hotoaso
+		Ka'eskoneveho
+		Ka'eve'ho'e
+		Ko'ana
+		Kona'e
+		Ko'ometa
+		Kopehe
+		Kosaneso
+		Kovaahe
+		Mahpevahnee'estse
+		Mahpevana'hane
+		Makeeta
+		Ma'aataeestse'henahe
+		Ma'hahko'e
+		Ma'heehehe
+		Meona'hane
+		Moho'ohtse
+		Mo'ohtameohtsestse
+		Mo'ohtaveaenohe
+		Mo'ohtavenehe
+		Mo'ohtaveo'eseenahe
+		Mo'ohtaveo'kome
+		Mo'ohtaveonone
+		Mo'ohtavetoo'o
+		Mo'ohtavo'ha
+		Mo'ohtavo'nehe
+		Mo'ohtavoohevatse
+		Mo'ohtavoonestse
+		Na'atsehe'e
+		Naha'e'ta
+		Na'heosehe
+		Nahkoestse
+		Nahkohema'ta
+		Nahkohemeeotse
+		Nahkohemeo'estse
+		Netse_Ohmo'ohtavaestse
+		Netse_Ohno'kaestse
+		Netse_Ohtseve'hatse
+		Netse_Ohvehonevestse
+		Netse_Ohvo'komaestse
+		Netse_Oxhaaestse
+		Netse_Oxhaahketa
+		Netse_Oxheovaestse
+		No'kena'hane
+		Nonoma'evoo'xenehe
+		Notaxeo'kome
+		O'kome
+		O'komeeho'esta
+		O'komeeotse
+		O'komehemahtovoo'otse
+		O'komeheso
+		O'komohnee'estse
+		O'komohno'kaestse
+		O'komohtamehnestse
+		O'komohtameohtse
+		O'komohtameohtsestse
+		O'komohvo'komaestse
+		O'komohvotonevestse
+		O'komoxhaahketa
+		Ota'taveaenohe
+		Otsevohto
+		Ovahemaese
+		Ovama'haahe
+		Oxhataveseve'hamestse
+		Oxhaveseveneheto'anestse
+		Oxhoe'haooestse
+		Oxhootoo'otse
+		Pavoomatse
+		Pe'ee'ese
+		Pehpe'e
+		Pe'ova'eta
+		Pe'pe'ova'eta
+		Ponohene
+		Poo'heeno
+		Se'ohtahonoo'o
+		Sosohkevata
+		Seheso
+		Taa'evaho'nehe
+		Taa'evaho'ne'e
+		Taa'evahoo'estse
+		Taa'evahtamehnestse
+		Taa'evanahkohe
+		Taa'eveameohts
+		Tahtaenotovahe
+		Tahtanoma'o'e
+		Tane'emaxestse
+		Taxena'hane
+		Toestohene
+		Tovohkeso
+		Vanaheoeso
+		Vanaheoeve
+		Vehoeso
+		Vohkoohe_Ohvovo'haestse
+		Vohko'xenehe
+		Vohpaheso
+		Vo'aehevotse
+		Vo'estanenahkohe
+		Vo'evahtamehnestse
+		Vo'evahtoesestse
+		Vo'eveho
+		Vo'heesehe
+		Vo'ho'kase
+		Vo'kaa'e
+		Vo'kaa'e_Ohma'aestse
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Aenohe'ke
+		Ahtonoohtse'e
+		Amahtoohe'e
+		Ame'ha'e
+		Ameohne'e
+		Ameohtse'e
+		Ameo'e
+		Ametane'e
+		Amevaohtse'e
+		Amone'hehe
+		Amotsehe'e
+		Aneahta'e
+		Anestaeseva'e
+		Anohneo'o
+		Anoohtse'e
+		Anovaoo'o
+		Avoone'e
+		E'ehahta'e
+		Eehe'e
+		Eestseohtse'e
+		E'eskosa'e
+		E'kome'hahe'e
+		Enoohtse'e
+		Eseohtseva'e
+		Esevona'e
+		Esevona'keso
+		Esevonehoehne'e
+		Esevoneme'ehne'e
+		Estseohtse'e
+		Estseovoeva'e
+		Eseamehe'e
+		Eseeva'e
+		Eseeva'keso
+		Haa'hoeva'e
+		Hotoahe'e
+		Hotoa'hehe
+		Hotohke'he'e
+		Hotohpeheeva'e
+		Hotomanee'e
+		Hotomo'ome
+		Hotomo'omehe'e
+		Hotoomee'e
+		Kohenaa'e'e
+		Kohenone'e
+		Koheoso
+		Koeha'e
+		Koesene'e
+		Ko'a'e
+		Ko'konoho'e'hehe
+		Komenahe'e
+		Konoo'e
+		Ho'ha'ene
+		Ho'eohtsestse'e
+		Hoheehe'e
+		Hohkahne
+		Hohkahnoneva'e
+		O'komeha'e
+		Mahpevame'ehne'e
+		Mahta'sohka'e
+		Ma'aataevonene'e
+		Ma'eseeota'e
+		Ma'esehona'e
+		Ma'etomona'e
+		Mene'a'e
+		Mene'emeona'e
+		Meona'hane'e
+		Nemene'hehe
+		Neme'oona'e
+		Noma'hemeona'e
+		Nonoma'e'e
+		Nova'e
+		Nova'hehe
+		Oestone'e
+		Ohtseemehe'e
+		Ohtsevatoehne'e
+		O'komeha'e
+		Oo'kemanohova'e
+		Ota'taveenova'e
+		Otseohtse'e
+		Otsestaoo'o
+		Otseve'eha'e
+		Ova'hehe
+		Pa'eesa'e
+		Pahahne'hehe
+		Pahoevotona'e
+		Paveena'e
+		Paveha'e
+		Pavemeona'e
+		Pavena'hane'e
+		Pavooma'e
+		Pe'a'e
+		Pe'pe'a'e
+		Sasoo'ohne'e
+		Se'henohkevoestaa'e
+		Seoneohtse'e
+		Seota'e
+		Soena'hane'e
+		So'aaheva'e
+		Soseskeameohtsehe'e
+		Sestoto'a'e
+		Sevone'e
+		Taa'evena'hane'e
+		Taa'eveohtse'e
+		Taaxemeoo'e
+		Tahovo'eoo'e
+		Tameesa'e
+		Ta'ovene'e
+		Taveenova'e
+		Taxena'hane'e
+		Toestohene'e
+		Tohtoo'a'e
+		To'estonene'hehe
+		To'keseohta'e
+		Toohe'e
+		Toohne'e
+		Tooveohtse'e
+		Tovoohne'e
+		Tseenaoo'e
+		Tsehesehe'e
+		Tsevatoehne'e
+		Vahkotse'e
+		Vanaheo'o
+		Vano'emeona'e
+		Vehona'e
+		Vehonena'hane'e
+		Ve'eenehe'e
+		Ve'ho'a'e
+		Ve'ho'ka'e
+		Ve'ho'keva'e
+		Ve'keseha'e
+		Ve'ohke'hehe
+		Ve'otse'e
+		Ve'otsena'hane'e
+		Ve'seheeva'e
+		Voaheva'e
+		Voaxaa'ema'heona'e
+		Voaxaa'emeona'e
+		Voe'ameohtseva'e
+		Voeheva'e
+		Voena'hane'e
+		Voestaa'e
+		Voestaeme'e
+		Voestanestseva'e
+		Voestanoehne'e
+		Voestaoheoeva'e
+		Voestasoemeona'e
+		Voesehe'e
+		Voesemeona'e
+		Vohkahe'he'e
+		Vohkeesa'e
+		Vohkeohta'hehe
+		Vohkeosa'e
+		Vohpahtsena'hehe
+		Vohpa'e'e
+		Vohpe'hame'e
+		Vohpemehe'e
+		Vo'komene'e
+		Vo'omene'e
+		Vonahe'e
+		Vonahe'kase'hehe
+		Vooheheva'e
+		Votona'e
+		Vovoehoehne'e
+		Xaeha'e
+		Xaoemehe'e
+		Xomoo'e
 	}
 	
 	common_last_names={
-	WIP
+		None
 	}
 	ethnicities = {
 		1 = native_american
@@ -986,12 +1383,8 @@ arapaho = { # and gros ventre
 	WIP
 	}
 	
-	noble_last_names = {
-	WIP
-	}
-	
 	common_last_names={
-	WIP
+		None
 	}
 	ethnicities = {
 		1 = native_american
@@ -2141,24 +2534,77 @@ nakoda={
 	}
 	graphics = generic
 }
-blackfoot={
+blackfoot={ #largely taken from The Blackfoot Papers, Volume 4 - specifically what's visible in the google books preview.
 	color = hsv{ 0.63 0.68 0.60 }
 	religion = animist
 	traits = { indigenous_american_heritage plains_trait algonquian_trait }
 	male_common_first_names={
-	WIP
+		Omach-katsi
+		Ninna-stakko
+		Manikap-pinna
+		Stumiks-onestae
+		Pitai-poka
+		Natachgoh-tstochk-itsee
+		Pitach-pikis
+		Inuk-sepisto
+		Ayokimma
+		Pita-onesta
+		Ini-kutsemee-otahs
+		Puk-saanee
+		Apau-machkan
+		Meekskim-achkuineman
+		Sitsikai-kwan
+		Ayee-bumpstan
+		Spayi-kwan
+		Pah-kops-co-map
+		Pachtsi-kakanasoyi
+		Inuksi-stumik
+		Imitaikwan
+		Napayin
+		Omachk-etsee-panikim
+		Stumiks-Auwauw-achkan
+		Inak-sapope
+		Awwee-nah
+		Mesami-okau
+		Sai-yeh
+		Mesam-otakauwanee
+		Akoch-ksik-otasiks
+		Stumiks-ato
+		Aisui-sami
+		Natuye-sepisto
+		Nato-apau
+		Itspyoch-kitopi
+		Sikch-poksim-api
+		Ka-taina
+		Makwi-powachsin
+		Apinakoy-pita
+		Apinakoy-nama
+		Katai-sokasimi
+		Sakuena-machkan
+		Apeeso-machkan
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Otaki
+		Pah-dahki
+		Pachtsi-iniskim
+		Achsa-ta-moh
+		Matui-yoch-kumee-aki
+		Eskohkin-aki
+		Achkuminem-aki
+		Mow-ti
+		Matsi-kamosaki
+		Aets-tsimah
+		Ksistapi-tuppi-aki
+		Ksakoy-aki
+		Matsoaki
+		Pikunn-aki
+		Sinopa-aki
+		Kah-no-ah
 	}
 	
 	common_last_names={
-	WIP
+		None
 	}
 	ethnicities = {
 		1 = native_american
@@ -2170,20 +2616,59 @@ siouan={ #Dhegihan and Chiwere peoples
 	religion = animist
 	traits = { indigenous_american_heritage siouan_trait }
 	male_common_first_names={
-	WIP
+		Emmett
+		George
+		Joseph
+		Fred
+		Joseph
+		Francis
+		Frank
+		Hiram
+		Thomas
+		Logan
+		William
+		Victor
+		Peter
+		James
 	}
 	
 	female_common_first_names = {
-	WIP
-	}
-	
-	noble_last_names = {
-	WIP
+		Lezitte
+		Lucy
+		Ellen
+		Julie
+		Lucille
+		Elise
+		Marie
+		Marjorie
+		Zazette
+		Susette
+		Ramona
+		Carrie
+		Martha
+		Dora
+		Mary
 	}
 	
 	common_last_names={
-	WIP
+		Bertrand
+		Tayiah
+		White_Hair
+		Pappan
+		Gonville
+		James
+		Chouteau
+		Bellmard
+		Lookout
+		Tallchief
+		Primeau
+		La_Flesche
+		Fontenelle
+		Clabber
+		Griffin
+		Revard
 	}
+
 	ethnicities = {
 		1 = native_american
 	}
