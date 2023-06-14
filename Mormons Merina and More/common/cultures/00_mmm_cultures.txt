@@ -2662,7 +2662,7 @@ haida={
 	traits = { indigenous_american_heritage northwest_coast }
 	
 	male_common_first_names={
-		K'łajangk'una
+		K'lajangk'una
 		Dah-egin
 		Eda_nsa
 		Tahaygen
