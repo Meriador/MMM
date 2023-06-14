@@ -3,20 +3,89 @@
 	religion = lds
 	traits = { anglophone european_heritage }
 	male_common_first_names = {
-		David
-		Hyrum
-		Joseph
+		Aaron Abraham Albert Alfred Alma Almon Alphonzo Amasa Ammon Andrew Anthon Aphek Aquila Aurelius
+		Benjamin Bessom Bringham
+		Charles Cornelius
+		Dale Daniel David
+		Edward Elias Elisha Enoch Erastus Ether Eugene Evan Ezra
+		Franklin
+		George Gideon
+		Heber Helaman Henry Hiram Horace Hosea Hugh Hyrum
+		Indiana Ira Isaac Isaiah Ishmael
+		Jacob James Jared Jedediah Jefferson Jeremiah Jesse John Joseph Joshua
+		Karl
+		LeGrand Lehi Leonard Levi Lorenzo Losee Lyman
+		Marion Marriner Marvin Matthias Moroni Moses Mosiah
+		Nathan Nephi Newel
+		Orrin Orson
+		Parley Peter Philip Phineas Porter Preston
+		Reed Reid Robert
+		Samuel Seth Shadrach Simeon Simon Spencer Sylvester
+		Thomas Truman
+		Willard William
+		Zerubbabel
 	}
 	female_common_first_names = {
-		Lucy
-		Emma
+		Abigail Alberta Ann Athalia Augusta
+		Betsy Beulah
+		Charity Clara Clarissa Cordelia Cyrene
+		Eliza Elizabeth Ellen Emeline Emily Emma Esther Esther_Smylinda
+		Florence Frances
+		Hannah Harriet
+		Ira
+		Johanna Julia
+		Keziah
+		Lavina Louisa Luacine Lucy Lydia
+		Marcia Margaret Marion Martha Mary Mary_Ann
+		Nancy Noel
+		Pearl Phebe Phoebe Polly
+		Rachel Rebecca Rhoda
+		Sarah Sarah_Ann Sophia Susan
+		Zervial
 	}
 	noble_last_names = {
-		Smith
-		Knight
+		Appleby
+		Ballard Bennett Benson Berhisel Burton
+		Cannon Carrington
+		Eccles Eldredge
+		Fielding
+		Grant Greene
+		Hardy Heywood Holbrook Hyde
+		Ivins
+		Kimball Knight
+		Lund Lyman
+		Merrill
+		Nelson Nibley
+		Penrose Phelps Pratt
+		Rich Richards Romney
+		Shumway Smith Smoot Snow
+		Taft Talmage Taylor Teasdale
+		Wells Whitney Woodruff Woolley
+		Young
 	}
 	common_last_names = {
-		Kimball
+		Anderson Ashton Angell Aagard Alford
+		Babbitt Barrett Bliss Browning Bullock Burns Blair Berthelson Blanchard
+		Cahoon Card Chase Clayton Cowley Crisman Crosby Colton Clawson Callis Clark Calder Christensen Cummings
+		Davis Dee Diamond
+		Erickson
+		Fullmer Ferguson Folsom Folkman
+		Groves Gammell Gardner Gregg
+		Hickenlooper Higbee Hunt Huntington Henriod Hooper Haven Hoffman Humes
+		Iversen
+		Johnson Jensen
+		Kempe
+		Lee Lewis Lott Lamoreaux Little Lybbert
+		Marriott McCune Miller Morgan Morley Murdock Moss Moench Moyle Mallett Miner McBride
+		Nebeker Nielsen
+		Pack Preston Pettigrew Peel Pedersen
+		Quimby
+		Roundy Rockwell Rawlins Reese
+		Sherwood Snyder Spencer Stout Stratton String Scott Stoddard Standing Savage
+		Thompson Thackham
+		Udall
+		Van_Cott
+		Wallace Ward West Willis Winder Wasson Waddel Watkins Winberg
 	}
 
 	graphics = european
@@ -691,6 +760,7 @@ antaimoro={
 	graphics = african
 }
 
+#WIP: not all of these namelists are of a particularly high quality. Some are fine, but others are kinda short or may have orthography issues or wrong names. I'd also like to look into potentially repurposing the common/noble/regal division to encompass social differences in europeanization, if it's possible to make the "noble chance" into more than a flat number
 ojibwe={
 	color = { 204 85 0 }
 	religion = animist
@@ -807,6 +877,7 @@ shoshone={ #much of this is from https://archive.org/details/jstor-983995 some f
 		Washakie
 		Potacello
 		Tonaioza
+		Terikee
 	}
 	
 	female_common_first_names = {
@@ -1376,11 +1447,340 @@ arapaho = { # and gros ventre
 	traits = { indigenous_american_heritage algonquian_trait plains_trait }
 	
 	male_common_first_names={
-	WIP
+		Seethii
+		Beehcowo'oot
+		Neniito'oubesiit
+		Cei'nootheih
+		Woxonoh'oe
+		Woxoc
+		Wosookutei
+		Wox
+		Wox_tebe'eihoo
+		Wox_ceeyou
+		Woxuu_niisook
+		Wox_beeseith
+		Coo'ooowut
+		Cei'isic
+		Nii'eihii_beeseith
+		Beneexookuuteet
+		Heebetohuuk
+		Beese'ei
+		Hinen_beeseith
+		Hotho'_beeseith
+		Beexooxeih
+		Wo'teen_nisice
+		Wo'teenox
+		Woo'teentoyo'oet
+		Wo'ooseinee'
+		Teebitheetheit
+		Wo'teenkoo'oh
+		Wo'teenii'eihii
+		Wo'teenooo
+		Woo'teenokoyeihit
+		Wo'teenees
+		Wo'teenibeteibetee
+		Ce'ees
+		Ceneeteenoxookeihi'
+		Tebiinis
+		Tebithei
+		Hiikoo'unen
+		Heneecee_ceniihoot
+		Heneecee_ce'etheis
+		Heneecee_boh'ooo
+		Ce'iiwoot
+		Cooh'ou
+		Wo'oot
+		Biiniisoo
+		Heniixoot_hitoniho'
+		Hohookee
+		Beh'eihohookee
+		Wox_ciiyei'
+		Co'ou'oo
+		Houunen
+		Toote'eit
+		Biikoo_tebiithee
+		Kooxesoot_seenookuu
+		Siisiic
+		Nii'eihiiwoxuu
+		Nii'eihiineecee
+		Nii'eihiibiixuut
+		Nii'eihii_hiitouwut
+		Neyeico'ook
+		Ciisinee
+		Noubee
+		Hihcebe'_cebih'o
+		Nii'eihii_cebih'o
+		Niitowuh'o
+		Neniitowuh'ohut
+		Hiitooxuh'ohut
+		Teesih'o
+		Be'enoo
+		Be'enouh
+		Neeyeiciinen
+		Bii'oxuyoo
+		Bici'ei
+		Coo
+		Ciitei
+		Hiinookothonit
+		Hinen_hitheih
+		Nii'oehit
+		Nonookuneseet
+		Hitouunen
+		Biise'ei
+		Nii'eihii_honobetouu
+		Howohesei
+		Hoowohooseiceiteet
+		Hoowohuusebeit
+		Neniitowooto'_nec
+		Co'ouuthii'eihii
+		Ni'itou'
+		Neeyeic_tou'
+		Nii'eihio_xonooneenoot
+		Hooxuuniitouu
+		Noo'oeniitouu
+		Heeyei_niitouu
+		Yeiy_niitouu
+		Woxhoox
+		Hooxei_hesnee
+		Wo'owuunen
+		Siiyonii'
+		Thonouhuunen
+		Nowooth
+		Ho'oeetiinohookee
+		Heth_hokeciih
+		Hecexo'eiihehi'
+		Hecesii'eihii
+		Heeso'ouhut
+		Wookuunehe'
+		Beethei_hokeciih
+		Heecexookeih'ineet
+		Hiisiis_hokeciih
+		Hooxei_hokeciih
+		Bicinen
+		Wox_niiseih
+		Neecee_niiseih
+		Seeth_niiseih
+		Heeni'eit
+		Ciisinehe'
+		Nii'eihii_nonoo'ein
+		Hiinos
+		Cei'inotheih
+		Cei'ei'is
+		Cee'eihteet
+		Woo'uh'ei
+		Hoowoo'
+		Heebiyoo_nihnotino'
+		Woxuu_wootheeno'
+		Houu_wootheeno'
+		Nii'eihii_wootheeno'
+		Hoowohoo'eit
+		Cetoun
+		Howoh'okooxuno'
+		Beeteet
+		Hotho'_niitowusei
+		Hohe'_honoh'oe
+		Boh'oohoox
+		Biikoonehe'
+		Nookonii'eihii
+		Hoowutei'
+		Houu_ciineih
+		Nii'eihii_beh'eih
+		Nootinei_betebi
+		Beeteibetee_betebi
+		Beh'ei
+		Hinono'ei_beh'ei
+		Beethei_beh'ei
+		Seetee
+		Heteihio
+		Ko'ookunootinei
+		Yeiy
+		Cowo'ouh
+		Bisceih
+		Beesii'oothit
+		Wohoono'
+		Biixonoo
+		Woxoothoobeih
+		Ce'itheeni'ei
+		Hohe'_hitheih
+		Ni'ook
+		Hoonino'
+		Nooku
+		Hiinookohunouwut
+		Coo'ou
+		Seyeiwo'oot
+		Be'eekuuni'
+		Be'iicooo
+		Be'ibiixuut
+		Be'iceetee
+		Hoowoo'uunonoh'e
+		Bo'ooceibiis
+		Hooxei_bo'ooneih
+		Cooxoo'ei
+		Thoothouuteiseet
+		Hoh'onookee
+		Niiteinootee
+		Beeheeteihit
+		Heeyeikoohut
+		Wooteinooni'i_biiciixo
+		Tethous
+		Thiikoni'ei'oo
+		Kokuyeneecee
+		Hites
+		Tooci'eit
+		Notkon
+		Hoonouseet
+		Tooxu'ooneet
+		Heeniibeet
+		Neniibei'i
+		Heeceihi'
+		Wohok
+		Neeh'eiite'
+		Nouuhehe'
+		Hihcebe'_niibei'i
+		Hinow_niibei'i
+		Wohooniibei'i
+		Teiitooniibei'i
+		Neci'_niitouu
+		Niitowuniibei'i
+		Niiteiniibei'i
+		Heneecee_thi'ok
+		Teenokuhu'
+		Teenok
+		Nowootok
+		Neniitootoxuuneet
+		Thiikonou'u
+		Wox_noko
+		Nowoniinen
+		Nooniisebeit
+		Heseihteesiisoo
+		Wox_kokuteeneih
+		Kokteenii'eihii
+		Neniiseekuut
+		Hotho'
+		Hotho'_bisisee
+		Tou'
+		Neehiithei'_tou'
+		Tei'ox
+		Hithobeete'
+		Tei'ineecee
+		Nii'eihii_no'oteih
+		Hiisiisbooo
+		Niinen
+		Hiinohooteinit
+		Beicito
+		Thiiye'ei
+		Heneecee_neh'ino'
+		Hotho'_neh'ino'
+		Be'enou'u
+		Nii'eihii_niisino'
+		Boh'ooo_ceebiseet
+		Hiiyoothicebisee
+		Neehiithei'_cebis
+		Hoh'eni'_ceebiseet
+		Hono'_cebisee
+		Cehee'ei
+		Biixonoo_hiinookuunit
+		Nisihiinec
+		Wox_nookeih
+		Nookunih'eeno'
+		Thiikon_nookeih
+		Woxhoox_nookeih
+		Nookookeihi'
+		Hotho'_nookeih
+		Hooxei_nookeih
+		Hooxei_woo'einoneet
+		Nookonii'oot
+		Wotouu'
+		Wox_nihooheih
+		Nihoonou'
+		Nihoonookuu
+		Niihoone'eit
+		Woxhoox_nihooneih
+		Hinen_nihooneih
+		Yeiy_nihooneih
+		Hoh'onookee_nihooneih
+		Heneeceehe'
 	}
 	
 	female_common_first_names = {
-	WIP
+		Hinono'usei
+		Woxuusei
+		Hooonisei
+		Hitouusei
+		Wo'teeniwo'oosei
+		Wo'teenii'eihisei
+		Hisei_wo'teeneih
+		Ceneeteenii'ehisei
+		Ben'oohcebisei
+		Ceeh'eenesei
+		Be'etheinoonesei
+		Notiniisei
+		Hinotiniisei
+		Nii'ehisei
+		Biito'owuusei
+		Biito'owuunesei
+		Hiwoxuunesei
+		Coothesei
+		Hithouunotho'usei
+		Hiinih'ohuunesei
+		Nouuhusei
+		Nookothon
+		Nookothonii'ehisei
+		Hisei_hiinookothonit
+		Hisei_niitouu
+		Niitowusei
+		Hisei_niiseih
+		Woxu'uunesei
+		Hoh'eniisei
+		Biixonoonesei
+		Ni'isei
+		Hisei_hitheih
+		Bei'ii'ehisei
+		Bo'ookenesei
+		Hiisiikosoobe'isei
+		Yookoxuu_be'eih
+		Hisei_be'eih
+		Hisei_koutok
+		Hoh'onookeis
+		Hoh'onookee_betebi
+		Nookhooseinesei
+		Nookhooseis
+		Nookhoosei
+		Wooniibei'i
+		Woxuu_niibei'i
+		Niibeihisei
+		Be'etheinooniibesei
+		Hohe'_niibei'i
+		Seethiiniibei'i
+		Hono'_niibei'i
+		Hotho'_neniibei'i
+		Niibeis
+		Hisei_niibei'i
+		Nootineehisei
+		Hisei_thi'ok
+		Hono'usei
+		Hotho'usei
+		Tei'ibetebi
+		Tei'itees
+		Hiisiis_bisisee_hisei
+		Ni'oxu'unesei
+		Neci'ook
+		Neeyei
+		Hotho'_cebisei
+		Hiinotisei
+		Neyooxetiisei
+		Kokiyonesei
+		Nookbiixoneesei
+		Nookesei
+		Heseisiinesei
+		Heetooke'_hisei
+		Hisei_ciitei
+		Hisei_niitowus
+		Hisei_noo'oes
+		Hisei_thoothouuteiseet
+		Hiiyoothbisisei
+		Nihoonoobe'isei
+		Nihoonees
 	}
 	
 	common_last_names={
@@ -2510,24 +2910,90 @@ kutenai={
 	}
 	graphics = generic
 }
-nakoda={
+nakoda={ #largely from https://www.gutenberg.org/files/49557/49557-h/49557-h.htm#NAMES_AND_EVENTS_IN_HISTORY
 	color= { 105 145 186 }
 	religion = animist
 	traits = { indigenous_american_heritage plains_trait siouan_trait }
 	male_common_first_names={
-	WIP
+		Wi-jun-jon
+		Mah-to-wit-ko
+		Hai-sap_Sap-pah
+		Kee-hee-nah
+		Ya-chunk-pe_Wah-ke-un
+		Pe-gah
+		Shunk-chan-ca-hoo
+		Wah-min-de_To-pah
+		O-he-an-ah
+		Wah-bo-san-dah
+		Conghai
+		Ean-hhai-nah
+		Conghai-ska
+		Muk-kah-na-boo-boo
+		Wah-ghan-seecha_Och-she
+		Muzza_Och-she
+		Hhom-bo-oah_Wah-ke-un
+		Ya-tunga-hho-tah
+		Chin-chah-nah_Ke-ni-ah
+		Kun-sha-chah
+		Chin-chah-nah_He-wash-tai
+		Etai-tah_Tun-gah
+		Me-nazh-zhah
+		Yah-to-kah-hhai_noom-pah
+		He-hun_Tungah
+		Wam-min-de_Tun-gah
+		Wah-ghan-see-cha_noompa_och-she
+		Chai-shah
+		Ekando_He_chin-ah
+		Tah-tungah_Du-tah
+		Tah-tungah_Shee-chah
+		Wah_Du-tah
+		Wah-ke_Un-to
+		O-canah-hhai
+		Minne_Naz-zhe
+		We-ze-zeet-ka_Utah
+		Sho-to-zshu_Och-she
+		Hai-kan-dai_Kan-dai-ghah
+		Etai-o-ke_Nun-ei-a
+		Etai_Wah-ghan
+		Pah_ska-nah
+		Esh-tai-o_Ghe-nah
+		Hee-boom_An-doo
+		Ah-wah_minne_o_minne
+		Wah-kee-e-nah
+		Menah
+		Pai-pach_Kich-tah
+		Shunga_Ou-nah
+		Shak-kai-nah
+		Ca-wai-ghai_Man-ne
+		Wa-caun-too
+		Coo-tai-nah
 	}
 	
 	female_common_first_names = {
-	WIP
+		Kan-dai-ghah_We-yah
+		Hoo_wash_e_nah
+		Hai-kees-kah_We-yah
+		Te_Owah_Ho-wat-tah
+		Wah-ke-un_Topa
+		Topa_Weyah
+		Man-ka-cha_Ca-ghah
+		Te-ien_da_weyah
+		Moh_pe_ah_caghah
+		Te_opah_u-cai-ghah
+		Hoo_pah_hoo
+		Coughai_a-hho-ton
+		Pah-kah_shah-nah
+		Pah-hah_e-u-me-ne
+		Chai-tun_We-yah
+		Hoon_yuh_shah
+		Ap-pai_Wam-min-de_E-i-ah
+		Wah-ghan_She-chah-ze
+		Chu-we_Muz-zah
+		We-yah_Skah
 	}
-	
-	noble_last_names = {
-	None
-	}
-	
+
 	common_last_names={
-	None
+		None
 	}
 	ethnicities = {
 		1 = native_american
