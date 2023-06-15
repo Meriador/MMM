@@ -1,0 +1,34 @@
+﻿COUNTRIES = {
+	c:WAS = {
+		activate_law = law_type:law_clerical_education
+	
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:TAS = {
+		activate_law = law_type:law_clerical_education
+	
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:SAS = {
+		activate_law = law_type:law_clerical_education
+	
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:NSW = {
+		activate_law = law_type:law_clerical_education
+	
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+}

@@ -1,1 +1,1 @@
-﻿
+﻿#just suppressing the vanilla file so the game doesn't whine about MAD not existing lol

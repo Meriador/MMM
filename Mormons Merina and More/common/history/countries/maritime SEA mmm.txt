@@ -1,0 +1,5 @@
+﻿COUNTRIES = {
+	c:LAN = {
+		activate_law = law_type:law_elected_boards
+	}
+}

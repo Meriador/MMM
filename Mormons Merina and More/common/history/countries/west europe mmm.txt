@@ -1,0 +1,9 @@
+﻿COUNTRIES = {
+	c:FRA = {
+		activate_law = law_type:law_professional_academia
+		activate_law = law_type:law_national_schools
+	}
+	c:GBR = {
+		activate_law = law_type:law_clerical_education
+	}
+}

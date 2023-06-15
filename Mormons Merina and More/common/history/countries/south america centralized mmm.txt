@@ -1,0 +1,56 @@
+﻿COUNTRIES = {
+	c:ARG = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:BOL = {		
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:CHL = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:CLM = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:ECU = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:PEU = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:PRG = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:URU = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:VNZ = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+}

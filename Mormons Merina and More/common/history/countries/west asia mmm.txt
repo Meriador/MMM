@@ -1,0 +1,8 @@
+﻿COUNTRIES = {
+	c:TUR = {
+		ig:ig_devout2 = {
+			remove_ideology =  ideology_evangelist
+			add_ideology = ideology_ottomanist
+		}
+	}
+}

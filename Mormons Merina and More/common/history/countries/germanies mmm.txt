@@ -1,0 +1,10 @@
+﻿COUNTRIES = {
+	c:PRU = {
+		activate_law = law_type:law_professional_academia
+		activate_law = law_type:law_national_schools
+	}
+	c:AUS = {
+		activate_law = law_type:law_professional_academia
+		activate_law = law_type:law_national_schools
+	}
+}

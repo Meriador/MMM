@@ -389,7 +389,7 @@ liberal_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_local_schools
+						has_law = law_type:law_religious_schools
 						has_law = law_type:law_no_schools
 					}
 				}

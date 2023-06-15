@@ -1,0 +1,93 @@
+﻿COUNTRIES = {
+	c:CUB = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:HAI = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:HBC = {
+		activate_law = law_type:law_clerical_education
+
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:MEX = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:NVS = {
+		activate_law = law_type:law_clerical_education
+
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:ONT = {
+		activate_law = law_type:law_clerical_education
+
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:ORG = {
+		activate_law = law_type:law_clerical_education
+
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:QUE = {
+		activate_law = law_type:law_clerical_education
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:SEQ = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:TEX = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:UCA = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:USA = {
+		activate_law = law_type:law_elected_boards
+
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+
+		trigger_event = {
+			id = lds_premigration.9
+		}
+	}
+}

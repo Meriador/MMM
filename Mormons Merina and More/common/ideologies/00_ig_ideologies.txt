@@ -114,7 +114,7 @@ ideology_individualist = {
 		law_private_schools = strongly_approve
 		law_national_schools = approve
 		law_public_schools = neutral
-		law_local_schools = neutral
+		law_religious_schools = neutral
 		law_no_schools = disapprove
 	}
 	
@@ -172,7 +172,7 @@ ideology_pious = {
 	lawgroup_education_system = {
 		law_national_schools = approve
 		law_public_schools = neutral
-		law_local_schools = approve
+		law_religious_schools = approve
 		law_private_schools = disapprove
 		law_no_schools = neutral	
 	}
@@ -418,7 +418,7 @@ ideology_liberal = {
 		law_public_schools = approve
 		law_national_schools = disapprove
 		law_private_schools = neutral
-		law_local_schools = neutral
+		law_religious_schools = disapprove
 		law_no_schools = disapprove
 	}
 }
@@ -512,7 +512,7 @@ ideology_proletarian = {
 		law_public_schools = approve
 		law_national_schools = neutral
 		law_private_schools = neutral
-		law_local_schools = neutral	
+		law_religious_schools = neutral	
 		law_no_schools = disapprove	
 	}
 }

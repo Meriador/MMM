@@ -19,7 +19,7 @@
 	}
 }
 
-law_local_schools = {
+law_religious_schools = {
 	group = lawgroup_education_system
 
 	progressiveness = 0
@@ -28,13 +28,22 @@ law_local_schools = {
 		academia
 	}
 
+	unlocking_laws = {
+		law_clerical_education
+	}
+
 	disallowing_laws = {
 		law_informal_education
+		law_total_separation
+		law_state_atheism
+		law_serfdom
 	}
 
 	institution = institution_schools
 	institution_modifier = {
-		state_education_access_add = 0.075
+		state_conversion_mult = 0.2
+		state_education_access_add = 0.08
+		interest_group_ig_devout_pol_str_mult = 0.1
 	}
 
 	possible_political_movements = {

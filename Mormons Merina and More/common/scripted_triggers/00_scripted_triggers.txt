@@ -38,7 +38,7 @@ country_has_voting_franchise = {
 
 country_has_education_system = {
 	OR = {
-		has_law = law_type:law_local_schools
+		has_law = law_type:law_religious_schools
 		has_law = law_type:law_public_schools
 		has_law = law_type:law_private_schools
 		has_law = law_type:law_national_schools
@@ -1726,6 +1726,7 @@ can_have_radical_leader = { # interest_group scope
 		is_interest_group_type = ig_trade_unions
 		is_interest_group_type = ig_petty_bourgeoisie
 		is_interest_group_type = ig_industrialists
+		is_interest_group_type = ig_devout2
 	}
 }
 

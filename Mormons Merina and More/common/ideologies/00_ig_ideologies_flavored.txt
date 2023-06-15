@@ -113,7 +113,7 @@ ideology_junker_paternalistic = {
 		law_private_schools = neutral
 		law_national_schools = strongly_approve
 		law_public_schools = neutral
-		law_local_schools = neutral
+		law_religious_schools = neutral
 		law_no_schools = disapprove
 	}
 
