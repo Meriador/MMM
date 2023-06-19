@@ -1,0 +1,14 @@
+﻿je_katips_legacy = {
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    complete = {
+		AND = {
+			owns_entire_state_region = STATE_BINH_DINH
+			owns_entire_state_region = STATE_ANNAM
+		}
+	}
+	on_complete = {
+        trigger_event = { id = vietnam.1 } # Katip's Legacy
+    }
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

@@ -1,0 +1,98 @@
+﻿je_lds_migration = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = lds_migration.1 }
+	}
+	
+	fail = {
+		OR = {
+			has_law = law_type:law_state_religion
+			has_law = law_type:law_state_atheism
+			has_law = law_type:law_ethnostate
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_technocracy
+			has_law = law_type:law_monarchy
+			has_law = law_type:law_theocracy
+		}
+	}
+	
+	on_fail = {
+		trigger_event = { id = lds_migration.9 }
+	}
+	
+	invalid = {
+		OR = {
+			AND = {
+				has_variable = lds_far_west
+				NOT = { any_scope_state = { state_region = { has_variable = far_west } } }
+			}
+			AND = {
+				has_variable = lds_nauvoo
+				NOT = { any_scope_state = { state_region = { has_variable = nauvoo_site } } }
+			}
+		}
+	}
+	
+	on_invalid = {
+		trigger_event = { id = lds_migration.2 }
+	}
+	
+	timeout = 4380
+	
+	on_timeout = {
+		trigger_event = { id = lds_migration.3 }
+	}
+	
+	current_value = {
+		value = var:lds_agitation
+	}
+	
+	goal_add_value = {
+		add >= 16
+	}
+	
+	progressbar = yes
+	
+	weight = 5000
+	should_be_pinned_by_default = yes
+	
+	on_monthly_pulse = {
+		random_events = {
+			2 = lds_premigration.10 #mormon farms attacked
+			1 = lds_premigration.11 #forced vigilante disavowals
+			4 = lds_premigration.12 #church land dispute
+			2 = lds_premigration.13 #nonmormons threatened by expansion
+			1 = lds_premigration.14 #rumors of theocracy
+			1 = lds_premigration.15 #rumors of infidelity
+			4 = lds_premigration.16 #local election violence
+			2 = missionary.1 #successful mission
+			34 = 0
+		}
+	}
+	
+	on_yearly_pulse = {
+		random_events = {
+			1 = lds_premigration.6 #boggs assassination
+			2 = 0
+		}
+	}
+	
+	on_weekly_pulse = {
+		events = {
+			lds_premigration.1 #kirtland safety society
+			lds_premigration.101 #if ohio stops being america first
+			lds_premigration.2 #missouri mormon war
+			lds_premigration.102 #missouri mormon war but contrived
+			lds_premigration.3 # opposition newspaper destroyed
+			lds_premigration.5 # election campaign
+		}
+	}
+}

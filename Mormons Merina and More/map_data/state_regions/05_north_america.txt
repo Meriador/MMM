@@ -1161,6 +1161,7 @@ STATE_NUNAVUT = {
         bg_logging = 26
         bg_fishing = 12
     }
+    naval_exit_id = 3044
 }
 
 STATE_BERMUDA = {
