@@ -62,6 +62,39 @@ law_religious_schools = {
 	}
 }
 
+law_mission_schools = {
+	group = lawgroup_education_system
+
+	progressiveness = 0
+
+	is_visible = {
+		OR = {
+			has_law = law_type:law_informal_education
+			has_law = law_type:law_mission_societies
+		}
+	}
+
+	unlocking_technologies = {
+		academia
+	}
+
+	unlocking_laws = {
+		law_mission_societies
+	}
+
+	disallowing_laws = {
+		law_state_atheism
+		law_state_religion
+		law_serfdom
+	}
+
+	institution = institution_schools
+	institution_modifier = {
+		state_education_access_add = 0.08
+		country_academics_pol_str_mult = 0.25
+	}
+}
+
 law_private_schools = {
 	group = lawgroup_education_system
 	
@@ -114,10 +147,11 @@ law_public_schools = {
 	unlocking_technologies = {
 		empiricism
 	}
-
+	
 	disallowing_laws = {
 		law_serfdom
 		law_informal_education
+		law_mission_societies
 	}
 	
 	institution = institution_schools
@@ -172,6 +206,7 @@ law_national_schools = {
 		law_anarchy
 		law_elected_boards
 		law_informal_education
+		law_mission_societies
 		#include federalism stuff if that ever comes about
 	}
 

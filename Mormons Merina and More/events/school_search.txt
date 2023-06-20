@@ -1,0 +1,5 @@
+﻿namespace = school_search
+
+school_search.1 = {
+	
+}

@@ -179,7 +179,7 @@ ideology_pious = {
 
 	lawgroup_education_leadership = {
 		law_informal_education = neutral
-		law_mission_school = disapprove
+		law_mission_societies = disapprove
 		law_clerical_education = strongly_approve
 		law_imperial_examination = approve
 		law_elected_boards = neutral
@@ -317,7 +317,7 @@ ideology_meritocratic = {
 		law_imperial_examination = approve
 		law_professional_academia = approve
 		law_modern_school = disapprove
-		law_mission_school = neutral
+		law_mission_societies = neutral
 	}
 }
 
@@ -434,13 +434,13 @@ ideology_anti_clerical = {
 	}
 	
 	lawgroup_education_leadership = {
-		law_informal_education = neutral
+		law_informal_education = disapprove
 		law_clerical_education = disapprove
 		law_imperial_examination = neutral
 		law_elected_boards = neutral
 		law_professional_academia = neutral
 		law_modern_school = disapprove
-		law_mission_school = disapprove
+		law_mission_societies = neutral
 	}
 
 	lawgroup_bureaucracy = {

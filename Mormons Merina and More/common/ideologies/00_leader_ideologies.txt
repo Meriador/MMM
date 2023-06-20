@@ -3315,7 +3315,7 @@ ideology_positivist = {
 		law_elected_boards = approve
 		law_professional_academia = strongly_approve
 		law_modern_school = strongly_disapprove
-		law_mission_school = strongly_disapprove
+		law_mission_societies = strongly_disapprove
 	}
 	
 	possible = {

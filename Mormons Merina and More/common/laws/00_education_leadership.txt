@@ -9,14 +9,14 @@
 	can_enact = {
 		OR = {
 			has_law = law_type:law_informal_education
-			has_law = law_type:law_mission_school
+			has_law = law_type:law_mission_societies
 		}
 	}
 
 	is_visible = {
 		OR = {
 			has_law = law_type:law_informal_education
-			has_law = law_type:law_mission_school
+			has_law = law_type:law_mission_societies
 		}
 	}
 
@@ -26,7 +26,7 @@
 	}
 
 	possible_political_movements = {
-		law_mission_school
+		law_mission_societies
 	}
 
 	pop_support = {
@@ -72,7 +72,7 @@ law_clerical_education = {
 		OR = {
 			NOR = {
 				has_law = law_type:law_informal_education
-				has_law = law_type:law_mission_school
+				has_law = law_type:law_mission_societies
 			}
 			has_variable = var_can_start_school_push_clerical
 		}
@@ -130,7 +130,7 @@ law_imperial_examination = {
 			AND = {
 				NOR = {
 					has_law = law_type:law_informal_education
-					has_law = law_type:law_mission_school
+					has_law = law_type:law_mission_societies
 				}
 				country_has_state_religion = rel:mahayana
 			}
@@ -194,7 +194,7 @@ law_elected_boards = {
 		OR = {
 			NOR = {
 				has_law = law_type:law_informal_education
-				has_law = law_type:law_mission_school
+				has_law = law_type:law_mission_societies
 			}
 			has_variable = var_can_start_school_push_elected
 		}
@@ -262,7 +262,7 @@ law_professional_academia = {
 		OR = {
 			NOR = {
 				has_law = law_type:law_informal_education
-				has_law = law_type:law_mission_school
+				has_law = law_type:law_mission_societies
 			}
 			has_variable = var_can_start_school_push_professional
 		}
@@ -320,14 +320,14 @@ law_modern_school = {
 		OR = {
 			NOR = {
 				has_law = law_type:law_informal_education
-				has_law = law_type:law_mission_school
+				has_law = law_type:law_mission_societies
 			}
 			has_variable = var_can_start_school_push_anarchist
 		}
 	}
 }
 
-law_mission_school = {
+law_mission_societies = {
 	group = lawgroup_education_leadership
 
 	#icon = 
@@ -342,14 +342,14 @@ law_mission_school = {
 	can_enact = {
 		OR = {
 			has_law = law_type:law_informal_education
-			has_law = law_type:law_mission_school
+			has_law = law_type:law_mission_societies
 		}
 	}
 
 	is_visible = {
 		OR = {
 			has_law = law_type:law_informal_education
-			has_law = law_type:law_mission_school
+			has_law = law_type:law_mission_societies
 		}
 	}
 

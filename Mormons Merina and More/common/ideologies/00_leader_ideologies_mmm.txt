@@ -229,7 +229,7 @@ ideology_leader_pious = {
 		law_elected_boards = approve
 		law_professional_academia = neutral
 		law_modern_school = strongly_disapprove
-		law_mission_school = strongly_disapprove
+		law_mission_societies = strongly_disapprove
 	}
 	
 	lawgroup_health_system = {

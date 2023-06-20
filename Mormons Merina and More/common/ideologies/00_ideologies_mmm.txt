@@ -48,7 +48,7 @@ ideology_evangelist = {
 		law_elected_boards = approve
 		law_professional_academia = neutral
 		law_modern_school = strongly_disapprove
-		law_mission_school = disapprove
+		law_mission_societies = disapprove
 	}
 }
 
@@ -74,7 +74,7 @@ ideology_proselytist = {
 		law_elected_boards = approve
 		law_professional_academia = neutral
 		law_modern_school = strongly_disapprove
-		law_mission_school = disapprove
+		law_mission_societies = disapprove
 	}
 	
 	lawgroup_colonization = {
@@ -189,7 +189,7 @@ ideology_ottomanist = {
 		law_elected_boards = approve
 		law_professional_academia = approve
 		law_modern_school = strongly_disapprove
-		law_mission_school = disapprove
+		law_mission_societies = disapprove
 	}
 
 	lawgroup_distribution_of_power = {

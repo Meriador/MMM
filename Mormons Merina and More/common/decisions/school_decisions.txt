@@ -1,0 +1,16 @@
+﻿investigate_foreign_schools = {
+    is_shown = {
+		has_journal_entry = je_establishing_academia
+	}
+
+	is_possible = {
+		NOT = { has_variable = investigating_schools }
+	}
+
+	when_taken = {
+		trigger_event = school_search.1
+		set_variable = investigating_schools
+	}
+
+	ai_chance = 25 #WIP - add details, make it part of government strategy. Hardline traditionalists should avoid this, but regular conservatives should see this as a better alternative to mission schools, especially if mission societies have established themselves already.
+}
