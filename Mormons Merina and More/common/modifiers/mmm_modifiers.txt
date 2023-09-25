@@ -71,3 +71,9 @@ esteemed_trade_partner = {
 
 	country_trade_route_competitiveness_mult = 0.2
 }
+
+school_search_bureaucracy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+
+	country_bureaucracy_add = -10
+}

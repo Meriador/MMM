@@ -296,14 +296,28 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 		Ratsimihety
 		Ratsitohaina
 		Ravonjy
+		Ravalontsalama
 		Razafianaka
 		Razafimbahiny
 		Razafinjara
 		Razakaratrimo
 		Tsinompo
 		Tsitakatrandriana
+		Rampola
+		Ramanohy
+		Raombana
+		Rabodolahy
+		Rakotovahiny
+		Rakotobe
+		Ratsiorimisa
+		Faralahisolo
+		Rakoto
+		Ratsitovana
+		Rahovy
 	}
 	male_noble_first_names = {
+		Andrianisa
+		Andriamihaja
 		Andriamamilazabe
 		Andriamampandry
 		Andriamanalina
@@ -372,6 +386,30 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 		Razafinjara
 		Razakaratrimo
 		Zafindralambo
+		Ravalontsalama
+		Rampola
+		Ramanohy
+		Raombana
+		Rabodolahy
+		Rakotovahiny
+		Andriantsalama
+		Raolombelona
+		Razafinkarefo
+		Ikiotomavo
+		Ramboa
+		Rafaralahy
+		Andriamisetra
+		Ratefy
+		Zafincarafe
+		Ambatonankady 
+		Andriamatsa
+		Rasikiha
+		Andriamatsa_Rasikiha
+		Rakoto
+		Andriantana
+		Ratsitovana
+		Rahovy
+		Simisate
 	}
 	female_common_first_names = {
 		Imaitsoanala
@@ -456,12 +494,36 @@ merina={ #https://gw.geneanet.org/aviavy is the source for most of these; it's a
 		Rakaloanosy
 		Ranoro
 		Rasoafaravavy
+		Rasendrasoazokiny
+		Rasendrasoazandriny
+		Rasamana
+		Ravolamisa
+		Rabodomirahalahy
+		Rafostsirahety
+		Ravoandriana
+		Ravo
+		Ikiotomavo
+		Rassa
+		Tarata
+		Teraka
 	}	
 	noble_last_names = {
 		None
 	}
-	common_last_names={
-		None
+	common_last_names={ #taken from more modern sources; checking which names could reasonably be used as last names basically. could use some beefing up
+		Razanabonjy
+		Mandresy
+		Razanamparany
+		Ramamonjisoua
+		Rabetsara
+		Ramamonjisoua
+		Ravelonjato
+		Rabeony
+		Noroaly
+		Amboaratiana
+		Rafaramino
+		Ratovoarisoa
+		Tsilavina
 	}
 	ethnicities = {
 		1 = polynesian
@@ -484,6 +546,9 @@ betsimisaraka={
 		Tsifanda
 		Rahidy
 		Linta
+		Chichipi
+		Fiche
+		Berora
 	}
 	male_noble_first_names = {
 		Ratsimilaho
@@ -498,6 +563,10 @@ betsimisaraka={
 		Tsifanda
 		Rahidy
 		Linta
+		Chichipi
+		Tsiatana
+		Fisatra
+		Berora
 	}
 	female_common_first_names = {
 		Bety
@@ -513,12 +582,26 @@ betsimisaraka={
 		Tsiresy
 		Ravahiny
 		Matave
+		Mandit_Sara
 	}	#first 5 names specifically betsimisaraka, those thereafter to fill out the list
 	noble_last_names = {
 		None
 	}
-	common_last_names={
-		None
+	common_last_names={ #lowlanders all share these; I'm already struggling to find first names, let alone "last names" for groups like the Antaimoro 
+		Nirina
+		Razanamparany
+		Bezara
+		Mahazaka
+		Sebany
+		Remahita
+		Velonirina
+		Harifanja
+		Mamitiana
+		Fanantera
+		Rasolonjatovo
+		Behanarina
+		Rabenirina
+		Ratsifa
 	}
 	ethnicities = {
 		1 = african
@@ -607,7 +690,20 @@ bara={
 		None
 	}
 	common_last_names={
-		None
+		Nirina
+		Razanamparany
+		Bezara
+		Mahazaka
+		Sebany
+		Remahita
+		Velonirina
+		Harifanja
+		Mamitiana
+		Fanantera
+		Rasolonjatovo
+		Behanarina
+		Rabenirina
+		Ratsifa
 	}
 	ethnicities = {
 		1 = african
@@ -638,6 +734,7 @@ sakalava={
 		Lahifotsy
 		Tsimenta
 		Toakafo
+		Chichipi
 	}
 	male_noble_first_names = {
 		Andriamisara
@@ -666,6 +763,7 @@ sakalava={
 		Tsimenta
 		Toakafo
 		Tsimanongarivo
+		Chichipi
 	}
 	female_common_first_names = {
 		Vohilakatsy
@@ -685,12 +783,26 @@ sakalava={
 		Kelisambay
 		Matave
 		Matavy
+		Rasalimo
 	}	
 	noble_last_names = {
 		None
 	}
 	common_last_names={
-		None
+		Nirina
+		Razanamparany
+		Bezara
+		Mahazaka
+		Sebany
+		Remahita
+		Velonirina
+		Harifanja
+		Mamitiana
+		Fanantera
+		Rasolonjatovo
+		Behanarina
+		Rabenirina
+		Ratsifa
 	}
 	ethnicities = {
 		1 = african
@@ -713,6 +825,8 @@ antaimoro={
 		Ramarohala
 		Rabesirana
 		Panolahe
+		Verkey
+		Mancana
 	}
 	male_noble_first_names = {
 		Andriamahazonoro
@@ -752,7 +866,20 @@ antaimoro={
 		None
 	}
 	common_last_names={
-		None
+		Nirina
+		Razanamparany
+		Bezara
+		Mahazaka
+		Sebany
+		Remahita
+		Velonirina
+		Harifanja
+		Mamitiana
+		Fanantera
+		Rasolonjatovo
+		Behanarina
+		Rabenirina
+		Ratsifa
 	}
 	ethnicities = {
 		1 = african

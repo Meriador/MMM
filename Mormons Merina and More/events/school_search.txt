@@ -1,5 +1,252 @@
 ﻿namespace = school_search
 
-school_search.1 = {
+#change image and events away from military parades
+
+school_search.1 = { #Initial event, states intention to start looking and sets appropriate things in motion
 	
+	type = country_event
+	placement = ROOT
+
+	title = school_search.1.t
+	desc = school_search.1.d
+	flavor = school_search.1.f
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+	option = {
+		name = school_search.1.a
+		add_modifier = {
+			name = school_search_bureaucracy
+			months = -1
+		}
+		hidden_effect = {
+			trigger_event = { 
+				id = school_search.2
+			}
+		}
+	}
+}
+
+school_search.2 = { #second event, lists some viable targets and what kind of law they'll get out of it
+	
+	type = country_event
+	placement = ROOT
+
+	title = school_search.2.t
+	desc = school_search.2.d
+	flavor = school_search.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+	immediate = {
+		random_country = {
+			limit = {
+				NOR = {
+					has_attitude = {
+						who = ROOT
+						attitude = disinterested
+					}
+					relations:ROOT <= relations_threshold:poor
+					has_law = law_type:law_informal_education
+					has_law = law_type:law_mission_schools
+					AND = {
+						has_law = law_type:law_clerical_education
+						NOT = { country_has_state_religion = root.religion }
+					}
+					AND = {
+						has_law = law_type:law_imperial_examination
+						is_country_type = unrecognized
+					}
+				}
+			}
+			save_scope_as = first_school_candidate
+		}
+		random_country = {
+			save_temporary_scope_as = searching_scope
+			limit = {
+				NOR = {
+					has_attitude = {
+						who = ROOT
+						attitude = disinterested
+					}
+					scope:searching_scope.relations:root <= relations_threshold:poor
+					has_law = law_type:law_informal_education
+					has_law = law_type:law_mission_schools
+					AND = {
+						has_law = law_type:law_clerical_education
+						NOT = { country_has_state_religion = root.religion }
+					}
+					scope:first_school_candidate = THIS
+				}
+			}
+			save_scope_as = second_school_candidate
+		}
+		random_country = {
+			save_temporary_scope_as = searching_scope
+			limit = {
+				NOR = {
+					has_attitude = {
+						who = ROOT
+						attitude = disinterested
+					}
+					scope:searching_scope.relations:root <= relations_threshold:poor
+					has_law = law_type:law_informal_education
+					has_law = law_type:law_mission_schools
+					AND = {
+						has_law = law_type:law_clerical_education
+						NOT = { country_has_state_religion = root.religion }
+					}
+					active_law:lawgroup_education_leadership = scope:first_school_candidate.active_law:lawgroup_education_leadership
+					active_law:lawgroup_education_leadership = scope:second_school_candidate.active_law:lawgroup_education_leadership
+				}
+			}
+			save_scope_as = third_school_candidate
+		}
+		random_country = {
+			save_temporary_scope_as = searching_scope
+			limit = {
+				NOR = {
+					has_attitude = {
+						who = ROOT
+						attitude = disinterested
+					}
+					scope:searching_scope.relations:root <= relations_threshold:poor
+					has_law = law_type:law_informal_education
+					has_law = law_type:law_mission_schools
+					AND = {
+						has_law = law_type:law_clerical_education
+						NOT = { country_has_state_religion = root.religion }
+					}
+					active_law:lawgroup_education_leadership = scope:first_school_candidate.active_law:lawgroup_education_leadership
+					active_law:lawgroup_education_leadership = scope:second_school_candidate.active_law:lawgroup_education_leadership
+					active_law:lawgroup_education_leadership = scope:third_school_candidate.active_law:lawgroup_education_leadership
+				}
+			}
+			save_scope_as = fourth_school_candidate
+		}
+	}
+
+	option = {
+		name = school_search.2.z
+
+	}
+
+	option = {
+		name = school_search.2.y
+		
+	}
+
+	option = {
+		name = school_search.2.x
+		
+	}
+
+	option = {
+		name = school_search.2.w
+		
+	}
+
+	option = {
+		name = school_search.2.a
+	}
+
+	option = {
+		name = school_search.2.b
+	}
+
+}
+
+school_search.3 = { #event if one decides to reject all options in this or the above event, picks a separate batch if available. basically just happens if the player thinks the initial options are too stinky
+	
+	type = country_event
+	placement = ROOT
+
+	title = school_search.3.t
+	desc = school_search.3.d
+	flavor = school_search.3.f
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+}
+
+school_search.4 = { #event if the country chosen changes their school law, allowing for the country to change goals to match (if allowed) or look for a new model
+	
+	type = country_event
+	placement = ROOT
+
+	title = school_search.4.t
+	desc = school_search.4.d
+	flavor = school_search.4.f
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+}
+
+school_search.5 = { #event for the sending of people to get educated - should prolly impact IG opinion on one hand, or IG attraction on the other, depending on the size
+	
+	type = country_event
+	placement = ROOT
+
+	title = school_search.5.t
+	desc = school_search.5.d
+	flavor = school_search.5.f
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	
+}
+
+#should have 15-20 "expedition events" for the bulk of the actual event chain
+
+
+school_search.100 = { #when the search succeeds - where to stick the guy is decided
+	type = country_event
+	placement = ROOT
+
+	title = school_search.100.t
+	desc = school_search.100.d
+	flavor = school_search.100.f
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
 }
