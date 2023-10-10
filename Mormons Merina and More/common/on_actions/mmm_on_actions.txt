@@ -53,6 +53,112 @@ on_five_year_pulse_state = {}
 on_decade_pulse_state = {}
 
 
+# Root = state
+on_state_incorporation = {
+	on_actions = {
+		if = {
+			limit = {
+				ROOT.owner = c:USA
+			}
+			star_counter
+		}
+	}
+}
+
+star_counter = {
+	c:USA = {
+		set_variable = {
+			name = flag_stars_var
+			value = 0
+		}
+		every_scope_state = {
+			limit = {
+				is_incorporated = yes
+				NOT = { has_variable = usa_state_flag_block }
+			}
+			c:USA = {
+				change_variable = {
+					name = flag_stars_var
+					add = 1
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				is_incorporated = yes
+				OR = {
+					state_region = STATE_MARYLAND
+					state_region = STATE_SOUTH_DAKOTA
+					state_region = STATE_MONTANA
+					state_region = STATE_VERACRUZ
+					state_region = STATE_YUCATAN
+					state_region = STATE_ZACATECAS
+					state_region = STATE_RIO_DE_JANERIO
+					state_region = STATE_SANTA_FE
+					state_region = STATE_PATAGONIA
+					state_region = STATE_CHACO
+					state_region = STATE_JUJUY
+				}
+			}
+			c:USA = {
+				change_variable = {
+					name = flag_stars_var
+					add = 1
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				is_incorporated = yes
+				OR = {
+					state_region = STATE_NEW_BRUNSWICK
+					state_region = STATE_RIO_GRANDE
+					state_region = STATE_JALISCO
+					state_region = STATE_MEXICO
+					state_region = STATE_BAJIO
+					state_region = STATE_PERNAMBUCO
+					state_region = STATE_RIO_NEGRO
+					state_region = STATE_CUYO
+				}
+			}
+			c:USA = {
+				change_variable = {
+					name = flag_stars_var
+					add = 2
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				is_incorporated = yes
+				OR = {
+					state_region = STATE_TUCUMAN
+				}
+			}
+			c:USA = {
+				change_variable = {
+					name = flag_stars_var
+					add = 3
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				is_incorporated = yes
+				OR = {
+					state_region = STATE_MASSACHUSETS
+				}
+			}
+			c:USA = {
+				change_variable = {
+					name = flag_stars_var
+					add = 5
+				}
+			}
+		}
+	}
+}
+
 # Root = Releasing Country
 # scope:target = Released Country
 on_country_released_as_independent = {

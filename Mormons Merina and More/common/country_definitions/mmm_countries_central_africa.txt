@@ -1,0 +1,157 @@
+#for chad, CAR, cameron
+
+MNB = {
+	color = { 75 129 182 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { mangbetu }
+	capital = STATE_ITURI
+}
+
+ZND = {
+	color = { 208 225 57 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { azande }
+	capital = STATE_UELE
+}
+
+GBY = {
+	color = { 37 110 116 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { gbaya }
+	capital = STATE_UBANGI_SHARI
+}
+
+BAN = {
+	color = { 235 126 239 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { banda }
+	capital = STATE_UPPER_UBANGI
+}
+
+WAD = {
+	color = { 194 66 41 }
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { fur }
+	capital = STATE_WADDAI
+}
+
+DAK = {
+	color = { 123 134 74 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { fur }
+	capital = STATE_UBANGI_SHARI
+}
+
+DAR = {
+	color = { 103 52 223 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { fur }
+	capital = STATE_UBANGI_SHARI
+}
+
+BOR = {
+	color = { 30 131 162 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kanuri }
+	capital = STATE_BORNU
+}
+
+BGI = {
+	color = { 64 124 157 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { baguirmi }
+	capital = STATE_BAGIRMI
+}
+
+SRA = { # Sara
+	color = { 179 236 217 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { sara }
+	capital = STATE_LOGONE
+}
+
+MND = {
+	color = { 162 31 117 }
+	country_type = unrecognized
+	tier = principality
+
+	cultures = { mandara }
+	religion = sunni
+	capital = STATE_MANDARA
+}
+
+DLA = {
+	color = { 22 121 17 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { equatorial_bantu }
+	capital = STATE_SOUTH_CAMEROON
+}
+
+BMM = {
+	color = { 197 201 163 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { grassfields }
+	religion = sunni
+	capital = STATE_SOUTH_CAMEROON
+}
+
+KNM = {
+	color = { 77 69 28 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { kanuri }
+	capital = STATE_KANEM
+}
+
+TBI = {
+	color = { 220 210 97 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { teda }
+	capital = STATE_CHAD
+}

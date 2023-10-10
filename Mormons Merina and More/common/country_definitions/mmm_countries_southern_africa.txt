@@ -1,0 +1,241 @@
+XHO = { # Xhosa
+	color = { 88 80 163 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { xhosa }
+	capital = STATE_XHOSALAND
+}
+
+THB = {
+	color = { 205 158 57 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { xhosa }
+	capital = STATE_XHOSALAND
+}
+
+MPD = {
+	color = { 57 205 190 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { xhosa }
+	capital = STATE_XHOSALAND
+}
+
+BST = {
+	color = { 137 106 217 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sotho }
+	capital = STATE_LESOTHO
+}
+
+STH = {
+	color = { 187 118 10 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { sotho }
+	capital = STATE_VRYSTAAT
+}
+
+TSW = {
+	color = { 117 170 219 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { tswana }
+	capital = STATE_BOTSWANA
+}
+
+MTB = {
+	color = { 142 80 55 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { ndebele }
+	capital = STATE_TRANSVAAL
+}
+
+SWZ = {
+	color = { 203 43 17 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { swazi }
+	capital = STATE_SWAZILAND
+}
+
+MRT = {
+	color = { 171 199 29 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { pedi }
+	capital = STATE_EAST_TRANSVAAL
+}
+
+VND = {
+	color = { 219 165 241 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { pedi kalanga }
+	capital = STATE_EAST_TRANSVAAL
+}
+
+ZPB = {
+	color = { 191 200 202 }
+
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { boer }
+	capital = STATE_ZOUTPANSBERG
+}
+
+WBG = {
+	color = { 144 230 55 }
+
+	country_type = recognized
+	
+	tier = city_state
+
+	cultures = { boer }
+	capital = STATE_VRYSTAAT
+}
+
+BTG = { # Batonga
+	color = { 200 193 108 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { tsonga }
+	capital = STATE_LOURENCO_MARQUES
+}
+
+LBD = {
+	color = { 17 22 109 }
+
+	country_type = decentralized
+	
+	tier = principality
+
+	cultures = { pedi }
+	capital = STATE_EAST_TRANSVAAL
+}
+
+LKW = {
+	color = { 29 221 114 }
+
+	country_type = decentralized
+	
+	tier = principality
+
+	cultures = { pedi tswana }
+	capital = STATE_ZOUTPANSBERG
+}
+
+HRO = {
+	color = { 221 140 40 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { herero khoisan }
+	capital = STATE_HEREROLAND
+}
+
+MNC = {
+	color = { 60 147 140 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { shona }
+	capital = STATE_MANICALAND
+}
+
+MRV = {
+	color = { 220 220 75 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { chewa }
+	capital = STATE_SHIRE_HIGHLAND
+}
+
+MKU = { # Makua
+	color = { 38 140 40 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { makua lomwe }
+	capital = STATE_MOCAMBIQUE
+}
+
+SNA = { # Sena
+	color = { 91 132 128 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { sena }
+	capital = STATE_SOFALA
+}
+
+RZV = {
+	color = { 234 180 20 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { kalanga }
+	capital = STATE_ZAMBEZI
+}
+
+MSH = {
+	color = { 193 189 151 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { shona }
+	capital = STATE_MASHONALAND
+}

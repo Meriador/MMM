@@ -1,0 +1,289 @@
+﻿#for kenya/uganda/tanzania area
+
+TPS = {
+	color = { 232 101 68 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { ateker }
+	capital = STATE_TURKANA
+}
+
+BSG = {
+	color = { 249 201 22 }
+
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { busoga }
+	capital = STATE_BUSOGA
+}
+
+ACH = {
+	color = { 166 225 217 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { luo }
+	capital = STATE_ACHOLILAND
+}
+
+ANK = {
+	color = { 126 162 98 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { nkole }
+	capital = STATE_UGANDA
+}
+
+BNY = {
+	color = { 174 24 66 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { banyoro }
+	capital = STATE_UGANDA
+}
+
+TOO = {
+	color = { 111 24 174 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { banyoro }
+	capital = STATE_UGANDA
+}
+
+KRG = {
+	color = { 48 177 169 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { nyambo }
+	capital = STATE_KAGERA
+}
+
+RWD = {
+	color = { 213 160 18 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { ruanda }
+	capital = STATE_RWANDA
+}
+
+BRD = {
+	color = { 21 191 16 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { rundi }
+	capital = STATE_BURUNDI
+}
+
+NDZ = {
+	color = { 197 34 13 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { swahili }
+	capital = STATE_COMOROS
+}
+
+MWA = {
+	color = { 197 197 13 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { merina }
+	capital = STATE_COMOROS
+}
+
+GCM = {
+	color = { 13 34 197 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { swahili }
+	capital = STATE_COMOROS
+}
+
+LUO = {
+	color = { 153 153 168 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { luo }
+	capital = STATE_NAM
+}
+
+KLJ = {
+	color = { 233 18 5 }
+	
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { kalenjin }
+
+	capital = STATE_RIFT_VALLEY
+}
+
+RDL = {
+	color = { 150 102 21 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { somali maasai }
+
+	capital = STATE_MARSABIT
+}
+
+SKM = { # Sukuma
+	color = { 101 122 158 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { sukuma }
+	capital = STATE_NYANZA
+}
+
+IQW = {
+	color = { 27 175 133 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { iraqw }
+	capital = STATE_ARUSHA
+}
+
+NYM = {
+	color = { 164 125 26 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { unyamwezi }
+	capital = STATE_UNYAMWEZI
+}
+
+UJJ = {
+	color = { 255 160 120 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { lacustrine_bantu }
+	capital = STATE_TANGANYIKA
+}
+
+FPA = {
+	color = { 204 77 103 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { rukwa }
+	capital = STATE_TANGANYIKA
+}
+
+SNG = {
+	color = { 203 54 66 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { rukwa nyasa }
+	capital = STATE_RUKWA
+}
+
+HHE = {
+	color = { 126 84 131 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { hehe }
+	capital = STATE_LINDI
+}
+
+GGO = {
+	color = { 244 228 166 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { hehe unyamwezi }
+	capital = STATE_ARUSHA
+}
+
+NGL = {
+	color = { 146 155 19 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { littoral_bantu }
+	capital = STATE_ARUSHA
+}
+
+RFJ = {
+	color = { 222 109 45 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { littoral_bantu }
+	capital = STATE_LINDI
+}
+
+YAO = {
+	color = { 0 127 72 }
+
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { yao }
+	capital = STATE_MOCAMBIQUE
+}

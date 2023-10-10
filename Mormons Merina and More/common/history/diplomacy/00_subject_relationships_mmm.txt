@@ -9,4 +9,20 @@
 			type = vassal
 		}
 	}
+	c:SMN = {
+		create_diplomatic_pact = {
+			country = c:AGM
+			type = vassal
+		}
+	}
+	c:XHO = {
+		create_diplomatic_pact = {
+			country = c:THB
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:MPD
+			type = vassal
+		}
+	}
 }

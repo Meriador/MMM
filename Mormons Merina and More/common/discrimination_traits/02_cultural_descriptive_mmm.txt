@@ -1,29 +1,49 @@
-﻿algonquian_trait = {
+﻿algonquian_trait = {}
+plains_trait = {}
+numic = {}
+siouan_trait = {}
+iroquoian_trait = {}
+southwest_american = {}
+southeast_american = {}
+nadene = {}
+penutian_trait = {}
+northwest_coast = {}
+
+east_african_heritage = {
+	heritage = yes
+}
+west_african_heritage = {
+	heritage = yes
+}
+southern_african_heritage = {
+	heritage = yes
+}
+diaspora_african_heritage = {
+	heritage = yes
 }
 
-plains_trait = {
-}
-
-numic = {
-}
-
-siouan_trait = {
-}
-
-iroquoian_trait = {
-}
-
-southwest_american = {
-}
-
-southeast_american = {
-}
-
-nadene = {
-}
-
-penutian_trait = {
-}
-
-northwest_coast = {
-}
+afro_semitic = {}
+cushitic = {}
+nilotic = {}
+nyanza_trait = {}
+rutara_trait = {}
+rwanda_rundi_language = {}
+ubangi_trait = {}
+nguni_trait = {}
+sotho_trait = {}
+nyasa_trait = {}
+kavango_trait = {}
+makua_trait = {}
+shona_trait = {}
+botatwe_trait = {}
+south_congo_trait = {}
+chadic_trait = {}
+delta_trait = {}
+gbe_trait = {}
+senegambian = {}
+gur_trait = {}
+kru_trait = {}
+mande_trait = {}
+nupe_trait = {}
+yoruba_trait = {}
+banyamwezi_trait = {}

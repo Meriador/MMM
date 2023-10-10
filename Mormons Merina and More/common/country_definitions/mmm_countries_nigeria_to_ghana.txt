@@ -1,0 +1,300 @@
+KWD = {
+    color = { 62 38 200 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { bariba }
+    capital = STATE_ATAKORA
+}
+
+KND = {
+    color = { 200 38 91 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { bariba }
+    capital = STATE_WEST_BORGU
+}
+
+PKU = {
+    color = { 146 5 230 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { bariba }
+    capital = STATE_WEST_BORGU
+}
+
+NKK = {
+    color = { 77 200 38 }
+    country_type = unrecognized
+    tier = grand_principality
+
+    cultures = { bariba }
+    capital = STATE_WEST_BORGU
+}
+
+ILL = {
+    color = { 230 119 5 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { bariba }
+    capital = STATE_EAST_BORGU
+}
+
+KAI = {
+    color = { 25 245 215 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { bariba }
+    capital = STATE_EAST_BORGU
+}
+
+BUS = {
+    color = { 202 245 25 }
+    country_type = unrecognized
+    tier = grand_principality
+
+    cultures = { bariba }
+    capital = STATE_EAST_BORGU
+}
+
+DSS = {
+    color = { 182 56 101 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { songhai }
+    capital = STATE_OUTER_HAUSALAND
+}
+
+SAY = {
+    color = { 56 67 182 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { songhai }
+    capital = STATE_OUTER_HAUSALAND
+}
+
+LPT = {
+    color = { 56 182 128 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { fulbe }
+    capital = STATE_LIPTAKO
+}
+
+SOK = {
+	color = { 0 135 81 }
+	country_type = unrecognized
+	tier = empire
+	
+	cultures = { hausa fulbe }
+	capital = STATE_HAUSALAND
+}
+
+HAU = {
+	color = { 225 185 85 }
+	country_type = unrecognized
+	tier = empire
+	
+	cultures = { hausa }
+	capital = STATE_KANO
+}
+
+GOB = {
+    color = { 60 212 169 }
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { hausa }
+	capital = STATE_MARADI
+}
+
+MAR = {
+    color = { 124 82 105 }
+	country_type = unrecognized
+	tier = city_state
+	
+	cultures = { hausa }
+	capital = STATE_MARADI
+}
+
+DAM = {
+    color = { 181 80 92 }
+	country_type = unrecognized
+	tier = city_state
+	
+	cultures = { kanuri }
+	capital = STATE_ZINDER
+}
+
+DGN = {
+    color = { 170 135 32 }
+	country_type = unrecognized
+	tier = kingdom
+	
+	cultures = { dagomba }
+	capital = STATE_YENDI
+}
+
+ASH = {
+	color = { 97 98 195 }
+	country_type = unrecognized
+	tier = kingdom
+	
+	cultures = { akan }
+	capital = STATE_GHANA
+}
+
+BNK = {
+    color = { 75 50 62 }
+    country_type = decentralized
+    tier = principality
+
+    cultures = { songhai kaybe }
+    capital = STATE_ATAKORA
+}
+
+KYB = {
+    color = { 107 97 68 }
+    country_type = decentralized
+    tier = principality
+
+    cultures = { kaybe }
+    capital = STATE_YENDI
+}
+
+ZRM = {
+    color = { 218 245 105 }
+    country_type = decentralized
+    tier = principality
+
+    cultures = { songhai }
+    capital = STATE_OUTER_HAUSALAND
+}
+
+IGL = {
+    color = { 112 21 29 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { igala }
+    capital = STATE_IGALA
+}
+
+OYO = {
+	color = { 211 184 179 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { yoruba }
+	capital = STATE_YORUBA_STATES
+}
+
+IJS = {
+    color = { 112 21 78 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { yoruba }
+    capital = STATE_BENIN
+}
+
+IJB = {
+    color = { 59 21 112 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { yoruba }
+    capital = STATE_EGBADO
+}
+
+ABJ = {
+    color = { 221 229 168 }
+    country_type = unrecognized
+    tier = principality
+
+    cultures = { hausa }
+    capital = STATE_SOUTH_ZARIA
+}
+
+JOS = {
+    color = { 144 104 27 }
+    country_type = decentralized
+    tier = principality
+
+    cultures = { gbari bole }
+    capital = STATE_JOS
+}
+
+TIV = { # Tivland
+	color = { 240 213 100 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { tiv }
+	capital = STATE_NIGERIA
+}
+
+IBO = {
+	color = { 119 24 85 }
+	country_type = decentralized
+	tier = principality
+	
+	cultures = { ibo }
+	capital = STATE_IGBOLAND
+}
+
+IBL = { # Ibibioland
+	color = { 142 134 187 }
+	country_type = decentralized
+	tier = principality
+	
+	cultures = { ibibio }
+	capital = STATE_CROSS_RIVER
+}
+
+IJW = {
+    color = { 56 35 20 }
+	country_type = decentralized
+	tier = principality
+	
+	cultures = { ijaw }
+	capital = STATE_NIGER_DELTA
+}
+
+GWR = {
+    color = { 208 166 135 }
+    country_type = decentralized
+    tier = principality
+
+    cultures = { gbari }
+    capital = STATE_KONTAGORA
+}
+
+NGI = {
+    color = { 166 68 168 }
+    country_type = unrecognized
+    tier = city_state
+
+    cultures = { hausa }
+    capital = STATE_NIGERIA
+}
+
+ZUU = {
+    color = { 68 168 158 }
+    country_type = decentralized
+    tier = principality
+
+    cultures = { benue }
+    capital = STATE_GWANDU
+}
+

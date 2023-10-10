@@ -3146,4 +3146,868 @@
 			}
 		}
 	}
+
+
+
+	s:STATE_INNER_MAURITANIA = {
+		region_state:OUA
+	}
+	s:STATE_EASTERN_MALI = {
+		region_state:MSN
+	}
+	s:STATE_SEGOU = {
+		region_state:SGU
+	}
+	s:STATE_SIKASSO = {
+		region_state:MDK
+
+		region_state:KDG
+	}
+	s:STATE_WESTERN_MALI = {
+		region_state:KRT
+	}
+	s:STATE_TIMBUKTU = {
+		region_state:ADG
+
+		region_state:MSN
+	}
+	s:STATE_NIGER = {
+		region_state:TBI
+
+		region_state:AIR
+
+		region_state:KNM
+	}
+	s:STATE_CHAD = {
+		region_state:TBI
+	}
+	s:STATE_IVORY_COAST = {
+		region_state:FRA
+			
+		region_state:BLE
+
+		region_state:AYI
+	}
+	s:STATE_ODIENNE = {
+		region_state:MDK
+	}
+	s:STATE_KONG = {
+		region_state:KNG
+
+		region_state:KDG
+	}
+	s:STATE_WINDWARD_COAST = {
+		region_state:KRU
+	}
+	s:STATE_SENEGAL = {
+		region_state:FRA
+			
+		region_state:JLF
+
+		region_state:CAY
+
+		region_state:FTR
+
+		region_state:SRR
+	}
+	s:STATE_TAMBACOUNDA = {
+		region_state:BND
+	}
+	s:STATE_CASAMANCE = {
+		region_state:KBU
+	}
+	s:STATE_GAMBIA = {
+		region_state:GBR
+
+	}
+	s:STATE_SIERRA_LEONE = {
+		region_state:SIL
+	}
+	s:STATE_VOLTA = {
+		region_state:FDG
+
+		region_state:TKD
+
+		region_state:YTG
+
+		region_state:WGD
+	}
+	s:STATE_BLACK_VOLTA = {
+		region_state:KNG
+
+		region_state:DGA
+	}
+	s:STATE_LIPTAKO = {
+		region_state:LPT
+	}
+	s:STATE_LIBERIA = {
+		region_state:LIB
+	}
+	s:STATE_HAUSALAND = {
+		region_state:SOK
+	}
+	s:STATE_GWANDU = {
+		region_state:SOK
+
+		region_state:ZUU
+	}
+	s:STATE_KATAGUM = {
+		region_state:SOK
+
+		region_state:BOR
+	}
+	s:STATE_KANO = {
+		region_state:SOK
+	}
+	s:STATE_KATSINA = {
+		region_state:SOK
+	}
+	s:STATE_SOUTH_ZARIA = {
+		region_state:SOK
+
+		region_state:ABJ
+	}
+	s:STATE_KONTAGORA = {
+		region_state:SOK
+
+		region_state:GWR
+	}
+	s:STATE_BIDA = {
+		region_state:SOK
+	}
+	s:STATE_BENIN = {
+		region_state:BEN
+
+		region_state:IJS
+	}
+	s:STATE_IGALA = {
+		region_state:IGL
+	}
+	s:STATE_YORUBA_STATES = {
+		region_state:OYO
+	}
+	s:STATE_EGBADO = {
+		region_state:OYO
+
+		region_state:IJB
+	}
+	s:STATE_ILORIN = {
+		region_state:SOK
+	}
+	s:STATE_NIGER_DELTA = {
+		region_state:IJW
+	}
+	s:STATE_CROSS_RIVER = {
+		region_state:IBL
+	}
+	s:STATE_IGBOLAND = {
+		region_state:IBO
+	}
+	s:STATE_OUTER_HAUSALAND = {
+		region_state:LPT
+
+		region_state:DSS
+
+		region_state:SAY
+
+		region_state:ZRM
+	}
+	s:STATE_ZINDER = {
+		region_state:DAM
+
+		region_state:KNM
+	}
+	s:STATE_MARADI = {
+		region_state:GOB
+
+		region_state:MAR
+
+		region_state:ZRM
+
+		region_state:AIR
+	}
+	s:STATE_BORNU = {
+		region_state:BOR
+	}
+	s:STATE_NIGERIA = {
+		region_state:SOK
+
+		region_state:NGI
+	}
+	s:STATE_GOMBE = {
+		region_state:SOK
+	}
+	s:STATE_JOS = {
+		region_state:JOS
+	}
+	s:STATE_MURI = {
+		region_state:SOK
+	}
+	s:STATE_LAFIA = {
+		region_state:SOK
+	}
+	s:STATE_BENUE = {
+		region_state:TIV
+	}
+	s:STATE_EAST_HAUSALAND = {
+		region_state:SOK
+	}
+	s:STATE_GUINEA = {
+		region_state:SSU
+	}
+	s:STATE_BISSAU = {
+		region_state:POR
+
+		region_state:KBU
+	}
+	s:STATE_FUTA_JALLON = {
+		region_state:FTJ
+	}
+	s:STATE_UPPER_GUINEA = {
+		region_state:MDK
+	}
+	s:STATE_GHANA = {
+		region_state:ASH
+			
+		region_state:GBR
+			
+		region_state:NET
+			
+		region_state:DEN
+	}
+	s:STATE_DAGBON = {
+		region_state:DGN
+
+		region_state:DGA
+	}
+	s:STATE_YENDI = {
+		region_state:DGN
+
+		region_state:KYB
+	}
+	s:STATE_TOGO = {
+		region_state:EWE
+	}
+	s:STATE_DAHOMEY = {
+		region_state:DAH
+	}
+	s:STATE_ATAKORA = {
+		region_state:KWD
+
+		region_state:KYB
+
+		region_state:BNK
+	}
+	s:STATE_EAST_BORGU = {
+		region_state:ILL
+
+		region_state:KAI
+
+		region_state:BUS
+
+		region_state:NKK
+	}
+	s:STATE_WEST_BORGU = {
+		region_state:KND
+
+		region_state:PKU
+
+		region_state:NKK
+
+		region_state:BNK
+	}
+	s:STATE_LINDI = {
+		region_state:NGL
+
+		region_state:HHE
+
+		region_state:RFJ
+
+		region_state:YAO
+
+		region_state:SNG
+	}
+	s:STATE_RUKWA = {
+		region_state:SNG
+
+		region_state:NYM
+
+		region_state:HHE
+
+		region_state:GGO
+	}
+	s:STATE_ZANZIBAR = {
+		region_state:OMA
+	}
+	s:STATE_TANGANYIKA = {
+		region_state:UJJ
+
+		region_state:FPA
+	}
+	s:STATE_ARUSHA = {
+		region_state:MSI
+
+		region_state:GGO
+
+		region_state:NGL
+
+		region_state:IQW
+	}
+	s:STATE_UNYAMWEZI = {
+		region_state:NYM
+	}
+	s:STATE_NYANZA = {
+		region_state:LUO
+
+		region_state:SKM
+	}
+	s:STATE_KAGERA = {
+		region_state:KRG
+	}
+	s:STATE_RWANDA = {
+		region_state:RWD
+	}
+	s:STATE_BURUNDI = {
+		region_state:BRD
+	}
+	s:STATE_KENYA = {
+		region_state:KKY
+
+		region_state:MSI
+	}
+	s:STATE_MOMBASA = {
+		region_state:OMA
+
+		region_state:KKY
+	}
+	s:STATE_MARSABIT = {
+		region_state:BRN
+
+		region_state:RDL
+
+		region_state:KKY
+	}
+	s:STATE_NAM = {
+		region_state:LUO
+
+		region_state:KLJ
+	}
+	s:STATE_TURKANA = {
+		region_state:TPS
+	}
+	s:STATE_RIFT_VALLEY = {
+		region_state:KLJ
+
+		region_state:MSI
+	}
+	s:STATE_OROMIA = {
+		region_state:AWS
+
+		region_state:HAR
+
+		region_state:OGD
+	}
+	s:STATE_SHEWA = {
+		region_state:SHW
+
+		region_state:HAR
+	}
+	s:STATE_AMHARA = {
+		region_state:WLG
+
+		region_state:DNK
+	}
+	s:STATE_SIDAMO = {
+		region_state:BRN
+
+		region_state:OGD
+
+		region_state:SDM
+	}
+	s:STATE_KAFFA = {
+		region_state:WLT
+
+		region_state:KFA
+
+		region_state:JIM
+
+		region_state:OMO
+
+		region_state:NUE
+	}
+	s:STATE_ILLUABOR = {
+		region_state:NUE
+
+		region_state:JIM
+	} 
+	s:STATE_GOJJAM = {
+		region_state:GJM
+
+		region_state:MQS
+	} 
+	s:STATE_TIGRAY = { 
+		region_state:AGM
+
+		region_state:SMN
+	}
+	s:STATE_WOLLO = {
+		region_state:AWS
+
+		region_state:YJJ
+	}
+	s:STATE_GONDER = {
+		region_state:SMN
+
+		region_state:MQS
+
+		region_state:YJJ
+	}
+	s:STATE_KAZEMBE = {
+		region_state:KZM
+
+		region_state:BMB
+
+		region_state:LMB
+	} 
+	s:STATE_NYASALAND = {
+		region_state:MRV
+
+		region_state:SNG
+	}
+	s:STATE_LUANGWA = {
+		region_state:MRV
+
+		region_state:SNG
+	}
+	s:STATE_SOMALILAND = {
+		region_state:AWS
+
+		region_state:ISQ
+
+		region_state:WSG
+	}
+	s:STATE_PUNTLAND = {
+		region_state:MJT
+	}
+	s:STATE_SOMALIA = {
+		region_state:MJT
+
+		region_state:GLD
+	}
+	s:STATE_JUBALAND = {
+		region_state:GLD
+
+		region_state:OGD
+	} 
+	s:STATE_COMOROS = {
+		region_state:NDZ
+
+		region_state:MWA
+
+		region_state:GCM
+	}
+	s:STATE_UGANDA = {
+		region_state:BUG
+	}
+	s:STATE_BUSOGA = {
+		region_state:BSG
+
+		region_state:TPS
+	}
+	s:STATE_ANKOLE = {
+		region_state:ANK
+	} 
+	s:STATE_BUNYORO = {
+		region_state:BNY
+
+		region_state:TOO
+	} 
+	s:STATE_ACHOLILAND = {
+		region_state:TPS
+
+		region_state:ACH
+
+		region_state:MNB
+	}
+	s:STATE_UPPER_NILE = {
+		region_state:DNK
+
+		region_state:NUE
+	}
+	s:STATE_BAHR_AL_GHAZAL = {
+		region_state:DFT
+
+		region_state:DNK
+	}
+	s:STATE_EQUATORIA = {
+		region_state:ZND
+
+		region_state:KRO
+
+		region_state:TPS
+	}
+	s:STATE_MOCAMBIQUE = {
+		region_state:POR
+
+		region_state:MKU
+
+		region_state:YAO
+	}
+	s:STATE_SHIRE_HIGHLAND = {
+		region_state:YAO
+
+		region_state:MRV
+	}
+	s:STATE_WADDAI = {
+		region_state:WAD
+
+		region_state:DAR
+	}
+	s:STATE_LOGONE = {
+		region_state:SRA
+	}
+	s:STATE_BAGIRMI = {
+		region_state:BGI
+
+		region_state:WAD
+
+		region_state:SRA
+	}
+	s:STATE_KANEM = {
+		region_state:WAD
+
+		region_state:KNM
+
+		region_state:TBI
+	}
+	s:STATE_MANDARA = {
+		region_state:BOR
+
+		region_state:MND
+	}
+	s:STATE_NORTH_CAMEROON = {
+		region_state:SOK
+	}
+	s:STATE_CAMEROON = {
+		region_state:FNG
+
+		region_state:DLA
+
+		region_state:BKA
+
+		region_state:GBY
+
+		region_state:BMM
+	}
+	s:STATE_CAMEROON_ISLANDS = {
+		region_state:POR
+
+		region_state:GBR
+	}
+	s:STATE_SOUTH_CAMEROON = {
+		region_state:DLA
+
+		region_state:BMM
+	}
+	s:STATE_UBANGI_SHARI = {
+		region_state:NGB
+
+		region_state:GBY
+
+		region_state:SRA
+	}
+	s:STATE_UPPER_UBANGI = {
+		region_state:ZND
+
+		region_state:BAN
+
+		region_state:DFT
+	}
+	s:STATE_DAR_AL_KUTI = {
+		region_state:DAK
+
+		region_state:BAN
+	}
+	s:STATE_CUVETTE = {
+		region_state:BKA
+	}
+	s:STATE_EAST_CONGO = {
+		region_state:TKE
+	}
+	s:STATE_CONGO = {
+		region_state:LNG
+	}
+	s:STATE_CONGO_ORIENTALE = {
+		region_state:BNG
+
+		region_state:BWA
+
+		region_state:KMO
+	}
+	s:STATE_UELE = {
+		region_state:ZND
+
+		region_state:BWA
+
+		region_state:MNB
+	}
+	s:STATE_ITURI = {
+		region_state:MNB
+
+		region_state:KMO
+	}
+	s:STATE_MANIEMA = {
+		region_state:KMO
+
+		region_state:LGA
+
+		region_state:HMB
+
+		region_state:TTL
+	}
+	s:STATE_KIVU = {
+		region_state:KMO
+
+		region_state:LGA
+	}
+	s:STATE_SANKURU = {
+		region_state:TTL
+	}
+	s:STATE_KASAI = {
+		region_state:KBA
+
+		region_state:LND
+
+		region_state:TTL
+
+		region_state:SGE
+	}
+	s:STATE_BAS_CONGO = {
+		region_state:KON
+
+		region_state:NGY
+
+		region_state:TKE
+	}
+	s:STATE_KWANGO = {
+		region_state:YKA
+
+		region_state:KWL
+	}
+	s:STATE_TSHUAPA = {
+		region_state:BNG
+	}
+	s:STATE_LOWER_UBANGI = {
+		region_state:BNG
+
+		region_state:NGB
+
+		region_state:BWA
+	}
+	s:STATE_EQUATEUR = {
+		region_state:BNG
+
+		region_state:SKT
+	}
+	s:STATE_NORTH_ANGOLA = {
+		region_state:POR
+	}
+	s:STATE_ZAIRE = {
+		region_state:KON
+	}
+	s:STATE_MOCAMEDES = {
+		region_state:OVB
+
+		region_state:POR
+	}
+	s:STATE_HUILA = {
+		region_state:OVB
+
+		region_state:OVM
+	}
+	s:STATE_LUNDA = {
+		region_state:LND
+
+		region_state:KSN
+	}
+	s:STATE_SOUTH_ANGOLA = {
+		region_state:OVM
+
+		region_state:POR
+
+		region_state:KSN
+	}
+	s:STATE_EAST_ANGOLA = {
+		region_state:MBD
+
+		region_state:LVL
+
+		region_state:OVB
+
+		region_state:OVM
+	}
+	s:STATE_KATANGA = {
+		region_state:KZM
+
+		region_state:LBA
+	}
+	s:STATE_WEST_TANGANYIKA = {
+		region_state:LBA
+
+		region_state:HMB
+	}
+	s:STATE_LUALABA = {
+		region_state:LND
+
+		region_state:LBA
+
+		region_state:SGE
+	}
+	s:STATE_MUNI = {
+		region_state:FNG
+	}
+	s:STATE_OGOOUE = {
+		region_state:FNG
+	}
+	s:STATE_GABON = {
+		region_state:FNG
+
+		region_state:LNG
+	}
+	s:STATE_ZAMBIA = {
+		region_state:LMB
+
+		region_state:LZO
+	}
+	s:STATE_BATONGALAND = {
+		region_state:BAT
+
+		region_state:LZO
+	}
+	s:STATE_BAROTSELAND = {
+		region_state:LZO
+	}
+	s:STATE_TETE = {
+		region_state:POR
+			
+		region_state:MRV
+
+		region_state:SNA
+	}
+	s:STATE_SOFALA = {
+		region_state:POR
+
+		region_state:MNC
+
+		region_state:SNA
+
+		region_state:GZA
+	}
+	s:STATE_ZAMBEZIA = {
+		region_state:POR
+
+		region_state:MKU
+	}
+	s:STATE_ZAMBEZI = {
+		region_state:RZV
+	}
+	s:STATE_MASHONALAND = {
+		region_state:MSH
+	}
+	s:STATE_MATABELELAND = {
+		region_state:BAT
+
+		region_state:VND
+
+		region_state:RZV
+	}
+	s:STATE_MANICALAND = {
+		region_state:MNC
+	}
+	s:STATE_NAMAQUALAND = {
+		region_state:NAM
+	}
+	s:STATE_HEREROLAND = {
+		region_state:NAM
+
+		region_state:HRO
+
+		region_state:OVB
+	}
+	s:STATE_ZULULAND = {
+		region_state:ZUL
+	}
+	s:STATE_VRYSTAAT = {
+		region_state:STH
+
+		region_state:TSW
+
+		region_state:WBG
+	}
+	s:STATE_TRANSVAAL = {
+		region_state:MTB
+
+		region_state:STH
+
+		region_state:TSW
+	}
+	s:STATE_EAST_TRANSVAAL = {
+		region_state:STH
+
+		region_state:SWZ
+
+		region_state:LBD
+
+		region_state:MRT
+	}
+	s:STATE_ZOUTPANSBERG = {
+		region_state:LBD
+
+		region_state:ZPB
+
+		region_state:VND
+
+		region_state:LKW
+	}
+	s:STATE_XHOSALAND = {
+		region_state:XHO = {
+			
+		}
+
+		region_state:THB
+
+		region_state:MPD
+
+		region_state:STH
+	}
+	s:STATE_LESOTHO = {
+		region_state:BST
+	}
+	s:STATE_SWAZILAND = {
+		region_state:SWZ
+	}
+	s:STATE_EASTERN_CAPE = {
+		region_state:SAF
+
+	}
+	s:STATE_CAPE_COLONY = {
+		region_state:SAF
+	}
+	s:STATE_NORTHERN_CAPE = {
+		region_state:SAF
+
+	}
+	s:STATE_SOUTH_BECHUANALAND = {
+		region_state:TSW
+	}
+	s:STATE_BOTSWANA = {
+		region_state:TSW
+
+		region_state:LZO
+	}
+	s:STATE_LOURENCO_MARQUES = {
+		region_state:POR
+			
+		region_state:GZA
+	}
 }

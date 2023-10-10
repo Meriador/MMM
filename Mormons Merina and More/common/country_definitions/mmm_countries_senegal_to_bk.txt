@@ -1,0 +1,165 @@
+MSN = {
+	color = { 230 231 62 }
+	country_type = unrecognized
+	tier = kingdom
+	
+	cultures = { fulbe }
+	capital = STATE_EASTERN_MALI
+}
+
+FDG = {
+	color = { 25 115 12 }
+	country_type = unrecognized
+	tier = principality
+
+	cultures = { mossi }
+	capital = STATE_VOLTA
+}
+
+TKD = {
+	color = { 121 233 105 }
+	country_type = unrecognized
+	tier = principality
+
+	cultures = { mossi }
+	capital = STATE_VOLTA
+}
+
+YTG = {
+	color = { 42 274 60 }
+	country_type = unrecognized
+	tier = principality
+
+	cultures = { mossi }
+	capital = STATE_VOLTA
+}
+
+WGD = {
+	color = { 192 179 24 }
+	country_type = unrecognized
+	tier = grand_principality
+
+	cultures = { mossi }
+	capital = STATE_VOLTA
+}
+
+DGA = {
+	color = { 111 9 154 }
+	country_type = decentralized
+	tier = principality
+
+	cultures = { gurma }
+	capital = STATE_DAGBON
+}
+
+KNG = {
+	color = { 137 98 195 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { dyula senufo }
+	capital = STATE_KONG
+}
+
+KDG = {
+	color = { 127 99 28 }
+	country_type = unrecognized
+	tier = principality
+
+	cultures = { senufo }
+	capital = STATE_SIKASSO
+}
+
+KRT = {
+	color = { 127 28 45 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bambara }
+	capital = STATE_WESTERN_MALI
+}
+
+SGU = {
+	color = { 27 28 145 }
+	country_type = unrecognized
+	tier = kingdom
+	
+	cultures = { bambara }
+	capital = STATE_WESTERN_MALI
+}
+
+MDK = {
+	color = { 191 83 53 }
+	country_type = decentralized
+	tier = principality
+	
+	cultures = { malinke }
+	capital = STATE_UPPER_GUINEA
+}
+
+FTJ = {
+	color = { 230 125 127 }
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { fulbe }
+	capital = STATE_FUTA_JALLON
+}
+
+KBU = {
+	color = { 101 63 41 }
+	country_type = decentralized
+	tier = principality
+	
+	cultures = { jola malinke }
+	religion = mande_faith
+	capital = STATE_CASAMANCE
+}
+
+BND = {
+	color = { 60 118 54 }
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { fulbe mande }
+	capital = STATE_TAMBACOUNDA
+}
+
+TRZ = {
+	color = { 230 123 17 }
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { bidan }
+	capital = STATE_MAURITANIA
+}
+
+CAY = {
+	color = { 189 187 166 }
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { wolof }
+	capital = STATE_SENEGAL
+}
+
+JLF = {
+	color = { 215 215 125 }
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { wolof }
+	capital = STATE_SENEGAL
+}
+
+SRR = {
+	color = { 57 121 111 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { serer }
+	capital = STATE_SENEGAL
+}

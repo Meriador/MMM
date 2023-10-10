@@ -546,7 +546,7 @@ STATE_GHANA = {
     #make into ashanti
     id = 220
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x111F0C" "x1472E7" "x14F486" "x364DF5" "x4B8CBE" "x589734" "x61C0D0" "x6A6B14" "x6B5943" "x6C8064" "x6C9759" "x6FFF10" "x8504E6" "xA624EE" "xB99E19" "xB9D107" "xBC1F14" "xC2E0C0" "xD14671" "xDBB653" "xDE4D17" "xE0C0D0" "xE63565" "xE9F5E6" }
+    provinces = { "x111F0C" "x1472E7" "x14F486" "x364DF5" "x4B8CBE" "x589734" "x61C0D0" "x6A6B14" "x6B5943" "x6C8064" "x6C9759" "x6FFF10" "x8504E6" "xA624EE" "xB99E19" "xB9D107" "xBC1F14" "xC2E0C0" "xD14671" "xDBB653" "xDE4D17" "xE0C0D0" "xE63565" "xE9F5E6" "x802111" }
     traits = { "state_trait_malaria" }
     city = "x6A6B14"
     port = "x8504E6"
@@ -582,7 +582,7 @@ STATE_TOGO = {
     #still togo
     id = 221
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x406D9B" "x40E9E9" "x778011" "x802111" "xD4B5FF" }
+    provinces = { "x406D9B" "x40E9E9" "x778011" "xD4B5FF" }
     prime_land = { "x802111" "x406D9B" }
     traits = { "state_trait_malaria" }
     city = "x87D283"
@@ -976,7 +976,7 @@ STATE_SOMALILAND = {
     #still somaliland
     id = 232
     subsistence_building = "building_subsistence_orchards"
-    provinces = { "x089FE7" "x0C544E" "x0CE1C7" "x12FDBA" "x132465" "x184064" "x20E090" "x284319" "x2C4BFE" "x2FB806" "x395C77" "x3BB51B" "x3EE4D1" "x40E050" "x42DA4F" "x48FFF1" "x4A6DFD" "x524E91" "x560238" "x5C2622" "x678D0D" "x7D4764" "x7FBAFA" "x85FD85" "x8AA210" "x9ACA9E" "x9B6C39" "x9DA796" "x9E8FDD" "xAE76D1" "xC6A5CB" "xCA0AFC" "xCCC39F" "xD0FF66" "xD3EE2E" "xD6084C" "xD85A85" "xDDAC33" "xDEFB4F" "xDF951C" "xE19C5A" "xF2A924" "xF9565C" }
+    provinces = { "x089FE7" "x0C544E" "x0CE1C7" "x12FDBA" "x184064" "x20E090" "x284319" "x2C4BFE" "x2FB806" "x395C77" "x3BB51B" "x3EE4D1" "x40E050" "x42DA4F" "x48FFF1" "x4A6DFD" "x524E91" "x560238" "x5C2622" "x678D0D" "x7D4764" "x7FBAFA" "x85FD85" "x8AA210" "x9ACA9E" "x9B6C39" "x9DA796" "x9E8FDD" "xAE76D1" "xC6A5CB" "xCA0AFC" "xCCC39F" "xD0FF66" "xD3EE2E" "xD6084C" "xD85A85" "xDDAC33" "xDEFB4F" "xDF951C" "xE19C5A" "xF2A924" "xF9565C" }
     traits = { "state_trait_malaria" }
     city = "x894078"
     port = "x524E91"
@@ -995,7 +995,7 @@ STATE_SOMALILAND = {
 STATE_PUNTLAND = {
     id = 6058
 
-    provinces = { "x281ECB" "x2CA298" "x2D75F4" "x326FD1" "x995FB2" "xA0E090" "xA6E128" "xB19FD2" "xB72AFB" "xB9F779" "xD97AC4" "xED2D92" "xEF3903" "xF70163" }
+    provinces = { "x281ECB" "x2CA298" "x2D75F4" "x326FD1" "x995FB2" "xA0E090" "xA6E128" "xB19FD2" "xB72AFB" "xB9F779" "xD97AC4" "xED2D92" "xEF3903" "xF70163" "x132465" }
 }
 
 STATE_SOMALIA = {
@@ -1400,14 +1400,14 @@ STATE_CUVETTE = {
 STATE_EAST_CONGO = {
     id = 6076
 
-    provinces = { "x03C590" "x0A0CBB" "x1D4C74" "x269967" "x34850C" "x38E47B" "x4513A5" "x82767A" "x8D5A30" "x956FF5" "x981D9F" "xA0F4A3" "xA415F8" "xABF62E" "xB1B163" "xB63B70" "xCF9269" "xE383BC" }
+    provinces = { "x03C590" "x0A0CBB" "x1D4C74" "x269967" "x34850C" "x38E47B" "x4513A5" "x82767A" "x8D5A30" "x956FF5" "xA0F4A3" "xA415F8" "xABF62E" "xB1B163" "xB63B70" "xCF9269" "xE383BC" "x981D9F" "x19AA2E" }
 }
 
 STATE_CONGO = {
     #make into west congo
     id = 242
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x077290" "x0866D6" "x195E39" "x19AA2E" "x2A3008" "x376A4C" "x406070" "x4B6E4C" "x552D48" "x55BFC9" "x6471E0" "x6D11B0" "x80E0F0" "x989470" }
+    provinces = { "x077290" "x0866D6" "x195E39" "x2A3008" "x376A4C" "x406070" "x4B6E4C" "x552D48" "x55BFC9" "x6471E0" "x6D11B0" "x80E0F0" "x989470" }
     traits = { "state_trait_severe_malaria" "state_trait_congo_river" "state_trait_congo_forest" }
     city = "xE383BC"
     port = "x406070"

@@ -921,7 +921,7 @@
 		
 		}
 	}
-	s:STATE_MORONDAVA  = {
+	s:STATE_MORONDAVA = {
 		region_state:MER = {
 			
 		}
@@ -933,7 +933,7 @@
 				building="building_barracks"
 				level=4
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+				activate_production_methods={ "pm_irregular_infantry" }
 			}
 		}
 	}
@@ -1018,7 +1018,7 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+				activate_production_methods={ "pm_line_infantry" }
 			}			
 			create_building={
 				building="building_construction_sector"
