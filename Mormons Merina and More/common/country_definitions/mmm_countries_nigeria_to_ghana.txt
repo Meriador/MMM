@@ -229,7 +229,7 @@ JOS = {
     country_type = decentralized
     tier = principality
 
-    cultures = { gbari bole }
+    cultures = { benue bole }
     capital = STATE_JOS
 }
 
@@ -294,7 +294,7 @@ ZUU = {
     country_type = decentralized
     tier = principality
 
-    cultures = { benue }
+    cultures = { kainji }
     capital = STATE_GWANDU
 }
 

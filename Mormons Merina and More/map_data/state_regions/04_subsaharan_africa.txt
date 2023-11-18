@@ -150,7 +150,7 @@ STATE_VOLTA = {
     #make into mossi
     id = 209
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x07A8CE" "x098AEC" "x0E3E31" "x12A8D0" "x1EAC06" "x334887" "x3BD729" "x4011B4" "x4A242B" "x4CCE99" "x589177" "x589185" "x624D5E" "x6C7E40" "x72F918" "x7A0BFB" "x802190" "x80BF3F" "x847A38" "x8A68F2" "x9011A0" "xA83043" "xAB99DB" "xC254B3" "xC58317" "xD7264E" "xDB8A9E" "xDEAE02" "xE156B1" "xE413C3" "xE5AE46" }
+    provinces = { "x07A8CE" "x098AEC" "x0E3E31" "x12A8D0" "x1EAC06" "x334887" "x3BD729" "x4011B4" "x4A242B" "x4CCE99" "x589177" "x589185" "x624D5E" "x6C7E40" "x72F918" "x7A0BFB" "x802190" "x80BF3F" "x847A38" "x8A68F2" "x9011A0" "xA83043" "xAB99DB" "xC254B3" "xC58317" "xD7264E" "xDB8A9E" "xDEAE02" "xE156B1" "xE413C3" }
     traits = { "state_trait_malaria" }
     city = "xC58317"
     farm = "x74936B"
@@ -170,7 +170,7 @@ STATE_VOLTA = {
 STATE_BLACK_VOLTA = {
     id = 6010
 
-    provinces = { "x0136A2" "x1190A0" "x20DA55" "x6012BE" "x6040D0" "x7154F9" "x74936B" "x87EFE1" "x9064E0" "xB22C30" "xC1D0A4" "xD15F36" "xD48611" "xE591D8" "xEE2D7C" "xEFED0D" }
+    provinces = { "x0136A2" "x1190A0" "x20DA55" "x6012BE" "x6040D0" "x7154F9" "x74936B" "x87EFE1" "x9064E0" "xB22C30" "xC1D0A4" "xD15F36" "xD48611" "xE591D8" "xEE2D7C" "xEFED0D" "xE5AE46" }
 }
 
 STATE_LIPTAKO = {
@@ -274,7 +274,7 @@ STATE_BENIN = {
     #still benin
     id = 212
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x691E00" "x7B4B80" "xB8FA68" "xCF11A0" "xE11C43" "xEBFCB5" "xF1E4DA" }
+    provinces = { "x691E00" "x7B4B80" "xCF11A0" "xEBFCB5" "xF1E4DA" }
     traits = { "state_trait_malaria" "state_trait_niger_river" }
     city = "xF1E4DA"
     port = "xF1E4DA"
@@ -300,6 +300,12 @@ STATE_IGALA = {
     id = 6019
 
     provinces = { "x6F99BE" "xB3DBE6" "xD42491" "xFF1D7C" }
+}
+
+STATE_EKITI = {
+    id = 6108
+
+    provinces = { "x066264" "xE11C43" "xB8FA68" }
 }
 
 STATE_YORUBA_STATES = {
@@ -539,7 +545,7 @@ STATE_FUTA_JALLON = {
 STATE_UPPER_GUINEA = {
     id = 6033
 
-    provinces = { "x08E1DB" "x12A380" "x14D406" "x168505" "x29C6D0" "x324AE0" "x339CE8" "x380214" "x3D0B76" "x482B8D" "x5CB7F3" "x5D1375" "x6C8F72" "x7EFED6" "x8140A0" "x83B875" "x852260" "x8F0D6B" "xA04050" "xAAA0DE" "xAFBE88" "xB7BFEE" "xCC84F1" "xD00D92" "xF4618A" }
+    provinces = { "x08E1DB" "x12A380" "x14D406" "x168505" "x29C6D0" "x324AE0" "x339CE8" "x380214" "x3D0B76" "x482B8D" "x5CB7F3" "x5D1375" "x6C8F72" "x7EFED6" "x8140A0" "x83B875" "x8F0D6B" "xA04050" "xAAA0DE" "xAFBE88" "xB7BFEE" "xCC84F1" "xD00D92" "xF4618A" }
 }
 
 STATE_GHANA = {
@@ -702,7 +708,7 @@ STATE_TANGANYIKA = {
     #make into east tanganyika
     id = 225
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x02207F" "x206030" "x2729FD" "x337D6C" "x494A2E" "x4F3573" "x6CFAFE" "x7CE03A" "x83BED8" "x8D4D80" "x8EAA8A" "x8F39A2" "xA9F940" "xBCE7C6" "xC40CD1" "xCAC52D" "xF3365F" }
+    provinces = { "x02207F" "x206030" "x2729FD" "x337D6C" "x494A2E" "x4F3573" "x6CFAFE" "x83BED8" "x8D4D80" "x8EAA8A" "x8F39A2" "xA9F940" "xBCE7C6" "xC40CD1" "xCAC52D" "xF3365F" }
     prime_land = { "x5093DF" "x16915A" "xD8B2ED" "x80DF50" "x5954AA" "x34EFF0" "x662B31" }
     traits = { "state_trait_malaria" "state_trait_lake_victoria" }
     city = "x34EFF0"
@@ -737,7 +743,7 @@ STATE_UNYAMWEZI = {
 STATE_NYANZA = {
     id = 6042
 
-    provinces = { "x04F5F9" "x2691C1" "x385BCF" "x38E17B" "x3F4074" "x425AA5" "x56F303" "x61218F" "x6936D4" "x8C4477" "x8C8524" "xD0FF5C" "xDD184B" "xE15FF5" "xFCA852" "xFDF261" }
+    provinces = { "x04F5F9" "x2691C1" "x385BCF" "x38E17B" "x3F4074" "x425AA5" "x56F303" "x61218F" "x6936D4" "x8C4477" "x8C8524" "xD0FF5C" "xDD184B" "xE15FF5" "xFCA852" "xFDF261" "x7CE03A" }
 }
 
 STATE_KAGERA = {
@@ -1013,7 +1019,7 @@ STATE_JUBALAND = {
 STATE_SOUTH_MADAGASCAR = {
     id = 233
     subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { "x069C0D" "x19F69A" "x1BB5E5" "x1FAF90" "x2B3FCB" "x40C0E0" "x471161" "x5F8C33" "x6D48C1" "x714D08" "x794F7A" "x9F5F4C" "xB9259E" "xBCB8C0" "xBFA51F" "xDBFAC1" "xE655F6" "xF2317F" "xFC9FEC" }
+    provinces = { "x069C0D" "x19F69A" "x1BB5E5" "x1FAF90" "x2B3FCB" "x40C0E0" "x471161" "x5F8C33" "x6D48C1" "x714D08" "x794F7A" "x9F5F4C" "xB9259E" "xBCB8C0" "xBFA51F" "xDBFAC1" "xE655F6" "xF2317F" "xFC9FEC" "x5D2D79" "x10A7DF" "xADD893" }
     traits = { "state_trait_malaria" }
     city = "x9F5F4C"
     farm = "x5F8C33"
@@ -1051,7 +1057,7 @@ STATE_NORTH_MADAGASCAR = {
 STATE_SOUTHEAST_MADAGASCAR = {
     id = 6002
     subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { "x10A7DF" "x132895" "x44FC6E" "x5897EC" "x5D2D79" "x94059D" "x9C2288" "xA58AC5" "xADD893" "xB0B64A" "xC910DF" "xED95E1" "xF81480" }
+    provinces = { "x132895" "x44FC6E" "x5897EC" "x94059D" "x9C2288" "xA58AC5" "xADD893" "xB0B64A" "xC910DF" "xED95E1" "xF81480" }
     traits = { "state_trait_malaria" }
     city = "x5D2D79"
     port = "xB0B64A"
@@ -1407,7 +1413,7 @@ STATE_CONGO = {
     #make into west congo
     id = 242
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x077290" "x0866D6" "x195E39" "x2A3008" "x376A4C" "x406070" "x4B6E4C" "x552D48" "x55BFC9" "x6471E0" "x6D11B0" "x80E0F0" "x989470" }
+    provinces = { "x077290" "x0866D6" "x195E39" "x2A3008" "x376A4C" "x4B6E4C" "x552D48" "x55BFC9" "x6471E0" "x6D11B0" "x80E0F0" "x989470" }
     traits = { "state_trait_severe_malaria" "state_trait_congo_river" "state_trait_congo_forest" }
     city = "xE383BC"
     port = "x406070"
@@ -1470,13 +1476,13 @@ STATE_ITURI = {
 STATE_MANIEMA = {
     id = 6079
 
-    provinces = { "x0160D0" "x153063" "x223F0E" "x2A5811" "x4C5241" "x5247D2" "x563D5E" "x59223C" "x59DED0" "x668E52" "x68D1B6" "x7449D3" "x7ABE0E" "x85DD57" "x9C9DF0" "xACB239" "xADE217" "xBDBDF3" "xC6AF9F" "xCCED8E" "xD1DE64" "xDA13AB" "xDAB788" "xE42825" "xEC1630" }
+    provinces = { "x0160D0" "x153063" "x223F0E" "x2A5811" "x4C5241" "x5247D2" "x563D5E" "x59223C" "x59DED0" "x668E52" "x68D1B6" "x7449D3" "x7ABE0E" "x85DD57" "x9C9DF0" "xACB239" "xADE217" "xBDBDF3" "xC6AF9F" "xCCED8E" "xD1DE64" "xDA13AB" "xDAB788" "xE42825" "xEC1630" "x135F4B" }
 }
 
 STATE_KIVU = {
     id = 6080
 
-    provinces = { "x135F4B" "x15439F" "x162FA7" "x1FEDC0" "x401860" "x4DC376" "x67535D" "x74FC60" "x85AB59" "x892521" "x91E008" "x9D9072" "xA0A030" "xAFF1B2" "xB2F385" "xDCBFE3" "xE06714" "xE2A642" "xE31D6A" "xE70C3A" "xFD986B" }
+    provinces = { "x15439F" "x162FA7" "x1FEDC0" "x401860" "x4DC376" "x67535D" "x74FC60" "x85AB59" "x892521" "x91E008" "x9D9072" "xA0A030" "xAFF1B2" "xB2F385" "xDCBFE3" "xE06714" "xE2A642" "xE31D6A" "xE70C3A" "xFD986B" }
 }
 
 STATE_SANKURU = {
@@ -1511,7 +1517,7 @@ STATE_KASAI = {
 STATE_BAS_CONGO = {
     id = 245
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x08302D" "x0CD600" "x0E91BE" "x24A658" "x45360F" "x71AE65" "x7F1954" "x811426" "x9A6D48" "xA13978" "xADA9E9" "xB0403C" "xB593B6" "xB8838B" "xBC72E9" "xD0721B" "xF4AA39" "xFAB5FE" "xFDCF01" }
+    provinces = { "x08302D" "x0CD600" "x0E91BE" "x24A658" "x45360F" "x71AE65" "x7F1954" "x811426" "x9A6D48" "xA13978" "xADA9E9" "xB0403C" "xB593B6" "xB8838B" "xBC72E9" "xD0721B" "xF4AA39" "xFAB5FE" "xFDCF01" "x406070" }
     traits = { "state_trait_severe_malaria" "state_trait_congo_river" "state_trait_congo_forest" }
     prime_land = { "xB0403C" "xADA9E9" "xA13978" "xBC72E9" "x71AE65" "x08302D" "xB593B6" "x24A658" }
     city = "xF4AA39"
@@ -1542,7 +1548,7 @@ STATE_KWANGO = {
 STATE_TSHUAPA = {
     id = 6083
 
-    provinces = { "x0189CE" "x0568F6" "x1DF65B" "x23496A" "x23CA3D" "x32D956" "x32F501" "x3E64C9" "x47FB27" "x4AE988" "x55DFE1" "x5AAE1D" "x60613A" "x6315E1" "x64F74D" "x71CEE9" "x81CBC9" "x828628" "x8695B2" "x8941BB" "x8B73F4" "x8FA7E6" "x98859A" "x99C010" "xA07ADA" "xA2CE72" "xACC1BD" "xB1EF94" "xB3697B" "xB858B9" "xBB6510" "xC0DC10" "xC99932" "xCB6124" "xD3F022" "xE05B64" "xE080C6" "xE1673F" "xE9DB6A" "xE9DE6C" "xF1F5C4" "xF60457" "xF7E188" "xFF0F19" }
+    provinces = { "x0189CE" "x0568F6" "x1DF65B" "x23496A" "x23CA3D" "x32D956" "x32F501" "x3E64C9" "x47FB27" "x4AE988" "x55DFE1" "x5AAE1D" "x60613A" "x6315E1" "x64F74D" "x71CEE9" "x81CBC9" "x828628" "x8695B2" "x8941BB" "x8B73F4" "x98859A" "x99C010" "xA07ADA" "xA2CE72" "xACC1BD" "xB1EF94" "xB3697B" "xB858B9" "xBB6510" "xC0DC10" "xC99932" "xCB6124" "xD3F022" "xE05B64" "xE080C6" "xE1673F" "xE9DB6A" "xE9DE6C" "xF1F5C4" "xF60457" "xF7E188" "xFF0F19" }
 }
 
 STATE_LOWER_UBANGI = {
@@ -1555,7 +1561,7 @@ STATE_EQUATEUR = {
     #make mai-ndombe
     id = 246
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x1E2B55" "x23FD54" "x26F6D7" "x287A3D" "x2D5A83" "x2DE815" "x44C391" "x5F6A22" "x689CB8" "x73084C" "xA17D11" "xB27626" "xBB6F40" "xC060F0" "xD8927C" "xDFF631" "xF15770" }
+    provinces = { "x1E2B55" "x23FD54" "x26F6D7" "x287A3D" "x2D5A83" "x2DE815" "x44C391" "x5F6A22" "x689CB8" "x73084C" "xA17D11" "xB27626" "xBB6F40" "xC060F0" "xD8927C" "xDFF631" "xF15770" "x8FA7E6" }
     traits = { "state_trait_severe_malaria" "state_trait_congo_river" "state_trait_congo_forest" }
     prime_land = { "xD8927C" "xB858B9" "xB3697B" "xB27626" "xC060F0" "x73084C" "xD8927C" }
     city = "x5AAE1D"

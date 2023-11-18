@@ -1,0 +1,11 @@
+COUNTRIES = {
+	c:MSN = {
+		activate_law = law_type:law_slave_trade
+	}
+	c:FTR = {
+		activate_law = law_type:law_legacy_slavery
+	}
+	c:SOK = {
+		activate_law = law_type:law_racial_segregation
+	}
+}

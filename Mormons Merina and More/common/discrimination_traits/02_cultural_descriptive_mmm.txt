@@ -47,3 +47,4 @@ mande_trait = {}
 nupe_trait = {}
 yoruba_trait = {}
 banyamwezi_trait = {}
+kongo_trait = {}

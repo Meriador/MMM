@@ -3311,7 +3311,7 @@ algonquian={ #WIP, make sure names are appropriate given the new culture split
 	graphics = generic
 }
 
-afro_portuguese = {
+afro_portuguese = { #currently just a duplicate of afro-brazilian. ideally a different namelist would be made.
 	color= hsv{ 0.67 0.22 0.50 }
 	religion = catholic
 	traits = { diaspora_african_heritage lusophone }
@@ -3970,6 +3970,8 @@ afro_antillean={
 	graphics = african
 }
 
+#generally vanilla cultures just use vanilla namelists - they are included here for discrimination traits primarily.
+
 #horn of africa
 amhara={
 	color= hsv{ 0.25 0.43 0.55 }
@@ -4146,26 +4148,56 @@ oromo={
 	}
 	graphics = african
 }
-harar={ #WIP namelists
+harar={ #more names would be nice; the ones here might be anachronistic as well
 	color= rgb{ 175 75 15 }
 	religion = sunni
 	traits = { east_african_heritage cushitic }
 	male_common_first_names={
-		WIP
+		Abdalkarim
+		Abdalshakur
+		Abdullah
+		Abdurahim
+		Abu_Bakr
+		Abun
+		Barakat
+		Duri
+		Fuad
+		Khalid
+		Khalil
+		Mahfuz
+		Mohamed
+		Murad
+		Nuriya
+		Ordeen
+		Riad
+		Sabit
+		Yemaj
+		Yonis
 	}
 	female_common_first_names = {
-		WIP
-	}	
+		Alfuleila
+		Amira
+		Bati
+		Fatuma
+		Musa
+		Samia
+	}
 	noble_last_names = {
-		WIP
+		Abdullahi
+		Abdulrahman
+		Adashe
+		Ali
+		Ibrahim
 	}
 	common_last_names={
-		WIP
+		Abdosh
+		Aboker
+		Abubakri
+		Badri
+		Musa
+		Sadiq
+		Semod
 	}
-	ethnicities = {
-		1 = african
-	}
-	graphics = african
 }
 somali={
 	color={ 0.97 0.7 0.78 }
@@ -4269,21 +4301,165 @@ sidama={
 	}
 	graphics = african
 }
-omotic = {
+omotic = { #amalgamation of several languages' names. This could easily be improved; it's short on last names and draws from a limited number of cultures
 	color= rgb{ 127 72 59 }
 	religion = oriental_orthodox
 	traits = { east_african_heritage }
-	male_common_first_names={
-		WIP
+	male_common_first_names={ #taken from king lists from the world statesmen for various omotic kingdoms. Also took a few from the papers listed in the female names
+		Abaya
+		Abeti
+		Adilo
+		Ala
+		Amole
+		Ano
+		Atsio
+		Awano
+		Aynasu
+		Baasaa
+		Balo
+		Bedi
+		Beshi
+		Botoree
+		Buraatoo
+		Chaso
+		Colsha
+		Dagoye
+		Dalaso
+		Darotaa
+		Deji
+		Dirgimo
+		Dogamno
+		Doka
+		Dooyamoo
+		Dukamo
+		Fugga
+		Gaamuu
+		Gabito
+		Gaha
+		Gaki
+		Galasoo
+		Galli
+		Gawi
+		Geesamoo
+		Gere
+		Geserra
+		Giba
+		Gona
+		Gosasso
+		Gujjaa
+		Hoti
+		Kaika
+		Kalsa
+		Karetsoo
+		Kaye
+		Kobe
+		Kochchoo
+		Koke
+		Kuma
+		Leliso
+		Maadaa
+		Maahee
+		Maldoo
+		Malko
+		Mentsaa
+		Ogata
+		Olancho
+		Oleta
+		Sakalla
+		Shagi
+		Shella
+		Shiko
+		Siilisoo
+		Takibo
+		Techi
+		Titoo
+		Tona
+		Tuge
+		Tume
+		Wako
+		Wetsa
+		Wogaa
+		Wojjuu
+		Wolaa
+		Wontaa
+		Wotangoo
+		Woyra
+		Woze
+		Xona
+		Zaaroo
+		Zarmado
+		Zikole
+		Zuulaa
 	}
-	female_common_first_names = {
-		WIP
-	}	
-	noble_last_names = {
-		WIP
+	female_common_first_names = { #Heavily Dawro and Gofa, from "Dawro Personal Names and Naming Practices" by Mengistu Dinato Didena and "The Advent of “Modern State” in Ethiopia and the Dynamics of Personal Names and Naming Practices among the Gofa of Southwest Ethiopia" by Yetebarek Hizekeal Zekareas. 
+		Arbe
+		Baac'iree
+		Baatalee
+		Baloto
+		Banako
+		Barano
+		Biidoo
+		Bothe
+		Bullache
+		Butee
+		Cisha
+		Daa'imee
+		Dal'ishee
+		Dango
+		Darc'ee
+		Darotee
+		Dunkee
+		Elile
+		Gatta
+		Geesamee
+		Gomaree
+		Kulee
+		Malo
+		Monoshe
+		Naatree
+		Naqete
+		Nashechee
+		Palahee
+		Paltaamee
+		Pudho
+		Qere
+		S'oolintee
+		Shanqo
+		Shi'ee
+		Suro
+		Terenkee
+		Torgonnee
+		Toroojee
+		Uffysse
+		Woge
+		Wojjee
+		Wolayte
+		Woso
+		Yegelso
+		Zomaro
 	}
-	common_last_names={
-		WIP
+	noble_last_names = { #I do not know if these are actually "last names" per se, just that the kings of Kaffa and Sheka had them as second names
+		Afochi
+		Gaocho
+		Ginocho
+		Goechi
+		Nechochi
+		Nechocho
+		Serocho
+	}
+	common_last_names={ #taken from Yetebarek as well. I believe these are supposed to come before given names, but alas.
+		Alsoo
+		Dangarassa
+		Goba
+		Shodhe
+		Yoshi
+		None #I get the impression not everyone had one
+		None #hopefully this works lol
+		None
+		None
+		None
+		None
+		None
 	}
 	ethnicities = {
 		1 = african
@@ -5283,7 +5459,7 @@ rukwa={ #WIP namelists
 	graphics = african
 }
 iraqw={ #WIP namelists
-	color= rgb{ 96 96 110 }
+	color= rgb{ 224 228 166 }
 	religion = jok
 	traits = { southern_african_heritage cushitic }
 	male_common_first_names={
@@ -5726,7 +5902,7 @@ baguirmi={
 	}
 	graphics = african
 }
-mandara={ #WIP namelists
+kirdi={ #WIP namelists
 	color= rgb{ 123 44 123 }
 	religion = chadic_faith
 	traits = { west_african_heritage chadic_trait }
@@ -5747,29 +5923,8 @@ mandara={ #WIP namelists
 	}
 	graphics = african
 }
-massa={ #WIP namelists
-	color= rgb{ 123 123 44 }
-	religion = chadic_faith
-	traits = { west_african_heritage chadic_trait }
-	male_common_first_names={
-		WIP
-	}
-	female_common_first_names = {
-		WIP
-	}	
-	noble_last_names = {
-		WIP
-	}
-	common_last_names={
-		WIP
-	}
-	ethnicities = {
-		1 = african
-	}
-	graphics = african
-}
 bole={ #WIP namelists
-	color= rgb{ 44 123 123 }
+	color= rgb{ 177 175 9 }
 	religion = sunni
 	traits = { west_african_heritage chadic_trait }
 	male_common_first_names={
@@ -5789,7 +5944,7 @@ bole={ #WIP namelists
 	}
 	graphics = african
 }
-hadjari={ #WIP namelists
+hadjarai={ #WIP namelists
 	color= rgb{ 44 44 123 }
 	religion = chadic_faith
 	traits = { west_african_heritage chadic_trait }
@@ -6215,6 +6370,27 @@ ijaw = { #WIP namelists
 	}
 	graphics = african
 }
+efik = { #WIP namelists
+	color= rgb{ 137 207 225 }
+	religion = inam
+	traits = { west_african_heritage delta_trait }
+	male_common_first_names={
+		WIP
+	}
+	female_common_first_names = {
+		WIP
+	}	
+	noble_last_names = {
+		WIP
+	}
+	common_last_names={
+		WIP
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
 igala = { #WIP namelists
 	color= rgb{ 98 220 240 }
 	religion = isese
@@ -6237,7 +6413,28 @@ igala = { #WIP namelists
 	graphics = african
 }
 benue = { #WIP namelists
-	color= rgb{ 6 122 140 }
+	color= rgb{ 132 209 90 }
+	religion = chadic_faith
+	traits = { west_african_heritage }
+	male_common_first_names={
+		WIP
+	}
+	female_common_first_names = {
+		WIP
+	}	
+	noble_last_names = {
+		WIP
+	}
+	common_last_names={
+		WIP
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+kainji = { #WIP namelists
+	color= rgb{ 176 176 61 }
 	religion = chadic_faith
 	traits = { west_african_heritage }
 	male_common_first_names={
@@ -6419,7 +6616,7 @@ mossi={
 bariba={ #WIP namelists
 	color= rgb{ 52 55 156 }
 	religion = sunni
-	traits = { west_african_heritage gur_trait }
+	traits = { west_african_heritage }
 	male_common_first_names={
 		WIP
 	}
@@ -6481,7 +6678,7 @@ dagomba={ #WIP namelists
 }
 gurma={ #WIP namelists
 	color= rgb{ 82 140 120 }
-	religion = sunni
+	religion = mande_faith
 	traits = { west_african_heritage gur_trait }
 	male_common_first_names={
 		WIP
@@ -6723,6 +6920,8 @@ kru={
 		Togba
 		William
 		Yenseloh
+		Somayou
+		Zea
 	}
 	female_common_first_names = {
 		Antoinette
@@ -6734,6 +6933,8 @@ kru={
 	}	
 	noble_last_names = {
 		Twe
+		Clayou
+		Gboboh
 	}
 	common_last_names={
 		Banguro
@@ -6744,28 +6945,6 @@ kru={
 		Kama
 		Kanta
 		Kindo
-	}
-	ethnicities = {
-		1 = african
-	}
-	graphics = african
-}
-bassa={
-	color= hsv{ 0.71 0.46 0.73 }
-	religion = kru_faith
-	traits = { west_african_heritage kru_trait }
-	male_common_first_names = {
-		Somayou
-		Zea
-	}
-	female_common_first_names = {
-		Mary
-	}
-	noble_last_names = {
-		Clayou
-		Gboboh
-	}
-	common_last_names = {
 		Flo
 		Penick
 	}
@@ -6873,6 +7052,27 @@ bambara={
 }
 kpelle={ #WIP namelists
 	color= rgb{ 130 131 65 }
+	religion = sunni
+	traits = { west_african_heritage mande_trait }
+	male_common_first_names={
+		WIP
+	}
+	female_common_first_names = {
+		WIP
+	}	
+	noble_last_names = {
+		WIP
+	}
+	common_last_names={
+		WIP
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+dan={ #WIP namelists
+	color= rgb{ 130 131 65 }
 	religion = mande_faith
 	traits = { west_african_heritage mande_trait }
 	male_common_first_names={
@@ -6901,7 +7101,7 @@ malinke={ #WIP namelists
 	}
 	female_common_first_names = {
 		WIP
-	}	
+	}
 	noble_last_names = {
 		WIP
 	}
@@ -6936,6 +7136,27 @@ soninke={ #WIP namelists
 }
 susu={ #WIP namelists
 	color= rgb{ 29 239 98 }
+	religion = sunni
+	traits = { west_african_heritage mande_trait }
+	male_common_first_names={
+		WIP
+	}
+	female_common_first_names = {
+		WIP
+	}	
+	noble_last_names = {
+		WIP
+	}
+	common_last_names={
+		WIP
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+bissa={ #WIP namelists
+	color= rgb{ 29 39 98 }
 	religion = sunni
 	traits = { west_african_heritage mande_trait }
 	male_common_first_names={
@@ -8598,6 +8819,100 @@ bushongo={ #WIP namelists
 	}
 	graphics = african
 }
+tetela={ #WIP namelists
+	color= rgb{ 128 205 128 }
+	religion = north_congo_faith
+	traits = { southern_african_heritage }
+	male_common_first_names={
+		WIP
+	}
+	female_common_first_names = {
+		WIP
+	}	
+	noble_last_names = {
+		WIP
+	}
+	common_last_names={
+		WIP
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+mongo={
+	color= hsv{ 0.01 0.47 67 }
+	religion = north_congo_faith
+	traits = { southern_african_heritage }
+	male_common_first_names={
+		Amadi
+		Andikan
+		Aren
+		Averey
+		Bahari
+		Bakari
+		Bash
+		Bayode
+		Bitalo
+		Chane
+		Chata
+		Dakarai
+		Davu
+		Dume
+		Fabunni
+		Gamba
+		Genet
+		Guban
+		Hajari
+		Haruni
+		Ife
+		Ilo
+		Issay
+		Jabari
+		Jabilo
+		Jaguan
+		Kabili
+		Kamwimbile
+		Kasim
+		Kenyi
+		Khairi
+		Makalo
+		Mansa
+		Morathi
+		Musawenkosi
+		Raimi
+		Razi
+		Reth
+	}
+	female_common_first_names = {
+		Bulanda
+		Mabela
+		Tshiambuaya
+	}	
+	noble_last_names = {
+		Bokondji
+		Bolamba
+		Bomboko
+		Kanza
+	}
+	common_last_names={
+		Bokote
+		Bolia
+		Bongandu
+		Dengese
+		Ekonda
+		Mbole
+		Nkutu
+		Ntomba
+		Sengele
+		Songomeno
+		Tetela-Kusu
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
 bemba={ #WIP namelists
 	color= rgb{ 76 234 187 }
 	religion = zambezi_faith
@@ -8620,3 +8935,99 @@ bemba={ #WIP namelists
 	graphics = african
 }
 
+haratin={
+	color= hsv{ 0.95 0.39 0.78 }
+	religion = sunni
+	traits = { arab_speaking middle_eastern_heritage }
+	male_common_first_names = {
+		Messaoud
+	}
+	female_common_first_names = {
+		Aicha
+		Amina
+		Batoul
+		Fadhma
+		Nadia
+		Souhila
+		Touria
+		Zina
+	}	
+	noble_last_names = {
+		al-Alawi
+		ben_Gana
+		Benaissa
+		Djellouli
+	}
+	common_last_names = {
+		Ould_Boulkheir
+		ibn_Ali
+		ibn_Yusuf
+		Sabiri
+		Sharvit
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+bidan={
+	color= hsv{ 0.04 0.39 0.88 }
+	religion = sunni
+	traits = { arab_speaking west_african_heritage }
+	male_common_first_names={
+		Abbas
+		Abu
+		Amira
+		Asim
+		Farraj
+		Galib
+		Hajib
+		Hasan
+		Hayyan
+		Ibn_Muhammad
+		Jalaf
+		Malamah
+		Mansur
+		Maymun
+		Mujahid
+		Mutarrif
+		Nasr
+		Tabit
+		Tamim
+		Tariq
+		Ubada
+		Ufayr
+		Umar
+		Wasil
+		Yazid
+		Yunus
+		Zuhayr
+	}
+	female_common_first_names = {
+		Fatima
+		Sayyida
+	}	
+	noble_last_names = {
+		Battuta
+		al-Zahrawi
+	}
+	common_last_names={
+		Bajjah
+		Firnas
+		Khaldon
+		Rushd
+		Tufail
+		Ziyad
+		Zuhr
+		al-Baitar
+		al-Idrisi
+		al-Majriti
+		al-Qalasadi
+		al-Rahman
+		al-Zarqali
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}

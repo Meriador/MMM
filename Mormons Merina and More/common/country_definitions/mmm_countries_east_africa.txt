@@ -197,6 +197,7 @@ NYM = {
 	tier = principality
 	
 	cultures = { unyamwezi }
+	religion = sunni
 	capital = STATE_UNYAMWEZI
 }
 

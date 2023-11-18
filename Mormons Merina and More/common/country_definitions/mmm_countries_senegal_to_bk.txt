@@ -71,6 +71,15 @@ KDG = {
 	capital = STATE_SIKASSO
 }
 
+GWK = {
+	color = { 233 102 153 }
+	country_type = unrecognized
+	tier = principality
+
+	cultures = { dyula }
+	capital = STATE_BLACK_VOLTA
+}
+
 KRT = {
 	color = { 127 28 45 }
 	country_type = unrecognized
@@ -87,6 +96,7 @@ SGU = {
 	tier = kingdom
 	
 	cultures = { bambara }
+	religion = sunni
 	capital = STATE_WESTERN_MALI
 }
 
@@ -123,7 +133,7 @@ BND = {
 	country_type = unrecognized
 	tier = principality
 	
-	cultures = { fulbe mande }
+	cultures = { fulbe malinke }
 	capital = STATE_TAMBACOUNDA
 }
 
@@ -142,6 +152,7 @@ CAY = {
 	tier = principality
 	
 	cultures = { wolof }
+	religion = serer_faith
 	capital = STATE_SENEGAL
 }
 
@@ -151,6 +162,7 @@ JLF = {
 	tier = principality
 	
 	cultures = { wolof }
+	religion = serer_faith
 	capital = STATE_SENEGAL
 }
 
@@ -162,4 +174,13 @@ SRR = {
 	
 	cultures = { serer }
 	capital = STATE_SENEGAL
+}
+
+SMO = {
+	color = { 175 33 33 }
+	country_type = decentralized
+	tier = principality
+
+	cultures = { bisa }
+	capital = STATE_BLACK_VOLTA
 }

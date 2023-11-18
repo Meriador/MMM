@@ -29,7 +29,13 @@
 			add_ideology = ideology_nativist
 		}
 	}
-	c:PEU = {
+	c:NPU = {
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			add_ideology = ideology_nativist
+		}
+	}
+	c:SPU = {
 		ig:ig_petty_bourgeoisie = { 
 			remove_ideology = ideology_reactionary
 			add_ideology = ideology_nativist

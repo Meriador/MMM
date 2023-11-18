@@ -118,7 +118,6 @@ star_counter = {
 					state_region = STATE_BAJIO
 					state_region = STATE_PERNAMBUCO
 					state_region = STATE_RIO_NEGRO
-					state_region = STATE_CUYO
 				}
 			}
 			c:USA = {

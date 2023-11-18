@@ -45,10 +45,9 @@
  tonga: "Tonga"
  lamba: "Lamba"
  grassfields: "Grassfields"
- mandara: "Mandara"
+ kirdi: "Kirdi"
  bole: "Bole"
- massa: "Massa"
- hadjari: "Hadjari"
+ hadjarai: "Hadjarai"
  ijaw: "Ijaw"
  duala: "Duala"
  igala: "Igala"
@@ -83,8 +82,12 @@
  degar: "Degar"
  swazi: "Swazi"
  afro_portuguese: "Afro-Portuguese"
+ dan: "Dan"
+ bissa: "Bissa"
+ efik: "Efik"
+ kainji: "Kainji"
+ tetela: "Tetela"
 
- 
  
  
  #discrimination traits
@@ -128,3 +131,4 @@
  nupe_trait: "Nupe"
  yoruba_trait: "Yoruboid"
  banyamwezi_trait: "Bazyamwezi"
+ kongo_trait: "Kongo"
